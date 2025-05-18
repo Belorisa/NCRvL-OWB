@@ -138,7 +138,3 @@ FRE = {
 	has_government = people
 	has_cosmetic_tag = STN_freedoms_army
 }
-DOD = {
-	original_tag = BGC
-	has_country_flag = DOD_revolter
-}
