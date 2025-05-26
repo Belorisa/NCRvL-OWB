@@ -43,4 +43,11 @@ sub_unit_categories = {
 	category_implant
 	category_behemoth
 	category_anti_tank
+		category_creatures
+	category_mutant_creatures
+	category_insects
+	category_deathclaws
+	category_ferals
+	category_beasts
+	category_unique
 }

@@ -129,7 +129,7 @@ script_enum_equipment_bonus_type = {
 	chariot_equipment
 	infantry
 	mechanized
-	radroach_equipment
+	insect_equipment
 	super_heavy_robot_equipment
 	car_fighter_equipment
 	hev_fighter_equipment
@@ -144,7 +144,16 @@ script_enum_equipment_bonus_type = {
 	ship_hull_medium
 	cnc_robot_equipment
 	behemoth_equipment
-	mirelurk_equipment
+	amphibious_beast_equipment
+	burrowing_beast_equipment
+	amphibious_beast_equipment
+	insect_equipment
+	deathclaw_equipment
+	deathclaw_special_equipment
+	feral_ghoul_equipment
+	beast_creature_equipment
+	gecko_creature_equipment
+	
 	skate_equipment
 	ground_blimp_equipment
 	cheap_blimp_equipment
@@ -340,12 +349,12 @@ script_enum_equipment_bonus_type = {
 	gauss_equipment_2
 	plasma_equipment_1
 	plasma_equipment_2
-	mirelurk_equipment_1
-	molerat_equipment
-	molerat_equipment_1
+	amphibious_beast_equipment_1
+	burrowing_beast_equipment
+	burrowing_beast_equipment_1
 	monster_equipment
 	gehenna_molech_equipment
-	radroach_equipment_1
+	insect_equipment_1
 	power_armor_equipment_0
 	power_armor_equipment_1
 	power_armor_equipment_2
@@ -414,6 +423,49 @@ script_enum_equipment_bonus_type = {
 	drug_equipment_coffee_2
 	supply_equipment
 	supply_equipment_1
+	amphibious_beast_equipment_1
+	amphibious_beast_equipment_2
+	amphibious_beast_equipment_armor
+	amphibious_beast_equipment_king
+	beast_creature_equipment_1
+	beast_creature_equipment_2
+	beast_creature_equipment_heavy
+	beast_creature_equipment_dusky
+	beast_creature_equipment_stalker
+	beast_creature_equipment_cloaked
+	gecko_creature_equipment_1
+	gecko_creature_equipment_2
+	gecko_creature_equipment_fire
+	gecko_creature_equipment_green
+	burrowing_beast_equipment_1
+	burrowing_beast_equipment_2
+	burrowing_beast_equipment_glowing
+	burrowing_beast_equipment_brood
+	deathclaw_equipment_1
+	deathclaw_equipment_2
+	deathclaw_equipment_3
+	deathclaw_special_equipment_1
+	deathclaw_special_equipment_2
+	feral_ghoul_equipment_1
+	feral_ghoul_equipment_2
+	feral_ghoul_equipment_armored
+	feral_ghoul_equipment_glowing
+	insect_equipment_1
+	insect_equipment_2
+	insect_equipment_3
+	railway_gun_equipment_1
+	railway_gun_equipment_2
+	railway_gun_equipment_3
+	railway_gun_equipment_4
+	ballistic_missile_equipment
+	ballistic_missile_equipment_1
+	ballistic_missile_equipment_2
+	ballistic_missile_equipment_3
+	nuclear_missile_equipment
+	nuclear_missile_equipment_1
+	nuclear_missile_equipment_2
+	explosive_ammo_equipment
+	explosive_ammo_equipment_1
 
 }
 

@@ -3560,7 +3560,7 @@ focus_tree = {
 		prerequisite = {
 			focus = imo_ach_tbh_puppet
 		}
-		relative_id = imo_ach_tbh_puppet
+		relative_position_id = imo_ach_tbh_puppet
 		bypass = {
 			LNS = {
 				all_core_land_owned_by_prev_sphere = yes

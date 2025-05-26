@@ -394,10 +394,10 @@ sub_units = {
 			movement = 0.1
 		}
 
-		transport = mirelurk_equipment
+		transport = amphibious_beast_equipment
 
 		need = {
-			mirelurk_equipment = 25
+			amphibious_beast_equipment = 25
 		}
 	}
 
@@ -474,10 +474,10 @@ sub_units = {
 			movement = 0.1
 		}
 
-		transport = radroach_equipment
+		transport = insect_equipment
 
 		need = {
-			radroach_equipment = 25
+			insect_equipment = 25
 		}
 	}
 
@@ -540,7 +540,7 @@ sub_units = {
 		transport = infantry_equipment
 
 		need = {
-			molerat_equipment = 100
+			burrowing_beast_equipment = 100
 			infantry_equipment = 10
 		}
 	}

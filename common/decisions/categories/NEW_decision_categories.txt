@@ -1,0 +1,13 @@
+NEW_tourist_trade = {
+	icon = GFX_deicsion_caps_category
+	allowed = {
+		OR = {
+			original_tag = NEW
+			original_tag = VEG
+		}
+	}
+	visible_when_empty = yes
+	priority = 30
+}
+
+

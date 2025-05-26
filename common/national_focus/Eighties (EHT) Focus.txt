@@ -1573,7 +1573,7 @@ focus_tree = {
 			focus = EHT_focus_eastport_promotion
 		}
 		prerequisite = {
-			focus = EHT_focus_riperult_promotion
+			focus = EHT_lord_long_road
 		}
 
 		completion_reward = {

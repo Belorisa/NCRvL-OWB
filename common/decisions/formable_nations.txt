@@ -1782,9 +1782,6 @@ formable_nations = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = STN_competitive_goverment_tt
-				NOR = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
 				STA = {
 					all_core_land_owned_by_prev_sphere = yes
 				}

@@ -44,7 +44,13 @@
 #	# ...
 #}
 
-
+MZZ = {
+	targets = { VIP MDT }
+	fallback = MDT
+	any_character = {
+		is_character = MDT_mesmeralda
+	}
+}
 MAL = {
 	original_tag = CES
 	has_country_flag = CES_malpais_legion_flag
@@ -132,9 +138,18 @@ RDS = {
 	original_tag = NCR
 	has_country_flag = NCR_redding_flag
 }
-
+CRH = {
+	original_tag = UOA
+	has_country_flag = UOA_crusher_tag
+}
 FRE = {
 	original_tag = STN
 	has_government = people
 	has_cosmetic_tag = STN_freedoms_army
+}
+
+HWB = {
+	original_tag = LNS
+	NOT = { tag = LNS }
+	has_government = ruler
 }
