@@ -49,7 +49,7 @@ set_technology = {
 	fireteam_weaponry_tech = 1
 	bike_tech_1 = 1
 	raider_reckless_aggression = 1
-	molerat_infantry_unlock_tech = 1
+	burrowing_beast_unlock_tech = 1
 	spec_ops_equipment_tech_1 = 1
 }
 
