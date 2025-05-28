@@ -3309,6 +3309,11 @@ technologies = {
 			blocked_tech = 1
 		}
 
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_other y = @Col_13 }
+		}
+
 		allow = { always = no }
 
 		category_combat_support = {
@@ -3522,6 +3527,102 @@ technologies = {
 		}
 		custom_modifier_tooltip = scav_unlock_weapon_tt
 	}
+whd_dragoon_tech =	{
+		research_cost = 1
 
-	
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_other y = @Col_10 }
+		}
+
+		allow = { always = no }
+
+		power_armour_support = {
+			battalion_mult = {
+				category = category_light_special_forces
+				armor_value = 0.10
+				hardness = 0.10
+			}
+		}
+		sentinel_unit = {
+			max_organisation = 2
+		}
+	}
+	whd_combined_arms_tech =	{
+		research_cost = 1
+
+		coordination_bonus = 0.01
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_other y = @Col_11 }
+		}
+
+		allow = { always = no }
+
+		tank = {
+			battalion_mult = {
+				category = category_front_line
+				armor_value = 0.10
+				hardness = 0.05
+			}
+		}
+		anti_armor_infantry = {
+			battalion_mult = {
+				category = category_standard_infantry
+				hard_attack = 0.10
+			}
+		}
+	}
+	whd_ghoul_synergy_tech =	{
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_other y = @Col_12 }
+		}
+
+		allow = { always = no }
+
+#		ghoul_infantry = {
+#			battalion_mult = {
+#				category = category_ferals
+#				default_morale = 0.05
+#				#add = yes
+#			}
+#		}
+		feral_ghoul = {
+			max_organisation = 2
+			combat_width = -0.3
+		}
+	}
+	ballistic_missile_unlock_tech = {
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			ballistic_missile_equipment_1
+			ballistic_missile_equipment_2
+			ballistic_missile_equipment_3
+		}
+		research_cost = 1
+	}
+	nuclear_missile_unlock_tech = {
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			nuclear_missile_equipment_1
+			nuclear_missile_equipment_2
+		}
+		research_cost = 1
+	}
 }
