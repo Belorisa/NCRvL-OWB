@@ -30,6 +30,21 @@ ncr_civil_war_decision_category = {
 	}
 	visible_when_empty = yes
 }
+ncr_civil_war_redding_support = {
+	allowed = { tag = RDS }
+	icon = GFX_decision_gold
+	visible_when_empty = yes
+	priority = 1500
+	visible = {
+		RDS = {
+			OR = {
+				has_completed_focus = ncr_red_support_calhoun
+				has_completed_focus = ncr_red_california_bleeding
+				has_completed_focus = ncr_red_support_moore
+			}
+		}
+	}
+}
 ncr_presidential_election = {
 	allowed = {
 		original_tag = NCR
