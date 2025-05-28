@@ -8,6 +8,21 @@ SHI_infiltration_category = {
 	}
 }
 
+SHI_mandate_over_california = {
+	icon = GFX_decision_category_generic_pantheon
+	priority = 100000
+	allowed = {
+		tag = SHI
+	}
+	visible = {
+		NOT = {
+			OR = {
+				has_completed_focus = shi_contact_lost_hills
+				has_completed_focus = shi_ncr_friendship
+			}
+		}
+	}
+}
 SHI_ncr_wp_category = {
 	icon = GFX_decision_category_generic_crisis
 	priority = 100
