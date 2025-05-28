@@ -10,4 +10,14 @@ NEW_tourist_trade = {
 	priority = 30
 }
 
-
+NEW_faction_choice = {
+	icon = GFX_deicsion_caps_category
+	allowed = {
+		original_tag = NEW
+	}
+	visible = {
+		has_completed_focus = new_brokenrejecthumanity
+	}
+	visible_when_empty = no
+	priority = 300
+}
