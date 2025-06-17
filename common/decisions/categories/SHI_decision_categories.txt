@@ -7,7 +7,6 @@ SHI_infiltration_category = {
 	visible = {
 	}
 }
-
 SHI_mandate_over_california = {
 	icon = GFX_decision_category_generic_pantheon
 	priority = 100000
