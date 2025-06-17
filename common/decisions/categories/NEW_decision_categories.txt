@@ -16,8 +16,8 @@ NEW_faction_choice = {
 		original_tag = NEW
 	}
 	visible = {
-		has_completed_focus = new_brokenrejecthumanity
-	}
+		always = no
+		}
 	visible_when_empty = no
 	priority = 300
 }
