@@ -21,3 +21,4 @@ NEW_faction_choice = {
 	visible_when_empty = no
 	priority = 300
 }
+
