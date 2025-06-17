@@ -16,7 +16,7 @@ SHI_mandate_over_california = {
 	visible = {
 		NOT = {
 			OR = {
-				has_completed_focus = shi_contact_lost_hills
+				#has_completed_focus = shi_contact_lost_hills
 				has_completed_focus = shi_ncr_friendship
 			}
 		}
