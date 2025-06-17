@@ -36,12 +36,7 @@ ncr_civil_war_redding_support = {
 	visible_when_empty = yes
 	priority = 1500
 	visible = {
-		RDS = {
-			OR = {
-				has_completed_focus = ncr_red_support_calhoun
-				has_completed_focus = ncr_red_california_bleeding
-				has_completed_focus = ncr_red_support_moore
-			}
+		    always = no
 		}
 	}
 }
