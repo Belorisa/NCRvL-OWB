@@ -38,7 +38,6 @@ ncr_civil_war_redding_support = {
 	visible = {
 		    always = no
 		}
-	}
 }
 ncr_presidential_election = {
 	allowed = {
