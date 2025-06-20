@@ -418,7 +418,7 @@ technologies = {
 	implant_rejection_therapy_tech = {
 
 		industrial_capacity_factory = -0.02
-		medical_chem_company = {
+		category_medical_support = {
 			casualty_trickleback = 0.05
 			experience_loss_factor = -0.05
 		}
@@ -697,7 +697,7 @@ technologies = {
 	implant_medical_maintenance_tech = {
 
 		industrial_capacity_factory = -0.02
-		medical_chem_company = {
+		category_medical_support = {
 			reliability_factor = 0.05
 		}
 
