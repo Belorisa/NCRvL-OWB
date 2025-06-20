@@ -173,6 +173,15 @@ technologies = {
 		}
 
 		planning_speed = 0.15
+				category_front_line = {
+			max_organisation = -10
+		}
+		tank = {
+			max_organisation = -5
+		}
+		category_front_line_robots = {
+			max_organisation = 2
+		}
 		category_cnc_robots = {
 			max_organisation = 15
 		}
@@ -218,6 +227,15 @@ technologies = {
 	advanced_cnc_focus_doctrine_2 = {
 
 		initiative_factor = 0.15
+				category_front_line = {
+			max_organisation = -10
+		}
+		tank = {
+			max_organisation = -5
+		}
+		category_front_line_robots = {
+			max_organisation = 5
+		}
 		enable_subunits = {
 			cnc_robot_2
 		}
@@ -266,8 +284,14 @@ technologies = {
 	advanced_cnc_focus_doctrine_3 = {
 
 		coordination_bonus = 0.025
+				category_front_line = {
+			max_organisation = -10
+		}
+		tank = {
+			max_organisation = -5
+		}
 		category_front_line_robots = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		enable_subunits = {
 			cnc_robot_3
@@ -3925,6 +3949,9 @@ technologies = {
 			hardness = 0.1
 			defense = 0.1
 			armor_value = 0.1
+		}
+				category_insects = {
+			hard_attack = 0.2
 		}
 
 		XOR = { we_are_fast_doctrine }
