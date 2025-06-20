@@ -13,7 +13,8 @@ operations = {
 		}
 
 		visible = {
-			has_completed_focus = imo_attack_rrg
+			always = no
+			#not in our focus tree
 		}
 
 		highlight_states = {
