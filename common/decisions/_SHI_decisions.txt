@@ -46,15 +46,12 @@ SHI_mandate_over_california = {
 			factor = 100
 		}
 		available = {
-			has_completed_focus = shi_conquer_california
-			owns_state = 253
+			always = no
+			#no in our focus tree
 		}
 		visible = {
 			NOT = {
-				OR = {
-					has_completed_focus = shi_contact_lost_hills
-					has_completed_focus = shi_ncr_friendship
-				}
+				has_completed_focus = shi_ncr_friendship
 				has_cosmetic_tag = SHI_Closed_Fist
 			}
 		}
