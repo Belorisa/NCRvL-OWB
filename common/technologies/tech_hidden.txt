@@ -21,17 +21,18 @@ technologies = {
 	@Row_unit2 = 2
 	@Row_doctrine = 4
 	@Row_unlock = 6
-	@Row_unlock2 = 8
-	@Row_tribal = 11
-	@Row_tribal2 = 13
-	@Row_cali = 15
-	@Row_ari = 17
-	@Row_ari2 = 19
-	@Row_oreg = 21
-	@Row_tex = 23
-	@Row_mex = 25
+	@Row_unlock2 = 8	
+	@Row_unlock3 = 10
+	@Row_tribal = 13
+	@Row_tribal2 = 15
+	@Row_cali = 17
+	@Row_ari = 19
+	@Row_ari2 = 21
+	@Row_oreg = 23
+	@Row_tex = 25
+	@Row_mex = 27
 	@Row_khans = 29
-	@Row_other = 27
+	@Row_other = 31
 
 
 	forward_fire_base_unlock_tech = {
@@ -223,7 +224,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unit2 y = @Col_3 }
+			position = { x = @Row_unit2 y = @Col_1 }
 		}
 
 		enable_subunits = {
@@ -391,7 +392,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unit2 y = @Col_9 }
+			position = { x = @Row_unit2 y = @Col_7 }
 		}
 
 		enable_subunits = {
@@ -1119,7 +1120,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_cali y = @Col_2 }
+			position = { x = @Row_cali y = @Col_13 }
 		}
 
 		dependencies = {
@@ -1130,7 +1131,7 @@ technologies = {
 			always = no
 		}
 
-		molerat_infantry = {
+		burrowing_beast_creature = {
 			soft_attack = 0.05
 			defense = 0.05
 		}
@@ -1879,6 +1880,71 @@ technologies = {
 		}
 	}
 
+	bag_steelrangers = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_cali y = @Col_12 }
+		}
+
+		allow = { always = no }
+
+		on_research_complete = {
+			custom_effect_tooltip = bag_steelrangers_tt
+		}
+
+		spec_ops = {
+			need = {
+				spec_ops_equipment = 25 #Was this production cost doubling intended?
+				power_armor_equipment = 10
+			}
+			hardness = -0.30
+			armor_value = -0.30
+			breakthrough = -0.20
+		}
+		ghoul_paratrooper = {
+			need = {
+				spec_ops_equipment = 25
+				power_armor_equipment = 10
+			}
+			hardness = -0.30
+			armor_value = -0.30
+			breakthrough = -0.20
+		}
+
+		show_effect_as_desc = yes
+	}
+
+	ncr_shocktroopers_tech = {
+		research_cost = 1
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_cali y = @Col_11 }
+		}
+
+		allow = { always = no }
+
+		category_power_armour = {
+			armor_value = 0.2
+			defense = 0.1
+		}
+
+		power_armour_support = {
+			armor_value = 0.2
+			breakthrough = 0.1
+		}
+	}
+
 	################################################
 	#Reno
 	################################################
@@ -1943,7 +2009,7 @@ technologies = {
 		allow = { always = no }
 
 
-		militia = {
+		category_militia = {
 			suppression_factor = 0.2
 		}
 
@@ -2187,7 +2253,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock2 y = @Col_1 }
+			position = { x = @Row_unlock3 y = @Col_1 }
 		}
 
 		ai_will_do = {
@@ -2263,7 +2329,7 @@ technologies = {
 		custom_modifier_tooltip = scav_unlock_weapon_tt
 	}
 
-	high_fighter_unlock_tech = {
+	midwest_pa_unlock_tech = {
 		research_cost = 1.0
 
 		dependencies = {
@@ -2285,7 +2351,7 @@ technologies = {
 		custom_modifier_tooltip = scav_unlock_weapon_tt
 	}
 
-	vertibird_unlock_tech = {
+	high_fighter_unlock_tech = {
 		research_cost = 1.0
 
 		dependencies = {
@@ -2307,7 +2373,7 @@ technologies = {
 		custom_modifier_tooltip = scav_unlock_weapon_tt
 	}
 
-	general_atomics_unlock_tech = {
+	vertibird_unlock_tech = {
 		research_cost = 1.0
 
 		dependencies = {
@@ -2321,6 +2387,28 @@ technologies = {
 		folder = {
 			name = fallout_focus_tree_folder
 			position = { x = @Row_unlock y = @Col_6 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		custom_modifier_tooltip = scav_unlock_weapon_tt
+	}
+
+		general_atomics_unlock_tech = {
+		research_cost = 1.0
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_unlock2 y = @Col_1 }
 		}
 
 		ai_will_do = {
@@ -2342,7 +2430,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_7 }
+			position = { x = @Row_unlock2 y = @Col_2 }
 		}
 
 		ai_will_do = {
@@ -2364,7 +2452,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_8 }
+			position = { x = @Row_unlock2 y = @Col_3 }
 		}
 
 		ai_will_do = {
@@ -2386,7 +2474,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_9 }
+			position = { x = @Row_unlock2 y = @Col_4 }
 		}
 
 		ai_will_do = {
@@ -2408,7 +2496,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_10 }
+			position = { x = @Row_unlock2 y = @Col_5 }
 		}
 
 		ai_will_do = {
@@ -2430,7 +2518,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_11 }
+			position = { x = @Row_unlock2 y = @Col_6 }
 		}
 
 		ai_will_do = {
@@ -2452,7 +2540,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_12 }
+			position = { x = @Row_unlock2 y = @Col_7 }
 		}
 
 		ai_will_do = {
@@ -2474,7 +2562,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_13 }
+			position = { x = @Row_unlock2 y = @Col_8 }
 		}
 
 		ai_will_do = {
@@ -2496,7 +2584,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_14 }
+			position = { x = @Row_unlock2 y = @Col_9 }
 		}
 
 		ai_will_do = {
@@ -2512,10 +2600,6 @@ technologies = {
 			mininuke_equipment_1
 		}
 
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
-		}
-
 		dependencies = {
 			blocked_tech = 1
 		}
@@ -2526,7 +2610,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unit2 y = @Col_5 }
+			position = { x = @Row_unit2 y = @Col_3 }
 		}
 
 		ai_will_do = {
@@ -2541,10 +2625,6 @@ technologies = {
 			artillery_ammo_equipment_1
 		}
 
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
-		}
-
 		dependencies = {
 			blocked_tech = 1
 		}
@@ -2555,7 +2635,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unit2 y = @Col_7 }
+			position = { x = @Row_unit2 y = @Col_5 }
 		}
 
 		ai_will_do = {
@@ -3046,6 +3126,34 @@ technologies = {
 			factor = 0
 		}
 	}
+	
+    # Special crazy horns tech to let them make mono-demo/fireteam units
+	crazy_horns_fire_warriors = {
+		allow = {
+			always = no
+		}
+		research_cost = 1
+
+		allow = { always = no }
+
+		category_demolitions = {
+			breakthrough = 0.4
+			hard_attack = 0.4
+			soft_attack = 0.4
+			max_strength = 10
+			max_organisation = 20
+			combat_width = 3
+		}
+		category_fireteams = {
+			breakthrough = 0.4
+			hard_attack = 0.4
+			soft_attack = 0.4
+			max_strength = 10
+			max_organisation = 20
+			combat_width = 3
+		}
+	}
+	
 	###############################################
 	# New Khans Tech
 	###############################################
@@ -3488,8 +3596,6 @@ technologies = {
 	}
 
 	robco_security_protectrons_tech = {
-		research_cost = 1
-
 		dependencies = {
 			blocked_tech = 1
 		}
@@ -3498,35 +3604,13 @@ technologies = {
 			name = fallout_focus_tree_folder
 			position = { x = @Row_other y = @Col_9 }
 		}
-
-		#allow = { always = no }
+		allow = { always = no }
 
 		cnc_robot = {
 			max_organisation = 10
 		}
 	}
-	
-	midwest_pa_unlock_tech = {
-		research_cost = 1.0
 
-		dependencies = {
-			blocked_tech = 1
-		}
-
-		allow = {
-			always = no
-		}
-
-		folder = {
-			name = fallout_focus_tree_folder
-			position = { x = @Row_unlock y = @Col_4 }
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-		custom_modifier_tooltip = scav_unlock_weapon_tt
-	}
 whd_dragoon_tech =	{
 		research_cost = 1
 
@@ -3604,6 +3688,7 @@ whd_dragoon_tech =	{
 			combat_width = -0.3
 		}
 	}
+	
 	ballistic_missile_unlock_tech = {
 		allow = {
 			always = no
