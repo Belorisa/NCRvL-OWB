@@ -14,7 +14,7 @@ vlt_magistrates_cat = {
 		original_tag = VLT
 	}
 	visible = {
-		has_completed_focus = vlt_territorial_magistrates
+		always = no
 	}
 	visible_when_empty = no
 	priority = {
