@@ -250,7 +250,8 @@ res_launch_nuke_category = {
 		available = {
 			if = {
 				limit = {
-					has_completed_focus = res_right_hand
+					always = no
+					#no in our focus tree
 				}
 				RES = { has_country_flag = RES_crusade_started_flag }
 			}
