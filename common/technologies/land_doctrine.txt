@@ -1406,6 +1406,635 @@ technologies = {
 		}
 	}
 
+	mutant_perk_tech_1 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 25
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_super_mutant_infantry_design_cost_factor = -0.1
+			unit_super_mutant_aux_infantry_design_cost_factor = -0.1
+			unit_faerie_infantry_design_cost_factor = -0.1
+			experience_gain_super_mutant_infantry_combat_factor = 0.03
+			experience_gain_super_mutant_aux_infantry_combat_factor = 0.03
+			experience_gain_faerie_infantry_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = mutant_perk_tech_modifier_tt
+
+		category_super_mutant_infantry = {
+			supply_consumption = -0.03
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_1 y = @Col_tactics }
+		}
+
+		path = {
+			leads_to_tech = mutant_perk_tech_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 20
+				has_tech = outsider_warfare_doctrine
+			}
+			modifier = {
+				factor = 0
+				original_tag = TBH
+				NOT = { has_completed_focus = tbh_nf_the_long_road }
+				NOT = { has_completed_focus = tbh_nf_the_hard_road }
+				NOT = { has_completed_focus = tbh_nf_the_alamo_was_right }
+				NOT = { has_focus_tree = nf_texan_republic }
+			}
+		}
+	}
+
+	mutant_perk_tech_2 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 25
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_super_mutant_infantry_design_cost_factor = -0.1
+			unit_super_mutant_aux_infantry_design_cost_factor = -0.1
+			unit_faerie_infantry_design_cost_factor = -0.1
+			experience_gain_super_mutant_infantry_combat_factor = 0.03
+			experience_gain_super_mutant_aux_infantry_combat_factor = 0.03
+			experience_gain_faerie_infantry_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = mutant_perk_tech_modifier_tt
+
+		category_super_mutant_infantry = {
+			supply_consumption = -0.03
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_2 y = @Col_tactics }
+		}
+
+		path = {
+			leads_to_tech = mutant_perk_tech_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	mutant_perk_tech_3 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_super_mutant_infantry_design_cost_factor = -0.1
+			unit_super_mutant_aux_infantry_design_cost_factor = -0.1
+			unit_faerie_infantry_design_cost_factor = -0.1
+			experience_gain_super_mutant_infantry_combat_factor = 0.03
+			experience_gain_super_mutant_aux_infantry_combat_factor = 0.03
+			experience_gain_faerie_infantry_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = mutant_perk_tech_modifier_tt
+
+		category_super_mutant_infantry = {
+			max_organisation = 2
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_3 y = @Col_tactics }
+		}
+
+		path = {
+			leads_to_tech = mutant_perk_tech_4
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	mutant_perk_tech_4 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_super_mutant_infantry_design_cost_factor = -0.1
+			unit_super_mutant_aux_infantry_design_cost_factor = -0.1
+			unit_faerie_infantry_design_cost_factor = -0.1
+			experience_gain_super_mutant_infantry_combat_factor = 0.03
+			experience_gain_super_mutant_aux_infantry_combat_factor = 0.03
+			experience_gain_faerie_infantry_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = mutant_perk_tech_modifier_tt
+
+		category_super_mutant_infantry = {
+			max_organisation = 2
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_4 y = @Col_tactics }
+		}
+
+		path = {
+			leads_to_tech = mutant_perk_tech_5
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	mutant_perk_tech_5 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 75
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_super_mutant_infantry_design_cost_factor = -0.1
+			unit_super_mutant_aux_infantry_design_cost_factor = -0.1
+			unit_faerie_infantry_design_cost_factor = -0.1
+			experience_gain_super_mutant_infantry_combat_factor = 0.03
+			experience_gain_super_mutant_aux_infantry_combat_factor = 0.03
+			experience_gain_faerie_infantry_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = mutant_perk_tech_modifier_tt
+
+		category_super_mutant_infantry = {
+			default_morale = 0.02
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_5 y = @Col_tactics }
+		}
+
+		path = {
+			leads_to_tech = mutant_perk_tech_6
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	mutant_perk_tech_6 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 75
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_super_mutant_infantry_design_cost_factor = -0.1
+			unit_super_mutant_aux_infantry_design_cost_factor = -0.1
+			unit_faerie_infantry_design_cost_factor = -0.1
+			experience_gain_super_mutant_infantry_combat_factor = 0.03
+			experience_gain_super_mutant_aux_infantry_combat_factor = 0.03
+			experience_gain_faerie_infantry_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = mutant_perk_tech_modifier_tt
+
+		category_super_mutant_infantry = {
+			default_morale = 0.02
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_6 y = @Col_tactics }
+		}
+
+		path = {
+			leads_to_tech = mutant_perk_tech_7
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	mutant_perk_tech_7 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_super_mutant_infantry_design_cost_factor = -0.1
+			unit_super_mutant_aux_infantry_design_cost_factor = -0.1
+			unit_faerie_infantry_design_cost_factor = -0.1
+			experience_gain_super_mutant_infantry_combat_factor = 0.03
+			experience_gain_super_mutant_aux_infantry_combat_factor = 0.03
+			experience_gain_faerie_infantry_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = mutant_perk_tech_modifier_tt
+
+		category_super_mutant_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		#enable_subunits = {
+		#	elite_infantry
+		#}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_7 y = @Col_tactics }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	creature_perk_tech_1 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 25
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_burrowing_beast_creature_design_cost_factor = -0.1
+			unit_insect_creature_design_cost_factor = -0.1
+			unit_amphibious_beast_creature_design_cost_factor = -0.1
+			unit_deathclaw_creature_design_cost_factor = -0.1
+			unit_deathclaw_special_forces_design_cost_factor = -0.1
+			unit_feral_ghoul_design_cost_factor = -0.1
+			unit_beast_creature_design_cost_factor = -0.1
+			experience_gain_burrowing_beast_creature_combat_factor = 0.03
+			experience_gain_insect_creature_combat_factor = 0.03
+			experience_gain_amphibious_beast_creature_combat_factor = 0.03
+			experience_gain_deathclaw_creature_combat_factor = 0.03
+			experience_gain_deathclaw_special_forces_combat_factor = 0.03
+			experience_gain_feral_ghoul_combat_factor = 0.03
+			experience_gain_beast_creature_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = creature_perk_tech_modifier_tt
+
+		category_creatures = {
+			supply_consumption = -0.03
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_1 y = @Col_tactics2 }
+		}
+
+		path = {
+			leads_to_tech = creature_perk_tech_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					has_tech = creatures_tech_level_tribal
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = TBH
+				NOT = { has_completed_focus = tbh_nf_the_long_road }
+				NOT = { has_completed_focus = tbh_nf_the_hard_road }
+				NOT = { has_completed_focus = tbh_nf_the_alamo_was_right }
+				NOT = { has_focus_tree = nf_texan_republic }
+			}
+		}
+	}
+
+	creature_perk_tech_2 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 25
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_burrowing_beast_creature_design_cost_factor = -0.1
+			unit_insect_creature_design_cost_factor = -0.1
+			unit_amphibious_beast_creature_design_cost_factor = -0.1
+			unit_deathclaw_creature_design_cost_factor = -0.1
+			unit_deathclaw_special_forces_design_cost_factor = -0.1
+			unit_feral_ghoul_design_cost_factor = -0.1
+			unit_beast_creature_design_cost_factor = -0.1
+			experience_gain_burrowing_beast_creature_combat_factor = 0.03
+			experience_gain_insect_creature_combat_factor = 0.03
+			experience_gain_amphibious_beast_creature_combat_factor = 0.03
+			experience_gain_deathclaw_creature_combat_factor = 0.03
+			experience_gain_deathclaw_special_forces_combat_factor = 0.03
+			experience_gain_feral_ghoul_combat_factor = 0.03
+			experience_gain_beast_creature_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = creature_perk_tech_modifier_tt
+
+		category_creatures = {
+			supply_consumption = -0.03
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_2 y = @Col_tactics2 }
+		}
+
+		path = {
+			leads_to_tech = creature_perk_tech_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	creature_perk_tech_3 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_burrowing_beast_creature_design_cost_factor = -0.1
+			unit_insect_creature_design_cost_factor = -0.1
+			unit_amphibious_beast_creature_design_cost_factor = -0.1
+			unit_deathclaw_creature_design_cost_factor = -0.1
+			unit_deathclaw_special_forces_design_cost_factor = -0.1
+			unit_feral_ghoul_design_cost_factor = -0.1
+			unit_beast_creature_design_cost_factor = -0.1
+			experience_gain_burrowing_beast_creature_combat_factor = 0.03
+			experience_gain_insect_creature_combat_factor = 0.03
+			experience_gain_amphibious_beast_creature_combat_factor = 0.03
+			experience_gain_deathclaw_creature_combat_factor = 0.03
+			experience_gain_deathclaw_special_forces_combat_factor = 0.03
+			experience_gain_feral_ghoul_combat_factor = 0.03
+			experience_gain_beast_creature_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = creature_perk_tech_modifier_tt
+
+		category_creatures = {
+			max_organisation = 2
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_3 y = @Col_tactics2 }
+		}
+
+		path = {
+			leads_to_tech = creature_perk_tech_4
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	creature_perk_tech_4 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_burrowing_beast_creature_design_cost_factor = -0.1
+			unit_insect_creature_design_cost_factor = -0.1
+			unit_amphibious_beast_creature_design_cost_factor = -0.1
+			unit_deathclaw_creature_design_cost_factor = -0.1
+			unit_deathclaw_special_forces_design_cost_factor = -0.1
+			unit_feral_ghoul_design_cost_factor = -0.1
+			unit_beast_creature_design_cost_factor = -0.1
+			experience_gain_burrowing_beast_creature_combat_factor = 0.03
+			experience_gain_insect_creature_combat_factor = 0.03
+			experience_gain_amphibious_beast_creature_combat_factor = 0.03
+			experience_gain_deathclaw_creature_combat_factor = 0.03
+			experience_gain_deathclaw_special_forces_combat_factor = 0.03
+			experience_gain_feral_ghoul_combat_factor = 0.03
+			experience_gain_beast_creature_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = creature_perk_tech_modifier_tt
+
+		category_creatures = {
+			max_organisation = 2
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_4 y = @Col_tactics2 }
+		}
+
+		path = {
+			leads_to_tech = creature_perk_tech_5
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	creature_perk_tech_5 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 75
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_burrowing_beast_creature_design_cost_factor = -0.1
+			unit_insect_creature_design_cost_factor = -0.1
+			unit_amphibious_beast_creature_design_cost_factor = -0.1
+			unit_deathclaw_creature_design_cost_factor = -0.1
+			unit_deathclaw_special_forces_design_cost_factor = -0.1
+			unit_feral_ghoul_design_cost_factor = -0.1
+			unit_beast_creature_design_cost_factor = -0.1
+			experience_gain_burrowing_beast_creature_combat_factor = 0.03
+			experience_gain_insect_creature_combat_factor = 0.03
+			experience_gain_amphibious_beast_creature_combat_factor = 0.03
+			experience_gain_deathclaw_creature_combat_factor = 0.03
+			experience_gain_deathclaw_special_forces_combat_factor = 0.03
+			experience_gain_feral_ghoul_combat_factor = 0.03
+			experience_gain_beast_creature_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = creature_perk_tech_modifier_tt
+
+		category_creatures = {
+			default_morale = 0.02
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_5 y = @Col_tactics2 }
+		}
+
+		path = {
+			leads_to_tech = creature_perk_tech_6
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	creature_perk_tech_6 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 75
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_burrowing_beast_creature_design_cost_factor = -0.1
+			unit_insect_creature_design_cost_factor = -0.1
+			unit_amphibious_beast_creature_design_cost_factor = -0.1
+			unit_deathclaw_creature_design_cost_factor = -0.1
+			unit_deathclaw_special_forces_design_cost_factor = -0.1
+			unit_feral_ghoul_design_cost_factor = -0.1
+			unit_beast_creature_design_cost_factor = -0.1
+			experience_gain_burrowing_beast_creature_combat_factor = 0.03
+			experience_gain_insect_creature_combat_factor = 0.03
+			experience_gain_amphibious_beast_creature_combat_factor = 0.03
+			experience_gain_deathclaw_creature_combat_factor = 0.03
+			experience_gain_deathclaw_special_forces_combat_factor = 0.03
+			experience_gain_feral_ghoul_combat_factor = 0.03
+			experience_gain_beast_creature_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = creature_perk_tech_modifier_tt
+
+		category_creatures = {
+			default_morale = 0.02
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_6 y = @Col_tactics2 }
+		}
+
+		path = {
+			leads_to_tech = creature_perk_tech_7
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	creature_perk_tech_7 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+		doctrine = yes
+
+		hidden_modifier = {
+			unit_burrowing_beast_creature_design_cost_factor = -0.1
+			unit_insect_creature_design_cost_factor = -0.1
+			unit_amphibious_beast_creature_design_cost_factor = -0.1
+			unit_deathclaw_creature_design_cost_factor = -0.1
+			unit_deathclaw_special_forces_design_cost_factor = -0.1
+			unit_feral_ghoul_design_cost_factor = -0.1
+			unit_beast_creature_design_cost_factor = -0.1
+			experience_gain_burrowing_beast_creature_combat_factor = 0.03
+			experience_gain_insect_creature_combat_factor = 0.03
+			experience_gain_amphibious_beast_creature_combat_factor = 0.03
+			experience_gain_deathclaw_creature_combat_factor = 0.03
+			experience_gain_deathclaw_special_forces_combat_factor = 0.03
+			experience_gain_feral_ghoul_combat_factor = 0.03
+			experience_gain_beast_creature_combat_factor = 0.03
+		}
+		custom_modifier_tooltip = creature_perk_tech_modifier_tt
+
+		category_creatures = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		#enable_subunits = {
+		#	elite_infantry
+		#}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_7 y = @Col_tactics2 }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+		##TERRAIN AND SF PERKS
 	tactics_doctrine_tech = {
 
 		experience_gain_army_factor = 0.1
@@ -3613,6 +4242,12 @@ technologies = {
 	tactics_spec_ops_light_tech = {
 
 		category_light_special_forces = {
+			max_organisation = 5
+		}
+				super_mutant_nightkin_infantry = {
+			max_organisation = 5
+		}
+		deathclaw_special_forces = {
 			max_organisation = 5
 		}
 
