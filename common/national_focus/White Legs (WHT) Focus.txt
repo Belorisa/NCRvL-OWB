@@ -1591,9 +1591,6 @@ focus_tree = {
 									NOT = {
 										has_completed_focus = EHT_ally_mormons
 									}
-									NOT = {
-										has_completed_focus = EHT_second_nevada_road_war
-									}
 								}
 							}
 						}

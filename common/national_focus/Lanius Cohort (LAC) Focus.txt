@@ -1887,6 +1887,71 @@ focus_tree = {
 			factor = 0
 		}
 	}
+	focus = {##keep it here so it's less stuff to remove elswhere just keep the alaways no and its fine
+		id = lac_triumphant_campaign
+		text = lac_no_strings_on_me
+		icon = GFX_goal_LAC_monster_of_the_east
+		cost = 30
+		available = {
+			has_offensive_war = no
+			is_subject = no
+			always = no
+		}
+		prerequisite = {
+			focus = lac_brought_to_heel
+		}
+		mutually_exclusive = {
+			focus = lac_the_march_west
+		}
+		mutually_exclusive = {
+			focus = lac_good_boy_puppet
+		}
+		x = 0
+		y = 1
+		relative_position_id = lac_brought_to_heel
+		completion_reward = {
+			CES = {
+				if = {
+					limit = { exists = yes }
+					news_event =  nf_lanius_ces_relations.3
+					if = {
+						limit = { LAC = { is_subject_of = PREV } }
+						set_autonomy = {
+							target = LAC
+							autonomy_state = autonomy_free
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				leave_current_faction = yes
+			}
+			set_cosmetic_tag = LAC_texas
+			LAC_lanius = {
+				add_skill_level = 1
+				add_unit_leader_trait = built_to_destroy_trait
+			}
+			create_or_join_lanius_horde = yes
+			if = {
+				limit = {
+					IRN = {
+						is_caesars_legion_member = yes
+					}
+				}
+				IRN = {
+					join_lanius_horde = yes
+				}
+			}
+			swap_ruler_traits = {
+				remove = lac_no_mercy
+				add = lac_frontier_justice
+			}
+			remove_ideas = { lanius_countdown_dog_city }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
 	focus = {
 		id = lac_the_march_west
 		icon = GFX_goal_NCR_Damassault

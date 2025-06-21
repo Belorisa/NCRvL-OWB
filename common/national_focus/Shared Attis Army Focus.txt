@@ -3326,16 +3326,16 @@ focus_tree = {
 		icon = GFX_goal_attis_army
 		cost = 30
 		x = 0
-		y = 3
+		y = 1
 		allow_branch = {
 			original_tag = IMO
 		}
 		available = {
 			SHA = {
-				has_completed_focus = shale_unite_the_army
+				has_completed_focus = imo_the_road_of_conquest
 			}
 		}
-		relative_position_id = imo_flames_of_the_forge
+		relative_position_id = imo_the_road_of_conquest
 		bypass = {
 			UOA = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -3351,6 +3351,7 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
+
 	focus = {
 		id = imo_ach_tbh_puppet
 		icon = GFX_goal_TBH_two_coins
@@ -3553,8 +3554,7 @@ focus_tree = {
 		id = imo_the_road_of_conquest
 		icon = GFX_goal_generic_texas2
 		cost = 30
-		x = 0
-		y = 0
+
 		available = {
 			date > 2277.1.01
 		}
@@ -3562,6 +3562,8 @@ focus_tree = {
 			focus = imo_ach_tbh_puppet
 		}
 		relative_position_id = imo_ach_tbh_puppet
+		x = 0
+		y = 1
 		bypass = {
 			LNS = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -3580,7 +3582,6 @@ focus_tree = {
 				}
 			}
 		}
-		relative_position_id = imo_unification_wars
 		will_lead_to_war_with = LNS
 		will_lead_to_war_with = TBH
 		completion_reward = {

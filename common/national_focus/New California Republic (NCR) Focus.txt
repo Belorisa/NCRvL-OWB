@@ -6459,7 +6459,7 @@ focus = {
 		icon = GFX_goal_NCR_Calhoun_Expansion_Ballot_Box
 		cost = 30
 		available = {
-			has_completed_focus = ncr_true_synthesis
+			has_completed_focus = ncr_cal_new_canaan
 		}
 		prerequisite = {
 			focus = ncr_cal_new_canaan

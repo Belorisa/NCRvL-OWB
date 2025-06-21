@@ -4,9 +4,11 @@ technologies = {
 	@Col_special_forces = 2
 	@Col_robot = 4
 	@Col_vehicle = 6
-	@Col_tactics = 8
-	@Col_tactics2 = 10
-	@Col_tactics3 = 12
+	@Col_mutant = 8
+	@Col_creature = 10
+	@Col_tactics = 12
+	@Col_tactics2 = 14
+	@Col_tactics3 = 16
 
 	@Row_1 = 0
 	@Row_2 = 2
@@ -28,6 +30,7 @@ technologies = {
 	#army_leader_cost_factor = -0.3 Works
 	#unit_leader_as_advisor_cp_cost_factor = -0.25 No idea if this works
 	#army_advisor_cost_factor = -0.25 Works
+	###UNIT TYPE PERKS
 
 	infantry_perk_tech_1 = {
 
@@ -2065,6 +2068,14 @@ technologies = {
 			leads_to_tech = terrain_mountain_tech_4
 			research_cost_coeff = 1
 		}
+				path = {
+			leads_to_tech = terrain_mountain_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = terrain_mountain_tech_6
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = terrain_harsh_tech
 			research_cost_coeff = 1
@@ -2079,6 +2090,14 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = terrain_harsh_tech_4
+			research_cost_coeff = 1
+		}
+				path = {
+			leads_to_tech = terrain_harsh_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = terrain_harsh_tech_6
 			research_cost_coeff = 1
 		}
 		path = {
@@ -2097,6 +2116,14 @@ technologies = {
 			leads_to_tech = terrain_plains_tech_4
 			research_cost_coeff = 1
 		}
+				path = {
+			leads_to_tech = terrain_plains_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = terrain_plains_tech_6
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = terrain_jungle_tech
 			research_cost_coeff = 1
@@ -2111,6 +2138,14 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = terrain_jungle_tech_4
+			research_cost_coeff = 1
+		}
+				path = {
+			leads_to_tech = terrain_jungle_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = terrain_jungle_tech_6
 			research_cost_coeff = 1
 		}
 		path = {
@@ -2688,6 +2723,224 @@ technologies = {
 		}
 	}
 
+	terrain_harsh_tech_5 = {
+		super_mutant_infantry = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		super_mutant_aux_infantry = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		faerie_infantry = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_mountain_tech_5 terrain_plains_tech_5 terrain_jungle_tech_5 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_left_2 y = @Col_mutant }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_5
+			}
+		}
+	}
+
+	terrain_harsh_tech_6 = {
+		burrowing_beast_creature = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		insect_creature = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		amphibious_beast_creature = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_creature = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_special_forces = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		feral_ghoul = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		beast_creature = {
+			default_morale = 0.01
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defence = 0.05
+			}
+			radiation = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_mountain_tech_6 terrain_plains_tech_6 terrain_jungle_tech_6 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_left_2 y = @Col_creature }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_6
+			}
+		}
+	}
+
 	terrain_plains_tech = {
 
 		infantry = {
@@ -3121,6 +3374,183 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_tech = terrain_jungle_tech_4
+			}
+		}
+	}
+	terrain_plains_tech_5 = {
+		super_mutant_infantry = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		super_mutant_aux_infantry = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		faerie_infantry = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_jungle_tech_5 terrain_mountain_tech_5 terrain_harsh_tech_5 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_left_1 y = @Col_mutant }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_5
+			}
+		}
+	}
+
+	terrain_plains_tech_6 = {
+		burrowing_beast_creature = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		insect_creature = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		amphibious_beast_creature = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_creature = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_special_forces = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		feral_ghoul = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		beast_creature = {
+			default_morale = 0.01
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_jungle_tech_4 terrain_mountain_tech_6 terrain_harsh_tech_6 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_left_1 y = @Col_creature }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_6
 			}
 		}
 	}
@@ -3562,6 +3992,184 @@ technologies = {
 		}
 	}
 
+	terrain_mountain_tech_5 = {
+		super_mutant_infantry = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		super_mutant_aux_infantry = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		faerie_infantry = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_harsh_tech_5 terrain_plains_tech_5 terrain_jungle_tech_5 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_right_1 y = @Col_mutant }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_5
+			}
+		}
+	}
+
+	terrain_mountain_tech_6 = {
+		burrowing_beast_creature = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		insect_creature = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		amphibious_beast_creature = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_creature = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_special_forces = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		feral_ghoul = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		beast_creature = {
+			default_morale = 0.01
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_harsh_tech_6 terrain_plains_tech_6 terrain_jungle_tech_6 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_right_1 y = @Col_creature }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_jungle_tech_6
+			}
+		}
+	}
+
 	terrain_jungle_tech = {
 
 		infantry = {
@@ -3995,6 +4603,184 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_tech = terrain_mountain_tech_4
+			}
+		}
+	}
+
+	terrain_jungle_tech_5 = {
+		super_mutant_infantry = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		super_mutant_aux_infantry = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		faerie_infantry = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_plains_tech_5 terrain_mountain_tech_5 terrain_harsh_tech_5 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_right_2 y = @Col_mutant }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_5
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_5
+			}
+		}
+	}
+
+	terrain_jungle_tech_6 = {
+		burrowing_beast_creature = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		insect_creature = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		amphibious_beast_creature = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_creature = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		deathclaw_special_forces = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		feral_ghoul = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		beast_creature = {
+			default_morale = 0.01
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		XOR = { terrain_plains_tech_6 terrain_mountain_tech_6 terrain_harsh_tech_6 }
+
+		xp_research_type = army
+		xp_unlock_cost = 50
+		doctrine = yes
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @Row_tactics_right_2 y = @Col_creature }
+		}
+
+		categories = {
+			caf_land_doctrine_xp
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_tech = terrain_plains_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_harsh_tech_6
+			}
+			modifier = {
+				factor = 0
+				has_tech = terrain_mountain_tech_6
 			}
 		}
 	}
