@@ -3655,7 +3655,7 @@ whd_dragoon_tech =	{
 				hardness = 0.05
 			}
 		}
-		anti_armor_infantry = {
+		anti_tank_infantry = {
 			battalion_mult = {
 				category = category_standard_infantry
 				hard_attack = 0.10
