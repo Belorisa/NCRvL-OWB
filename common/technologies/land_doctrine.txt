@@ -1085,14 +1085,14 @@ technologies = {
 			unit_motorized_demoteam_design_cost_factor = -0.1
 			unit_cybernetic_warform_design_cost_factor = -0.1
 			unit_tank_design_cost_factor = -0.1
-			unit_chariot_unit_design_cost_factor = -0.1
+			unit_chariot_design_cost_factor = -0.1
 			experience_gain_motorized_combat_factor = 0.03
 			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
 			experience_gain_motorized_fireteam_combat_factor = 0.03
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_chariot_unit_combat_factor = 0.03
+			experience_gain_unit_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
@@ -1140,14 +1140,14 @@ technologies = {
 			unit_motorized_demoteam_design_cost_factor = -0.1
 			unit_cybernetic_warform_design_cost_factor = -0.1
 			unit_tank_design_cost_factor = -0.1
-			unit_chariot_unit_design_cost_factor = -0.1
+			unit_chariot_design_cost_factor = -0.1
 			experience_gain_motorized_combat_factor = 0.03
 			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
 			experience_gain_motorized_fireteam_combat_factor = 0.03
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_chariot_unit_combat_factor = 0.03
+			experience_gain_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
@@ -1187,14 +1187,14 @@ technologies = {
 			unit_motorized_demoteam_design_cost_factor = -0.1
 			unit_cybernetic_warform_design_cost_factor = -0.1
 			unit_tank_design_cost_factor = -0.1
-			unit_chariot_unit_design_cost_factor = -0.1
+			unit_chariot_design_cost_factor = -0.1
 			experience_gain_motorized_combat_factor = 0.03
 			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
 			experience_gain_motorized_fireteam_combat_factor = 0.03
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_chariot_unit_combat_factor = 0.03
+			experience_gain_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
@@ -1234,14 +1234,14 @@ technologies = {
 			unit_motorized_demoteam_design_cost_factor = -0.1
 			unit_cybernetic_warform_design_cost_factor = -0.1
 			unit_tank_design_cost_factor = -0.1
-			unit_chariot_unit_design_cost_factor = -0.1
+			unit_chariot_design_cost_factor = -0.1
 			experience_gain_motorized_combat_factor = 0.03
 			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
 			experience_gain_motorized_fireteam_combat_factor = 0.03
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_chariot_unit_combat_factor = 0.03
+			experience_gain_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
@@ -1281,14 +1281,14 @@ technologies = {
 			unit_motorized_demoteam_design_cost_factor = -0.1
 			unit_cybernetic_warform_design_cost_factor = -0.1
 			unit_tank_design_cost_factor = -0.1
-			unit_chariot_unit_design_cost_factor = -0.1
+			unit_chariot_design_cost_factor = -0.1
 			experience_gain_motorized_combat_factor = 0.03
 			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
 			experience_gain_motorized_fireteam_combat_factor = 0.03
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_chariot_unit_combat_factor = 0.03
+			experience_gain_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
@@ -1328,14 +1328,14 @@ technologies = {
 			unit_motorized_demoteam_design_cost_factor = -0.1
 			unit_cybernetic_warform_design_cost_factor = -0.1
 			unit_tank_design_cost_factor = -0.1
-			unit_chariot_unit_design_cost_factor = -0.1
+			unit_chariot_design_cost_factor = -0.1
 			experience_gain_motorized_combat_factor = 0.03
 			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
 			experience_gain_motorized_fireteam_combat_factor = 0.03
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_chariot_unit_combat_factor = 0.03
+			experience_gain_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
@@ -1379,14 +1379,14 @@ technologies = {
 			unit_motorized_demoteam_design_cost_factor = -0.1
 			unit_cybernetic_warform_design_cost_factor = -0.1
 			unit_tank_design_cost_factor = -0.1
-			unit_chariot_unit_design_cost_factor = -0.1
+			unit_chariot_design_cost_factor = -0.1
 			experience_gain_motorized_combat_factor = 0.03
 			experience_gain_motorized_heavy_infantry_combat_factor = 0.03
 			experience_gain_motorized_fireteam_combat_factor = 0.03
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_chariot_unit_combat_factor = 0.03
+			experience_gain_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 
@@ -2675,7 +2675,7 @@ technologies = {
 				defence = 0.05
 			}
 		}
-		chariot_unit = {
+		chariot = {
 			default_morale = 0.01
 			urban = {
 				attack = 0.05
@@ -3334,7 +3334,7 @@ technologies = {
 				defence = 0.05
 			}
 		}
-		chariot_unit = {
+		chariot = {
 			default_morale = 0.01
 			plains = {
 				attack = 0.05
@@ -3948,7 +3948,7 @@ technologies = {
 				defence = 0.05
 			}
 		}
-		chariot_unit = {
+		chariot = {
 			default_morale = 0.01
 			mountain = {
 				attack = 0.05
@@ -4563,7 +4563,7 @@ technologies = {
 				defence = 0.05
 			}
 		}
-		chariot_unit = {
+		chariot = {
 			default_morale = 0.01
 			jungle = {
 				attack = 0.05

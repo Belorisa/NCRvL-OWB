@@ -1915,7 +1915,7 @@ technologies = {
 			chariot_equipment_1
 		}
 		enable_subunits = {
-			chariot_unit
+			chariot
 		}
 
 		dependencies = {
@@ -1923,7 +1923,7 @@ technologies = {
 		}
 		on_research_complete_limit = {
 			NOT = {
-				has_template_containing_unit = chariot_unit
+				has_template_containing_unit = chariot
 			}
 		}
 		on_research_complete = {
