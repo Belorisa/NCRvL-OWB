@@ -3,7 +3,7 @@
 # For sea units: ship,transport,uboat
 
 sub_units = {
-	chariot_unit = {
+	chariot = {
 		sprite = owb_chariot
 		map_icon_category = armored
 		priority = 610
