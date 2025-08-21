@@ -1852,6 +1852,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = lac_the_march_west
 		}
+		mutually_exclusive = {
+			focus = lac_triumphant_campaign
+		}
 		x = 2
 		y = 1
 		ai_will_do = {
@@ -1961,6 +1964,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = lac_good_boy_puppet
+		}
+		mutually_exclusive = {
+			focus = lac_triumphant_campaign
 		}
 		available = {
 			has_offensive_war = no
