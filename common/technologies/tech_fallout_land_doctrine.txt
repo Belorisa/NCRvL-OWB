@@ -1246,6 +1246,12 @@ technologies = {
 		category_army = {
 			breakthrough = 0.1
 		}
+			category_demolitions = {
+			maximum_speed = 0.1
+		}
+		category_fireteams = {
+			maximum_speed = 0.1
+		}
 
 		path = {
 			leads_to_tech = hit_and_run
@@ -3322,6 +3328,11 @@ technologies = {
 			hard_attack = 0.1
 			max_organisation = 10
 		}
+				category_creatures = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			max_organisation = 5
+		}
 
 		attrition = -0.25
 
@@ -3371,8 +3382,17 @@ technologies = {
 			soft_attack = 0.10
 			hard_attack = 0.10
 		}
+				land_reinforce_rate = 0.04
 		conscription_factor = 0.05
 		enable_tactic = tactic_barrage
+
+		dog_company = {
+			battalion_mult = {
+				category = category_creatures
+				default_morale = 0.15
+				defense = 0.05
+			}
+		}
 
 		path = {
 			leads_to_tech = the_mirelurk_pincer
@@ -3602,6 +3622,11 @@ technologies = {
 			breakthrough = 0.15
 			maximum_speed = 0.05
 		}
+		category_creatures = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			breakthrough = 0.05
+		}
 
 		command_power_gain_mult = 0.25
 
@@ -3724,6 +3749,9 @@ technologies = {
 		category_behemoth = {
 			default_morale = 0.15
 		}
+		category_mutant_creatures = {
+			default_morale = 0.15
+		}
 
 		path = {
 			leads_to_tech = we_are_special_doctrine
@@ -3773,6 +3801,11 @@ technologies = {
 			hard_attack = 0.1
 			breakthrough = 0.1
 		}
+		category_mutant_creatures = {
+			soft_attack = 0.08
+			hard_attack = 0.08
+			breakthrough = 0.10
+		}
 
 		path = {
 			leads_to_tech = we_are_strong_doctrine
@@ -3821,6 +3854,9 @@ technologies = {
 			max_strength = 5
 		}
 		category_behemoth = {
+			max_strength = 5
+		}
+		category_mutant_creatures = {
 			max_strength = 5
 		}
 		attrition = -0.10
@@ -3883,6 +3919,10 @@ technologies = {
 			initiative = 0.05
 		}
 		category_behemoth = {
+			max_organisation = 5
+			initiative = 0.05
+		}
+		category_mutant_creatures = {
 			max_organisation = 5
 			initiative = 0.05
 		}
@@ -3950,6 +3990,11 @@ technologies = {
 			defense = 0.1
 			armor_value = 0.1
 		}
+		category_mutant_creatures = {
+			hardness = 0.1
+			defense = 0.1
+			armor_value = 0.1
+		}
 				category_insects = {
 			hard_attack = 0.2
 		}
@@ -4011,6 +4056,9 @@ technologies = {
 			maximum_speed = 0.15
 		}
 		category_behemoth = {
+			maximum_speed = 0.15
+		}
+		category_mutant_creatures = {
 			maximum_speed = 0.15
 		}
 
@@ -4126,6 +4174,9 @@ technologies = {
 		category_behemoth = {
 			recon = 0.6
 		}
+		category_mutant_creatures = {
+			recon = 0.3
+		}
 		intel_from_combat_factor = 0.25
 
 		XOR = { we_are_beautiful_doctrine }
@@ -4227,6 +4278,11 @@ technologies = {
 			hard_attack = 0.05
 			breakthrough = 0.05
 		}
+		category_mutant_creatures = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			breakthrough = 0.05
+		}
 		experience_gain_army_unit_factor = 0.05
 		conscription_factor = -0.1
 
@@ -4282,6 +4338,9 @@ technologies = {
 			default_morale = 0.15
 		}
 		category_behemoth = {
+			default_morale = 0.15
+		}
+		category_mutant_creatures = {
 			default_morale = 0.15
 		}
 		experience_loss_factor = -0.30
@@ -4384,6 +4443,10 @@ technologies = {
 			default_morale = 0.1
 			breakthrough = 0.05
 		}
+		category_mutant_creatures = {
+			default_morale = 0.1
+			breakthrough = 0.05
+		}
 		land_reinforce_rate = 0.04
 
 		path = {
@@ -4437,6 +4500,25 @@ technologies = {
 			breakthrough = 0.1
 			defense = 0.1
 		}
+				category_mutant_creatures = {
+			hardness = 0.3
+			defense = 0.05
+		}
+		burrowing_beast_creature = {
+			ap_attack = 0.15
+		}
+		insect_creature = {
+			maximum_speed = 0.25
+		}
+		amphibious_beast_creature = {
+			armor_value = 0.15
+		}
+		category_deathclaws = {
+			hard_attack = 0.15
+		}
+		feral_ghoul = {
+			breakthrough = 0.15
+		}
 		special_forces_min = 80
 		mobilization_speed = 0.25
 
@@ -4489,6 +4571,12 @@ technologies = {
 			hard_attack = 0.05
 		}
 		category_behemoth = {
+			max_organisation = 5
+			maximum_speed = 0.1
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+				category_mutant_creatures = {
 			max_organisation = 5
 			maximum_speed = 0.1
 			soft_attack = 0.05

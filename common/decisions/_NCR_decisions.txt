@@ -2838,45 +2838,45 @@ NCR_bos_crusade = {
 			}
 		}
 	}
-	ncr_mbc_mon = {
-		icon = GFX_decision_vertibird
-		cost = 50
-		days_remove = 25
-		war_with_on_remove = MNC
-		days_re_enable = 30
-		allowed = {
-			tag = NCR
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			1023 = {
-				OWNER = {
-					NOT = {
-						is_in_faction_with = ROOT
-					}
-					borders_californian_hegemony = yes
-				}
-			}
-		}
-		visible = {
-			MNC = {
-				all_core_land_owned_by_prev_sphere = no
-			}
-		}
-		modifier = {
-			war_support_factor = 0.01
-			cant_justify_on_countries = 1
-		}
-		remove_effect = {
-			MNC = {
-				NCR = {
-					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
-				}
-			}
-		}
-	}
+	# ncr_mbc_mon = {
+	# 	icon = GFX_decision_vertibird
+	# 	cost = 50
+	# 	days_remove = 25
+	# 	war_with_on_remove = MNC
+	# 	days_re_enable = 30
+	# 	allowed = {
+	# 		tag = NCR
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# 	available = {
+	# 		1023 = {
+	# 			OWNER = {
+	# 				NOT = {
+	# 					is_in_faction_with = ROOT
+	# 				}
+	# 				borders_californian_hegemony = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		MNC = {
+	# 			all_core_land_owned_by_prev_sphere = no
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		war_support_factor = 0.01
+	# 		cant_justify_on_countries = 1
+	# 	}
+	# 	remove_effect = {
+	# 		MNC = {
+	# 			NCR = {
+	# 				grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 	ncr_mbc_finale = {
 		icon = GFX_decision_praying
 		cost = 100

@@ -583,6 +583,7 @@ technologies = {
 			}
 		}
 	}
+	
 	tribal_beast_breakthrough_tech = {
 
 		category_beasts = {

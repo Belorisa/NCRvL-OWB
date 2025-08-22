@@ -1261,6 +1261,8 @@ ideas = {
 				caps_flat_income_modifier = 9
 				#caps country_trade_modifier = 0.30
 			}
+						cancel_if_invalid = no
+		}
 			currencycomputerchip = {
 			picture = gov_idea_computerchip
 			#cost = 150
@@ -1301,9 +1303,6 @@ ideas = {
 				consumer_goods_expected_value = -0.03
 				caps_flat_income_modifier = 12
 			}
-
-			cancel_if_invalid = no
-		}
 
 			cancel_if_invalid = no
 		}

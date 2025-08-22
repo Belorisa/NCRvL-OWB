@@ -518,6 +518,20 @@ technologies = {
 				movement = 0.1
 			}
 		}
+				spec_ops_cavalry = {
+			plains = {
+				movement = 0.1
+			}
+			forest = {
+				movement = 0.1
+			}
+			jungle = {
+				movement = 0.1
+			}
+			marsh = {
+				movement = 0.1
+			}
+		}
 	}
 
 	clanfightingstyles = {

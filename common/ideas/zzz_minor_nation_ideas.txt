@@ -2834,7 +2834,7 @@ ideas = {
             removal_cost = -1
             allowed = {
                 always = no
-            }F
+            }
             allowed_civil_war = {
                 always = yes
             }
