@@ -2283,14 +2283,14 @@ setup_legion_revolter = {
 		}
 		unlock_national_focus = ces_hold_crossings
 	}
-	if = {
-		limit = {
-			CES = {
-				has_completed_focus = ces_assimilate_resistance
-			}
-		}
-		unlock_national_focus = ces_assimilate_resistance
-	}
+	# if = {
+	# 	limit = {
+	# 		CES = {
+	# 			has_completed_focus = ces_assimilate_resistance
+	# 		}
+	# 	}
+	# 	unlock_national_focus = ces_assimilate_resistance
+	# }
 
 	if = {
 		limit = {

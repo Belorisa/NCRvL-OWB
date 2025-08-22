@@ -1092,7 +1092,7 @@ technologies = {
 			experience_gain_motorized_demoteam_combat_factor = 0.03
 			experience_gain_cybernetic_warform_combat_factor = 0.03
 			experience_gain_tank_combat_factor = 0.03
-			experience_gain_unit_chariot_combat_factor = 0.03
+			experience_gain_chariot_combat_factor = 0.03
 		}
 		custom_modifier_tooltip = vehicle_perk_tech_modifier_tt
 

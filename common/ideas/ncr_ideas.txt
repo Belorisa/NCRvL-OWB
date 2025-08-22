@@ -179,6 +179,17 @@ ideas = {
 				production_speed_dockyard_factor = 0.1
 			}
 		}
+				ncr_diversified_weapons_contracts_idea = {
+			picture = generic_war_preparation
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.2
+			}
+			research_bonus = {
+				infantry_tech_category = 0.2
+			}
+		}
 
 		ncr_forceful_expansion_idea = {
 			picture = generic_badass
