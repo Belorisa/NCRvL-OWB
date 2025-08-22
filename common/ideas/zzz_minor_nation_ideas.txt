@@ -2745,6 +2745,56 @@ ideas = {
                 local_resources_factor = 0.03
             }
         }
+        		DMM_ragged = {
+			picture = generic_trowl
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 0.1
+				dig_in_speed_factor = 0.1
+				army_attack_speed_factor = -0.1
+				army_morale_factor = -0.05
+			}
+		}
+		DMM_lake_lords = {
+			picture = generic_coastal_navy
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				caps_country_trade_modifier = 0.2
+				out_of_supply_factor = -0.20
+				justify_war_goal_time = -0.25
+				navy_screen_attack_factor = 0.1
+				invasion_preparation = -0.25
+			}
+		}
+		DMM_northern_power_stations = {
+			picture = generic_dam
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.08
+				max_dig_in_factor = 0.1
+				trade_opinion_factor = 0.2
+				country_resource_energy = 15
+				country_resource_water = 15
+			}
+		}
         GIM_forging_masters = {
             picture = rejection_of_automation
             removal_cost = -1
@@ -2784,7 +2834,7 @@ ideas = {
             removal_cost = -1
             allowed = {
                 always = no
-            }
+            }F
             allowed_civil_war = {
                 always = yes
             }
@@ -2809,6 +2859,20 @@ ideas = {
                 army_defence_factor = 0.10
             }
         }
+        	ROL_reducing_want = {
+			picture = HEA_idea_precursers
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				political_power_factor = 0.1
+			}
+		}
         ATM_deluge_of_fire = {
             picture = apocalypse_now
             removal_cost = -1

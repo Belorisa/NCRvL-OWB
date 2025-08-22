@@ -28,17 +28,17 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-	# UOA_lieutenant_crusher = {
-	# 	name = UOA_LIEUTENANT_CRUSHER_NAME
-	# 	portraits = {
-	# 		civilian = {
-	# 			large = GFX_Portrait_UOA_lieutenant_crusher
-	# 		}
-	# 		army = {
-	# 			large = GFX_Portrait_UOA_lieutenant_crusher
-	# 		}
-	# 	}
-	# }
+	UOA_lieutenant_crusher = {
+		name = UOA_LIEUTENANT_CRUSHER_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_UOA_lieutenant_crusher
+			}
+			army = {
+				large = GFX_Portrait_UOA_lieutenant_crusher
+			}
+		}
+	}
 	UOA_chauncey_ferocious = {
 		name = UOA_CHAUNCEY_FEROCIOUS_NAME
 		portraits = {

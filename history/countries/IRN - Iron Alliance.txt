@@ -158,7 +158,7 @@ set_country_flag = ignore_div_limiter_before_2280
 add_ideas = {
 	irn_mercenaries
 	irn_ironknights
-	slavers_idea_2
+	# slavers_idea_2
 	petty_gang_conscription
 	undesirables_law_raider
 	training_law_wasteland
