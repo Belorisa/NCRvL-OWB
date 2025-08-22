@@ -1101,6 +1101,7 @@ EHT_ai_behavior = {
 		allow_achievements = yes
 	}
 }
+
 # Ejercito Mexicano
 ARM_ai_behavior = {
 	name = "RULE_AI_BEHAVIOR_ARM"
@@ -1124,6 +1125,7 @@ ARM_ai_behavior = {
 		allow_achievements = yes
 	}
 }
+
 # Eureka
 EUR_ai_behavior = {
 	name = "RULE_AI_BEHAVIOR_EUR"

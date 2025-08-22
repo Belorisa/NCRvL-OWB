@@ -207,6 +207,9 @@ focus_tree = {
 	focus = {
 		id = mot_secure_the_west
 		icon = GFX_goal_generic_western
+		search_filters = {
+			FOCUS_FILTER_MOT_SUNBURST
+		}
 		cost = 30
 		available = {
 			NOT = {
@@ -240,6 +243,9 @@ focus_tree = {
 	focus = {
 		id = mot_solidify_military_leadership
 		icon = GFX_goal_generic_land_doctrines_focus
+		search_filters = {
+			FOCUS_FILTER_MOT_SUNBURST
+		}
 		cost = 30
 		available = {
 			NOT = {
@@ -269,6 +275,9 @@ focus_tree = {
 	focus = {
 		id = mot_protect_route_95
 		icon = GFX_goal_generic_protectron_conceptart_primm_slimm
+		search_filters = {
+			FOCUS_FILTER_MOT_SUNBURST
+		}
 		cost = 30
 		available = {
 			NOT = {
@@ -302,6 +311,9 @@ focus_tree = {
 	focus = {
 		id = mot_promote_major_moore
 		icon = GFX_goal_NCR_Weapon_Standardization
+		search_filters = {
+			FOCUS_FILTER_MOT_SUNBURST
+		}
 		available = {
 			NOT = {
 				has_country_flag = mot_crisis_in_california

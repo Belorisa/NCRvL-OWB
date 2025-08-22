@@ -1098,7 +1098,7 @@ focus_tree = {
 
 	focus = {
 		id = EHT_faith_in_the_roads
-		icon = GFX_goal_generic_canister_nucleaer
+		icon = GFX_goal_generic_canister_nuclear
 		cost = 60
 		prerequisite = {
 			focus = EHT_long_road_home

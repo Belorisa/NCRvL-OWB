@@ -119,7 +119,6 @@ set_country_flag = is_chinese_nation
 set_country_flag = grand_doctrine_ai
 set_country_flag = grand_infantry_doctrine_ai
 set_country_flag = is_california_nation
-
 set_politics = {
 	ruling_party = ruler
 	elections_allowed = no

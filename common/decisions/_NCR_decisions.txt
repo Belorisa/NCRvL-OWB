@@ -414,7 +414,6 @@ NCR_presidential_declarations = {
 		}
 		days_re_enable = 100
 	}
-	
 }
 
 ncr_civil_war_decision_category = {

@@ -69,7 +69,7 @@ technologies = {
 		}
 	}
 
-	# Combat Protocols
+	# Human Targeting Firmware
 	combat_protocols = {
 
 		category_cnc_robots = {

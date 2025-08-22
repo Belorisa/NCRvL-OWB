@@ -481,6 +481,7 @@ ideas = {
 					instant = yes
 				}
 			}
+			
 			research_bonus = {
 				power_armor_tech_category = 0.25
 				energy_weaponry_tech_category = 0.25

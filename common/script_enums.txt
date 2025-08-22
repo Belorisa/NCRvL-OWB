@@ -48,15 +48,11 @@ script_enum_equipment_category = {
 	naval_bomber
 	missile
 	emplacement_gun_ammo
-	ballistic_missile
-	nuclear_missile
-	sam_missile
 	suicide
 	scout_plane
 	maritime_patrol_plane
 	air_transport
 	carrier
-	missile_launcher
 	support
 	amphibious
 	anti_air
@@ -65,7 +61,6 @@ script_enum_equipment_category = {
 	rocket
 	flame
 	land_cruiser
-	emplacement_gun_ammo
 	ballistic_missile
 	nuclear_missile
 	sam_missile
@@ -129,7 +124,6 @@ script_enum_equipment_bonus_type = {
 	chariot_equipment
 	infantry
 	mechanized
-	insect_equipment
 	super_heavy_robot_equipment
 	car_fighter_equipment
 	hev_fighter_equipment
@@ -144,7 +138,6 @@ script_enum_equipment_bonus_type = {
 	ship_hull_medium
 	cnc_robot_equipment
 	behemoth_equipment
-	amphibious_beast_equipment
 	burrowing_beast_equipment
 	amphibious_beast_equipment
 	insect_equipment
@@ -152,19 +145,16 @@ script_enum_equipment_bonus_type = {
 	deathclaw_special_equipment
 	feral_ghoul_equipment
 	beast_creature_equipment
-	gecko_creature_equipment
-	
+	gecko_creature_equipment	
 	skate_equipment
 	ground_blimp_equipment
 	cheap_blimp_equipment
 	long_strategic_bomber_equipment
 	nav_strategic_bomber_equipment
+	railway_gun_equipment
 
 	train
-	railway_gun_equipment
-	railway_gun_equipment_1
 	floating_harbor
-	floating_harbor_equipment
 	railway_gun
 	armor
 	motorized
@@ -349,19 +339,15 @@ script_enum_equipment_bonus_type = {
 	gauss_equipment_2
 	plasma_equipment_1
 	plasma_equipment_2
-	amphibious_beast_equipment_1
-	burrowing_beast_equipment
-	burrowing_beast_equipment_1
 	monster_equipment
 	gehenna_molech_equipment
-	insect_equipment_1
 	power_armor_equipment_0
 	power_armor_equipment_1
 	power_armor_equipment_2
 	power_armor_equipment_3
 	power_armor_equipment_3_light
 	power_armor_equipment_4
-	power_armor_equipment_4_light
+	#power_armor_equipment_4_light
 	power_armor_equipment_5
 	power_armor_equipment_tbh
 	power_armor_equipment_midwest
@@ -394,7 +380,6 @@ script_enum_equipment_bonus_type = {
 	dun_robot_equipment
 	dun_robot_equipment_1
 	convoy_1
-	floating_harbor_equipment_1
 	ship_hull_heavy_1
 	ship_hull_heavy_2
 	ship_hull_heavy_3
