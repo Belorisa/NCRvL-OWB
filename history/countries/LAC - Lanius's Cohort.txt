@@ -92,7 +92,6 @@ set_popularities = {
 
 set_variable = { never_return_stolen_territory = 1 }
 
-set_country_flag = slavery_allowed
 set_country_flag = manpower_laws_hidden
 set_country_flag = slave_society
 set_country_flag = bans_drugs
@@ -112,7 +111,6 @@ add_ideas = {
 	national_spirit_rejection_of_automation
 	lac_beast_of_the_east
 	lac_mustering_cohort
-	# slavers_idea_2
 	tribal_recruitment
 	undesirables_law_petty
 	partial_economic_mobilisation

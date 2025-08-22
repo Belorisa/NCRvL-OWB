@@ -109,7 +109,7 @@ set_popularities = {
 	ruler = 20
 }
 
-set_country_flag = slavery_allowed
+
 set_country_flag = grand_doctrine_ai
 set_country_flag = grand_motorized_doctrine_ai
 
@@ -118,7 +118,6 @@ set_variable = { never_return_stolen_territory = 1 }
 add_ideas = {
 	roaring_machines
 	EHT_idea_terror_of_long_80
-	#slavers_idea_2
 	raider_bands
 	undesirables_law_raider
 	EHT_the_devils_of_utah
@@ -158,7 +157,6 @@ create_dynamic_country = {
 	set_country_flag = EHT_thunderbird_lord
 	set_country_flag = is_raider_nation
 	set_country_flag = is_utah_nation
-	set_country_flag = slavery_allowed
 	set_country_flag = grand_doctrine_ai
 	set_country_flag = grand_motorized_doctrine_ai
 	set_country_flag = no_generic_advisor

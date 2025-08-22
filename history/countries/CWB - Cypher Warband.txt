@@ -95,3 +95,6 @@ add_manpower = 1000
 
 
 recruit_character = CWB_helki_the_ripper
+recruit_character = CWB_allison_forrest
+recruit_character = CWB_ulysses_hindman
+recruit_character = CWB_augustus_greer
