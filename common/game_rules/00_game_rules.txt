@@ -25,6 +25,199 @@
 # REGIONAL UNIFIERS #
 #####################
 
+
+NCR_SHI_unifier = {
+	name = "RULE_NCR_UNIFIER"
+	group = "RULE_GROUP_UNIFIERS"
+	default = {
+		name = "NONE"
+		text = "RULE_UNIFIERS_NCR_SHI_DEFAULT"
+		desc = "RULE_UNIFIERS_NCR_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "SHI/EUR"
+		text = "RULE_SHI/EUR"
+		desc = "RULE_UNIFIERS_SHI/EUR_DESC"
+		allow_achievements = yes
+	}
+		option = {
+		name = "SHI/EUR/ARR"
+		text = "RULE_UNIFIERS_SHI/EUR/ARR"
+		desc = "RULE_UNIFIERS_SHI/EUR/ARR_DESC"
+		allow_achievements = yes
+	}
+}
+
+NCR_EUR_unifier = {
+	name = "RULE_NCR_UNIFIER"
+	group = "RULE_GROUP_UNIFIERS"
+	default = {
+		name = "NONE"
+		text = "RULE_UNIFIERS_NCR_EUR_DEFAULT"
+		desc = "RULE_UNIFIERS_NCR_EUR_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "EUR/ARR"
+		text = "RULE_EUR/ARR"
+		desc = "RULE_UNIFIERS_EUR/ARR_DESC"
+		allow_achievements = yes
+	}
+		option = {
+		name = "EUR/ARR/OREGON"
+		text = "RULE_UNIFIERS_EUR/ARR/OREGON"
+		desc = "RULE_UNIFIERS_EUR/ARR/OREGON_DESC"
+		allow_achievements = yes
+	}
+}
+
+NCR_ARR_unifier = {
+	name = "RULE_NCR_UNIFIER"
+	group = "RULE_GROUP_UNIFIERS"
+	default = {
+		name = "NONE"
+		text = "RULE_UNIFIERS_NCR_EUR_DEFAULT"
+		desc = "RULE_UNIFIERS_NCR_EUR_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ARR/EUR"
+		text = "RULE_ARR/EUR"
+		desc = "RULE_UNIFIERS_ARR/EUR_DESC"
+		allow_achievements = yes
+	}
+		option = {
+		name = "ARR/OREGON"
+		text = "RULE_UNIFIERS_ARR/OREGON"
+		desc = "RULE_UNIFIERS_ARR/OREGON_DESC"
+		allow_achievements = yes
+	}
+			option = {
+		name = "ARR/EUR/OREGON"
+		text = "RULE_UNIFIERS_ARR/EUR/OREGON"
+		desc = "RULE_UNIFIERS_ARR/EUR/OREGON_DESC"
+		allow_achievements = yes
+	}
+	 
+}
+
+NCR_NEW_unifier = {
+	name = "RULE_NCR_UNIFIER"
+	group = "RULE_GROUP_UNIFIERS"
+	default = {
+		name = "NONE"
+		text = "RULE_UNIFIERS_NCR_EUR_DEFAULT"
+		desc = "RULE_UNIFIERS_NCR_EUR_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "NEW/DES"
+		text = "RULE_NEW/DES"
+		desc = "RULE_UNIFIERS_NEW/DES_DESC"
+		allow_achievements = yes
+	}
+		option = {
+		name = "NEW/VLT"
+		text = "RULE_UNIFIERS_NEW/VLT"
+		desc = "RULE_UNIFIERS_NEW/VLT_DESC"
+		allow_achievements = yes
+	}
+
+			option = {
+		name = "NEW/Oregon"
+		text = "RULE_UNIFIERS_NEW/Oregon"
+		desc = "RULE_UNIFIERS_NEW/Oregon_DESC"
+		allow_achievements = yes
+	}
+}
+
+NCR_VLT_unifier = {
+	name = "RULE_NCR_UNIFIER"
+	group = "RULE_GROUP_UNIFIERS"
+	default = {
+		name = "NONE"
+		text = "RULE_UNIFIERS_NCR_EUR_DEFAULT"
+		desc = "RULE_UNIFIERS_NCR_EUR_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "VLT/NEW"
+		text = "RULE_VLT/NEW"
+		desc = "RULE_UNIFIERS_VLT/NEW_DESC"
+		allow_achievements = yes
+	}
+		option = {
+		name = "VLT/Oregon"
+		text = "RULE_UNIFIERS_VLT/Oregon"
+		desc = "RULE_UNIFIERS_VLT/Oregon_DESC"
+		allow_achievements = yes
+	}
+
+			option = {
+		name = "VLT/DES"
+		text = "RULE_UNIFIERS_VLT/DES"
+		desc = "RULE_UNIFIERS_VLT/DES_DESC"
+		allow_achievements = yes
+	}
+}
+
+NCR_DES_unifier = {
+	name = "RULE_NCR_UNIFIER"
+	group = "RULE_GROUP_UNIFIERS"
+	default = {
+		name = "NONE"
+		text = "RULE_UNIFIERS_NCR_EUR_DEFAULT"
+		desc = "RULE_UNIFIERS_NCR_EUR_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "DES/NEW"
+		text = "RULE_DES/NEW"
+		desc = "RULE_UNIFIERS_DES/NEW_DESC"
+		allow_achievements = yes
+	}
+		option = {
+		name = "DES/VLT"
+		text = "RULE_UNIFIERS_DES/VLT"
+		desc = "RULE_UNIFIERS_DES/VLT_DESC"
+		allow_achievements = yes
+	}
+
+}
+
+
+Legion_unifier = {
+	name = "RULE_LEGION_UNIFIER"
+	group = "RULE_GROUP_UNIFIERS"
+	default = {
+		name = "NONE"
+		text = "RULE_UNIFIERS_LEGION_DEFAULT"
+		desc = "RULE_UNIFIERS_LEGION_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = { 
+		name = "LEGION/TWOSUN/NAVARRO/WHITELEG"
+		text = "RULE_UNIFIERS_LEGION/TWOSUN/NAVARRO/WHITELEG"
+		desc = "RULE_UNIFIERS_LEGION/TWOSUN/NAVARRO/WHITELEG_DESC"
+		allow_achievements = yes
+	}
+		option = { 
+		name = "LEGION/TWOSUN/NAVARRO/EIGHTIES"
+		text = "RULE_UNIFIERS_LEGION/TWOSUN/NAVARRO/EIGHTIES"
+		desc = "RULE_UNIFIERS_LEGION/TWOSUN/NAVARRO/EIGHTIES_DESC"
+		allow_achievements = yes
+	}
+	option = { 
+		name = "LEGION/TWOSUN/NAVARRO/IRONALLIANCE"
+		text = "RULE_UNIFIERS_LEGION/TWOSUN/NAVARRO/IRONALLIANCE"
+		desc = "RULE_UNIFIERS_LEGION/TWOSUN/NAVARRO/IRONALLIANCE_DESC"
+		allow_achievements = yes
+	}
+
+	
+}
+
 canada_unifier = {
 	name = "RULE_CANADA_UNIFIER"
 	group = "RULE_GROUP_UNIFIERS"
