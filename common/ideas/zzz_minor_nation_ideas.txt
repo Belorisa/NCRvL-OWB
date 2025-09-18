@@ -65,6 +65,34 @@ ideas = {
             }
             removal_cost = -1
         }
+        fbh_aeronautics_ineptitude = {
+            picture = generic_atom
+            allowed = {
+                always = no
+            }
+            equipment_bonus = {
+                fighter_equipment = {
+                    build_cost_ic = 0.66
+                    instant = yes
+                }
+                cas_equipment = {
+                    build_cost_ic = 0.66
+                    instant = yes
+                }
+				strategic_bomber = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+            allowed_civil_war = {
+                always = yes
+            }
+            research_bonus = {
+                cat_automated_warfare = -0.90
+            }
+            removal_cost = -1
+        }
+    }
+        
         sun_victors_against_pallus = {
             picture = pantheon_lon
             removal_cost = -1

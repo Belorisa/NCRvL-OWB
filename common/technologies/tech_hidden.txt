@@ -2857,6 +2857,57 @@ technologies = {
 			factor = 0
 		}
 	}
+	
+	paladin_unlock_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_unit y = @Col_18 }
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		enable_subunits = {
+			paladin_unit
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	paladin_support_unlock_tech = {
+		research_cost = 1.0
+
+		allow = {
+			always = no
+		}
+
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_unit y = @Col_19 }
+		}
+
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		enable_subunits = {
+			paladin_fireteam_unit
+			paladin_demo_unit
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 	knights_unlock_tech = {
 		research_cost = 1.0

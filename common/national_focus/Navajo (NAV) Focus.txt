@@ -219,26 +219,18 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_tech = energy_weaponry_tech_1
-				}
-				set_technology = {
-					energy_weaponry_tech_2 = 1
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = energy_weaponry_tech_1
-				}
-				set_technology = {
-					energy_weaponry_tech_2 = 1
-				}
-			}
-			else_if = {
-				limit = {
 					has_tech = energy_weaponry_tech_2
 				}
 				set_technology = {
 					energy_weaponry_tech_3 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = energy_weaponry_tech_1
+				}
+				set_technology = {
+					energy_weaponry_tech_2 = 1
 				}
 			}
 			else_if = {

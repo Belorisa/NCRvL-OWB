@@ -26,3 +26,15 @@ NDefines.NAI.STOP_TRAINING_EQUIPMENT_LEVEL = 0.90                -- ai will not 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30				-- This much progress can be saved while not having a focus selected
 
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 5								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
+
+
+-- NO UNITS FOR YOU BAD PLAYER, never again 40 width demo teams.
+NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 6			-- Max width of regiments in division designer.
+NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 4			-- Max height of regiments in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 6			-- Max width of support in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 1			-- Max height of support in division designer.
+
+NDefines.NMilitary.BASE_COMBAT_WIDTH = 120					-- base combat width
+NDefines.NMilitary.ADDITIONAL_COMBAT_WIDTH = 40	
+
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40

@@ -2539,6 +2539,19 @@
   WNC_ruler:0 "Washington Enclave"
   WNC_ruler_ADJ:0 "Washington Enclave"
   WNC_ruler_DEF:0 "Washington Enclave"
+  
+  FBH_elites:0 "Florida Brotherhood"
+  FBH_elites_ADJ:0 "Florida Brotherhood"
+  FBH_elites_DEF:0 "Florida Brotherhood"
+  FBH_intellectuals:0 "Florida Brotherhood"
+  FBH_intellectuals_ADJ:0 "Florida Brotherhood"
+  FBH_intellectuals_DEF:0 "Florida Brotherhood"
+  FBH_people:0 "Florida Brotherhood"
+  FBH_people_ADJ:0 "Florida Brotherhood"
+  FBH_people_DEF:0 "Florida Brotherhood"
+  FBH_ruler:0 "Florida Brotherhood"
+  FBH_ruler_ADJ:0 "Florida Brotherhood"
+  FBH_ruler_DEF:0 "Florida Brotherhood"
 #  TAG_elites:0
 #  TAG_elites_ADJ:0
 #  TAG_elites_DEF:0
