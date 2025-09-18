@@ -46,8 +46,10 @@ set_technology = {
 	fireteam_weaponry_tech = 1
 	anti_tank_equipment_tech_1 = 1
 	recon_company_tech_1 = 1
-	power_armour_equipment_tech_1 = 1
-	power_armour_equipment_tech_2 = 1
+	stripped_pa_tech = 1
+	weight_support_frame_pa_tech_1 = 1
+	weight_support_frame_pa_tech_2 = 1
+	wasteland_pa_tech = 1
 	super_mutant_behemoth = 1
 	bike_tech_1 = 1
 	

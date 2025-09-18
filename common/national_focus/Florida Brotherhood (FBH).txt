@@ -383,7 +383,7 @@ focus_tree = {
 			add_tech_bonus = {
 				uses = 3
 				bonus = 0.66
-				category = robot_tech_category
+				category = robotics_tech_category
 			}
 			set_technology = { robotics_tech_level_scientific = 1 }
 		}
@@ -510,7 +510,7 @@ focus_tree = {
 		country_event = nf_fbh.9
 				if = {
 					limit = {
-						ruling_party = intellectuals 
+						has_government = intellectuals 
 					}
 			hidden_effect = {
 				set_technology = {
@@ -628,10 +628,16 @@ focus_tree = {
 		}
 		relative_position_id = fbh_elder_return
 		completion_reward = {
-			add_state_core = 157
-			FBH = { transfer_state = 157 }
-			remove_core_of = NCR
-			remove_claim_by = NCR
+			
+			FBH = { 
+				transfer_state = 157
+				add_state_core = 157
+			 }
+			157 = {
+				remove_core_of = NCR
+				remove_claim_by = NCR
+			}
+
 			if = {
 				limit = {
 					NOT = {
@@ -640,8 +646,9 @@ focus_tree = {
 						}
 					}
 				}
+				set_capital = { state = 157 }
 			}
-			set_capital = { state = 157 }
+			
 			157 = {
 				set_temp_variable = {
 					pop_add = 5000
@@ -995,33 +1002,33 @@ focus_tree = {
 			add_manpower = 750
 			613 = {
 					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+				add_building_construction = {
 					type = bunker2
 					level = 1
 					instant_build = yes
-					id = 9071
+					province = 9071
 				}
 				add_building_construction = {
 					type = bunker
 					level = 3
 					instant_build = yes
-					id = 9071
+					province = 9071
 				}
 
 			}
 			137 = {
 					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+				add_building_construction = {
 					type = bunker2
 					level = 1
 					instant_build = yes
-					id = 3209
+					province = 3209
 				}
 				add_building_construction = {
 					type = bunker
 					level = 3
 					instant_build = yes
-					id = 3209
+					province = 3209
 				}
 
 			}
@@ -1042,65 +1049,65 @@ focus_tree = {
 		}
 		relative_position_id = fbh_mutual_benefit
 		completion_reward = {
-		MOJ = {
+		MOT = {
 			add_manpower = 750
 			647 = {
-					add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = bunker2
 					level = 2
 					instant_build = yes
-					id = 12305
+					province = 12305
 				}
 				add_building_construction = {
 					type = bunker
 					level = 3
 					instant_build = yes
-					id = 12305
+					province = 12305
 				}
 
 			}
 			47 = {
-					add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = bunker2
 					level = 2
 					instant_build = yes
-					id = 3238
+					province = 3238
 				}
 				add_building_construction = {
 					type = bunker
 					level = 3
 					instant_build = yes
-					id = 3238
+					province = 3238
 				}
 			}
 			573 = {
-					add_building_construction = {
+				add_building_construction = {
 					type = bunker2
 					level = 2
 					instant_build = yes
-					id = 6991
+					province = 6991
 				}
 				add_building_construction = {
 					type = bunker
 					level = 3
 					instant_build = yes
-					id = 6991
+					province = 6991
 				}
 			}
 			417 = {
-					add_building_construction = {
+				add_building_construction = {
 					type = bunker2
 					level = 2
 					instant_build = yes
-					id = 5764
+					province = 5764
 				}
 				add_building_construction = {
 					type = bunker
 					level = 3
 					instant_build = yes
-					id = 5764
+					province = 5764
 				}
 			}
 			77 = {
@@ -1271,7 +1278,7 @@ focus_tree = {
 				add_tech_bonus = {
 					bonus = 0.25
 					uses = 1
-					category = dog_equipment_tech_category
+					category = support_dog_tech_category
 				}
 			}
 		}
@@ -1293,8 +1300,11 @@ focus_tree = {
 			#add scurry bot here
 			add_state_core = 412
 			FBH = { transfer_state = 412 }
-			remove_core_of = LAC
-			remove_claim_by = LAC
+			412 = {
+				remove_core_of = LAC
+				remove_claim_by = LAC
+			}
+
 			if = {
 				limit = {
 					NOT = {
@@ -1303,8 +1313,9 @@ focus_tree = {
 						}
 					}
 				}
+				set_capital = { state = 412 }
 			}
-			set_capital = { state = 412 }
+			
 			412 = {
 				set_temp_variable = {
 					pop_add = 5000
@@ -1470,10 +1481,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = power_armor_equipment_1 
 				amount = 5 
-				producer = IMN
-			}
-			IMN = {
-				country_event = nf_fbh.14
+				producer = IRN
 			}
 		}
 	}
@@ -2269,26 +2277,6 @@ focus = {
 		relative_position_id = fbh_one_final_effort
 		completion_reward = {
 			add_nuclear_bombs = 1
-		}
-	}
-	focus = {
-		id = fbh_phantom_pain
-		icon = GFX_goal_NCR_Army_of_Mobility
-		cost = 100
-		x = 0
-		y = 2
-		available = {
-			date > 2285.1.1
-		}
-		prerequisite = {
-			focus = fbh_command_and_conquer
-		}
-		prerequisite = {
-			focus = fbh_red_alert
-		}
-		relative_position_id = fbh_one_final_effort
-		completion_reward = {
-			add_nuclear_bombs = 10
 		}
 	}
 	focus = {

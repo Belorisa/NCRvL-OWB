@@ -16,6 +16,8 @@ technologies = {
 	@Col_15 = 32
 	@Col_16 = 34
 	@Col_17 = 36
+	@Col_18 = 38
+	@Col_19 = 40
 
 	@Row_unit = 0
 	@Row_unit2 = 2
@@ -2892,7 +2894,7 @@ technologies = {
 
 		folder = {
 			name = fallout_focus_tree_folder
-			position = { x = @Row_unit y = @Col_19 }
+			position = { x = @Row_unit y =	@Col_19  }
 		}
 
 		dependencies = {

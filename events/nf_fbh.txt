@@ -35,7 +35,7 @@ country_event = {
 		1410 = {
 			if = {
 				limit = {
-					is_valid_state_for_2_industrial_complex = yes
+					is_valid_state_for_2_civilian_factories = yes
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -178,11 +178,11 @@ country_event = {
 	option = {
 		name = nf_fbh.7.b
 		1410 = {
-			add_resources = {
+			add_resource = {
 				type = energy 
 				amount = 40
 			}
-			add_resources = {
+			add_resource = {
 				type = water
 				amount = 40
 			}
@@ -222,7 +222,7 @@ country_event = {
 				elections_allowed = no
 			}
 		}
-		else = {
+		else_if = {
 			limit = {
 				ruler > party_popularity@elites
 				ruler > party_popularity@intellectuals
@@ -367,13 +367,13 @@ country_event = {
 			uses = 1
 			bonus = 1
 			ahead_reduction = 1
-			category = power_armour_tech
+			category = power_armor_tech_category
 		}
 		IRN = {
 			add_tech_bonus = {
 			uses = 2
 			bonus = 0.025
-			category = power_armour_tech
+			category = power_armor_tech_category
 			}
 		}
 	}
@@ -427,6 +427,7 @@ country_event = {
 	title = nf_fbh.18.t
 	desc = nf_fbh.18.d
 	picture = GFX_event_generic_ruins_2
+	is_triggered_only = yes
 	option = {
 		name = nf_fbh.18.a
 		CES = {
@@ -452,6 +453,7 @@ country_event = {
 	title = nf_fbh.19.t
 	desc = nf_fbh.19.d
 	picture = GFX_event_NCN_new_canaan
+	is_triggered_only = yes
 	option = {
 		name = nf_fbh.19.a
 		MOT = {
@@ -502,6 +504,7 @@ country_event = {
 	title = nf_fbh.20.t
 	desc = nf_fbh.20.d
 	picture = GFX_event_CES_whitelegs
+	is_triggered_only = yes
 	option = {
 		name = nf_fbh.20.a
 		add_stability = 0.3
@@ -524,6 +527,7 @@ country_event = {
 	title = nf_fbh.21.t
 	desc = nf_fbh.21.d
 	picture = GFX_event_CES_whitelegs
+	is_triggered_only = yes
 	option = {
 		name = nf_fbh.21.a
 		IRN = {
