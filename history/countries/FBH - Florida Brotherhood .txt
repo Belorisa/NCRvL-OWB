@@ -161,6 +161,7 @@ add_ideas = {
 	centralization_brotherhood_minimum
 	knighlty_armaments
 	fbh_long_range_comms
+	fbh_peace_in_our_time
 }
 
 add_opinion_modifier = { target = SHA modifier = boshatesmutants }

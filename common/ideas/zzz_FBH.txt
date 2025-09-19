@@ -401,5 +401,21 @@ ideas = {
 				war_support_factor = -0.3
 			}
 		}
+
+		fbh_peace_in_our_time = {
+
+			picture=generic_morale_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				cant_justify_on_countries = 1
+				cant_be_justified_on = 1
+			}
+		}
 	}
 }
