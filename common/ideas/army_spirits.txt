@@ -991,10 +991,7 @@ ideas = {
 		choir_practice_spirit = {
 			ledger = army
 			visible = {
-				OR = {
-					original_tag = RRG
-					original_tag = ARM
-				}
+				original_tag = CHC
 			}
 			modifier = {
 				army_org_factor = 0.05

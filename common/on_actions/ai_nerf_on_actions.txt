@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					tag = BVC
+					is_ai = yes
+				}
+				remove_ideas = {
+					baja_banditos_united
+					blp_procurement_specialists
+				}
+				add_ideas = {
+					northern_colorado_famine
+				}
+			}
+		}
+	}
+}

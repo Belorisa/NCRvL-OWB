@@ -6,6 +6,21 @@ ideas = {
         ######
         # MOS
         ######
+        YKZ_bushido = {
+			picture = shi_dragon
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = 0.05
+				experience_loss_factor = -0.1
+				custom_modifier_tooltip = yakuza_melee_1
+			}
+		}
          sun_victors_against_pallus = {
             picture = pantheon_lon
             removal_cost = -1
@@ -1321,47 +1336,6 @@ ideas = {
                 research_speed_factor = 0.04
                 production_speed_buildings_factor = 0.075
                 custom_modifier_tooltip = toc_memories_of_a_future_past_tt
-            }
-        }
-        ######
-        # ROT
-        ######
-        rot_legacy_of_vault_100 = {
-            picture = generic_vault_door
-            allowed = {
-                always = no
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            modifier = {
-                army_core_defence_factor = 0.05
-                war_support_factor = 0.15
-                production_speed_arms_factory_factor = 0.15
-                production_speed_industrial_complex_factor = -0.1
-            }
-        }
-        rot_eternal_quest = {
-            picture = generic_flamer
-            allowed = {
-                always = no
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            equipment_bonus = {
-                demolitions_equipment = {
-                    build_cost_ic = -0.08
-                    soft_attack = 0.065
-                    hard_attack = 0.035
-                    instant = yes
-                }
-            }
-            modifier = {
-                custom_modifier_tooltip = rot_eternal_quest_tt
-                ai_focus_aggressive_factor = 0.4
-                exodus_occupier_appeal = -0.25
-                trade_opinion_factor = -0.05
             }
         }
         ######
@@ -2878,54 +2852,6 @@ ideas = {
                 caps_flat_income_modifier = 5
             }
         }
-        HST_sound_of_music = {
-            picture = usa_magic
-            removal_cost = -1
-            allowed = {
-                always = no
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            modifier = {
-                enemy_justify_war_goal_time = 0.15
-                political_power_factor = 0.05
-                stability_factor = 0.05
-            }
-        }
-        		HST_university_formed = {
-			picture = export_focus_good_book
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				research_speed_factor = 0.15
-				army_leader_start_planning_level = 2
-				agency_upgrade_time = -0.33
-				crypto_strength = 2
-				decryption_power_factor = 0.25
-			}
-		}
-		HST_university_formed_no_la = {
-			picture = export_focus_good_book
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				research_speed_factor = 0.15
-				army_leader_start_planning_level = 2
-				decryption = 2
-				encryption = 2
-			}
-		}
         BAT_mercenary_force = {
             picture = generic_helm_army
             removal_cost = -1

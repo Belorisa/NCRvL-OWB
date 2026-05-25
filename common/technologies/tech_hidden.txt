@@ -2001,7 +2001,7 @@ pathfinders = {
 
 		allow = { always = no }
 
-		militia = {
+		category_militia = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 			defense = 0.1
@@ -2303,6 +2303,26 @@ pathfinders = {
 		}
 		#custom_modifier_tooltip = scav_unlock_weapon_tt
 		show_effect_as_desc = yes
+	}
+	
+	combat_engineers_tech = {
+		research_cost = 1.0
+		folder = {
+			name = fallout_focus_tree_folder
+			position = { x = @Row_unlock3 y = @Col_2 }
+		}
+		enable_subunits = {
+			combat_engineer_unit
+		}
+		dependencies = {
+			blocked_tech = 1
+		}
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	gauss_unlock_tech = {

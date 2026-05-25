@@ -27,7 +27,7 @@ equipments = {
 			water = 1
 		}
 	}
-
+	# Stripped Power Armour
 	power_armor_equipment_0 = {
 		archetype = power_armor_equipment
 		priority = 10
@@ -47,8 +47,7 @@ equipments = {
 			water = 1
 		}
 	}
-
-	# Stripped Power Armour
+	# Scavenged Power Armour
 	power_armor_equipment_1 = {
 		archetype = power_armor_equipment
 		parent = power_armor_equipment_0
@@ -71,7 +70,7 @@ equipments = {
 		}
 	}
 
-	# Scavenged Power Armour
+	# Wasteland Power
 	power_armor_equipment_2 = {
 		archetype = power_armor_equipment
 		parent = power_armor_equipment_1

@@ -11,7 +11,7 @@
   category_cnc_robots:0 "CnC Robots"
   category_mutants:0 "Mutants"
   category_super_mutants:0 "Super Mutants"
-  category_super_mutant_infantry:0 "Super Mutant Infantry"
+  category_super_mutant_infantry:0 "Standard Mutant Infantry"
   category_special_forces:0 "Special Forces"
   category_infantry_and_special_forces:0 "Infantry and Special Forces"
   category_light_special_forces:0 "Light Special Forces"
@@ -455,6 +455,9 @@
   scribe_support_unit:0 "Field Scribes"
   scribe_support_unit_short:0 "Scribes"
   scribe_support_unit_desc:0 ""
+    combat_engineer_unit:0 "Combat Engineers"
+  combat_engineer_unit_short:0 "Combat Engineer"
+  combat_engineer_unit_desc:0 "Engineers trained to support our troops in the field by building fortifications, reinforcing armor, and tweaking equipment to evolving battlefield conditions"
   ACH_scribe_support_unit:0 "Specialist Support"
   ACH_scribe_support_unit_short:0 "Specialists"
 

@@ -4125,6 +4125,14 @@ technologies = {
 				attack = 0.02
 			}
 		}
+				combat_engineer_unit = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
 
 		path = {
 			leads_to_tech = maintenance_company_tech_3
@@ -4189,6 +4197,14 @@ technologies = {
 			}
 		}
 		motorized_maintenance_company = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
+				combat_engineer_unit = {
 			urban = {
 				attack = 0.02
 			}
@@ -4267,6 +4283,14 @@ technologies = {
 				attack = 0.02
 			}
 		}
+				combat_engineer_unit = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
 
 		path = {
 			leads_to_tech = maintenance_company_tech_5
@@ -4338,6 +4362,14 @@ technologies = {
 				attack = 0.02
 			}
 		}
+				combat_engineer_unit = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
 
 		path = {
 			leads_to_tech = maintenance_company_tech_6
@@ -4402,6 +4434,14 @@ technologies = {
 			}
 		}
 		motorized_maintenance_company = {
+			urban = {
+				attack = 0.02
+			}
+			fort = {
+				attack = 0.02
+			}
+		}
+				combat_engineer_unit = {
 			urban = {
 				attack = 0.02
 			}

@@ -316,6 +316,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5370;5789;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
 5370;5808;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
 5808;8929;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
+5315;5791;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
+5315;5792;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
+5315;3107;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
+2047;3107;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
+2047;5314;sea;3057;-1;-1;-1;-1;;Gila Mouth Crossing
 
 6631;2320;sea;3058;-1;-1;-1;-1;;Yuma to Rusty Hooks over Gila Crossing
 5367;5147;sea;3058;-1;-1;-1;-1;;Yuma to Rusty Hooks over Gila Crossing
@@ -386,6 +391,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8211;1741;sea;1896;-1;-1;-1;-1;;Idaho Falls
 8208;1741;sea;1896;-1;-1;-1;-1;;Idaho Falls
 2017;8327;sea;1897;-1;-1;-1;-1;;Upper Snake River
+4570;4565;sea;1896;-1;-1;-1;-1;;Upper Snake River
+4520;4565;sea;1896;-1;-1;-1;-1;;Upper Snake River
+4520;8213;sea;1896;-1;-1;-1;-1;;Upper Snake River
 
 9924;10157;sea;10101;-1;-1;-1;-1;Veracruz Canal;Adjacency Rule Link for Veracruz Canal
 3063;5920;sea;6603;-1;-1;-1;-1;Hoover Dam Western Boatlift;Adjacency Rule Link for Hoover Dam Western Boatlift
@@ -657,6 +665,56 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 15451;17660;sea;6110;-1;-1;-1;-1;;
 17761;13975;sea;6109;-1;-1;-1;-1;;
 1268;7220;sea;6109;-1;-1;-1;-1;;
+
+7888;7964;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+7888;3160;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+7889;3160;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+7889;7968;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+7890;7968;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+7890;2917;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+7890;887;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+1689;887;impassable;-1;-1;-1;-1;-1;;East Mogollon Rim
+
+7886;7964;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+1688;7964;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+1688;7946;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+7883;7946;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+7883;7957;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+7883;2832;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+7880;2832;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+7880;7956;impassable;-1;-1;-1;-1;-1;;West Mogollon Rim
+
+7955;7953;impassable;-1;-1;-1;-1;-1;;Sedona Secret Mtn
+7955;1685;impassable;-1;-1;-1;-1;-1;;Sedona Secret Mtn
+
+7950;5167;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+7950;2901;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+7950;2900;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+3166;5167;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+3166;2902;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+7951;5167;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+
+3166;2902;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+3166;5167;impassable;-1;-1;-1;-1;-1;;Prescott Mtn Ranges
+
+7919;7923;impassable;-1;-1;-1;-1;-1;;Humphreys Peak
+7918;7923;impassable;-1;-1;-1;-1;-1;;Humphreys Peak
+7918;7924;impassable;-1;-1;-1;-1;-1;;Humphreys Peak
+7918;7925;impassable;-1;-1;-1;-1;-1;;Humphreys Peak
+
+2899;2319;impassable;-1;-1;-1;-1;-1;;White Tank Mtn Range
+2899;5157;impassable;-1;-1;-1;-1;-1;;White Tank Mtn Range
+2063;5157;impassable;-1;-1;-1;-1;-1;;White Tank Mtn Range
+2063;5637;impassable;-1;-1;-1;-1;-1;;White Tank Mtn Range
+
+8940;870;impassable;-1;-1;-1;-1;-1;;Estrella South Mtn Ranges
+8940;2896;impassable;-1;-1;-1;-1;-1;;Estrella South Mtn Ranges
+8930;2896;impassable;-1;-1;-1;-1;-1;;Estrella South Mtn Ranges
+
+1612;1614;impassable;-1;-1;-1;-1;-1;;Little Colorado Canyon
+1612;7985;impassable;-1;-1;-1;-1;-1;;Little Colorado Canyon
+1595;7985;impassable;-1;-1;-1;-1;-1;;Little Colorado Canyon
+1595;991;impassable;-1;-1;-1;-1;-1;;Little Colorado Canyon
 
 5791;5315;sea;3057;-1;-1;-1;-1;;NCRvLegion Crossing
 3107;5315;sea;3057;-1;-1;-1;-1;;NCRvLegion Crossing

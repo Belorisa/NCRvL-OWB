@@ -266,8 +266,8 @@ sub_units = {
 			category_army
 			category_front_line
 			category_infantry
-			category_leg_infantry
 			category_infantry_and_special_forces
+			category_leg_infantry
 		}
 
 		combat_width = 2

@@ -649,6 +649,9 @@ focus_tree = {
 		available = {
 			has_government = people
 		}
+				mutually_exclusive = {
+			focus = arr_army_special_forces
+		}
 		cost = 30
 		x = 3
 		y = 1

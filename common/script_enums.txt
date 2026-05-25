@@ -412,6 +412,8 @@ script_enum_equipment_bonus_type = {
 	drug_equipment_coffee_2
 	supply_equipment
 	supply_equipment_1
+	supply_equipment_2
+	supply_equipment_3
 	amphibious_beast_equipment_1
 	amphibious_beast_equipment_2
 	amphibious_beast_equipment_armor

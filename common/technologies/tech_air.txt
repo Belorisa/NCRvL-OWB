@@ -3832,7 +3832,7 @@ technologies = {
 		allow_branch = { has_dlc = "La Resistance" }
 
 		categories = {
-			vertibird_tech_category
+			light_air_tech_category
 		}
 
 		ai_will_do = {
@@ -3862,7 +3862,7 @@ technologies = {
 		allow_branch = { has_dlc = "La Resistance" }
 
 		categories = {
-			vertibird_tech_category
+			light_air_tech_category
 		}
 
 		ai_will_do = {
@@ -3889,7 +3889,7 @@ technologies = {
 		allow_branch = { has_dlc = "La Resistance" }
 
 		categories = {
-			vertibird_tech_category
+			high_fighter_tech_category
 		}
 
 		ai_will_do = {

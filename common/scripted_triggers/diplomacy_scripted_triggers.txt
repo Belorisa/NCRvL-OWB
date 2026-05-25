@@ -203,6 +203,30 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 			}
 		}
 		# CES Call - Sub Answer
+				else_if = {
+			limit = {
+				is_caesars_legion_leader = yes
+				is_subject = no
+				FROM = {
+					is_not_caesars_legion_leader = yes
+					is_subject = no
+				}
+				NOT = {
+					FROM = {
+						any_neighbor_country = {
+							OR = {
+								original_tag = ROOT
+								has_war_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = subordinate_must_border_us_or_a_country_we_are_at_war_with
+				always = no
+			}
+		}
 	}
 	else_if = {
 		limit = {
@@ -310,6 +334,30 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER  = {
 			}
 		}
 		# Sub Join - CES Answer
+				else_if = {
+			limit = {
+				FROM = {
+					is_caesars_legion_leader = yes
+					is_subject = no
+				}
+				is_not_caesars_legion_leader = yes
+				is_subject = no
+				NOT = {
+					FROM = {
+						any_neighbor_country = {
+							OR = {
+								original_tag = ROOT
+								has_war_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = we_must_border_them_or_a_country_they_are_at_war_with
+				always = no
+			}
+		}
 		else_if = {
 			limit = {
 				FROM = {
@@ -385,6 +433,10 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 		limit = {
 			has_global_flag = allow_guarantees_limited_global_flag
 		}
+				custom_trigger_tooltip = {
+				tooltip = RULE_ALLOW_GUARANTEES_SAME_IDEOLOGY_TOOLTIP
+				has_government = FROM
+			}
 		within_reachable_land_distance_of_from = yes
 	}
 	else = {
@@ -600,6 +652,47 @@ DIPLOMACY_REVOKE_MILACC_ENABLE_TRIGGER = { # Trigger for revoking *your* mil acc
 	}
 }
 
+DIPLOMACY_AIR_BASE_ACCESS_ENABLE_TRIGGER = { # Trigger for *asking* for air acc
+	if = {
+		limit = {
+			has_global_flag = allow_access_free_global_flag
+		}
+		within_reachable_land_distance_of_from = yes
+	}
+	else_if = {
+		limit = {
+			has_global_flag = allow_access_same_ideology_global_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+		within_reachable_land_distance_of_from = yes
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_REVOKE_AIR_BASE_ACCESS_ENABLE_TRIGGER = { # Trigger for revoking *your* air acc in another nation
+	if = {
+		limit = {
+			original_tag = MOT
+			FROM = { original_tag = VEG }
+			NCR = { has_idea = ncr_veg_treaty_of_new_vegas }
+			MOT = { has_idea = ncr_veg_treaty_of_new_vegas }
+			VEG = { has_idea = ncr_veg_treaty_of_new_vegas }
+		}
+		custom_trigger_tooltip = {
+			tooltip = ncr_veg_treaty_of_new_vegas_tt
+			always = no
+		}
+	}
+}
+
 DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = { # Triger for *offering* mil acc
 	if = {
 		limit = {
@@ -668,6 +761,56 @@ DIPLOMACY_REVOKE_OFFER_MILACC_ENABLE_TRIGGER = { # Trigger for revoking *another
 		}
 	}
 
+}
+
+DIPLOMACY_OFFER_AIR_BASE_ACCESS_ENABLE_TRIGGER = { # Triger for *offering* air acc
+	if = {
+		limit = {
+			has_global_flag = allow_access_free_global_flag
+		}
+		within_reachable_land_distance_of_from = yes
+	}
+	else_if = {
+		limit = {
+			has_global_flag = allow_access_same_ideology_global_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+		within_reachable_land_distance_of_from = yes
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_REVOKE_OFFER_AIR_BASE_ACCESS_ENABLE_TRIGGER = { # Triger revoking air acc
+	if = {
+		limit = {
+			has_global_flag = allow_access_free_global_flag
+		}
+		within_reachable_land_distance_of_from = yes
+	}
+	else_if = {
+		limit = {
+			has_global_flag = allow_access_same_ideology_global_flag
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_SAME_IDEOLOGY_TT
+			has_government = FROM
+		}
+		within_reachable_land_distance_of_from = yes
+	}
+	else = {
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_MILITARY_ACCESS_BLOCKED_TT
+			always = no
+		}
+	}
 }
 
 DIPLOMACY_NONAGGRESSIONPACT_ENABLE_TRIGGER = {
@@ -739,6 +882,9 @@ DIPLOMACY_REVOKE_NONAGGRESSIONPACT_ENABLE_TRIGGER = {
 				has_dynamic_modifier = {
 					modifier = bos_ncr_tension_dynamic_modifier
 				}
+			}
+						NOT = {
+				has_global_flag = bos_ncr_surrendered_maxson ##if the NCR surrendered maxson, the BoS is expected to break the non-aggression to advance their focus tree.
 			}
 		}
 		custom_trigger_tooltip = {

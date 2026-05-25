@@ -485,4 +485,9 @@ sub_unit_modifiers = {
 	modifier_army_sub_unit_category_behemoth_defence_factor
 	modifier_army_sub_unit_category_behemoth_speed_factor
 	modifier_army_sub_unit_category_behemoth_max_org_factor
+	
+	modifier_army_sub_unit_plant_support_attack_factor
+	modifier_army_sub_unit_plant_support_defence_factor
+	modifier_army_sub_unit_plant_support_speed_factor
+	modifier_army_sub_unit_plant_support_max_org_factor
 }

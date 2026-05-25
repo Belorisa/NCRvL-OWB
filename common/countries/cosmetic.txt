@@ -2037,7 +2037,7 @@ FRG_faewild = {
 	color = rgb { 7 147 0 }
 	color_ui = rgb { 7 147 0 }
 }
-## BLC and kids; VLS, YMP, PNT, BCR
+### BLC and kids; VLS, YMP, PNT, BCR
 
 PNT_painted_nation = {
 	color = rgb { 136 17 28 }
