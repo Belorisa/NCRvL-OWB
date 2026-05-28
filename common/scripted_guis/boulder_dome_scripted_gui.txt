@@ -1,0 +1,1669 @@
+scripted_gui = {
+	# open_boulder_dome_sublevels_window = {
+	# 	window_name = "open_boulder_dome_sublevels_window"
+	# 	parent_window_token = politics_tab
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		NOT = {
+	# 			has_country_flag = BAG_boulder_fail_flag
+	# 		}
+	# 		OR = {
+	# 			has_completed_focus = bag_fill_out_damage_report
+	# 			#Testing
+	# 			is_debug = yes
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		button_dome_enter_click = {
+	# 			568 = {
+	# 				set_state_flag = show_dome_outside
+	# 				set_state_flag = show_dome_sublevels
+	# 			}
+	# 		}
+	# 		button_dome_close_click = {
+	# 			568 = {
+	# 				clr_state_flag = show_dome_outside
+	# 				clr_state_flag = show_dome_sublevels
+	# 				clear_all_room_checks = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	triggers = {
+	# 		button_dome_enter_visible = {
+	# 			568 = {
+	# 				NOT = {
+	# 					has_state_flag = show_dome_outside
+	# 				}
+	# 			}
+	# 		}
+	# 		button_dome_close_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_outside
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# boulder_dome_decision_gui = {
+	# 	context_type = player_context
+	# 	window_name = "boulder_dome_decision_gui_window"
+	# 	#parent_window_token = politics_tab
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		568 = {
+	# 			has_state_flag = show_dome_outside
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		button_dome_close_click = {
+	# 			568 = {
+	# 				clr_state_flag = show_dome_outside
+	# 				clr_state_flag = show_dome_sublevels
+	# 				clear_all_room_checks = yes
+	# 			}
+	# 		}
+	# 		dome_scouting_button_click = {
+	# 			country_event = nf_baggers_boulder.1
+	# 		}
+	# 		dome_siege_button_click = {
+	# 			country_event = nf_baggers_boulder.2
+	# 		}
+	# 		dome_fort_button_click = {
+	# 			country_event = nf_baggers_boulder.3
+	# 		}
+	# 		dome_decision_robobrain_agnes_click = {
+	# 			country_event = nf_baggers_boulder.67
+	# 			add_political_power = -50
+	# 		}
+	# 	}
+	# 	triggers = {
+	# 		lvl_0_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_outside
+	# 			}
+	# 			NOT = {
+	# 				OR = {
+	# 					568 = {
+	# 						has_state_flag = lvl_1
+	# 					}
+	# 					568 = {
+	# 						has_state_flag = lvl_2
+	# 					}
+	# 					568 = {
+	# 						has_state_flag = lvl_3
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		lvl_1_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_outside
+	# 			}
+	# 			568 = {
+	# 				has_state_flag = lvl_1
+	# 			}
+	# 			NOT = {
+	# 				OR = {
+	# 					568 = {
+	# 						has_state_flag = lvl_2
+	# 					}
+	# 					568 = {
+	# 						has_state_flag = lvl_3
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		lvl_2_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_outside
+	# 			}
+	# 			568 = {
+	# 				has_state_flag = lvl_2
+	# 			}
+	# 			NOT = {
+	# 				568 = {
+	# 					has_state_flag = lvl_3
+	# 				}
+	# 			}
+	# 		}
+	# 		lvl_3_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_outside
+	# 			}
+	# 			568 = {
+	# 				has_state_flag = lvl_3
+	# 			}
+	# 		}
+	# 		dome_scouting_button_visible = {
+	# 			NOT = {
+	# 				568 = {
+	# 					has_state_flag = lvl_1
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_scouting_button_click_enabled = {
+	# 			has_tech = recon_company_tech_2
+	# 		}
+	# 		dome_siege_button_visible = {
+	# 			NOT = {
+	# 				568 = {
+	# 					has_state_flag = lvl_2
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_siege_button_click_enabled = {
+	# 			568 = {
+	# 				has_state_flag = lvl_1
+	# 			}
+	# 			OR = {
+	# 				has_tech = ballistic_fireteam_weaponry_tech_2
+	# 				has_tech = energy_fireteam_weaponry_tech_2
+	# 			}
+	# 		}
+	# 		dome_fort_button_visible = {
+	# 			NOT = {
+	# 				568 = {
+	# 					has_state_flag = lvl_3
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_fort_button_click_enabled = {
+	# 			568 = {
+	# 				has_state_flag = lvl_2
+	# 			}
+	# 			568 = {
+	# 				any_province_building_level = {
+	# 					province = {
+	# 						id = 6868
+	# 						#limit_to_border = yes
+	# 					}
+	# 					building = bunker
+	# 					level > 2
+	# 				}
+	# 			}
+	# 		}
+	# 		segmented_level_lvl_0_visible = {
+	# 			568 = {
+	# 				has_state_flag = dome_lvl_1
+	# 			}
+	# 		}
+	# 		segmented_level_lvl_1_visible = {
+	# 			568 = {
+	# 				has_state_flag = dome_lvl_1
+	# 			}
+	# 		}
+	# 		segmented_level_lvl_2_visible = {
+	# 			568 = {
+	# 				has_state_flag = dome_lvl_2
+	# 			}
+	# 		}
+	# 		segmented_level_lvl_3_visible = {
+	# 			568 = {
+	# 				has_state_flag = dome_lvl_3
+	# 			}
+	# 		}
+	# 		segmented_level_lvl_4_visible = {
+	# 			568 = {
+	# 				has_state_flag = dome_lvl_4
+	# 			}
+	# 		}
+	# 		segmented_level_lvl_5_visible = {
+	# 			568 = {
+	# 				has_state_flag = dome_lvl_5
+	# 			}
+	# 		}
+	# 		dome_decision_robobrain_agnes_visible = {
+	# 			has_country_flag = DOME_second_level_robobrain_lab_explored
+	# 			NOT = {
+	# 				has_country_flag = BAG_agnes_is_brain
+	# 			}
+	# 		}
+	# 		dome_decision_robobrain_agnes_click_enabled = {
+	# 			has_political_power > 50
+	# 		}
+	# 	}
+	# }
+	# boulder_dome_sublevels_window = {
+	# 	context_type = player_context
+	# 	window_name = "boulder_dome_sublevels_topbar"
+	# 	#parent_window_token = politics_tab
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		568 = {
+	# 			has_state_flag = show_dome_outside
+	# 			has_state_flag = show_dome_sublevels
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		button_first_level_click = {
+	# 			if = {
+	# 				limit = {
+	# 					568 = {
+	# 						has_state_flag = show_dome_sublevel_1
+	# 					}
+	# 				}
+	# 				ROOT = {
+	# 					clear_all_room_checks = yes
+	# 					568 = {
+	# 						clr_state_flag = show_dome_sublevel_1
+	# 					}
+	# 				}
+	# 			}
+	# 			else = {
+	# 				ROOT = {
+	# 					clear_all_room_checks = yes
+	# 					568 = {
+	# 						set_state_flag = show_dome_sublevel_1
+	# 						clr_state_flag = show_dome_sublevel_2
+	# 						clr_state_flag = show_dome_sublevel_3
+	# 						clr_state_flag = show_dome_sublevel_4
+	# 						clr_state_flag = show_dome_sublevel_5
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		button_second_level_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				568 = {
+	# 					set_state_flag = show_dome_sublevel_2
+	# 					clr_state_flag = show_dome_sublevel_1
+	# 					clr_state_flag = show_dome_sublevel_3
+	# 					clr_state_flag = show_dome_sublevel_4
+	# 					clr_state_flag = show_dome_sublevel_5
+	# 				}
+	# 			}
+	# 		}
+	# 		button_third_level_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				568 = {
+	# 					set_state_flag = show_dome_sublevel_3
+	# 					clr_state_flag = show_dome_sublevel_1
+	# 					clr_state_flag = show_dome_sublevel_2
+	# 					clr_state_flag = show_dome_sublevel_4
+	# 					clr_state_flag = show_dome_sublevel_5
+	# 				}
+	# 			}
+	# 		}
+	# 		button_fourth_level_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				568 = {
+	# 					set_state_flag = show_dome_sublevel_4
+	# 					clr_state_flag = show_dome_sublevel_1
+	# 					clr_state_flag = show_dome_sublevel_2
+	# 					clr_state_flag = show_dome_sublevel_3
+	# 					clr_state_flag = show_dome_sublevel_5
+	# 				}
+	# 			}
+	# 		}
+	# 		button_fifth_level_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				568 = {
+	# 					set_state_flag = show_dome_sublevel_5
+	# 					clr_state_flag = show_dome_sublevel_1
+	# 					clr_state_flag = show_dome_sublevel_2
+	# 					clr_state_flag = show_dome_sublevel_3
+	# 					clr_state_flag = show_dome_sublevel_4
+	# 				}
+	# 			}
+	# 		}
+	# 		button_enter_room_click = {
+	# 			ROOT = {
+	# 				#Set up an array with all possible flags for here later, -McGebe, ##TODO!
+	# 				if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_first_level_hydroponics_garden_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.40
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_first_level_officer_quarters_clicked
+	# 						has_country_flag = DOME_second_level_gym_explored
+	# 					}
+	# 					country_event = nf_baggers_boulder.41
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_first_level_water_pump_shack_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.42
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_weapons_lab_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.50
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_armour_lab_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.51
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_armour_lab_testing_chamber_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.58
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_weapons_lab_testing_chamber_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.59
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_robobrain_lab_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.53
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_code_lab_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.66
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_sleepers_lab_clicked
+	# 					}
+	# 					if = {
+	# 						limit = {
+	# 							has_country_flag = DOME_fourth_level_reactor_access_fixed
+	# 						}
+	# 						country_event = nf_baggers_boulder.54
+	# 					}
+	# 					else = {
+	# 						country_event = nf_baggers_boulder.540
+	# 					}
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_gym_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.55
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_second_level_well_room_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.56
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_third_level_rocket_research_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.57
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = dome_third_level_robobrain_chassis_research_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.65
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_fourth_level_restroom_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.68
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_fourth_level_water_storage_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.64
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_fourth_level_reactor_access_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.60
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_fourth_level_purification_center_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.62
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_fifth_level_emergency_generator_clicked
+	# 					}
+	# 					country_event = nf_baggers_boulder.61
+	# 				}
+	# 				else_if = {
+	# 					limit = {
+	# 						has_country_flag = DOME_fifth_level_zax_ai_clicked
+	# 					}
+	# 					BAG_ZAX = {
+	# 						unit_leader_event = nf_baggers_leader.3
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		button_reward_enter_room_click = {
+	# 			ROOT = {
+	# 				clr_country_flag = DOME_show_room_preq
+	# 				set_country_flag = DOME_show_room_reward
+	# 			}
+	# 		}
+	# 		button_preq_enter_room_click = {
+	# 			ROOT = {
+	# 				clr_country_flag = DOME_show_room_reward
+	# 				set_country_flag = DOME_show_room_preq
+	# 			}
+	# 		}
+	# 	}
+	# 	triggers = {
+	# 		button_first_level_click_enabled = {
+	# 			ROOT = {
+	# 				568 = {
+	# 					has_state_flag = dome_lvl_1
+	# 				}
+	# 			}
+	# 		}
+	# 		button_second_level_click_enabled = {
+	# 			ROOT = {
+	# 				568 = {
+	# 					has_state_flag = dome_lvl_2
+	# 				}
+	# 			}
+	# 		}
+	# 		button_third_level_click_enabled = {
+	# 			ROOT = {
+	# 				568 = {
+	# 					has_state_flag = dome_lvl_3
+	# 				}
+	# 			}
+	# 		}
+	# 		button_fourth_level_click_enabled = {
+	# 			ROOT = {
+	# 				568 = {
+	# 					has_state_flag = dome_lvl_4
+	# 				}
+	# 			}
+	# 		}
+	# 		button_fifth_level_click_enabled = {
+	# 			ROOT = {
+	# 				568 = {
+	# 					has_state_flag = dome_lvl_5
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_sublevels_first_level_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_sublevel_1
+	# 			}
+	# 			NOT = {
+	# 				568 = {
+	# 					OR = {
+	# 						has_state_flag = show_dome_sublevel_2
+	# 						has_state_flag = show_dome_sublevel_3
+	# 						has_state_flag = show_dome_sublevel_4
+	# 						has_state_flag = show_dome_sublevel_5
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_sublevels_second_level_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_sublevel_2
+	# 			}
+	# 			NOT = {
+	# 				568 = {
+	# 					OR = {
+	# 						has_state_flag = show_dome_sublevel_1
+	# 						has_state_flag = show_dome_sublevel_3
+	# 						has_state_flag = show_dome_sublevel_4
+	# 						has_state_flag = show_dome_sublevel_5
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_sublevels_third_level_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_sublevel_3
+	# 			}
+	# 			NOT = {
+	# 				568 = {
+	# 					OR = {
+	# 						has_state_flag = show_dome_sublevel_1
+	# 						has_state_flag = show_dome_sublevel_2
+	# 						has_state_flag = show_dome_sublevel_4
+	# 						has_state_flag = show_dome_sublevel_5
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_sublevels_fourth_level_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_sublevel_4
+	# 			}
+	# 			NOT = {
+	# 				568 = {
+	# 					OR = {
+	# 						has_state_flag = show_dome_sublevel_1
+	# 						has_state_flag = show_dome_sublevel_2
+	# 						has_state_flag = show_dome_sublevel_3
+	# 						has_state_flag = show_dome_sublevel_5
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_sublevels_fifth_level_visible = {
+	# 			568 = {
+	# 				has_state_flag = show_dome_sublevel_5
+	# 			}
+	# 			NOT = {
+	# 				568 = {
+	# 					OR = {
+	# 						has_state_flag = show_dome_sublevel_1
+	# 						has_state_flag = show_dome_sublevel_2
+	# 						has_state_flag = show_dome_sublevel_3
+	# 						has_state_flag = show_dome_sublevel_4
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 		button_enter_room_click_enabled = {
+	# 			ROOT = {
+	# 				#Set up an array with all possible flags for here later, -McGebe, ##TODO!
+	# 				OR = {
+	# 					AND = {
+	# 						has_country_flag = DOME_first_level_hydroponics_garden_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_first_level_hydroponics_garden_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_first_level_water_pump_shack_clicked
+	# 						OR = {
+	# 							has_idea_with_trait = col_water_mechanic
+	# 							has_idea_with_trait = bag_longtime_mechanic
+	# 						}
+	# 						NOT = {
+	# 							has_country_flag = DOME_first_level_water_pump_shack_fixed
+	# 							#NOTE! Because of the water related side-quest having two-set of flags would be unnecessary.
+	# 							#_fixed will function here instead of _explored good enough
+	# 						}
+	# 					}
+	# 					#AND = {
+	# 					#	has_country_flag = DOME_first_level_officer_quarters_clicked
+	# 					#	has_country_flag = DOME_second_level_gym_explored
+	# 					#	NOT = {
+	# 					#		has_country_flag = DOME_first_level_officer_quarters_explored
+	# 					#	}
+	# 					#}
+	# 					#
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_weapons_lab_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_weapons_lab_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_weapons_lab_testing_chamber_clicked
+	# 						has_country_flag = DOME_fourth_level_reactor_access_fixed
+	# 						num_of_factories > 25
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_weapons_lab_testing_chamber_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_armour_lab_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_armour_lab_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_armour_lab_testing_chamber_clicked
+	# 						has_tech = scav_pa_tech
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_armour_lab_testing_chamber_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_gym_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_gym_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_code_lab_clicked
+	# 						has_tech = med_company_tech_3
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_code_lab_explored
+	# 						}
+	# 					}
+	# 					#AND = {
+	# 					#	has_country_flag = DOME_second_level_robobrain_lab_clicked
+	# 					#	NOT = {
+	# 					#		has_country_flag = DOME_second_level_robobrain_lab_explored
+	# 					#	}
+	# 					#}
+	# 					#Dummying this out for now because the implications of Agnes becoming a brain in a jar just seem too sweeping to incorporate - Skellie
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_sleepers_lab_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_sleepers_lab_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_well_room_clicked
+	# 						has_country_flag = DOME_fourth_level_purification_center_fixed
+	# 						OR = {
+	# 							has_idea_with_trait = col_water_mechanic
+	# 							has_idea_with_trait = bag_longtime_mechanic
+	# 						}
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_well_room_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_third_level_rocket_research_clicked
+	# 						has_tech = aerodynamics_tech_3
+	# 						NOT = {
+	# 							has_country_flag = DOME_third_level_rocket_research_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = dome_third_level_robobrain_chassis_research_clicked
+	# 						has_tech = robot_high_power_optics_tech
+	# 						NOT = {
+	# 							has_country_flag = dome_third_level_robobrain_chassis_research_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fourth_level_restroom_clicked
+	# 						has_country_flag = DOME_toilet_joke_flag_1
+	# 						has_country_flag = DOME_toilet_joke_flag_2
+	# 						has_country_flag = DOME_toilet_joke_flag_3
+	# 						has_country_flag = DOME_toilet_joke_flag_4
+	# 						NOT = {
+	# 							has_country_flag = DOME_fourth_level_restroom_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fourth_level_water_storage_clicked
+	# 						has_country_flag = DOME_fourth_level_purification_center_fixed
+	# 						OR = {
+	# 							has_idea_with_trait = col_water_mechanic
+	# 							has_idea_with_trait = bag_longtime_mechanic
+	# 						}
+	# 						NOT = {
+	# 							has_country_flag = DOME_fourth_level_water_storage_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fourth_level_reactor_access_clicked
+	# 						has_tech = resource_generator_power_tech_3
+	# 						has_country_flag = DOME_fifth_level_emergency_generator_fixed
+	# 						NOT = {
+	# 							has_country_flag = DOME_fourth_level_reactor_access_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fourth_level_purification_center_clicked
+	# 						has_tech = resource_generator_water_tech_3
+	# 						OR = {
+	# 							has_idea_with_trait = col_water_mechanic
+	# 							has_idea_with_trait = bag_longtime_mechanic
+	# 						}
+	# 						NOT = {
+	# 							has_country_flag = DOME_fourth_level_purification_center_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fifth_level_emergency_generator_clicked
+	# 						has_tech = resource_generator_power_tech_2
+	# 						NOT = {
+	# 							has_country_flag = DOME_fifth_level_emergency_generator_explored
+	# 						}
+	# 					}
+	# 					has_country_flag = DOME_fifth_level_zax_ai_clicked
+	# 					#SPECIAL CASE! Do not need an _explored flag
+	# 				}
+	# 			}
+	# 		}
+	# 		button_preq_enter_room_click_enabled = {
+	# 			ROOT = {
+	# 				#Set up an array with all possible flags for here later, -McGebe, ##TODO!
+	# 				OR = {
+	# 					AND = {
+	# 						has_country_flag = DOME_first_level_hydroponics_garden_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_first_level_hydroponics_garden_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_first_level_water_pump_shack_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_first_level_water_pump_shack_fixed
+	# 							#NOTE! Because of the water related side-quest having two-set of flags would be unnecessary.
+	# 							#_fixed will function here instead of _explored good enough
+	# 						}
+	# 					}
+	# 					#AND = {
+	# 					#	has_country_flag = DOME_first_level_officer_quarters_clicked
+	# 					#	NOT = {
+	# 					#		has_country_flag = DOME_first_level_officer_quarters_explored
+	# 					#	}
+	# 					#}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_weapons_lab_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_weapons_lab_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_weapons_lab_testing_chamber_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_weapons_lab_testing_chamber_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_armour_lab_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_armour_lab_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_armour_lab_testing_chamber_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_armour_lab_testing_chamber_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_gym_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_gym_explored
+	# 						}
+	# 					}
+	# 					#AND = {
+	# 					#	has_country_flag = dome_second_level_robobrain_lab_clicked
+	# 					#	NOT = {
+	# 					#		has_country_flag = dome_second_level_robobrain_lab_explored
+	# 					#	}
+	# 					#}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_code_lab_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_code_lab_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = dome_second_level_sleepers_lab_clicked
+	# 						NOT = {
+	# 							has_country_flag = dome_second_level_sleepers_lab_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_second_level_well_room_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_well_room_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_third_level_rocket_research_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_third_level_rocket_research_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = dome_third_level_robobrain_chassis_research_clicked
+	# 						NOT = {
+	# 							has_country_flag = dome_third_level_robobrain_chassis_research_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fourth_level_water_storage_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_fourth_level_water_storage_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fourth_level_reactor_access_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_fourth_level_reactor_access_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fourth_level_purification_center_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_fourth_level_purification_center_explored
+	# 						}
+	# 					}
+	# 					AND = {
+	# 						has_country_flag = DOME_fifth_level_emergency_generator_clicked
+	# 						NOT = {
+	# 							has_country_flag = DOME_fifth_level_emergency_generator_explored
+	# 						}
+	# 					}
+	# 					has_country_flag = DOME_fifth_level_zax_ai_clicked
+	# 					#SPECIAL CASE! Do not need an _explored flag
+	# 				}
+	# 			}
+	# 		}
+	# 		button_reward_enter_room_click_enabled = {
+	# 			ROOT = {
+	# 				any_room_check = yes
+	# 			}
+	# 		}
+	# 		enter_preq_desc_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_show_room_preq
+	# 			}
+	# 		}
+	# 		enter_rewards_desc_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_show_room_reward
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# boulder_dome_sublevels_first_level_window = {
+	# 	context_type = player_context
+	# 	window_name = "dome_sublevels_first_level"
+	# 	#parent_window_token = politics_tab
+	# 	#parent_window_name = boulder_dome_sublevels_topbar
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		568 = {
+	# 			has_state_flag = show_dome_outside
+	# 			has_state_flag = show_dome_sublevels
+	# 			has_state_flag = show_dome_sublevel_1
+	# 		}
+	# 		NOT = {
+	# 			568 = {
+	# 				OR = {
+	# 					has_state_flag = show_dome_sublevel_2
+	# 					has_state_flag = show_dome_sublevel_3
+	# 					has_state_flag = show_dome_sublevel_4
+	# 					has_state_flag = show_dome_sublevel_5
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		dome_first_level_elevator_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_elevator_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_east_garage_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_east_garage_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_galenski_quarters_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_galenski_quarters_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_lobby_entrance_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_lobby_entrance_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_baggers_quarters_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_baggers_quarters_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_storage_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_storage_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_toilet_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_toilet_clicked
+	# 				set_country_flag = DOME_toilet_joke_flag_1
+	# 			}
+	# 		}
+	# 		dome_first_level_west_garage_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_west_garage_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_kitchen_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_kitchen_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_quarantine_entrance_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_quarantine_entrance_clicked
+	# 			}
+	# 		}
+	# 		dome_first_level_officer_quarters_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_officer_quarters_clicked
+	# 				#set_country_flag = DOME_spec_requirement
+	# 			}
+	# 		}
+	# 		dome_first_level_hydroponics_garden_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_hydroponics_garden_clicked
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_first_level_water_pump_shack_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_first_level_water_pump_shack_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# boulder_dome_sublevels_second_level_window = {
+	# 	context_type = player_context
+	# 	window_name = "dome_sublevels_second_level"
+	# 	#parent_window_token = politics_tab
+	# 	#parent_window_name = boulder_dome_sublevels_topbar
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		568 = {
+	# 			has_state_flag = show_dome_outside
+	# 			has_state_flag = show_dome_sublevels
+	# 			has_state_flag = show_dome_sublevel_2
+	# 		}
+	# 		NOT = {
+	# 			568 = {
+	# 				OR = {
+	# 					has_state_flag = show_dome_sublevel_1
+	# 					has_state_flag = show_dome_sublevel_3
+	# 					has_state_flag = show_dome_sublevel_4
+	# 					has_state_flag = show_dome_sublevel_5
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	triggers = {
+	# 		dome_second_level_weapons_lab_testing_chamber_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_second_level_weapons_lab_visited
+	# 			}
+	# 		}
+	# 		dome_second_level_armour_lab_testing_chamber_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_second_level_armour_lab_visited
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_1_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_second_level_plague_lab_visited
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_2_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_second_level_plague_lab_visited
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_3_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_second_level_plague_lab_visited
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_4_visible = {
+	# 			ROOT = {
+	# 				has_country_flag = DOME_second_level_plague_lab_visited
+	# 			}
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		dome_second_level_elevator_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_elevator_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_goddard_office_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_goddard_office_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_agnes_office_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_agnes_office_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_1_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_1_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_2_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_2_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_3_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_3_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_4_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_4_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_5_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_5_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_6_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_6_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_7_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_7_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_8_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_8_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_9_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_9_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_10_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_10_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_common_residence_11_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_common_residence_11_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_toilet_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_toilet_clicked
+	# 				set_country_flag = DOME_toilet_joke_flag_2
+	# 			}
+	# 		}
+	# 		dome_second_level_gym_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_gym_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_weapons_lab_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_weapons_lab_clicked
+	# 				set_country_flag = DOME_spec_reward
+	# 				if = {
+	# 					limit = {
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_weapons_lab_visited
+	# 						}
+	# 					}
+	# 					set_country_flag = DOME_second_level_weapons_lab_visited
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_second_level_weapons_lab_testing_chamber_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_weapons_lab_testing_chamber_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_second_level_armour_lab_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_armour_lab_clicked
+	# 				set_country_flag = DOME_spec_reward
+	# 				if = {
+	# 					limit = {
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_armour_lab_visited
+	# 						}
+	# 					}
+	# 					set_country_flag = DOME_second_level_armour_lab_visited
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_second_level_armour_lab_testing_chamber_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_armour_lab_testing_chamber_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_plague_lab_clicked
+	# 				if = {
+	# 					limit = {
+	# 						NOT = {
+	# 							has_country_flag = DOME_second_level_plague_lab_visited
+	# 						}
+	# 					}
+	# 					set_country_flag = DOME_second_level_plague_lab_visited
+	# 				}
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_1_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_plague_lab_terminal_1_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_2_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_plague_lab_terminal_2_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_3_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_plague_lab_terminal_3_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_plague_lab_terminal_4_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_plague_lab_terminal_4_clicked
+	# 			}
+	# 		}
+	# 		dome_second_level_robobrain_lab_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_robobrain_lab_clicked
+	# 				#set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_second_level_code_lab_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_code_lab_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_second_level_sleepers_lab_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_sleepers_lab_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_second_level_well_room_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_second_level_well_room_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# boulder_dome_sublevels_third_level_window = {
+	# 	context_type = player_context
+	# 	window_name = "dome_sublevels_third_level"
+	# 	#parent_window_token = politics_tab
+	# 	#parent_window_name = boulder_dome_sublevels_topbar
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		568 = {
+	# 			has_state_flag = show_dome_outside
+	# 			has_state_flag = show_dome_sublevels
+	# 			has_state_flag = show_dome_sublevel_3
+	# 		}
+	# 		NOT = {
+	# 			568 = {
+	# 				OR = {
+	# 					has_state_flag = show_dome_sublevel_1
+	# 					has_state_flag = show_dome_sublevel_2
+	# 					has_state_flag = show_dome_sublevel_4
+	# 					has_state_flag = show_dome_sublevel_5
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		dome_third_level_elevator_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_elevator_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_water_pipe_maintenance_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_water_pipe_maintenance_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_decontamination_chamber_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_decontamination_chamber_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_decontamination_chamber_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_decontamination_chamber_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_energy_research_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_energy_research_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_steam_research_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_steam_research_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_bathroom_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_bathroom_clicked
+	# 				set_country_flag = DOME_toilet_joke_flag_3
+	# 			}
+	# 		}
+	# 		dome_third_level_lounge_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_lounge_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_rocket_research_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_rocket_research_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_third_level_solar_laboratory_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_solar_laboratory_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_living_quarters_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_living_quarters_one_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_living_quarters_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_living_quarters_two_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_office_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_office_one_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_office_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_office_two_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_office_storage_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_office_storage_clicked
+	# 			}
+	# 		}
+	# 		dome_third_level_executive_toilet_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_third_level_executive_toilet_clicked
+	# 				set_country_flag = DOME_toilet_joke_flag_4
+	# 			}
+	# 		}
+	# 		dome_third_level_robobrain_chassis_research_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = dome_third_level_robobrain_chassis_research_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_third_level_long_distance_communication_research_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = dome_third_level_long_distance_communication_research_clicked
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# boulder_dome_sublevels_fourth_level_window = {
+	# 	context_type = player_context
+	# 	window_name = "dome_sublevels_fourth_level"
+	# 	#parent_window_token = politics_tab
+	# 	#parent_window_name = boulder_dome_sublevels_topbar
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		568 = {
+	# 			has_state_flag = show_dome_outside
+	# 			has_state_flag = show_dome_sublevels
+	# 			has_state_flag = show_dome_sublevel_4
+	# 		}
+	# 		NOT = {
+	# 			568 = {
+	# 				OR = {
+	# 					has_state_flag = show_dome_sublevel_1
+	# 					has_state_flag = show_dome_sublevel_2
+	# 					has_state_flag = show_dome_sublevel_3
+	# 					has_state_flag = show_dome_sublevel_5
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		dome_fourth_level_elevator_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_elevator_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_water_storage_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_water_storage_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_fourth_level_restroom_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_restroom_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_robobrain_rechargers_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_robobrain_rechargers_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_storage_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_storage_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_sleepers_chamber_one_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_sleepers_chamber_one_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_sleepers_chamber_two_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_sleepers_chamber_two_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_sleepers_chamber_three_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_sleepers_chamber_three_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_sleepers_chamber_four_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_sleepers_chamber_four_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_another_sleepers_chamber_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_another_sleepers_chamber_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_brain_bar_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_brain_bar_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_reactor_access_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_reactor_access_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_fourth_level_purification_center_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_purification_center_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_fourth_level_morgue_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_morgue_clicked
+	# 			}
+	# 		}
+	# 		dome_fourth_level_cement_grave_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fourth_level_cement_grave_clicked
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# boulder_dome_sublevels_fifth_level_window = {
+	# 	context_type = player_context
+	# 	window_name = "dome_sublevels_fifth_level"
+	# 	#parent_window_token = politics_tab
+	# 	#parent_window_name = boulder_dome_sublevels_topbar
+	# 	visible = {
+	# 		original_tag = BAG
+	# 		568 = {
+	# 			has_state_flag = show_dome_outside
+	# 			has_state_flag = show_dome_sublevels
+	# 			has_state_flag = show_dome_sublevel_5
+	# 		}
+	# 		NOT = {
+	# 			568 = {
+	# 				OR = {
+	# 					has_state_flag = show_dome_sublevel_1
+	# 					has_state_flag = show_dome_sublevel_2
+	# 					has_state_flag = show_dome_sublevel_3
+	# 					has_state_flag = show_dome_sublevel_4
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	effects = {
+	# 		dome_fifth_level_elevator_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_elevator_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_zax_ai_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_zax_ai_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_emergency_generator_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_emergency_generator_clicked
+	# 				set_country_flag = DOME_spec_requirement
+	# 				set_country_flag = DOME_spec_reward
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_1_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_2_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_3_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_4_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_5_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_6_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_7_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_8_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_9_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_10_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_11_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_12_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_13_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_14_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 		dome_fifth_level_mainframe_databank_15_click = {
+	# 			ROOT = {
+	# 				clear_all_room_checks = yes
+	# 				set_country_flag = DOME_fifth_level_mainframe_databank_clicked
+	# 			}
+	# 		}
+	# 	}
+	# }
+}

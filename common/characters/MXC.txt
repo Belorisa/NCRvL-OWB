@@ -1,0 +1,808 @@
+characters = {
+	MXC_andrea_brixley = {
+		name = MXC_ANDREA_BRIXLEY_NAME
+		portraits = {
+			army = {
+				large = GFX_Portrait_MXC_leader
+				small = GFX_idea_MXC_leader
+			}
+			civilian = {
+				large = GFX_Portrait_MXC_leader
+				small = GFX_idea_MXC_leader
+			}
+		}
+		country_leader = {
+			desc = MXC_ANDREA_BRIXLEY_DESC
+			ideology = technocracy
+			traits = {
+				isolationist
+				fortifications_expert
+				challenged_leadership
+				mxc_protector_weak_locked
+				colorado_family_locked
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		country_leader = {
+			desc = MXC_ANDREA_BRIXLEY_DESC_GOOD
+			ideology = town_hall_democracy
+			traits = {
+				fortifications_expert
+				mxc_protector_weak_locked
+				colorado_family
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = MXC_ANDREA_BRIXLEY_army_chief
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_andrea_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		field_marshal = {
+			traits = {
+				enduring_trait
+				perceptive_trait
+				bunker_kid_trait
+				pain_train_trait
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	MXC_reg_billings = {
+		name = MXC_PALADIN_BILLINGS_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_billings
+				large = GFX_Portrait_MXC_billings
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = MXC_BILLINGS_army_chief
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_billings_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		corps_commander = {
+			desc = MXC_PALADIN_BILLINGS_DESC
+			traits = {
+				bunker_kid_trait
+				strong_trait
+				enduring_trait
+				pain_train_trait
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	MXC_knight_atom = {
+		name = MXC_KNIGHT_ATOM_NAME
+		portraits = {
+			army = {
+				large = GFX_Portrait_MXC_atom
+				small = GFX_idea_MXC_atom
+			}
+		}
+		advisor = {
+			available = {
+				has_completed_focus = maxson_bos_truchas_peak
+			}
+			slot = high_command
+			idea_token = MXC_KNIGHT_ATOM_high_command
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_atom_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_completed_focus = maxson_bos_truchas_peak
+			}
+			traits = {
+				bunker_kid_trait
+				survivalist_trait
+				desert_fox
+				agile_trait
+				lucky_trait
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	MXC_scribe_elrick = {
+		name = MXC_SCRIBE_ELRICK_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_elrick
+			}
+		}
+		advisor = {
+			# available = {
+			# 	OR = {
+			# 		has_completed_focus = maxson_bos_robot_city_territory_final
+			# 		has_completed_focus = maxson_bos_robot_city_ally_final
+			# 	}
+			# }
+			slot = economic_advisor
+			idea_token = MXC_SCRIBE_ELRICK_cultural_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_elrick_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_trader_dan = {
+		name = MXC_TRADER_DAN_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_dan
+			}
+		}
+		advisor = {
+			available = {
+				has_completed_focus = maxson_bos_scorpions_territory_final
+			}
+			slot = cultural_advisor
+			idea_token = MXC_TRADER_DAN_economic_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_dan_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_paladin_corsetti = {
+		name = MXC_PALADIN_CORSETTI_NAME
+		portraits = {
+			army = {
+				large = GFX_Portrait_MXC_corsetti
+			}
+		}
+		corps_commander = {
+			desc = MXC_PALADIN_CORSETTI_DESC
+			traits = {
+				pain_train_trait
+				agile_trait
+				lucky_trait
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	MXC_paladin_niels = {
+		name = MXC_PALADIN_NIELS_NAME
+		portraits = {
+			army = {
+				large = GFX_Portrait_MXC_niels
+			}
+		}
+		corps_commander = {
+			desc = MXC_PALADIN_NIELS_DESC
+			traits = {
+				pain_train_trait
+				bunker_kid_trait
+				agile_trait
+				lucky_trait
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		country_leader = {
+			ideology = feudalism
+			desc = MXC_PALADIN_NIELS_DESC
+			expire = "2292.1.1.12"
+			id = -1
+		}
+	}
+
+	MXC_paladin_deering = {
+		name = MXC_PALADIN_DEERING_NAME
+		portraits = {
+			army = {
+				large = GFX_Portrait_MXC_deering
+			}
+		}
+		corps_commander = {
+			desc = MXC_PALADIN_DEERING_DESC
+			traits = {
+				enduring_trait
+				perceptive_trait
+				bunker_kid_trait
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	MXC_simon_sullivan = {
+		name = MXC_SIMON_SULLIVAN_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Brotherhood_Generic_4
+				small = GFX_idea_brotherhood_Generic_4
+			}
+			army = {
+				large = GFX_Portrait_Brotherhood_Generic_4
+				small = GFX_idea_brotherhood_Generic_4
+			}
+		}
+		country_leader = {
+			ideology = town_hall_democracy
+			desc = MXC_SIMON_SULLIVAN_DESC
+			traits = {
+				fortification_engineer
+				quartermaster_general
+			}
+			expire = "2282.1.1.12"
+			id = -1
+		}
+	}
+	MXC_james_lee = {
+		name = MXC_JAMES_LEE_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Brotherhood_Generic_5
+				small = GFX_idea_brotherhood_Generic_5
+			}
+			army = {
+				large = GFX_Portrait_Brotherhood_Generic_5
+				small = GFX_idea_brotherhood_Generic_5
+			}
+		}
+	}
+	MXC_samuel_gibbs = {
+		name = MXC_SAMUEL_GIBBS_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Brotherhood_Generic_4
+				small = GFX_idea_brotherhood_Generic_4
+			}
+			army = {
+				large = GFX_Portrait_Brotherhood_Generic_4
+				small = GFX_idea_brotherhood_Generic_4
+			}
+		}
+		country_leader = {
+			ideology = gang
+			desc = MXC_SAMUEL_GIBBS_DESC
+			traits = {
+				silent_workhorse
+				well_liked_leader
+			}
+			expire = "2287.1.1.12"
+			id = -1
+		}
+	}
+	MXC_knight_banks = {
+		name = MXC_KNIGHT_BANKS_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_banks
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = MXC_KNIGHT_BANKS_economic_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_backbone_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_scribe_monroe = {
+		name = MXC_SCRIBE_MONROE_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_monroe
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = MXC_SCRIBE_MONROE_economic_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				brotherhood_scribe
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_scribe_pierce = {
+		name = MXC_SCRIBE_PIERCE_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_pierce
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = MXC_SCRIBE_PIERCE_economic_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_onetrack_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_sara_winters = {
+		name = MXC_SARA_WINTERS_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_mechanic
+			}
+		}
+		advisor = {
+			available = {
+				has_completed_focus = maxson_bos_ironalliance_b
+			}
+			slot = economic_advisor
+			idea_token = MXC_SARA_WINTERS_economic_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_mechanic_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	MXC_carolyn = {
+		name = MXC_CAROLYN_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_fashion
+			}
+		}
+		advisor = {
+			available = {
+				has_completed_focus = maxson_bos_choir_5
+			}
+			slot = economic_advisor
+			idea_token = MXC_CAROLYN_economic_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_fashion_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	MXC_maddoc_conley = {
+		name = MXC_MADDOC_CONLEY_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_coly
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = MXC_MADDOC_CONLEY_cultural_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_envoy_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_aidan_young = {
+		name = MXC_AIDAN_YOUNG_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_young
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = MXC_AIDAN_YOUNG_cultural_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_iron_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_knight_hood = {
+		name = MXC_KNIGHT_HOOD_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_hood
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = MXC_KNIGHT_HOOD_cultural_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_integration_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_paladin_greene = {
+		name = MXC_PALADIN_GREENE_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_greene
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = MXC_PALADIN_GREENE_cultural_advisor
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_acquisition_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_gags = {
+		name = MXC_GAGS_NAME
+		portraits = {
+			army = {
+				small = GFX_big_grass_advisor_15
+			}
+		}
+
+		advisor = {
+			slot = cultural_advisor
+			idea_token = MXC_gags_cultural_advisor
+			# available = {
+			# 	has_completed_focus = maxson_bos_robot_ally_a
+			# 	#original_tag = MXC
+			# }
+			traits = {
+				MXC_comedian_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_broderick_caldwell = {
+		name = MXC_BRODERICK_CALDWELL_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_caldwell
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MXC_BRODERICK_CALDWELL_high_command
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_vic_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_blondie = {
+		name = MXC_BLONDIE_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_blonde
+			}
+		}
+		advisor = {
+			available = {
+				has_completed_focus = maxson_bos_scorpions_territory_a
+			}
+			slot = high_command
+			idea_token = MXC_BLONDIE_high_command
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_blondie_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_grey_atkinson = {
+		name = MXC_GREY_ATKINSON_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_atkinson
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MXC_GREY_ATKINSON_high_command
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_burden_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_scribe_gallagher = {
+		name = MXC_SCRIBE_GALLAGHER_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_scribe
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MXC_SCRIBE_GALLAGHER_high_command
+			ledger = army
+			allowed = {
+				original_tag =MXC
+			}
+			traits = {
+				MXC_smarter_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_knight_hardee = {
+		name = MXC_KNIGHT_HARDEE_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_hardee
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MCX_KNIGHT_HARDEE_high_command
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_wasteland_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_scout_gallagher = {
+		name = MXC_SCOUT_GALLAGHER_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_gallagher
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = MXC_SCOUT_GALLAGHER_economic_advisor
+			ledger = army
+			allowed = {
+				original_tag =MXC
+			}
+			traits = {
+				surveyor
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_lancer_angus = {
+		name = MXC_LANCER_ANGUS_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_MXC_angus
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = MXC_LANCER_ANGUS_air_chief
+			ledger = air
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				MXC_air_trait
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_paladin_malachi = {
+		name = MXC_PALADIN_MALACHI_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_DES_General_2
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = MXC_PALADIN_MALACHI_navy_chief
+			ledger = navy
+			allowed = {
+				original_tag = MXC
+			}
+			traits = {
+				settler_navy_buff
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_paladin_jackson = {
+		name = MXC_PALADIN_JACKSON_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_WBH_advisor4
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = MXC_PALADIN_JACKSON_theorist
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			research_bonus = {
+				cat_elite_army = 0.15
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	MXC_head_scribe_armond = {
+		name = MXC_HEAD_SCRIBE_ARMOND_NAME
+		portraits = {
+			army = {
+				small = GFX_idea_WBH_advisor6
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = MXC_HEAD_SCRIBE_ARMOND_theorist
+			ledger = army
+			allowed = {
+				original_tag = MXC
+			}
+			research_bonus = {
+				cat_automated_warfare = 0.15
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}

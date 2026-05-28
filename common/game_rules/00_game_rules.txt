@@ -34,15 +34,15 @@ NCR_SHI_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "SHI/EUR"
-		text = "RULE_UNIFIERS_SHI/EUR"
-		desc = "RULE_UNIFIERS_SHI/EUR_DESC"
+		name = "SHI_EUR"
+		text = "RULE_UNIFIERS_SHI_EUR"
+		desc = "RULE_UNIFIERS_SHI_EUR_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "SHI/EUR/ARR"
-		text = "RULE_UNIFIERS_SHI/EUR/ARR"
-		desc = "RULE_UNIFIERS_SHI/EUR/ARR_DESC"
+		name = "SHI_EUR_ARR"
+		text = "RULE_UNIFIERS_SHI_EUR_ARR"
+		desc = "RULE_UNIFIERS_SHI_EUR_ARR_DESC"
 		allow_achievements = yes
 	}
 }
@@ -57,15 +57,15 @@ NCR_EUR_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "EUR/ARR"
-		text = "RULE_UNIFIERS_EUR/ARR"
-		desc = "RULE_UNIFIERS_EUR/ARR_DESC"
+		name = "EUR_ARR"
+		text = "RULE_UNIFIERS_EUR_ARR"
+		desc = "RULE_UNIFIERS_EUR_ARR_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "EUR/ARR/OREGON"
-		text = "RULE_UNIFIERS_EUR/ARR/OREGON"
-		desc = "RULE_UNIFIERS_EUR/ARR/OREGON_DESC"
+		name = "EUR_ARR_OREGON"
+		text = "RULE_UNIFIERS_EUR_ARR_OREGON"
+		desc = "RULE_UNIFIERS_EUR_ARR_OREGON_DESC"
 		allow_achievements = yes
 	}
 }
@@ -80,21 +80,21 @@ NCR_ARR_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "ARR/EUR"
-		text = "RULE_UNIFIERS_ARR/EUR"
-		desc = "RULE_UNIFIERS_ARR/EUR_DESC"
+		name = "ARR_EUR"
+		text = "RULE_UNIFIERS_ARR_EUR"
+		desc = "RULE_UNIFIERS_ARR_EUR_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "ARR/OREGON"
-		text = "RULE_UNIFIERS_ARR/OREGON"
-		desc = "RULE_UNIFIERS_ARR/OREGON_DESC"
+		name = "ARR_OREGON"
+		text = "RULE_UNIFIERS_ARR_OREGON"
+		desc = "RULE_UNIFIERS_ARR_OREGON_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "ARR/EUR/OREGON"
-		text = "RULE_UNIFIERS_ARR/EUR/OREGON"
-		desc = "RULE_UNIFIERS_ARR/EUR/OREGON_DESC"
+		name = "ARR_EUR_OREGON"
+		text = "RULE_UNIFIERS_ARR_EUR_OREGON"
+		desc = "RULE_UNIFIERS_ARR_EUR_OREGON_DESC"
 		allow_achievements = yes
 	}
 }
@@ -109,21 +109,21 @@ NCR_NEW_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "NEW/DES"
-		text = "RULE_UNIFIERS_NEW/DES"
-		desc = "RULE_UNIFIERS_NEW/DES_DESC"
+		name = "NEW_DES"
+		text = "RULE_UNIFIERS_NEW_DES"
+		desc = "RULE_UNIFIERS_NEW_DES_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "NEW/DES/OREGON"
-		text = "RULE_UNIFIERS_NEW/DES/OREGON"
-		desc = "RULE_UNIFIERS_NEW/DES/OREGON_DESC"
+		name = "NEW_DES_OREGON"
+		text = "RULE_UNIFIERS_NEW_DES_OREGON"
+		desc = "RULE_UNIFIERS_NEW_DES_OREGON_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "NEW/Oregon"
-		text = "RULE_UNIFIERS_NEW/OREGON"
-		desc = "RULE_UNIFIERS_NEW/Oregon_DESC"
+		name = "NEW_Oregon"
+		text = "RULE_UNIFIERS_NEW_OREGON"
+		desc = "RULE_UNIFIERS_NEW_Oregon_DESC"
 		allow_achievements = yes
 	}
 }
@@ -138,21 +138,21 @@ NCR_VLT_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "VLT/NEW"
-		text = "RULE_UNIFIERS_VLT/NEW"
-		desc = "RULE_UNIFIERS_VLT/NEW_DESC"
+		name = "VLT_NEW"
+		text = "RULE_UNIFIERS_VLT_NEW"
+		desc = "RULE_UNIFIERS_VLT_NEW_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "VLT/OREGON"
-		text = "RULE_UNIFIERS_VLT/OREGON"
-		desc = "RULE_UNIFIERS_VLT/OREGON_DESC"
+		name = "VLT_OREGON"
+		text = "RULE_UNIFIERS_VLT_OREGON"
+		desc = "RULE_UNIFIERS_VLT_OREGON_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "VLT/NEW/OREGON"
-		text = "RULE_UNIFIERS_VLT/NEW/OREGON"
-		desc = "RULE_UNIFIERS_VLT/NEW/OREGON_DESC"
+		name = "VLT_NEW_OREGON"
+		text = "RULE_UNIFIERS_VLT_NEW_OREGON"
+		desc = "RULE_UNIFIERS_VLT_NEW_OREGON_DESC"
 		allow_achievements = yes
 	}
 } 
@@ -167,15 +167,15 @@ NCR_DES_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "DES/NEW"
-		text = "RULE_UNIFIERS_DES/NEW"
-		desc = "RULE_UNIFIERS_DES/NEW_DESC"
+		name = "DES_NEW"
+		text = "RULE_UNIFIERS_DES_NEW"
+		desc = "RULE_UNIFIERS_DES_NEW_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "DES/NEW/OREGON"
-		text = "RULE_UNIFIERS_DES/NEW/OREGON"
-		desc = "RULE_UNIFIERS_DES/NEW/OREGON_DESC"
+		name = "DES_NEW_OREGON"
+		text = "RULE_UNIFIERS_DES_NEW_OREGON"
+		desc = "RULE_UNIFIERS_DES_NEW_OREGON_DESC"
 		allow_achievements = yes
 	}
 }
@@ -190,15 +190,15 @@ NCR_VEG_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "DES/VEG"
-		text = "RULE_UNIFIERS_DES/VEG"
-		desc = "RULE_UNIFIERS_DES/VEG_DESC"
+		name = "DES_VEG"
+		text = "RULE_UNIFIERS_DES_VEG"
+		desc = "RULE_UNIFIERS_DES_VEG_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "NCR/VEG"
-		text = "RULE_UNIFIERS_NCR/VEG"
-		desc = "RULE_UNIFIERS_NCR/VEG_DESC"
+		name = "NCR_VEG"
+		text = "RULE_UNIFIERS_NCR_VEG"
+		desc = "RULE_UNIFIERS_NCR_VEG_DESC"
 		allow_achievements = yes
 	}
 }
@@ -213,9 +213,9 @@ NCR_MOT_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "NCR/MOT"
-		text = "RULE_UNIFIERS_NCR/MOT"
-		desc = "RULE_UNIFIERS_NCR/MOT_DESC"
+		name = "NCR_MOT"
+		text = "RULE_UNIFIERS_NCR_MOT"
+		desc = "RULE_UNIFIERS_NCR_MOT_DESC"
 		allow_achievements = yes
 	}
 }
@@ -230,15 +230,15 @@ Legion_TWO_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "TWO/GDH"
-		text = "RULE_UNIFIERS_TWO/GDH"
-		desc = "RULE_UNIFIERS_TWO/GDH_DESC"
+		name = "TWO_GDH"
+		text = "RULE_UNIFIERS_TWO_GDH"
+		desc = "RULE_UNIFIERS_TWO_GDH_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "TWO/GDH/LEGIONEXT"
-		text = "RULE_UNIFIERS_TWO/GDH/LEGIONEXT"
-		desc = "RULE_UNIFIERS_TWO/GDH/LEGIONEXT_DESC"
+		name = "TWO_GDH_LEGIONEXT"
+		text = "RULE_UNIFIERS_TWO_GDH_LEGIONEXT"
+		desc = "RULE_UNIFIERS_TWO_GDH_LEGIONEXT_DESC"
 		allow_achievements = yes
 	}
 }
@@ -253,15 +253,15 @@ Legion_GDH_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "GDH/TWO"
-		text = "RULE_UNIFIERS_GDH/TWO"
-		desc = "RULE_UNIFIERS_GDH/TWO_DESC"
+		name = "GDH_TWO"
+		text = "RULE_UNIFIERS_GDH_TWO"
+		desc = "RULE_UNIFIERS_GDH_TWO_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "GDH/TWO/LEGIONEXT"
-		text = "RULE_UNIFIERS_GDH/TWO/LEGIONEXT"
-		desc = "RULE_UNIFIERS_GDH/TWO/LEGIONEXT_DESC"
+		name = "GDH_TWO_LEGIONEXT"
+		text = "RULE_UNIFIERS_GDH_TWO_LEGIONEXT"
+		desc = "RULE_UNIFIERS_GDH_TWO_LEGIONEXT_DESC"
 		allow_achievements = yes
 	}
 }
@@ -276,22 +276,22 @@ Legion_NAV_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "NAV/RES"
-		text = "RULE_UNIFIERS_NAV/RES"
-		desc = "RULE_UNIFIERS_NAV/RES_DESC"
+		name = "NAV_RES"
+		text = "RULE_UNIFIERS_NAV_RES"
+		desc = "RULE_UNIFIERS_NAV_RES_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "NAV/RES/LANIUS"
-		text = "RULE_UNIFIERS_NAV/RES/LANIUS"
-		desc = "RULE_UNIFIERS_NAV/RES/LANIUS_DESC"
+		name = "NAV_RES_LANIUS"
+		text = "RULE_UNIFIERS_NAV_RES_LANIUS"
+		desc = "RULE_UNIFIERS_NAV_RES_LANIUS_DESC"
 		allow_achievements = yes
 	}
 
 		option = {
-		name = "NAV/LANIUS"
-		text = "RULE_UNIFIERS_NAV/LANIUS"
-		desc = "RULE_UNIFIERS_NAV/LANIUS_DESC"
+		name = "NAV_LANIUS"
+		text = "RULE_UNIFIERS_NAV_LANIUS"
+		desc = "RULE_UNIFIERS_NAV_LANIUS_DESC"
 		allow_achievements = yes
 	}
 }
@@ -306,22 +306,22 @@ Legion_RES_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "RES/NAV"
-		text = "RULE_UNIFIERS_RES/NAV"
-		desc = "RULE_UNIFIERS_RES/NAV_DESC"
+		name = "RES_NAV"
+		text = "RULE_UNIFIERS_RES_NAV"
+		desc = "RULE_UNIFIERS_RES_NAV_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "RES/NAV/LANIUS"
-		text = "RULE_UNIFIERS_RES/NAV/LANIUS"
-		desc = "RULE_UNIFIERS_RES/NAV/LANIUS_DESC"
+		name = "RES_NAV_LANIUS"
+		text = "RULE_UNIFIERS_RES_NAV_LANIUS"
+		desc = "RULE_UNIFIERS_RES_NAV_LANIUS_DESC"
 		allow_achievements = yes
 	}
 
 		option = {
-		name = "RES/LANIUS"
-		text = "RULE_UNIFIERS_RES/LANIUS"
-		desc = "RULE_UNIFIERS_RES/LANIUS_DESC"
+		name = "RES_LANIUS"
+		text = "RULE_UNIFIERS_RES_LANIUS"
+		desc = "RULE_UNIFIERS_RES_LANIUS_DESC"
 		allow_achievements = yes
 	}
 }
@@ -336,15 +336,15 @@ Legion_WHT_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "WHT/EHT"
-		text = "RULE_UNIFIERS_WHT/EHT"
-		desc = "RULE_UNIFIERS_WHT/EHT_DESC"
+		name = "WHT_EHT"
+		text = "RULE_UNIFIERS_WHT_EHT"
+		desc = "RULE_UNIFIERS_WHT_EHT_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "WHT/EHT/COLORADO"
-		text = "RULE_UNIFIERS_WHT/EHT/COLORADO"
-		desc = "RULE_UNIFIERS_WHT/EHT/COLORADO_DESC"
+		name = "WHT_EHT_COLORADO"
+		text = "RULE_UNIFIERS_WHT_EHT_COLORADO"
+		desc = "RULE_UNIFIERS_WHT_EHT_COLORADO_DESC"
 		allow_achievements = yes
 	}
 }
@@ -359,15 +359,15 @@ Legion_EHT_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "EHT/WHT"
-		text = "RULE_UNIFIERS_EHT/WHT"
-		desc = "RULE_UNIFIERS_EHT/WHT_DESC"
+		name = "EHT_WHT"
+		text = "RULE_UNIFIERS_EHT_WHT"
+		desc = "RULE_UNIFIERS_EHT_WHT_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "EHT/WHT/COLORADO"
-		text = "RULE_UNIFIERS_EHT/WHT/COLORADO"
-		desc = "RULE_UNIFIERS_EHT/WHT/COLORADO_DESC"
+		name = "EHT_WHT_COLORADO"
+		text = "RULE_UNIFIERS_EHT_WHT_COLORADO"
+		desc = "RULE_UNIFIERS_EHT_WHT_COLORADO_DESC"
 		allow_achievements = yes
 	}
 }
@@ -382,21 +382,21 @@ Legion_IRN_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "IRN/UTAH"
-		text = "RULE_UNIFIERS_IRN/UTAH"
-		desc = "RULE_UNIFIERS_IRN/UTAH_DESC"
+		name = "IRN_UTAH"
+		text = "RULE_UNIFIERS_IRN_UTAH"
+		desc = "RULE_UNIFIERS_IRN_UTAH_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "IRN/LANIUS"
-		text = "RULE_UNIFIERS_IRN/LANIUS"
-		desc = "RULE_UNIFIERS_IRN/LANIUS_DESC"
+		name = "IRN_LANIUS"
+		text = "RULE_UNIFIERS_IRN_LANIUS"
+		desc = "RULE_UNIFIERS_IRN_LANIUS_DESC"
 		allow_achievements = yes
 	}
 		option = {
-		name = "IRN/LANIUS/UTAH"
-		text = "RULE_UNIFIERS_IRN/LANIUS/UTAH"
-		desc = "RULE_UNIFIERS_IRN/LANIUS/UTAH_DESC"
+		name = "IRN_LANIUS_UTAH"
+		text = "RULE_UNIFIERS_IRN_LANIUS_UTAH"
+		desc = "RULE_UNIFIERS_IRN_LANIUS_UTAH_DESC"
 		allow_achievements = yes
 	}
 }
@@ -411,21 +411,21 @@ Legion_CES_unifier = {
 		allow_achievements = yes
 	}
 	option = {
-		name = "CES/TEXAS"
-		text = "RULE_UNIFIERS_CES/TEXAS"
-		desc = "RULE_UNIFIERS_CES/TEXAS_DESC"
+		name = "CES_TEXAS"
+		text = "RULE_UNIFIERS_CES_TEXAS"
+		desc = "RULE_UNIFIERS_CES_TEXAS_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "CES/TWO/GDH"
-		text = "RULE_UNIFIERS_CES/TWO/GDH"
-		desc = "RULE_UNIFIERS_CES/TWO/GDH_DESC"
+		name = "CES_TWO_GDH"
+		text = "RULE_UNIFIERS_CES_TWO_GDH"
+		desc = "RULE_UNIFIERS_CES_TWO_GDH_DESC"
 		allow_achievements = yes
 	}
 		option = {
-		name = "CES/NAV/RES"
-		text = "RULE_UNIFIERS_CES/NAV/RES"
-		desc = "RULE_UNIFIERS_CES/NAV/RES_DESC"
+		name = "CES_NAV_RES"
+		text = "RULE_UNIFIERS_CES_NAV_RES"
+		desc = "RULE_UNIFIERS_CES_NAV_RES_DESC"
 		allow_achievements = yes
 	}
 }
@@ -1627,6 +1627,36 @@ GDH_ai_behavior = {
 	}
 }
 
+# Heaven's Guard (Heaven's Gate)
+HEA_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_HEA"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_HEA_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_HEA_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "MICHAEL"
+		text = "RULE_AI_BEHAVIOR_HEA_MICHAEL"
+		desc = "RULE_AI_BEHAVIOR_HEA_MICHAEL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "CONCLAVE"
+		text = "RULE_AI_BEHAVIOR_HEA_CONCLAVE"
+		desc = "RULE_AI_BEHAVIOR_HEA_CONCLAVE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "GIDEON"
+		text = "RULE_AI_BEHAVIOR_HEA_GIDEON"
+		desc = "RULE_AI_BEHAVIOR_HEA_GIDEON_DESC"
+		allow_achievements = yes
+	}
+}
+
 # Kingdom of Manitoba
 BRA_ai_behavior = {
 	name = "RULE_AI_BEHAVIOR_BRA"
@@ -2766,6 +2796,32 @@ WHT_ai_behavior = {
 		allow_achievements = yes
 	}
 }
+
+
+# Yellowstone
+ROS_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_ROS"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_ROS_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_ROS_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "RANGERS"
+		text = "RULE_AI_BEHAVIOR_ROS_RANGER"
+		desc = "RULE_AI_BEHAVIOR_ROS_RANGER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "MONAD"
+		text = "RULE_AI_BEHAVIOR_ROS_MONAD"
+		desc = "RULE_AI_BEHAVIOR_ROS_MONAD_DESC"
+		allow_achievements = yes
+	}
+}
+
 
 #############
 # MAP SETUP #
@@ -4139,6 +4195,23 @@ caps_system_toggle = {
 		name = "DISABLED"
 		text = "RULE_CAPS_SYSTEM_TOGGLE_DISABLED"
 		desc = "RULE_CAPS_SYSTEM_TOGGLE_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
+org_cooldown_reminder_toggle = {
+	name = "RULE_ORG_COOLDOWN_REMINDER"
+	group = "RULE_GROUP_GAMEPLAY"
+	default = {
+		name = "DISABLED"
+		text = "RULE_ORG_COOLDOWN_REMINDER_DISABLED"
+		desc = "RULE_ORG_COOLDOWN_REMINDER_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ENABLED"
+		text = "RULE_ORG_COOLDOWN_REMINDER_ENABLED"
+		desc = "RULE_ORG_COOLDOWN_REMINDER_ENABLED_DESC"
 		allow_achievements = yes
 	}
 }

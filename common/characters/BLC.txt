@@ -1248,7 +1248,7 @@ characters = {
 				original_tag = BLC
 			}
 			available = {
-				has_completed_focus = blc_fund_three_some_caravan
+				# has_completed_focus = blc_fund_three_some_caravan
 			}
 			traits = {
 				economic_expert

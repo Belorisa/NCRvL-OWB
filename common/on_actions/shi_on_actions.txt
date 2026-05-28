@@ -1,0 +1,117 @@
+# on_actions = {
+# 	on_startup = {
+# 		effect = {
+# 			SHI = {
+# 				SHI_A_Ron_Meyers = {
+# 					set_nationality = USA
+# 				}
+# 				if = {
+# 					limit = {
+# 						has_global_flag = SHI_emperor_norton_enabled_global_flag
+# 					}
+# 					country_event = {
+# 						id = nf_shi_april.1
+# 						days = 1
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	on_puppet = {
+# 		effect = {
+# 			if = {
+# 				limit = {
+# 					SHI = {
+# 						is_subject = yes
+# 						has_country_leader = {
+# 							character = SHI_emperor
+# 							ruling_only = yes
+# 						}
+# 					}
+# 				}
+# 				SHI = {
+# 					set_country_leader_description = {
+# 						ideology = ruler
+# 						desc = SHI_EMPEROR_ALT_DESC
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	on_capitulation = {
+# 		effect = {
+# 			if = {
+# 				limit = {
+# 					ROOT = { tag = NVS }
+# 				}
+# 				SHI = {
+# 					country_event = SHI_navarro.3
+# 				}
+# 			}
+# 		}
+# 	}
+# 	on_declare_war = {
+# 		effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = shi_dragon_accomodate_brothers
+# 					OR = {
+# 						AND = {
+# 							ROOT = { tag = SHI }
+# 							FROM = { tag = BOS }
+# 						}
+# 						AND = {
+# 							ROOT = { tag = BOS }
+# 							FROM = { tag = SHI }
+# 						}
+# 					}
+# 				}
+# 				SHI = {
+# 					country_event = SHI_aki.20
+# 				}
+# 			}
+# 		}
+# 	}
+# 	on_declare_war = {
+# 		effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = shi_crane_victory
+# 					NOT = {
+# 						has_completed_focus = shi_crane_ncr_crisis
+# 					}
+# 					OR = {
+# 						AND = {
+# 							ROOT = { tag = SHI }
+# 							FROM = { tag = NCR }
+# 						}
+# 						AND = {
+# 							ROOT = { tag = NCR }
+# 							FROM = { tag = SHI }
+# 						}
+# 					}
+# 				}
+# 				SHI = {
+# 					country_event = SHI_lo_pan.13
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	#on_monthly_SHI = {
+# 	#	 effect = {
+# 	#		 if = {
+# 	#			 limit = {
+# 	#				 OR = {
+# 	#					 has_idea = SHI_golden_tiger_legation_idea
+# 	#					 has_idea = SHI_golden_tiger_legation_idea_2
+# 	#				 }
+# 	#				 check_variable = {
+# 	#					 SHI_golden_tiger_influence > 20
+# 	#				 }
+# 	#			 }
+# 	#			 country_event = SHI_golden_tiger.5
+# 	#		 }
+# 	#	 }
+# 	#}
+# }

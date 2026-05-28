@@ -1,0 +1,1619 @@
+﻿# CODED BY THE COOLEST PERSON EVER, REAL!!!!!!!!!!!!!!!!!!!!!!!!!!
+# designed and written by Applefries who is really cool
+
+add_namespace = nf_COW
+
+#EVENT_INITIAL_1
+country_event = {
+	id = nf_COW.1
+	title = nf_COW.1.t
+	desc = nf_COW.1.d
+	is_triggered_only = yes
+	picture = GFX_event_brahmin_tractor_fields
+
+
+	option = {
+		name = nf_COW.1.a
+		add_ideas = COW_cowboy_cooperation
+		set_temp_variable = { caps_to_add = 50 }
+		add_caps = yes
+	}
+
+	option = {
+		name = nf_COW.1.b
+		add_ideas = COW_always_armed
+		add_equipment_to_stockpile = {
+			type = ballistic_equipment_1
+			amount = 500
+			producer = USA
+		}
+	}
+}
+
+#EVENT_INITIAL_2
+country_event = {
+	id = nf_COW.2
+	title = nf_COW.2.t
+	desc = nf_COW.2.d
+	is_triggered_only = yes
+	picture = GFX_event_ncr_won
+
+
+	option = {
+		name = nf_COW.2.a
+		add_ideas = COW_weakness_inaction
+	}
+
+	option = {
+		name = nf_COW.2.b
+		add_ideas = COW_afraid_of_death
+	}
+}
+
+#EVENT_INITIAL_3
+country_event = {
+	id = nf_COW.3
+	title = nf_COW.3.t
+	desc = nf_COW.3.d
+	is_triggered_only = yes
+	picture = GFX_event_desert_rangers_marching
+
+
+	option = {
+		name = nf_COW.3.a
+		add_ideas = COW_guerilla_fighers
+		country_event = nf_COW.18
+	}
+
+	option = {
+		name = nf_COW.3.b
+		add_ideas = COW_secret_rearmament
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+		country_event = nf_COW.18
+	}
+}
+
+#Legion war event
+country_event = {
+	id = nf_COW.4
+	title = nf_COW.4.t
+	desc = nf_COW.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_NCR_battle
+
+	option = {
+		name = nf_COW.4.a
+	}
+}
+
+#Forgive Me Mama
+country_event = {
+	id = nf_COW.5
+	title = nf_COW.5.t
+	desc = nf_COW.5.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.5.a
+	}
+}
+
+#The Shooting Stops...
+country_event = {
+	id = nf_COW.6
+	title = nf_COW.6.t
+	desc = nf_COW.6.d
+	is_triggered_only = yes
+	picture = GFX_event_ncr_won
+
+
+	option = {
+		name = nf_COW.6.a
+	}
+}
+
+#Citadel Memorial
+country_event = {
+	id = nf_COW.7
+	title = nf_COW.7.t
+	desc = nf_COW.7.d
+	is_triggered_only = yes
+	picture = GFX_event_GRD_star_citadel
+
+
+	option = {
+		name = nf_COW.7.a
+		add_victory_points = {
+			province = 8946
+			value = 5
+		}
+		set_province_name = { id = 8946 name = VICTORY_POINTS_8946_COW }
+	}
+}
+
+#A Hell Of Our Own Failin
+country_event = {
+	id = nf_COW.8
+	title = nf_COW.8.t
+	desc = nf_COW.8.d
+	is_triggered_only = yes
+	picture = GFX_event_ash_barrens
+
+
+	option = {
+		name = nf_COW.8.a
+	}
+}
+
+#You Can Never Drown The Pain
+country_event = {
+	id = nf_COW.9
+	title = nf_COW.9.t
+	desc = nf_COW.9.d
+	is_triggered_only = yes
+	picture = GFX_event_BRA_moon_and_fireworks
+
+
+	option = {
+		name = nf_COW.9.a
+		custom_effect_tooltip = COW_finale_tooltip
+		country_event = nf_COW.10
+	}
+}
+#The Terrible Thoughts We Think
+country_event = {
+	id = nf_COW.10
+	title = nf_COW.10.t
+	desc = nf_COW.10.d
+	is_triggered_only = yes
+	picture = GFX_event_vault_13_canteen
+
+
+	option = {
+		name = nf_COW.10.a
+		custom_effect_tooltip = COW_finale_a_tooltip
+		country_event = nf_COW.11
+	}
+
+	option = {
+		name = nf_COW.10.b
+		custom_effect_tooltip = COW_finale_b_tooltip
+		country_event = nf_COW.12
+	}
+}
+
+#Blue Moon, You Saw Me Standing Alone
+country_event = {
+	id = nf_COW.11
+	title = nf_COW.11.t
+	desc = nf_COW.11.d
+	is_triggered_only = yes
+	picture = GFX_event_cowboy_hat
+
+
+	option = {
+		name = nf_COW.11.a
+		if = {
+			limit = { has_idea = COW_weakness_inaction}
+			remove_ideas = COW_weakness_inaction
+		}
+		else = {
+			remove_ideas = COW_afraid_of_death
+		}
+		add_manpower = -1
+		retire_character = COW_billy_clanton
+		add_country_leader_role = {
+			character = COW_cowboy_council
+			promote_leader = yes
+			country_leader = {
+				ideology = town_hall_democracy
+				traits = {
+					cow_regional_council
+				}
+				expire = "3000.01.01.01"
+			}
+		}
+	}
+}
+
+#Let’s All Ride Into The Sunset Together
+country_event = {
+	id = nf_COW.12
+	title = nf_COW.12.t
+	desc = nf_COW.12.d
+	is_triggered_only = yes
+	picture = GFX_event_sunset_binoculars
+
+
+	option = {
+		name = nf_COW.12.a
+		add_country_leader_trait = cow_hero_of_arizona
+		if = {
+			limit = { has_idea = COW_weakness_inaction}
+			remove_ideas = COW_weakness_inaction
+		}
+		else = {
+			remove_ideas = COW_afraid_of_death
+		}
+	}
+}
+
+#The Kid, The Ranger, And The Ugly
+country_event = {
+	id = nf_COW.13
+	title = nf_COW.13.t
+	desc = nf_COW.13.d
+	is_triggered_only = yes
+	picture = GFX_event_NCR_watch
+
+
+	option = {
+		name = nf_COW.13.a
+	}
+}
+
+#Ranger, Oh Ranger, Don’t Be A Lone Ranger
+country_event = {
+	id = nf_COW.14
+	title = nf_COW.14.t
+	desc = nf_COW.14.d
+	is_triggered_only = yes
+	picture = GFX_event_ranger_unification_treaty_monument
+
+
+	option = {
+		name = nf_COW.14.a
+		if = {
+			limit = {
+				country_exists = DES
+				DES = {
+					OR = {
+						is_subject = no
+						is_subject_of = COW
+					}
+				}
+			}
+			DES = { country_event = nf_COW.21 }
+		}
+		else = { country_event = nf_COW.24 }
+	}
+}
+
+#This Ranger’s Bound To Meet His Death
+country_event = {
+	id = nf_COW.15
+	title = nf_COW.15.t
+	desc = nf_COW.15.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.15.a
+	}
+}
+
+#Keep The Peace. Forever.
+country_event = {
+	id = nf_COW.16
+	title = nf_COW.16.t
+	desc = nf_COW.16.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_event_assemble_the_legion
+
+
+	option = {
+		name = nf_COW.16.a
+		effect_tooltip = { add_ideas = COW_legion_resistance_massive }
+		custom_effect_tooltip = COW_legion_resistance_tooltip
+	}
+}
+
+#Texas Comes To Town
+country_event = {
+	id = nf_COW.17
+	title = nf_COW.17.t
+	desc = nf_COW.17.d
+	is_triggered_only = yes
+	picture = GFX_event_NCR_settlers
+
+
+	option = {
+		name = nf_COW.17.a
+		2 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		444 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = nf_COW.17.b
+		division_template = {
+			name = "Texas Fighters"
+			regiments = {
+				police_infantry = { x = 0 y = 0 }
+				police_infantry = { x = 0 y = 1 }
+				police_infantry = { x = 0 y = 2 }
+				police_infantry = { x = 1 y = 0 }
+				police_infantry = { x = 1 y = 1 }
+				police_infantry = { x = 1 y = 2 }
+				police_infantry = { x = 2 y = 0 }
+				police_infantry = { x = 2 y = 1 }
+				police_infantry = { x = 2 y = 2 }
+				police_infantry = { x = 3 y = 0 }
+				police_infantry = { x = 3 y = 1 }
+				police_infantry = { x = 3 y = 2 }
+			}
+			support = {
+				recon_company = { x = 0 y = 0 }
+				anti_tank_company = { x = 1 y = 0 }
+			}
+		}
+		2 = {
+			create_unit = {
+				division = "name = \"Texas Ranger Volunteers\" division_template = \"Texas Fighters\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+				owner = COW
+			}
+		}
+		330 = {
+			create_unit = {
+				division = "name = \"Lone Star Prospectors\" division_template = \"Texas Fighters\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+				owner = COW
+			}
+		}
+		444 = {
+			create_unit = {
+				division = "name = \"Texan Fortune Seekers\" division_template = \"Texas Fighters\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+				owner = COW
+			}
+		}
+		335 = {
+			create_unit = {
+				division = "name = \"Dallas Adventurers\" division_template = \"Texas Fighters\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+				owner = COW
+			}
+		}
+		custom_effect_tooltip = COW_texas_red_event_tooltip
+	}
+}
+
+#REPORT - ARIZONA RANGERS
+country_event = {
+	id = nf_COW.18
+	title = nf_COW.18.t
+	desc = nf_COW.18.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.18.a
+	}
+}
+
+#Clanton and The Cowboy
+country_event = {
+	id = nf_COW.19
+	title = nf_COW.19.t
+	desc = nf_COW.19.d
+	is_triggered_only = yes
+	picture = GFX_event_sub_generic_city
+
+
+	option = {
+		name = nf_COW.19.a
+	}
+}
+
+#The Cowboy, The Ranger, and the Soldiers
+country_event = {
+	id = nf_COW.20
+	title = nf_COW.20.t
+	desc = nf_COW.20.d
+	is_triggered_only = yes
+	picture = GFX_event_ncr_ranger_cards
+
+
+	option = {
+		name = nf_COW.20.a
+	}
+}
+
+#The Ones Who Left Themselves Behind
+# country_event = {
+# 	id = nf_COW.21
+# 	title = nf_COW.21.t
+# 	desc = nf_COW.21.d
+# 	is_triggered_only = yes
+# 	picture = GFX_event_radio_new_vegas
+
+
+# 	option = {
+# 		name = nf_COW.21.a
+# 		if = {
+# 			limit = {
+# 				DES = {
+# 					has_completed_focus = des_rogue_ranger
+# 				}
+# 			}
+# 			unlock_decision_tooltip = COW_form_desert_rangers
+# 			custom_effect_tooltip = COW_DES_form_desert_rangers_tooltip
+# 			COW = {
+# 				country_event = nf_COW.22
+# 			}
+# 			hidden_effect = { set_country_flag = can_form_desert_rangers }
+# 		}
+# 		else_if = {
+# 			limit = {
+# 				DES = {
+# 					has_completed_focus = des_vargas_wins
+# 				}
+# 			}
+# 			COW = {
+# 				country_event = nf_COW.23
+# 			}
+# 		}
+# 		else = {
+# 			COW = {
+# 				country_event = nf_COW.24
+# 			}
+# 		}
+# 	}
+# }
+
+#Deserted Together, Rangers Forever.
+country_event = {
+	id = nf_COW.22
+	title = nf_COW.22.t
+	desc = nf_COW.22.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.22.a
+		add_ideas = COW_desert_ranger_traditions
+		add_equipment_to_stockpile = {
+			type = spec_ops_equipment_2
+			amount = 200
+			producer = USA
+		}
+	}
+}
+
+#Maybe You’ll Ask Me To Come Back Again
+country_event = {
+	id = nf_COW.23
+	title = nf_COW.23.t
+	desc = nf_COW.23.d
+	is_triggered_only = yes
+	picture = GFX_event_ranger_unification_treaty_monument
+
+
+	option = {
+		name = nf_COW.23.a
+		add_ideas = COW_part_of_something_greater
+		add_equipment_to_stockpile = {
+			type = ballistic_equipment_2
+			amount = 1000
+			producer = USA
+		}
+	}
+}
+
+#Last To Hold The Stars
+country_event = {
+	id = nf_COW.24
+	title = nf_COW.24.t
+	desc = nf_COW.24.d
+	is_triggered_only = yes
+	picture = GFX_event_sub_generic_wasteland_4
+
+
+	option = {
+		name = nf_COW.24.a
+		add_ideas = COW_on_our_own
+	}
+}
+
+#Cowboy’s Gunshow
+country_event = {
+	id = nf_COW.25
+	title = nf_COW.25.t
+	desc = nf_COW.25.d
+	is_triggered_only = yes
+	picture = GFX_event_BRA_moon_and_fireworks
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = nf_COW.29
+				days = 365
+			}
+		}
+	}
+
+	option = {
+		name = nf_COW.25.a
+		add_tech_bonus = {
+			name = tech_bonus_tree_tt
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons_tech_category
+		}
+		custom_effect_tooltip = COW_cowboy_gunshow_tooltip
+	}
+}
+
+#Cowboy’s Gunshow
+country_event = {
+	id = nf_COW.26
+	title = nf_COW.26.t
+	desc = nf_COW.26.d
+	is_triggered_only = yes
+	picture = GFX_event_BRA_moon_and_fireworks
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = nf_COW.29
+				days = 365
+			}
+		}
+	}
+
+	option = {
+		name = nf_COW.26.a
+		add_tech_bonus = {
+			name = tech_bonus_tree_tt
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons_tech_category
+		}
+		custom_effect_tooltip = COW_cowboy_gunshow_tooltip
+	}
+}
+
+#Cowboy’s Gunshow
+country_event = {
+	id = nf_COW.27
+	title = nf_COW.27.t
+	desc = nf_COW.27.d
+	is_triggered_only = yes
+	picture = GFX_event_BRA_moon_and_fireworks
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = nf_COW.29
+				days = 365
+			}
+		}
+	}
+
+	option = {
+		name = nf_COW.27.a
+		random_list = {
+			30 = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+					producer = USA
+				}
+			}
+			25 = {
+				add_equipment_to_stockpile = {
+					type = ballistic_equipment_1
+					amount = 750
+					producer = USA
+				}
+			}
+			20 = {
+				add_equipment_to_stockpile = {
+					type = ballistic_equipment_2
+					amount = 500
+					producer = USA
+				}
+			}
+			15 = {
+				add_equipment_to_stockpile = {
+					type = ballistic_equipment_3
+					amount = 250
+					producer = USA
+				}
+			}
+			10 = {
+				add_equipment_to_stockpile = {
+					type = ballistic_equipment_4
+					amount = 100
+					producer = USA
+				}
+			}
+		}
+		custom_effect_tooltip = COW_cowboy_gunshow_tooltip
+	}
+}
+
+#Cowboy’s Gunshow
+country_event = {
+	id = nf_COW.28
+	title = nf_COW.28.t
+	desc = nf_COW.28.d
+	is_triggered_only = yes
+	picture = GFX_event_BRA_moon_and_fireworks
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = nf_COW.29
+				days = 365
+			}
+		}
+	}
+
+	option = {
+		name = nf_COW.28.a
+		hidden_effect = {
+			every_controlled_state = {
+				if = {
+					limit = { NOT = { is_core_of = COW } }
+					add_compliance = 5
+				}
+			}
+		}
+		custom_effect_tooltip = COW_cowboy_gunshow_compliance_tooltip
+	}
+}
+
+#Cowboy’s Gunshow secret event
+country_event = {
+	id = nf_COW.29
+	title = nf_COW.29.t
+	desc = nf_COW.29.d
+	is_triggered_only = yes
+	picture = GFX_event_BRA_moon_and_fireworks
+	hidden = yes
+
+	option = {
+		name = nf_COW.29.a
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = COW_cant_hide_no_more
+				}
+			}
+			country_event = nf_COW.26
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = COW_cant_hide_no_more
+				NOT = {
+					has_completed_focus = COW_alive_we_are_alive
+					COW = { owns_state = 520 }
+				}
+			}
+			country_event = nf_COW.27
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = COW_cant_hide_no_more
+				OR = {
+					has_completed_focus = COW_alive_we_are_alive
+					COW = { owns_state = 520 }
+				}
+			}
+			country_event = nf_COW.28
+		}
+	}
+}
+
+#You Think You Know My Image
+country_event = {
+	id = nf_COW.30
+	title = nf_COW.30.t
+	desc = nf_COW.30.d
+	is_triggered_only = yes
+	picture = GFX_event_cowboy_hat
+
+
+	option = {
+		name = nf_COW.30.a
+	}
+}
+
+#A Very Conclusive Council
+country_event = {
+	id = nf_COW.31
+	title = nf_COW.31.t
+	desc = nf_COW.31.d
+	is_triggered_only = yes
+	picture = GFX_event_vault_tec_mug_switches
+
+
+	option = {
+		name = nf_COW.31.a
+		country_event = nf_COW.32
+	}
+}
+
+#The Complaint Jar
+country_event = {
+	id = nf_COW.32
+	title = nf_COW.32.t
+	desc = nf_COW.32.d
+	is_triggered_only = yes
+	picture = GFX_event_vault_tec_stress_ball
+
+
+	option = {
+		name = nf_COW.32.a
+	}
+}
+
+#The Rangers Who Cheated Death
+country_event = {
+	id = nf_COW.33
+	title = nf_COW.33.t
+	desc = nf_COW.33.d
+	is_triggered_only = yes
+	picture = GFX_event_desert_rangers_marching
+
+
+	option = {
+		name = nf_COW.33.a
+		country_event = nf_COW.34
+	}
+}
+
+#The Arizona Ranger Treaty Of Return
+country_event = {
+	id = nf_COW.34
+	title = nf_COW.34.t
+	desc = nf_COW.34.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.34.a
+		add_victory_points = {
+			province = 6632
+			value = 40
+		}
+		set_province_name = { id = 6632 name = VICTORY_POINTS_6632_COW }
+		set_capital = { state = 518 }
+	}
+}
+
+#NCR Aid chain
+#To California, From Cowboy Country, With Love.
+country_event = {
+	id = nf_COW.100
+	title = nf_COW.100.t
+	desc = nf_COW.100.d
+	is_triggered_only = yes
+	picture = GFX_event_NCR_victory
+
+
+	option = {
+		name = nf_COW.100.a
+		if = {
+			limit = {
+				NCR = {
+					has_country_leader = {
+						character = NCR_aaron_kimball
+						ruling_only = yes
+					}
+				}
+			}
+			set_temp_variable = { caps_to_add = -25 }
+			add_caps = yes
+			NCR = {
+				country_event = nf_COW.101
+			}
+		}
+		else_if = {
+			limit = {
+				NCR = {
+					has_country_leader = {
+						character = NCR_allgood_murphy
+						ruling_only = yes
+					}
+				}
+			}
+			set_temp_variable = { caps_to_add = -25 }
+			add_caps = yes
+			NCR = {
+				country_event = nf_COW.102
+			}
+		}
+		else_if = {
+			limit = {
+				NCR = {
+					has_country_leader = {
+						character = NCR_grant_c_hayes
+						ruling_only = yes
+					}
+				}
+			}
+			set_temp_variable = { caps_to_add = -25 }
+			add_caps = yes
+			NCR = {
+				country_event = nf_COW.103
+			}
+		}
+		else = {
+			country_event = nf_COW.106
+		}
+	}
+}
+
+#Calling From Cowboy Country! Kimballin
+country_event = {
+	id = nf_COW.101
+	title = nf_COW.101.t
+	desc = nf_COW.101.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.101.a
+		set_temp_variable = { caps_to_add = -25 }
+		add_caps = yes
+		add_timed_idea = {
+			idea = COW_helping_the_cowboys
+			days = 90
+		}
+		COW = {
+			hidden_effect = {
+				set_country_flag = kimball_industry
+			}
+			effect_tooltip = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+				set_temp_variable = { caps_to_add = 50 }
+				add_caps = yes
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = nf_COW.101.b
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+		}
+		COW = {
+			hidden_effect = {
+				set_country_flag = kimball_guns
+			}
+			effect_tooltip = {
+				add_equipment_to_stockpile = {
+					type = ballistic_equipment_1
+					amount = 2000
+					producer = USA
+				}
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 30
+		}
+	}
+	option = {
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		name = nf_COW.101.c
+		add_manpower = -1500
+		COW = {
+			hidden_effect = {
+				set_country_flag = kimball_manpower
+			}
+			effect_tooltip = {
+				add_manpower = 1500
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		name = nf_COW.101.e
+		COW = {
+			country_event = nf_COW.105
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#Calling From Cowboy Country! Allevil (:<<<<<
+country_event = {
+	id = nf_COW.102
+	title = nf_COW.102.t
+	desc = nf_COW.102.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.102.a
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		add_political_power = -50
+		COW = {
+			hidden_effect = {
+				set_country_flag = allgood_volunteers
+			}
+			effect_tooltip = {
+				division_template = {
+					name = "NCR Expedition"
+					template_counter = 83
+					division_names_group = _NCR_INF_01
+
+					regiments = {
+						spec_ops = { x = 0 y = 0 }
+						spec_ops = { x = 0 y = 1 }
+						spec_ops = { x = 0 y = 2 }
+						spec_ops = { x = 1 y = 0 }
+						spec_ops = { x = 1 y = 1 }
+						spec_ops = { x = 1 y = 2 }
+						spec_ops = { x = 2 y = 0 }
+						spec_ops = { x = 2 y = 1 }
+						spec_ops = { x = 2 y = 2 }
+					}
+					support = {
+						recon_company = { x = 0 y = 0 }
+					}
+				}
+				2 = {
+					create_unit = {
+						division = "name = \"‘Whyajo’ Expedition\" division_template = \"NCR Expedition\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = ROOT
+					}
+				}
+				2 = {
+					create_unit = {
+						division = "name = \"‘Arizona’ Expedition\" division_template = \"NCR Expedition\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = ROOT
+					}
+				}
+				2 = {
+					create_unit = {
+						division = "name = \"‘Cowboy’ Expedition\" division_template = \"NCR Expedition\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = ROOT
+					}
+				}
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+				custom_effect_tooltip = COW_ncr_aid_allgood_event_tooltip
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 60
+		}
+	}
+	option = {
+		name = nf_COW.102.b
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		add_political_power = -25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+		add_equipment_to_stockpile = {
+			type = spec_ops_equipment
+			amount = -500
+		}
+		COW = {
+			hidden_effect = {
+				set_country_flag = allgood_guns
+			}
+			effect_tooltip = {
+				add_equipment_to_stockpile = {
+					type = ballistic_equipment_1
+					amount = 1000
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = spec_ops_equipment_3
+					amount = 500
+					producer = USA
+				}
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = nf_COW.102.c
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		add_political_power = -10
+		1 = {
+			add_manpower = -200
+		}
+		63 = {
+			add_manpower = -200
+		}
+		70 = {
+			add_manpower = -200
+		}
+		350 = {
+			add_manpower = -200
+		}
+		253 = {
+			add_manpower = -200
+		}
+		245 = {
+			add_manpower = -200
+		}
+		589 = {
+			add_manpower = -200
+		}
+		489 = {
+			add_manpower = -200
+		}
+		141 = {
+			add_manpower = -200
+		}
+		135 = {
+			add_manpower = -200
+		}
+		COW = {
+			hidden_effect = {
+				set_country_flag = allgood_manpower
+			}
+			effect_tooltip = {
+				add_manpower = 2000
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 29
+		}
+	}
+	option = {
+		name = nf_COW.102.e
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		COW = {
+			country_event = nf_COW.105
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+#Calling From Cowboy Country! Hayes
+country_event = {
+	id = nf_COW.103
+	title = nf_COW.103.t
+	desc = nf_COW.103.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.103.a
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		add_political_power = -25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1500
+		}
+		COW = {
+			hidden_effect = {
+				set_country_flag = hayes_guns
+			}
+			effect_tooltip = {
+				add_equipment_to_stockpile = {
+					type = ballistic_equipment_3
+					amount = 1000
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = spec_ops_equipment_3
+					amount = 500
+					producer = USA
+				}
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 35
+		}
+	}
+	option = {
+		name = nf_COW.103.b
+		add_political_power = -25
+		set_temp_variable = { caps_to_add = -75 }
+		add_caps = yes
+		COW = {
+			hidden_effect = {
+				set_country_flag = hayes_cash
+			}
+			effect_tooltip = {
+				set_temp_variable = { caps_to_add = 100 }
+				add_caps = yes
+				add_corps_commander_role = {
+				character = COW_douglas_steele
+					desc = COW_DOUGLAS_STEELE_DESC
+					traits = {
+						perceptive_trait
+						agile_trait
+						desert_fox
+					}
+					skill = 4
+					attack_skill = 1
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+			country_event = nf_COW.104
+		}
+		ai_chance = {
+			base = 35
+		}
+	}
+	option = {
+		name = nf_COW.103.c
+		set_temp_variable = { caps_to_add = 25 }
+		add_caps = yes
+		COW = {
+			country_event = nf_COW.105
+		}
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+
+#From California, With Care.
+country_event = {
+	id = nf_COW.104
+	title = nf_COW.104.t
+	desc = nf_COW.104.d
+	is_triggered_only = yes
+	picture = GFX_event_ranger_unification_treaty_monument
+
+
+	option = {
+		name = nf_COW.104.a
+		if = {
+			limit = {
+				has_country_flag = kimball_industry
+			}
+			hidden_effect = {
+				clr_country_flag = kimball_industry
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			set_temp_variable = { caps_to_add = 75 }
+			add_caps = yes
+		}
+		else_if = {
+			limit = {
+				has_country_flag = kimball_guns
+			}
+			hidden_effect = {
+				clr_country_flag = kimball_guns
+			}
+			add_equipment_to_stockpile = {
+				type = ballistic_equipment_1
+				amount = 2000
+				producer = USA
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = kimball_manpower
+			}
+			hidden_effect = {
+				clr_country_flag = kimball_manpower
+			}
+			add_manpower = 1500
+		}
+		else_if = {
+			limit = {
+				has_country_flag = allgood_volunteers
+			}
+			hidden_effect = {
+				clr_country_flag = allgood_volunteers
+			}
+			division_template = {
+				name = "NCR Expedition"
+				template_counter = 83
+				division_names_group = _NCR_INF_01
+
+				regiments = {
+					spec_ops = { x = 0 y = 0 }
+					spec_ops = { x = 0 y = 1 }
+					spec_ops = { x = 0 y = 2 }
+					spec_ops = { x = 1 y = 0 }
+					spec_ops = { x = 1 y = 1 }
+					spec_ops = { x = 1 y = 2 }
+					spec_ops = { x = 2 y = 0 }
+					spec_ops = { x = 2 y = 1 }
+					spec_ops = { x = 2 y = 2 }
+				}
+				support = {
+					recon_company = { x = 0 y = 0 }
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"‘Arizona’ Expedition\" division_template = \"NCR Expedition\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"‘Cowboy’ Expedition\" division_template = \"NCR Expedition\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"‘Whyajo’ Expedition\" division_template = \"NCR Expedition\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = ROOT
+				}
+			}
+			custom_effect_tooltip = COW_ncr_aid_allgood_event_tooltip
+		}
+		else_if = {
+			limit = {
+				has_country_flag = allgood_guns
+			}
+			hidden_effect = {
+				clr_country_flag = allgood_guns
+			}
+			add_equipment_to_stockpile = {
+				type = ballistic_equipment_1
+				amount = 1000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = spec_ops_equipment_3
+				amount = 500
+				producer = USA
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = allgood_manpower
+			}
+			hidden_effect = {
+				clr_country_flag = allgood_manpower
+			}
+			add_manpower = 2000
+		}
+		else_if = {
+			limit = {
+				has_country_flag = hayes_guns
+			}
+			hidden_effect = {
+				clr_country_flag = hayes_guns
+			}
+			add_equipment_to_stockpile = {
+				type = ballistic_equipment_3
+				amount = 1000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = spec_ops_equipment_3
+				amount = 500
+				producer = USA
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = hayes_cash
+			}
+			hidden_effect = {
+				clr_country_flag = hayes_cash
+			}
+			set_temp_variable = { caps_to_add = 100 }
+		}
+		add_corps_commander_role = {
+			character = COW_douglas_steele
+			desc = COW_DOUGLAS_STEELE_DESC
+			traits = {
+				perceptive_trait
+				agile_trait
+				desert_fox
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}
+
+#California Couldn't Care Less!
+country_event = {
+	id = nf_COW.105
+	title = nf_COW.105.t
+	desc = nf_COW.105.d
+	is_triggered_only = yes
+	picture = GFX_event_sub_generic_wasteland_1
+
+
+	option = {
+		name = nf_COW.105.a
+		add_ideas = COW_helping_ourselves
+		add_war_support = -0.1
+	}
+}
+
+#California’s in Chaos | Civil war
+country_event = {
+	id = nf_COW.106
+	title = nf_COW.106.t
+	desc = nf_COW.106.d
+	is_triggered_only = yes
+	picture = GFX_event_ncr_won
+
+
+	option = {
+		name = nf_COW.106.a
+		add_ideas = COW_helping_ourselves
+		add_war_support = 0.1
+		add_stability = -0.20
+	}
+}
+
+#You’re Gone, And I Never Said Goodbye
+country_event = {
+	id = nf_COW.110
+	title = nf_COW.110.t
+	desc = nf_COW.110.d
+	is_triggered_only = yes
+	picture = GFX_event_nipton_massacre
+
+
+	option = {
+		name = nf_COW.110.a
+		swap_ideas = {
+			remove_idea = COW_legion_resistance_small
+			add_idea = COW_legion_resistance_eliminated
+		}
+	}
+}
+
+#Choose Your Friends Wisely
+country_event = {
+	id = nf_COW.111
+	title = nf_COW.111.t
+	desc = nf_COW.111.d
+	is_triggered_only = yes
+	picture = GFX_event_desert_rangers_marching
+
+
+	option = {
+		name = nf_COW.111.a
+		trigger = {
+			OR = {
+				AND = {
+					at_peace_with_new_california = yes
+					new_california_exists = yes
+
+				}
+				AND = {
+					at_peace_with_dharma_way = yes
+					dharma_way_exists = yes
+				}
+			}
+		}
+		if = {
+			limit = { new_california_exists = yes }
+			ask_to_join_new_california = yes
+		}
+		else_if = {
+			limit = { dharma_way_exists = yes }
+			ask_to_join_dharma_way = yes
+		}
+	}
+	option = {
+		name = nf_COW.111.b
+		unlock_decision_tooltip = COW_form_desert_rangers
+		hidden_effect = { set_country_flag = can_form_desert_rangers }
+	}
+}
+
+#To Remember to Forget
+country_event = {
+	id = nf_COW.113
+	title = nf_COW.113.t
+	desc = nf_COW.113.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.113.a
+	}
+}
+
+#The Two Of Us, Back In The Saddle
+country_event = {
+	id = nf_COW.114
+	title = nf_COW.114.t
+	desc = nf_COW.114.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.114.a
+	}
+}
+
+#A Hero’s Hero’s Hero’s Welcome
+country_event = {
+	id = nf_COW.115
+	title = nf_COW.115.t
+	desc = nf_COW.115.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.115.a
+	}
+}
+
+#Ranger, Standing Down, Standing Off
+country_event = {
+	id = nf_COW.116
+	title = nf_COW.116.t
+	desc = nf_COW.116.d
+	is_triggered_only = yes
+	picture = GFX_event_DES_rangers_symbol
+
+
+	option = {
+		name = nf_COW.116.a
+	}
+}

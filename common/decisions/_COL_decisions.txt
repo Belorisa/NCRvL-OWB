@@ -1,0 +1,620 @@
+col_coloradan_powderkeg_decisions = {
+	coloradan_powderkeg_mission = {
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		fire_only_once = yes
+		is_good = no		# so it shows up red
+		days_mission_timeout = 360
+		icon = GFX_decision_revolt
+		priority = 4
+		war_with_on_timeout = BAG
+		war_with_on_timeout = LUM
+		war_with_on_timeout = WHD
+		timeout_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] coloradan_powderkeg_mission (mission) complete entered"
+			}
+			else_if = {
+				limit = {
+					tag = BAG
+				}
+				hidden_effect = {
+					declare_war_on = {
+						target = WHD
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = LUM
+						type = annex_everything
+					}
+					LUM = {
+						declare_war_on = {
+							target = BAG
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = WHD
+							type = annex_everything
+						}
+					}
+					WHD = {
+						declare_war_on = {
+							target = BAG
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = LUM
+							type = annex_everything
+						}
+					}
+				}
+				country_event = nf_baggers_flavour.0
+				custom_effect_tooltip = spacer_tt
+				custom_effect_tooltip = event_effect_tt
+				event_option_tooltip = nf_baggers_flavour.0.a
+			}
+			else_if = {
+				limit = {
+					tag = LUM
+				}
+				declare_war_on = {
+					target = BAG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = WHD
+					type = annex_everything
+				}
+			}
+			else = {
+				declare_war_on = {
+					target = BAG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LUM
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = {
+							tag = BAG
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								region = 44
+								region = 55
+								region = 43
+								region = 42
+							}
+						}
+					}
+					news_event = nf_col_news.1
+				}
+				GLW = {
+					country_event = nf_glowbugs_refugee.0
+				}
+				BLC = {
+					country_event = nf_blc_beacons.5
+				}
+			}
+			#set_global_flag = colorado_war_flag
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] coloradan_powderkeg_mission (mission) complete exited"
+			}
+		}
+	}
+	colkeg_desc = {
+		icon = GFX_decision_category_generic_propaganda
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		priority = 5
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_desc (decision) complete entered"
+			}
+			#desc
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_desc (decision) complete exited"
+			}
+		}
+	}
+	colkeg_target_baggers = {
+		visible = {
+			NOT = {
+				tag = BAG
+			}
+			country_exists = BAG
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_idea = col_fighting_bag
+					has_idea = col_fighting_lum
+					has_idea = col_fighting_whd
+					has_idea = col_fighting_whd_and_lum
+					has_idea = col_fighting_bag_and_lum
+					has_idea = col_fighting_bag_and_whd
+				}
+			}
+			has_war_with = BAG
+		}
+		icon = GFX_decision_pipegun_2
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_baggers (decision) complete entered"
+			}
+			add_timed_idea = {
+				idea = col_fighting_bag
+				days = 90
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_baggers (decision) complete exited"
+			}
+		}
+	}
+	colkeg_target_withered = {
+		visible = {
+			NOT = {
+				tag = WHD
+			}
+			country_exists = WHD
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_idea = col_fighting_bag
+					has_idea = col_fighting_lum
+					has_idea = col_fighting_whd
+					has_idea = col_fighting_whd_and_lum
+					has_idea = col_fighting_bag_and_lum
+					has_idea = col_fighting_bag_and_whd
+				}
+			}
+			has_war_with = WHD
+		}
+		icon = GFX_decision_pipegun_2
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_withered (decision) complete entered"
+			}
+			add_timed_idea = {
+				idea = col_fighting_whd
+				days = 90
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_withered (decision) complete exited"
+			}
+		}
+	}
+	colkeg_target_luminious = {
+		visible = {
+			NOT = {
+				tag = LUM
+			}
+			country_exists = LUM
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_idea = col_fighting_bag
+					has_idea = col_fighting_lum
+					has_idea = col_fighting_whd
+					has_idea = col_fighting_whd_and_lum
+					has_idea = col_fighting_bag_and_lum
+					has_idea = col_fighting_bag_and_whd
+				}
+			}
+			has_war_with = LUM
+		}
+		icon = GFX_decision_pipegun_2
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_luminious (decision) complete entered"
+			}
+			add_timed_idea = {
+				idea = col_fighting_lum
+				days = 90
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_luminious (decision) complete exited"
+			}
+		}
+	}
+	colkeg_target_both = {
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_idea = col_fighting_bag
+					has_idea = col_fighting_lum
+					has_idea = col_fighting_whd
+					has_idea = col_fighting_whd_and_lum
+					has_idea = col_fighting_bag_and_lum
+					has_idea = col_fighting_bag_and_whd
+				}
+			}
+			has_war = yes
+		}
+		icon = GFX_decision_deagle
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_both (decision) complete entered"
+			}
+			if = {
+				limit = {
+					tag = BAG
+				}
+				add_timed_idea = {
+					idea = col_fighting_whd_and_lum
+					days = 90
+				}
+			}
+			if = {
+				limit = {
+					tag = WHD
+				}
+				add_timed_idea = {
+					idea = col_fighting_bag_and_lum
+					days = 90
+				}
+			}
+			if = {
+				limit = {
+					tag = LUM
+				}
+				add_timed_idea = {
+					idea = col_fighting_bag_and_whd
+					days = 90
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_target_both (decision) complete exited"
+			}
+		}
+	}
+	colkeg_make_peace = {
+		available = {
+			has_active_mission = coloradan_powderkeg_mission
+		}
+		icon = GFX_decision_vault_boy
+		fire_only_once = yes
+		cost = 75
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				OR = {
+					has_country_flag = LUM_ai_behavior_PATIENCE
+					has_country_flag = WHD_ai_behavior_ZHANG
+					has_country_flag = BAG_ai_behavior_ACADEMICS
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_make_peace (decision) complete entered"
+			}
+			if = {
+				limit = {
+					has_active_mission = coloradan_powderkeg_mission
+				}
+				add_30_days_to_CWT = yes
+				custom_effect_tooltip = add_30_days_to_CWT_tt
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_make_peace (decision) complete exited"
+			}
+		}
+	}
+	colkeg_make_war = {
+		available = {
+			has_active_mission = coloradan_powderkeg_mission
+		}
+		icon = GFX_decision_generic_ignite_civil_war
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_make_peace (decision) complete entered"
+			}
+			if = {
+				limit = {
+					has_active_mission = coloradan_powderkeg_mission
+				}
+				remove_30_days_from_CWT = yes
+				custom_effect_tooltip = remove_30_days_from_CWT_tt
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_make_peace (decision) complete exited"
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				OR = {
+					has_country_flag = LUM_ai_behavior_WRATH
+					has_country_flag = WHD_ai_behavior_CHARMINGDOG
+					has_country_flag = WHD_ai_behavior_ANGRYDOG
+					has_country_flag = BAG_ai_behavior_ARMY
+				}
+			}
+		}
+	}
+	colkeg_active_duty = {
+		icon = GFX_decision_army_helmet
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_active_duty (decision) complete entered"
+			}
+			if = {
+				limit = {
+					original_tag = BAG
+				}
+				BAG_COLERIDGE = {
+					add_max_trait = 1
+				}
+			}
+			else_if = {
+				limit = {
+					original_tag = WHD
+				}
+				WHD_OLD_DOG = {
+					add_max_trait = 1
+				}
+			}
+			else = {
+				LUM_the_great_glowing_one = {
+					add_max_trait = 1
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] colkeg_active_duty (decision) complete exited"
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+	}
+	# colkeg_remove_influence_bag = {
+	# 	available = {
+	# 		BAG = {
+	# 			all_core_land_owned_by_prev_sphere = yes
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		OR = {
+	# 			AND = {
+	# 				NOT = {
+	# 					tag = BAG
+	# 				}
+	# 				BAG = {
+	# 					has_completed_focus = bag_establish_outposts
+	# 				}
+	# 			}
+	# 			is_debug = yes
+	# 		}
+	# 	}
+	# 	icon = GFX_decision_bag
+	# 	fire_only_once = yes
+	# 	cost = 5
+	# 	complete_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_global_flag = debug_logs
+	# 			}
+	# 			log = "[GetDateText]: [Root.GetName] col_keg_remove_influence_bag (decision) complete entered"
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				BAG = {
+	# 					all_core_land_owned_by_prev_sphere = yes
+	# 				}
+	# 			}
+	# 			every_owned_state = {
+	# 				limit = {
+	# 					is_core_of = BAG
+	# 				}
+	# 				reset_state_name = yes
+	# 				hidden_effect = {
+	# 					reset_province_name = 6865
+	# 					reset_province_name = 8160
+	# 					reset_province_name = 9036
+	# 				}
+	# 				add_compliance = 5
+	# 				add_resistance = -5
+	# 			}
+	# 		}
+	# 		else = {
+	# 			effect_tooltip = {
+	# 				every_state = {
+	# 					limit = {
+	# 						is_core_of = BAG
+	# 					}
+	# 					reset_state_name = yes
+	# 					add_compliance = 5
+	# 					add_resistance = -5
+	# 				}
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_global_flag = debug_logs
+	# 			}
+	# 			log = "[GetDateText]: [Root.GetName] col_keg_remove_influence_bag (decision) complete exited"
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 50
+	# 	}
+	# }
+	# #Unique BAG decisions
+	# bag_activate_phlegias = {
+	# 	icon = GFX_decision_boat
+	# 	cost = 40
+	# 	fire_only_once = yes
+	# 	allowed = {
+	# 		original_tag = BAG
+	# 	}
+	# 	complete_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				has_global_flag = debug_logs
+	# 			}
+	# 			log = "[GetDateText]: [Root.GetName] bag_activate_phlegias (decision) complete entered"
+	# 		}
+	# 		add_naval_commander_role = {
+	# 			character = BAG_PHILIP
+	# 			skill = 3
+	# 			attack_skill = 3
+	# 			defense_skill = 2
+	# 			coordination_skill = 3
+	# 			maneuvering_skill = 2
+	# 		}
+	# 		custom_effect_tooltip = BAG_PHILIP_CHARACTER_TT
+	# 		453 = {
+	# 			add_extra_state_shared_building_slots = 1
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		custom_effect_tooltip = spacer_tt
+	# 		add_equipment_to_stockpile = {
+	# 			type = convoy
+	# 			amount = 10
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_global_flag = debug_logs
+	# 			}
+	# 			log = "[GetDateText]: [Root.GetName] bag_activate_phlegias (decision) complete exited"
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 50
+	# 	}
+	# }
+	bag_activate_daedalus = {
+		icon = GFX_decision_generic_air
+		cost = 40
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAG
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] bag_activate_daedalus (decision) complete entered"
+			}
+			add_ace = {
+				name = "Ike"
+				surname = "Wright"
+				callsign = "Icarus"
+				type = fighter_genius
+			}
+			453 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = spacer_tt
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 15
+				producer = USA
+			}
+			if = {
+				limit = {
+					has_global_flag = debug_logs
+				}
+				log = "[GetDateText]: [Root.GetName] bag_activate_daedalus (decision) complete exited"
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+	}
+}

@@ -1,0 +1,73 @@
+#!if we ever implement this mechanic correctly, we should put the new medals here
+#!until then, the unique medals will go to here
+# Valid unit modifiers are not exhaustive
+# Currently supported:
+# army_morale
+# army_morale_factor
+# army_org
+# army_org_factor
+# supply_consumption_factor
+# equipment_capture
+# equipment_capture_factor
+# army_fuel_capacity_factor
+# army_fuel_consumption_factor
+# recon_factor
+# recon_factor_while_entrenched
+# transport_capacity (?)
+# breakthrough_factor
+# armor_factor
+# army_strength_factor
+# experience_loss_factor
+# leader_modifier applies unit modifiers to all units under them as a general, similarly to traits.
+# army_attack_factor
+# army_defence_factor
+# max_dig_in
+# max_dig_in_factor
+@cost = 30
+unit_medals = {
+	##Unique
+	bag_golden_star = {
+		available = {
+			should_have_ncr_medals_trigger = yes
+			568 = {
+				has_state_flag = lvl_2
+			}
+			NOT = {
+				568 = {
+					has_state_flag = lvl_3
+				}
+			}
+		}
+		frame = 4
+		icon = "GFX_medal_icon_sov"
+		cost = 0
+		unit_modifiers = {
+			army_org_factor = 0.1
+		}
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+	# bag_long_trek_medal = {
+	# 	available = {
+	# 		should_have_ncr_medals_trigger = yes
+	# 		BAG = {
+	# 			NOT = {
+	# 				OR = {
+	# 					has_completed_focus = bag_empirical_method
+	# 					has_completed_focus = bag_straightforward_method
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	frame = 2
+	# 	icon = "GFX_medal_icon_democratic"
+	# 	cost = 0
+	# 	unit_modifiers = {
+	# 		supply_consumption_factor = -0.15
+	# 	}
+	# 	one_time_effect = {
+	# 		add_divisional_commander_xp = 100
+	# 	}
+	# }
+}

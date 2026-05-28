@@ -1,0 +1,1916 @@
+﻿add_namespace = nf_maxson
+add_namespace = nf_maxson_prepare
+add_namespace = nf_maxson_lanius
+add_namespace = nf_maxson_vault0
+add_namespace = nf_maxson_boulderdome
+add_namespace = nf_maxson_hangdogs
+add_namespace = nf_maxson_final
+
+	#Starting Events for 7 day focuses#
+
+country_event = {
+	id = nf_maxson.1
+	title = nf_maxson.1.t
+	desc = nf_maxson.1.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.1.a
+		add_manpower = 500
+		add_equipment_to_stockpile = {
+			type = energy_equipment_3
+			amount = 125
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = power_armor_equipment_3
+			amount = 125
+			producer = USA
+		}
+	}
+	option = {
+		name = nf_maxson.1.b
+		add_manpower = 250
+		add_equipment_to_stockpile = {
+			type = energy_equipment_3
+			amount = 250
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = power_armor_equipment_3
+			amount = 250
+			producer = USA
+		}
+	}
+}
+
+country_event = {
+	id = nf_maxson.2
+	title = nf_maxson.2.t
+	desc = nf_maxson.2.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+		option = {
+			name = nf_maxson.2.a
+			412 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = bunker2
+				province = {
+					id = 3110
+				}
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_maxson.3
+	title = nf_maxson.3.t
+	desc = nf_maxson.3.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.3.a
+
+		add_ideas = maxson_circle_schism
+	}
+}
+
+country_event = {
+	id = nf_maxson.4
+	title = nf_maxson.4.t
+	desc = nf_maxson.4.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.4.a
+
+		add_ideas = maxson_hangdog_defeat
+	}
+}
+
+
+ # A Relic Of The Past #
+country_event = {
+	id = nf_maxson.airship
+	title = nf_maxson.airship.t
+	desc = nf_maxson.airship.d
+	picture = GFX_event_downed_airship
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.airship.a
+		add_resource = {
+			type = metal
+			amount = 6
+			state = 112
+		}
+		add_resource = {
+			type = advanced
+			amount = 4
+			state = 112
+		}
+		add_resource = {
+			type = composites
+			amount = 4
+			state = 112
+		}
+
+	}
+}
+
+		#Prepare Ideas#
+
+	#Repair the Blimp#
+country_event = {
+	id = nf_maxson_prepare.1
+	title = nf_maxson_prepare.1.t
+	desc = nf_maxson_prepare.1.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_prepare.1.a
+		set_technology = {
+			inert_blimp_tech = 1
+			blimp_tech_1 = 1
+			}
+
+		add_equipment_to_stockpile = {
+			type = blimp_equipment_1
+			amount = 1
+			producer = USA
+			}
+	}
+}
+
+	#Cargo Planes Tech and find / Pristine Relics#
+country_event = {
+	id = nf_maxson_prepare.2
+	title = nf_maxson_prepare.2.t
+	desc = nf_maxson_prepare.2.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_prepare.2.a
+
+		add_equipment_to_stockpile = {
+			type = cargo_plane_equipment_1
+			amount = 5
+			producer = USA
+			}
+
+		set_technology = {
+			cargo_plane_tech_1 = 1
+			aerodynamics_tech_1 = 1
+			}
+	}
+}
+
+
+	#Complete Our Mission#
+country_event = {
+	id = nf_maxson.5
+	title = nf_maxson.5.t
+	desc = nf_maxson.5.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.5.a
+	}
+}
+		#---------------------------#
+		#----Army Airship Ideas-----#
+		#---------------------------#
+
+#Blimps Or Planes#
+country_event = {
+	id = nf_maxson.8
+	title = nf_maxson.8.t
+	desc = nf_maxson.8.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		#Blimp
+	option = {
+		name = nf_maxson.8.a
+		add_ideas = maxson_air_a
+	}
+		#Cargo
+	option = {
+		name = nf_maxson.8.b
+		add_ideas = maxson_air_b
+	}
+}
+
+#Steel Rain#
+country_event = {
+	id = nf_maxson.9
+	title = nf_maxson.9.t
+	desc = nf_maxson.9.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.9.a
+		add_ideas = maxson_airborne
+	}
+}
+
+# Story Stuff #
+
+country_event = {
+	id = nf_maxson.15
+	title = nf_maxson.15.t
+	desc = nf_maxson.15.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.15.a
+		set_temp_variable = {
+			caps_to_add = 50
+		}
+		add_caps = yes
+	}
+	option = {
+		name = nf_maxson.15.b
+		add_manpower = 100
+	}
+}
+# Check on Elrick #
+country_event = {
+	id = nf_maxson.7
+	title = nf_maxson.7.t
+	desc = nf_maxson.7.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.7.a
+		country_event = nf_maxson.11
+	}
+}
+# The Argument #
+country_event = {
+	id = nf_maxson.11
+	title = nf_maxson.11.t
+	desc = nf_maxson.11.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.11.a
+		add_ideas = maxson_industry_2a
+	}
+	option = {
+		name = nf_maxson.11.b
+		add_ideas = maxson_industry_2b
+	}
+}
+# Now That's Taken Care Of #
+country_event = {
+	id = nf_maxson.12
+	title = nf_maxson.12.t
+	desc = nf_maxson.12.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.12.a
+	}
+}
+# The Leftovers #
+country_event = {
+	id = nf_maxson.13
+	title = nf_maxson.13.t
+	desc = nf_maxson.13.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_13.a
+		country_event = nf_maxson.131
+	}
+}
+# Dan Rivers#
+country_event = {
+	id = nf_maxson.131
+	title = nf_maxson.131.t
+	desc = nf_maxson.131.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_131.a
+		add_timed_idea = {
+			idea = maxson_temp_dan_buff
+			days = 60
+		}
+	}
+}
+	#A Dispute#
+country_event = {
+	id = nf_maxson.14
+	title = nf_maxson.14.t
+	desc = nf_maxson.14.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.14.a
+		country_event = nf_maxson.141
+	}
+}
+	#Sacred Bottles#
+country_event = {
+	id = nf_maxson.141
+	title = nf_maxson.141.t
+	desc = nf_maxson.141.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.141.a
+		add_stability = 0.02
+	}
+	option = {
+		name = nf_maxson.141.b
+		208 = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+	#Elrick's Task#
+country_event = {
+	id = nf_maxson.21
+	title = nf_maxson.21.t
+	desc = nf_maxson.21.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.211
+		name = nf_maxson.21.a
+	}
+}
+	#Warden's Location#
+country_event = {
+	id = nf_maxson.211
+	title = nf_maxson.211.t
+	desc = nf_maxson.211.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.211.a
+	}
+}
+
+	#A Memorial#
+country_event = {
+	id = nf_maxson.22
+	title = nf_maxson.22.t
+	desc = nf_maxson.22.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.221
+		name = nf_maxson.22.a
+	}
+}
+	#A New Denver#
+country_event = {
+	id = nf_maxson.221
+	title = nf_maxson.221.t
+	desc = nf_maxson.221.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.222
+		name = nf_maxson.221.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.222
+	title = nf_maxson.222.t
+	desc = nf_maxson.222.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.222.a
+	}
+}
+
+	#Preparing for a promotion#
+country_event = {
+	id = nf_maxson.23
+	title = nf_maxson.23.t
+	desc = nf_maxson.23.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.231
+		name = nf_maxson.23.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.231
+	title = nf_maxson.231.t
+	desc = nf_maxson.231.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.232
+		name = nf_maxson.231.a
+	}
+}
+	#Lanius Seen#
+country_event = {
+	id = nf_maxson.232
+	title = nf_maxson.232.t
+	desc = nf_maxson.232.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.232.a
+		hidden_effect = {
+			if = {
+				limit = {
+					is_in_faction_with = ROB
+				}
+				country_event = { id = nf_maxson.29 }
+			}
+			if = {
+				limit = {
+					is_in_faction_with = CHC
+				}
+				country_event = { id = nf_maxson.30 }
+			}
+		}
+	}
+}
+	#Union Station Line Of Events#
+country_event = {
+	id = nf_maxson.24
+	title = nf_maxson.24.t
+	desc = nf_maxson.24.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.241
+		name = nf_maxson.24.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.241
+	title = nf_maxson.241.t
+	desc = nf_maxson.241.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.242
+		name = nf_maxson.241.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.242
+	title = nf_maxson.242.t
+	desc = nf_maxson.242.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson.243
+		name = nf_maxson.242.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.243
+	title = nf_maxson.243.t
+	desc = nf_maxson.243.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.243.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.16
+	title = nf_maxson.16.t
+	desc = nf_maxson.16.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.16.a
+		country_event = nf_maxson.161
+	}
+}
+
+country_event = {
+	id = nf_maxson.17
+	title = nf_maxson.17.t
+	desc = nf_maxson.17.d
+	picture = GFX_event_brotherhood_training
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.17.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.18
+	title = nf_maxson.18.t
+	desc = nf_maxson.18.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.18.a
+	}
+}
+country_event = {
+	id = nf_maxson.161
+	title = nf_maxson.161.t
+	desc = nf_maxson.161.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.161.a
+		add_timed_idea = {
+			idea = maxson_temp_research_buff
+			days = 80
+		}
+	}
+	option = {
+		name = nf_maxson.161.b
+		add_timed_idea = {
+			idea = maxson_temp_production_buff
+			days = 80
+		}
+	}
+}
+
+	#---------------------#
+	#-----LANIUS WAR------#
+	#---------------------#
+country_event = {
+	id = nf_maxson_lanius.1
+	title = nf_maxson_lanius.1.t
+	desc = nf_maxson_lanius.1.d
+	picture = GFX_event_lanius_attack
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_lanius.1.a
+	}
+}
+
+country_event = {
+	id = nf_maxson_lanius.2
+	title = nf_maxson_lanius.2.t
+	desc = nf_maxson_lanius.2.d
+	picture = GFX_event_generic_civil_unrest
+
+	fire_only_once = yes
+
+	trigger = {
+		MXC = {
+			controls_province = 8968
+		}
+	}
+
+	option = {
+		name = nf_maxson_lanius.2.a
+		country_event = nf_maxson_lanius.3
+	}
+}
+
+country_event = {
+	id = nf_maxson_lanius.3
+	title = nf_maxson_lanius.3.t
+	desc = nf_maxson_lanius.3.d
+	picture = GFX_event_legate_lanius
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_lanius.3.a
+		country_event = nf_maxson_lanius.4
+	}
+}
+
+country_event = {
+	id = nf_maxson_lanius.4
+	title = nf_maxson_lanius.4.t
+	desc = nf_maxson_lanius.4.d
+	picture = GFX_event_generic_civil_unrest
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = nf_maxson_lanius.4.a
+		retire_character = MXC_paladin_deering
+
+		LAC = {
+			retire_character = LAC_lanius
+		}
+	}
+}
+
+	#---------------------#
+	#------VAULT 0--------#
+	#---------------------#
+
+	#The Ancient Menace - Finding Vault 0#
+country_event = {
+	id = nf_maxson_vault0.1
+	title = nf_maxson_vault0.1.t
+	desc = nf_maxson_vault0.1.d
+	picture = GFX_event_the_ancient_menace
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.1.a
+	}
+}
+	#Cratered Entrance#
+country_event = {
+	id = nf_maxson_vault0.2
+	title = nf_maxson_vault0.2.t
+	desc = nf_maxson_vault0.2.d
+	picture = GFX_event_upper_levels
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson_vault0.21
+		name = nf_maxson_vault0.2.a
+	}
+}
+	#Silent Halls#
+country_event = {
+	id = nf_maxson_vault0.21
+	title = nf_maxson_vault0.21.t
+	desc = nf_maxson_vault0.21.d
+	picture = GFX_event_upper_levels
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.21.a
+	}
+}
+	#The Assault#
+country_event = {
+	id = nf_maxson_vault0.3
+	title = nf_maxson_vault0.3.t
+	desc = nf_maxson_vault0.3.d
+	picture = GFX_event_the_assault
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.3.a
+	}
+}
+	#Hellion#
+country_event = {
+	id = nf_maxson_vault0.4
+	title = nf_maxson_vault0.4.t
+	desc = nf_maxson_vault0.4.d
+	picture = GFX_event_hellion
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.4.a
+	}
+}
+	#Closer To The Truth#
+country_event = {
+	id = nf_maxson_vault0.5
+	title = nf_maxson_vault0.5.t
+	desc = nf_maxson_vault0.5.d
+	picture = GFX_event_closer_to_the_truth
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = nf_maxson_vault0.51
+		name = nf_maxson_vault0.5.a
+	}
+}
+
+country_event = {
+	id = nf_maxson_vault0.51
+	title = nf_maxson_vault0.51.t
+	desc = nf_maxson_vault0.51.d
+	picture = GFX_event_closer_to_the_truth
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.51.a
+	}
+}
+	#The Final Stand Of The Calculator#
+country_event = {
+	id = nf_maxson_vault0.6
+	title = nf_maxson_vault0.6.t
+	desc = nf_maxson_vault0.6.d
+	picture = GFX_event_the_final_stand_of_the_calculator
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.6.a
+		country_event = nf_maxson_vault0.7
+	}
+}
+	#The General#
+country_event = {
+	id = nf_maxson_vault0.7
+	title = nf_maxson_vault0.7.t
+	desc = nf_maxson_vault0.7.d
+	picture = GFX_event_the_general
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.7.a
+		country_event = nf_maxson_vault0.8
+	}
+}
+	#The Warrior's Decision#
+country_event = {
+	id = nf_maxson_vault0.8
+	title = nf_maxson_vault0.8.t
+	desc = nf_maxson_vault0.8.d
+	picture = GFX_event_the_warriors_decision
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.8.a
+		country_event = nf_maxson_vault0.9
+	}
+}
+	#Final Log#
+country_event = {
+	id = nf_maxson_vault0.9
+	title = nf_maxson_vault0.9.t
+	desc = nf_maxson_vault0.9.d
+	picture = GFX_event_final_log
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.9.a
+		country_event = nf_maxson_vault0.91
+		add_ideas = maxson_vault0_claimed
+		set_technology = {
+			humanoid_robot_unlock_tech = 1
+		}
+		460 = {
+			add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		add_resource = {
+			type = metal
+			amount = 10
+			state = 460
+		}
+		add_resource = {
+			type = advanced
+			amount = 10
+			state = 460
+		}
+		add_resource = {
+			type = energy
+			amount = 20
+			state = 460
+		}
+		add_resource = {
+			type = water
+			amount = 10
+			state = 460
+		}
+		add_resource = {
+			type = composites
+			amount = 10
+			state = 460
+		}
+		add_resource = {
+			type = circuitry
+			amount = 10
+			state = 460
+		}
+	}
+}
+
+country_event = {
+	id = nf_maxson_vault0.91
+	title = nf_maxson_vault0.91.t
+	desc = nf_maxson_vault0.91.d
+	picture = GFX_event_the_warriors_decision
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_vault0.91.a
+		if = {
+			limit = {
+				NOT = { has_country_flag = achievement_secret_of_vault_0 }
+			}
+			set_country_flag = achievement_secret_of_vault_0
+		}
+	}
+}
+
+	#------------#
+	#Boulder Dome#
+	#------------#
+
+	#Finding and Conquering the Dome#
+country_event = {
+	id = nf_maxson_boulderdome.1
+	title = nf_maxson_boulderdome.1.t
+	desc = nf_maxson_boulderdome.1.d
+	picture = GFX_event_boulder
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_boulderdome.1.a
+		GLW = {
+			ROOT = {
+				grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			}
+		}
+	}
+
+	option = {
+		name = nf_maxson_boulderdome.1.b
+
+		country_event = nf_maxson_boulderdome.11
+	}
+}
+	#Glowbugs Alliance#
+country_event = {
+	id = nf_maxson_boulderdome.11
+	title = nf_maxson_boulderdome.11.t
+	desc = nf_maxson_boulderdome.11.d
+	picture = GFX_event_boulder
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_boulderdome.11.a
+		if = {
+			limit ={
+				GLW ={
+					exists = yes
+				}
+			}
+			MXC = {
+				faction_leader = {
+					add_to_faction = GLW
+				}
+			}
+		}
+	}
+}
+	#Glowing and Angry#
+country_event = {
+	id = nf_maxson_boulderdome.2
+	title = nf_maxson_boulderdome.2.t
+	desc = nf_maxson_boulderdome.2.d
+	picture = GFX_event_glowing_and_angry
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_boulderdome.2.a
+	}
+}
+	#Camp Alpha Setup#
+country_event = {
+	id = nf_maxson_boulderdome.3
+	title = nf_maxson_boulderdome.3.t
+	desc = nf_maxson_boulderdome.3.d
+	picture = GFX_event_camp_alpha
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson_boulderdome.3.a
+	}
+}
+
+#FINAL EVENTS#
+
+country_event = {
+	id = nf_maxson_final.1
+	title = nf_maxson_final.1.t
+	desc = nf_maxson_final.1.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.1.a
+	}
+}
+
+# country_event = {
+# 	id = nf_maxson_final.1
+# 	title = nf_maxson_final.1.t
+# 	desc = nf_maxson_final.1.d
+# 	picture = GFX_event_maxson_chapter_default
+
+# 	is_triggered_only = yes
+# 		#Maxson Bunker Remains HQ#
+# 	option = {
+# 		name = nf_maxson_final.1.a
+# 		country_event = nf_maxson_final.2
+# 	}
+# 		#Denver HQ#
+# 	option = {
+# 		name = nf_maxson_final.1.b
+# 		country_event = nf_maxson_final.3
+# 		set_capital = {
+# 			state = 525
+# 			remember_old_capital = yes
+# 		}
+# 	}
+# 		#Vault 0 HQ#
+# 	option = {
+# 		name = nf_maxson_final.1.c
+# 		country_event = nf_maxson_final.4
+# 		set_capital = {
+# 			state = 460
+# 			remember_old_capital = yes
+# 		}
+# 	}
+# }
+# 	#Maxson Bunker HQ Event
+# country_event = {
+# 	id = nf_maxson_final.2
+# 	title = nf_maxson_final.2.t
+# 	desc = nf_maxson_final.2.d
+# 	picture = GFX_event_mxc_our_home_in_maxson
+
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = nf_maxson_final.2.a
+# 	}
+# }
+
+# 	#Denver HQ Event
+# country_event = {
+# 	id = nf_maxson_final.3
+# 	title = nf_maxson_final.3.t
+# 	desc = nf_maxson_final.3.d
+# 	picture = GFX_event_mxc_our_new_home_in_denver
+
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = nf_maxson_final.3.a
+# 	}
+# }
+
+# 	#Vault 0 HQ Event
+# country_event = {
+# 	id = nf_maxson_final.4
+# 	title = nf_maxson_final.4.t
+# 	desc = nf_maxson_final.4.d
+# 	picture = GFX_event_mxc_our_new_home_in_vault_0
+
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = nf_maxson_final.4.a
+# 	}
+# }
+
+## Texas Stuff
+
+
+
+##########################################
+
+##Choir related events
+country_event = {
+	id = nf_maxson.19
+	title = nf_maxson.19.t
+	desc = nf_maxson.19.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.19.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = nf_maxson.20
+	title = nf_maxson.20.t
+	desc = nf_maxson.20.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.20.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = nf_maxson.34
+	title = nf_maxson.34.t
+	desc = nf_maxson.34.d
+	picture = GFX_event_nature_nice
+	fire_only_once = yes
+
+	trigger = {
+		is_in_faction_with = CHC
+	}
+
+	option = {
+		name = nf_maxson.34.a
+		country_event = nf_maxson.35
+	}
+}
+
+country_event = {
+	id = nf_maxson.35
+	title = nf_maxson.35.t
+	desc = nf_maxson.35.d
+	picture = GFX_event_nature_nice
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson.35.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.36
+	title = nf_maxson.36.t
+	desc = nf_maxson.36.d
+	picture = GFX_event_nature_nice
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson.36.a
+	}
+}
+
+#Final Push#
+
+#Twin Mothers
+
+country_event = {
+	id = nf_maxson.40
+	title = nf_maxson.40.t
+	desc = nf_maxson.40.d
+	picture = GFX_event_ROT_vault_45
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson.40.a
+	}
+}
+
+#Twin Mothers with Doki
+country_event = {
+	id = nf_maxson.41
+	title = nf_maxson.41.t
+	desc = nf_maxson.41.d
+	picture = GFX_event_ROT_vault_45
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson.41.a
+	}
+}
+
+#Meeting Diana
+country_event = {
+	id = nf_maxson.37
+	title = nf_maxson.37.t
+	desc = nf_maxson.37.d
+	picture = GFX_event_ach_hood_progress
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.37.a
+		country_event = nf_maxson.38
+	}
+}
+country_event = {
+	id = nf_maxson.38
+	title = nf_maxson.38.t
+	desc = nf_maxson.38.d
+	picture = GFX_event_full_diana
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.38.a
+		country_event = nf_maxson.381
+	}
+}
+
+country_event = {
+	id = nf_maxson.381
+	title = nf_maxson.381.t
+	desc = nf_maxson.381.d
+	picture = GFX_event_full_diana
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.381.a
+	}
+}
+
+#Meeting Diana with Doki
+country_event = {
+	id = nf_maxson.39
+	title = nf_maxson.39.t
+	desc = nf_maxson.39.d
+	picture = GFX_event_full_diana
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.39.a
+		country_event = nf_maxson.391
+	}
+}
+
+country_event = {
+	id = nf_maxson.391
+	title = nf_maxson.391.t
+	desc = nf_maxson.391.d
+	picture = GFX_event_full_diana
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.391.a
+	}
+}
+
+
+### Friendslop Related Events ###
+## Note: The events where Brixley meets Doki are in the Robot City events file because they rely on event that ROB triggers when forming the alliance.
+## Still need the correct gfx pictures
+country_event = {
+	id = nf_maxson.25
+	title = nf_maxson.25.t
+	desc = nf_maxson.25.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.25.a
+		}
+}
+
+country_event = {
+	id = nf_maxson.26
+	title = nf_maxson.26.t
+	desc = nf_maxson.26.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.26.a
+		add_ideas = {
+			idea = maxson_research_club
+		}
+	}
+}
+
+# Brixley and Azkee
+country_event = {
+	id = nf_maxson.27
+	title = nf_maxson.27.t
+	desc = nf_maxson.27.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.27.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.28
+	title = nf_maxson.28.t
+	desc = nf_maxson.28.d
+	picture = GFX_event_raul
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.28.a
+		army_experience = 10
+		add_ideas = maxson_ghouls
+		WHD = {
+			WHD_zhang_wei = {
+				set_nationality = MXC
+			}
+		}
+	}
+	option = {
+		name = nf_maxson.28.b
+		army_experience = 10
+		add_ideas = maxson_ghouls
+	}
+}
+
+country_event = {
+	id = nf_maxson.29
+	title = nf_maxson.29.t
+	desc = nf_maxson.29.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson.29.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.30
+	title = nf_maxson.30.t
+	desc = nf_maxson.30.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.30.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.31
+	title = nf_maxson.31.t
+	desc = nf_maxson.31.d
+	picture = GFX_event_generic_wasteland_ruins
+
+	fire_only_once = yes
+
+	trigger = {
+		has_completed_focus = maxson_bos_postlanius_3
+		has_completed_focus = maxson_bos_ghouls_b
+	}
+	mean_time_to_happen = {
+			days = 30
+		}
+
+	option = {
+		name = nf_maxson.31.a
+	}
+}
+
+# country_event = {
+# 	id = nf_maxson.32
+# 	title = nf_maxson.32.t
+# 	desc = nf_maxson.32.d
+# 	picture = GFX_event_generic_wasteland_ruins
+
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		has_completed_focus = maxson_bos_robot_city_question
+# 	}
+
+# 	option = {
+# 		name = nf_maxson.32.a
+# 		if = {
+# 			limit = {
+# 				MXC = {
+# 					is_in_faction = no
+# 				}
+# 			}
+# 			MXC = {
+# 				create_or_join_colorado_technate = yes
+# 				ROB = {
+# 					invite_to_colorado_technate = yes
+# 				}
+# 			}
+# 		}
+
+# 		else = {
+# 			MXC = {
+# 				ROB = {
+# 					join_from_faction = yes
+# 				}
+# 			}
+# 		}
+# 		country_event = rob_event.9999
+# 	}
+# 	option = {
+# 		name = nf_maxson.32.b
+# 		complete_national_focus = maxson_bos_robot_city_a
+# 	}
+# }
+
+## Hike Events
+#Variant V + Doki
+country_event = {
+	id = nf_maxson.42
+	title = nf_maxson.42.t
+	desc = nf_maxson.42.d
+	picture = GFX_event_mxc_tree_Doki_V
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.42.a
+
+		add_popularity = {
+			ideology = people
+			popularity = 0.5
+		}
+
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no
+		}
+
+		hidden_effect = {
+			set_portraits = {
+				character = MXC_andrea_brixley
+				civilian = {
+					large = GFX_Portrait_MXC_brixley
+				}
+			}
+		}
+
+		CHC = {
+			clr_country_flag = CHC_maxson_flag
+		}
+	}
+}
+
+country_event = {
+	id = nf_maxson.43
+	title = nf_maxson.43.t
+	desc = nf_maxson.43.d
+	picture = GFX_event_navajo_1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.43.a
+		country_event = nf_maxson.44
+	}
+}
+
+country_event = {
+	id = nf_maxson.44
+	title = nf_maxson.44.t
+	desc = nf_maxson.44.d
+	picture = GFX_event_navajo_1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.44.a
+		country_event = nf_maxson.42
+	}
+}
+#Variant V
+country_event = {
+	id = nf_maxson.45
+	title = nf_maxson.45.t
+	desc = nf_maxson.45.d
+	picture = GFX_event_mxc_tree_V
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.45.a
+
+		add_popularity = {
+			ideology = people
+			popularity = 0.5
+		}
+
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no
+		}
+
+		hidden_effect = {
+			set_portraits = {
+				character = MXC_andrea_brixley
+				civilian = {
+					large = GFX_Portrait_MXC_brixley
+				}
+			}
+		}
+
+		CHC = {
+			clr_country_flag = CHC_maxson_flag
+		}
+	}
+}
+
+country_event = {
+	id = nf_maxson.46
+	title = nf_maxson.46.t
+	desc = nf_maxson.46.d
+	picture = GFX_event_navajo_1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.46.a
+		country_event = nf_maxson.45
+	}
+}
+
+#Variant Doki
+country_event = {
+	id = nf_maxson.47
+	title = nf_maxson.47.t
+	desc = nf_maxson.47.d
+	picture = GFX_event_mxc_tree_Doki
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.47.a
+
+		add_popularity = {
+			ideology = people
+			popularity = 0.5
+		}
+
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no
+		}
+
+		hidden_effect = {
+			set_portraits = {
+				character = MXC_andrea_brixley
+				civilian = {
+					large = GFX_Portrait_MXC_brixley
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nf_maxson.48
+	title = nf_maxson.48.t
+	desc = nf_maxson.48.d
+	picture = GFX_event_navajo_1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.48.a
+		country_event = nf_maxson.47
+	}
+}
+
+##Funeral Events
+country_event = {
+	id = nf_maxson.49
+	title = nf_maxson.49.t
+	desc = nf_maxson.49.d
+	picture = GFX_event_sub_generic_autumn
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.49.a
+		country_event = nf_maxson.50
+	}
+}
+
+country_event = {
+	id = nf_maxson.50
+	title = nf_maxson.50.t
+	desc = nf_maxson.50.d
+	picture = GFX_event_sub_generic_autumn
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.50.a
+		country_event = nf_maxson.51
+	}
+}
+
+country_event = {
+	id = nf_maxson.51
+	title = nf_maxson.51.t
+	desc = nf_maxson.51.d
+	picture = GFX_event_sub_generic_autumn
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.51.a
+		country_event = nf_maxson.52
+	}
+}
+country_event = {
+	id = nf_maxson.52
+	title = nf_maxson.52.t
+	desc = nf_maxson.52.d
+	picture = GFX_event_mnc_fields_1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.52.a
+	}
+}
+
+## The END
+
+country_event = {
+	id = nf_maxson.53
+	title = nf_maxson.53.t
+	desc = nf_maxson.53.d
+	picture = GFX_event_maxson_chapter_default
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.53.a
+	}
+}
+
+country_event = {
+	id = nf_maxson.54
+	title = nf_maxson.54.t
+	desc = nf_maxson.54.d
+	picture = GFX_event_mnc_fields_1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_maxson.54.a
+	}
+}
+
+
+#############################################################################################################
+## Contact Stuff
+	#Midwestern BOS contact event
+country_event = {
+	id = nf_maxson_final.5
+	title = nf_maxson_final.5.t
+	desc = nf_maxson_final.5.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.5.a
+	}
+}
+	#Western BOS exists and is contacted
+country_event = {
+	id = nf_maxson_final.6
+	title = nf_maxson_final.6.t
+	desc = nf_maxson_final.6.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.6.a
+		BOS = {
+			country_event = nf_maxson_final.12
+		}
+	}
+}
+	#Western BOS does not exist and is contacted
+country_event = {
+	id = nf_maxson_final.7
+	title = nf_maxson_final.7.t
+	desc = nf_maxson_final.7.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.7.a
+	}
+}
+
+	#Texas Brotherhood exists and is contacted
+country_event = {
+	id = nf_maxson_final.8
+	title = nf_maxson_final.8.t
+	desc = nf_maxson_final.8.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.8.a
+		TBH = {
+			country_event = nf_maxson_final.13
+		}
+	}
+}
+
+	#Texas Brotherhood does not exist and is contacted
+country_event = {
+	id = nf_maxson_final.9
+	title = nf_maxson_final.9.t
+	desc = nf_maxson_final.9.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.9.a
+	}
+}
+
+	#Alamo Chapter exists and is contacted
+country_event = {
+	id = nf_maxson_final.10
+	title = nf_maxson_final.10.t
+	desc = nf_maxson_final.10.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.10.a
+		ACH = {
+			country_event = nf_maxson_final.14
+		}
+	}
+}
+
+	#Alamo Chapter does not exist and is contacted
+country_event = {
+	id = nf_maxson_final.11
+	title = nf_maxson_final.11.t
+	desc = nf_maxson_final.11.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.11.a
+	}
+}
+
+	#Western Brotherhood exists and is given tech, their country event
+country_event = {
+	id = nf_maxson_final.12
+	title = nf_maxson_final.12.t
+	desc = nf_maxson_final.12.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.12.a
+	}
+}
+
+	#Texas Brotherhood exists and knows about us
+country_event = {
+	id = nf_maxson_final.13
+	title = nf_maxson_final.13.t
+	desc = nf_maxson_final.13.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.13.a
+	}
+}
+
+	#Alamo Chapter exists and knows about us
+country_event = {
+	id = nf_maxson_final.14
+	title = nf_maxson_final.14.t
+	desc = nf_maxson_final.14.d
+	picture = GFX_event_maxson_chapter_default
+
+	is_triggered_only = yes
+	option = {
+		name = nf_maxson_final.14.a
+	}
+}
