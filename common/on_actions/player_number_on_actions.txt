@@ -1,0 +1,238 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = NCR_players
+						option = FIVE
+					}
+				}
+					BDT = {
+						every_core_state = {
+							add_claim_by = VLT
+						}
+					}
+					TIM = {
+						every_core_state = {
+							add_claim_by = VLT
+						}
+					}
+					CHE = {
+						every_core_state = {
+							add_claim_by = VLT
+						}
+					}
+					MDT = {
+						every_core_state = {
+							add_claim_by = NEW
+						}
+					}
+					RBT = {
+						every_core_state = {
+							add_claim_by = NEW
+						}
+					}
+					CCW = {
+						every_core_state = {
+							add_claim_by = NEW
+						}
+					}
+					TRL = {
+						every_core_state = {
+							add_claim_by = NEW
+						}
+					}
+					PMR = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					MLT = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					DIS = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					ARR = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					MXS = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					FOU = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					PAC = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					UMB = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					EUR = {
+						every_core_state = {
+							add_claim_by = SHI
+						}
+					}
+					VEG = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					SKY = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					GRA = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					GRD = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					SOK = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					TOF = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					TVT = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					DES = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					VIP = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					PSH = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+					RIP = {
+						every_core_state = {
+							add_claim_by = MOT
+						}
+					}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Legion_players
+						option = FIVE
+					}
+				}
+				GDH = {
+					every_core_state = {
+						add_claim_by = TWO
+					}
+				}
+				TOB = {
+					every_core_state = {
+						add_claim_by = RES
+					}
+				}
+				FOR = {
+					every_core_state = {
+						add_claim_by = RES
+					}
+				}
+				INR = {
+					every_core_state = {
+						add_claim_by = RES
+					}
+				}
+				CLJ = {
+					every_core_state = {
+						add_claim_by = RES
+					}
+				}
+				RUB = {
+					every_core_state = {
+						add_claim_by = WHT
+					}
+				}
+				EHT = {
+					every_core_state = {
+						add_claim_by = WHT
+					}
+				}
+				HAM = {
+					every_core_state = {
+						add_claim_by = WHT
+					}
+				}
+				MUR = {
+					every_core_state = {
+						add_claim_by = WHT
+					}
+				}
+				DRY = {
+					every_core_state = {
+						add_claim_by = WHT
+					}
+				}
+				BLC = {
+					every_core_state = {
+						add_claim_by = WHT
+					}
+				}
+				GLW = {
+					every_core_state = {
+						add_claim_by = CES
+					}
+				}
+				LUM = {
+					every_core_state = {
+						add_claim_by = CES
+					}
+				}
+				BAG = {
+					every_core_state = {
+						add_claim_by = CES
+					}
+				}
+				WHD = {
+					every_core_state = {
+						add_claim_by = CES
+					}
+				}
+				IRN = {
+					every_core_state = {
+						add_claim_by = CES
+					}
+				}
+				
+			}
+		}
+	}
+}

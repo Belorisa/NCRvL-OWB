@@ -478,7 +478,6 @@ MP_mod_decisions = {
 				target = TPM
 				transfer_troops = no
 			}
-
 			every_state = {
 				limit = {
 					or = {
@@ -491,7 +490,7 @@ MP_mod_decisions = {
 			}
 		}
 	}
-legion_annex_white_legs = {
+	legion_annex_white_legs = {
 		visible = {
 			or = {
 				original_tag = EHT
@@ -523,7 +522,7 @@ legion_annex_white_legs = {
 			}
 		}
 	}
-legion_annex_eighties = {
+	legion_annex_eighties = {
 		visible = {
 			or = {
 				original_tag = WHT
@@ -613,14 +612,14 @@ legion_annex_eighties = {
 		fire_only_once = yes
 		complete_effect = {
 			every_state = {
-					limit = {
-						OR = {
-							is_owned_by = MOT
-						}
+				limit = {
+					OR = {
+						is_owned_by = MOT
 					}
-					add_core_of = NCR
-					set_state_flag = do_not_exodus
 				}
+				add_core_of = NCR
+				set_state_flag = do_not_exodus
+			}
 			annex_country = {
 				target = MOT
 				transfer_troops = yes
@@ -1062,6 +1061,398 @@ legion_annex_eighties = {
 				}
 				add_compliance = 50
 				add_resistance_target = -20
+			}
+		}
+	}
+	VLT_annex_five = {
+		visible = {
+			original_tag = VLT
+		}
+		allowed = {
+			original_tag = VLT
+		}
+		available = {
+			is_ai = no
+			date > 2278.1.1
+			has_game_rule = {
+				rule = NCR_players
+				option = FIVE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = BDT
+							is_core_of = TIM
+							is_core_of = CHE
+						}
+						NOT = {
+							is_owned_by = VLT
+						}
+					}
+					VLT = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_core_of = BDT
+							is_core_of = TIM
+							is_core_of = CHE
+						}
+					}
+					add_compliance = 80
+					add_resistance_target = -20
+				}
+			}
+		}
+	}
+	NEW_annex_five = {
+		visible = {
+			original_tag = NEW
+		}
+		allowed = {
+			original_tag = NEW
+		}
+		available = {
+			is_ai = no
+			date > 2278.1.1
+			has_game_rule = {
+				rule = NCR_players
+				option = FIVE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = MDT
+							is_core_of = RBT
+							is_core_of = CCW
+							is_core_of = TRL
+						}
+						NOT = {
+							is_owned_by = NEW
+						}
+					}
+					NEW = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_core_of = MDT
+							is_core_of = RBT
+							is_core_of = CCW
+							is_core_of = TRL
+						}
+					}
+					add_compliance = 80
+					add_resistance_target = -20
+				}
+			}
+		}
+	}
+	SHI_annex_five = {
+		visible = {
+			original_tag = SHI
+		}
+		allowed = {
+			original_tag = SHI
+		}
+		available = {
+			is_ai = no
+			date > 2278.1.1
+			has_game_rule = {
+				rule = NCR_players
+				option = FIVE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = PMR
+							is_core_of = MLT
+							is_core_of = DIS
+							is_core_of = ARR
+							is_core_of = MXS
+							is_core_of = FOU
+							is_core_of = PAC
+							is_core_of = UMB
+							is_core_of = EUR
+						}
+						NOT = {
+							is_owned_by = SHI
+						}
+					}
+					SHI = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_core_of = PMR
+							is_core_of = MLT
+							is_core_of = DIS
+							is_core_of = ARR
+							is_core_of = MXS
+							is_core_of = FOU
+							is_core_of = PAC
+							is_core_of = UMB
+							is_core_of = EUR
+						}
+					}
+					add_compliance = 80
+					add_resistance_target = -20
+				}
+			}
+		}
+	}
+	MOT_annex_five = {
+		visible = {
+			original_tag = MOT
+		}
+		allowed = {
+			original_tag = MOT
+		}
+		available = {
+			is_ai = no
+			date > 2278.1.1
+			has_game_rule = {
+				rule = NCR_players
+				option = FIVE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = VEG
+							is_core_of = SKY
+							is_core_of = GRA
+							is_core_of = GRD
+							is_core_of = SOK
+							is_core_of = TOF
+							is_core_of = TVT
+							is_core_of = DES
+							is_core_of = VIP
+							is_core_of = PSH
+							is_core_of = RIP
+						}
+						NOT = {
+							is_owned_by = MOT
+						}
+					}
+					MOT = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_core_of = VEG
+							is_core_of = SKY
+							is_core_of = GRA
+							is_core_of = GRD
+							is_core_of = SOK
+							is_core_of = TOF
+							is_core_of = TVT
+							is_core_of = DES
+							is_core_of = VIP
+							is_core_of = PSH
+							is_core_of = RIP
+						}
+					}
+					add_compliance = 80
+					add_resistance_target = -20
+				}
+			}
+		}
+	}
+	RES_annex_five = {
+		visible = {
+			original_tag = RES
+		}
+		allowed = {
+			original_tag = RES
+		}
+		available = {
+			is_ai = no
+			date > 2278.1.1
+			has_game_rule = {
+				rule = legion_players
+				option = FIVE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = TOB
+							is_core_of = FOR
+							is_core_of = INR
+							is_core_of = CLJ
+						}
+						NOT = {
+							is_owned_by = RES
+						}
+					}
+					RES = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_core_of = TOB
+							is_core_of = FOR
+							is_core_of = INR
+							is_core_of = CLJ
+						}
+					}
+					add_compliance = 80
+					add_resistance_target = -20
+				}
+			}
+		}
+	}
+	WHT_annex_five = {
+		visible = {
+			original_tag = WHT
+		}
+		allowed = {
+			original_tag = WHT
+		}
+		available = {
+			is_ai = no
+			date > 2278.1.1
+			has_game_rule = {
+				rule = legion_players
+				option = FIVE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = RUB
+							is_core_of = EHT
+							is_core_of = HAM
+							is_core_of = MUR
+							is_core_of = DRY
+							is_core_of = BLC
+						}
+						NOT = {
+							is_owned_by = WHT
+						}
+					}
+					WHT = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_core_of = RUB
+							is_core_of = EHT
+							is_core_of = HAM
+							is_core_of = MUR
+							is_core_of = DRY
+							is_core_of = BLC
+						}
+					}
+					add_compliance = 80
+					add_resistance_target = -20
+				}
+			}
+		}
+	}
+	CES_annex_five = {
+		visible = {
+			original_tag = CES
+		}
+		allowed = {
+			original_tag = CES
+		}
+		available = {
+			is_ai = no
+			date > 2278.1.1
+			has_game_rule = {
+				rule = legion_players
+				option = FIVE
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				if = {
+					limit = {
+						OR = {
+							is_core_of = GLW
+							is_core_of = LUM
+							is_core_of = BAG
+							is_core_of = WHD
+							is_core_of = IRN
+						}
+						NOT = {
+							is_owned_by = CES
+						}
+					}
+					CES = {
+						transfer_state = PREV
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							is_core_of = GLW
+							is_core_of = LUM
+							is_core_of = BAG
+							is_core_of = WHD
+							is_core_of = IRN
+						}
+					}
+					add_compliance = 80
+					add_resistance_target = -20
+				}
 			}
 		}
 	}
