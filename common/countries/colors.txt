@@ -117,8 +117,8 @@ BRT = {
 }
 
 BVC = {
-	color = rgb { 0 104 71 }
-	color_ui = rgb { 0 104 71 }
+	color = rgb { 174 161 11 }
+	color_ui = rgb { 174 161 11 }
 }
 
 BJS = {
@@ -326,6 +326,11 @@ HAM = {
 HAN = {
 	color = rgb { 232 108 0 }
 	color_ui = rgb { 232 108 0 }
+}
+
+WDN = {
+	color = rgb { 52 97 235 }
+	color_ui = rgb { 52 97 235 }
 }
 
 HAI = {

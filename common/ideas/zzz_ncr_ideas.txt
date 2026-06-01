@@ -166,7 +166,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = 0.35
+					build_cost_ic = 0.20
 					instant = yes
 				}
 				fireteam_equipment = {
@@ -463,7 +463,7 @@ ideas = {
 					instant = yes
 				}
 				infantry_equipment = {
-					build_cost_ic = -0.25
+					build_cost_ic = -0.15
 					reliability = 0.1
 					soft_attack = 0.1
 					hard_attack = 0.1

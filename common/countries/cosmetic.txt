@@ -929,7 +929,17 @@ HGH_NCN = {
 	color_ui = rgb { 237 211 166 }
 }
 
-### Heaven's Gate
+### Heaven's Guard (Heaven's Gate)
+
+HEA_CON = {
+	color = rgb { 125 196 26 }
+	color_ui = rgb { 125 196 26 }
+}
+
+HEA_SOH = {
+	color = rgb { 0 0 153 }
+	color_ui = rgb { 0 0 153 }
+}
 
 IRE_HEA = {
 	color = rgb { 225 225 225 }
@@ -1089,6 +1099,11 @@ MRA_VEG = {
 	color_ui = rgb { 58 165 86 }
 }
 
+# DAM_VEG = {
+# 	color = rgb { 58 165 86 }
+# 	color_ui = rgb { 58 165 86 }
+# }
+
 
 
 ###WESTERN BROTHERHOOD
@@ -1218,10 +1233,10 @@ SHI_BOS = {
 	color_ui = rgb { 192 38 0 }
 }
 
-SHI_Closed_Fist = {
-	color = rgb { 206 0 48 }
-	color_ui = rgb { 206 0 48 }
-}
+#SHI_Closed_Fist = {
+#	color = rgb { 206 0 48 }
+#	color_ui = rgb { 206 0 48 }
+#}
 
 NCR_shady_sands = {
 	color = rgb { 153 76 0 }
