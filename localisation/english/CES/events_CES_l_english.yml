@@ -20,7 +20,7 @@
   nf_legion.420.t:0 "The Old World Wall"
   nf_legion.420.d:0 "Since the defeat at the battle of Hoover Dam, the reformation of the Legion and Caesar's New Rome increasingly remains out of reach, he becomes acutely aware of his failing health and the mounting stress of commanding thousands. Day by day, the burden weighs heavily upon him. He contemplates whether he truly embodies what his Legion demands to achieve its glory, pondering deeply and reflecting on the accomplishments under his leadership. He could very easily pass on his will to another should he attempt to let the auto-doc's euthanasia take him silently into the night. Or he could continue down the road that he has laid out, Mars and his sons not far behind him.\n\nAfterall..."
   nf_legion.420.a:0 "Rome wasn't built in a day."
-  nf_legion.420.b:0 "Rome had many leaders in it's day."
+  nf_legion.420.b:0 "Rome had many leaders in it's day.(This Kill Cesar even if healed)"
 
 #Placeholder localization ends
   nf_legion.2.t:0 "The Eighties Petition"
@@ -513,6 +513,7 @@
   nf_legion.111.b:0 "To Vulpes, our loyal friend."
   nf_legion.111.c:0 "Aurelius knows best."
   nf_legion.111.e:0 "The Butcher will carve the NCR."
+  nf_Legion.111.f:0 "Numquam melius tibi servitur quam a te ipso."
 
 
   nf_legion.112.t:0 "Why Won't You Die!"

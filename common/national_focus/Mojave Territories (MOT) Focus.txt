@@ -2246,6 +2246,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			remove_ideas = mot_khan_raiders
 			if = {
 				limit = {
 					check_variable = { mot_oli_han_bal < 0.5 }

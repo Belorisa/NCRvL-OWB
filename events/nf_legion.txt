@@ -6154,6 +6154,22 @@ country_event = {
 			}
 		}
 	}
+		option = {
+		name = nf_legion.111.f
+		clr_country_flag = CES_stress
+		set_variable = {
+			CES_stress_level = 0
+		}
+		custom_effect_tooltip = nf_legion.95.a_tt
+		set_country_flag = CES_healthy
+		ai_chance = {
+			base = 9
+			modifier = {
+				CES_has_ai_behavior_caesar_death = yes
+				factor = 0
+			}
+		}
+	}
 }
 
 news_event = {

@@ -330,7 +330,7 @@ ideas = {
 			picture = generic_ranger_helm
 			removal_cost = -1
 			modifier = {
-				conscription_factor = -0.15
+				conscription_factor = -0.075
 				special_forces_min = 30
 				resistance_target = -0.1
 

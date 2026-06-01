@@ -372,29 +372,29 @@ news_event = {
 		}
 	}
 
-	option = { # A new power emerges in Utah
-		name = nf_ncn.7.c
-		ai_chance = {
-			base = 1
-		}
-		trigger = {
-			NOT = { tag = WHT }
-			NOT = { tag = NCN }
-		}
-		if = {
-			limit = {
-				tag = CES
-				NOT = { has_country_flag = CES_burned_man }
-				NOT = { has_idea = legion_nf_burned_man_rumours }
-				NOT = {
-					has_country_leader = {
-						character = CES_malpais
-					}
-				}
-			}
-			country_event = { id = nf_ncn.14 days = 2 }
-		}
-	}
+	# option = { # A new power emerges in Utah
+	# 	name = nf_ncn.7.c
+	# 	ai_chance = {
+	# 		base = 1
+	# 	}
+	# 	trigger = {
+	# 		NOT = { tag = WHT }
+	# 		NOT = { tag = NCN }
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			tag = CES
+	# 			NOT = { has_country_flag = CES_burned_man }
+	# 			NOT = { has_idea = legion_nf_burned_man_rumours }
+	# 			NOT = {
+	# 				has_country_leader = {
+	# 					character = CES_malpais
+	# 				}
+	# 			}
+	# 		}
+	# 		country_event = { id = nf_ncn.14 days = 2 }
+	# 	}
+	# }
 }
 
 country_event = { # Day of Judgement / Capture of Lincon
