@@ -194,6 +194,7 @@ ideas = {
 
 			modifier = {
 				equipment_conversion_speed = -0.1
+				recruitable_population = 0.025
 			}
 
 			equipment_bonus = {
