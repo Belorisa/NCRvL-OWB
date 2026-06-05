@@ -2923,7 +2923,7 @@ leader_traits = {
 	}
 	phillipe = {
 		random = no
-		supply_factor = 0.15
+		supply_consumption_factor = 0.15
 		stability_factor = 0.05
 	}
 	jessup = {
@@ -4229,7 +4229,7 @@ leader_traits = {
 
 	MET_safe_cracking = {
 		random = no
-		supply_factor = 0.1
+		supply_consumption_factor = 0.1
 		organization_floor_modifier_1 = 30
 		organization_floor_modifier_4 = 30
 	}
