@@ -9308,7 +9308,7 @@ focus = {
 		y = 1
 		relative_position_id = ncr_follower_industry
 		completion_reward = {
-			add_ideas = ncr_we_are_the_republic
+			add_ideas = ncr_we_are_the_republic_idea
 		}
 	}
 	focus = {
