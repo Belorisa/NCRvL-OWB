@@ -5,8 +5,8 @@ state={
 		19855 19861 19865 19868 19875 19880 19882 19885
 	}
 	history={
-		owner = FBH
-		add_core_of = FBH
+		# owner = FBH
+		# add_core_of = FBH
 		victory_points = {
 			19880 2
 		}

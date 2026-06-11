@@ -34,18 +34,18 @@ bookmarks = {
 				ces_triumph
 			}
 		}
-		"FBH" = {
-			history = "FBH_OWB_DESC"
-			ideology = elites
-			ideas = {
-				fbh_steel_aura
-			}
-			focuses = {
-				fbh_power_rangers
-				fbh_paladin_supremacy
-				fbh_like_us
-			}
-		}
+		# "FBH" = {
+		# 	history = "FBH_OWB_DESC"
+		# 	ideology = elites
+		# 	ideas = {
+		# 		fbh_steel_aura
+		# 	}
+		# 	focuses = {
+		# 		fbh_power_rangers
+		# 		fbh_paladin_supremacy
+		# 		fbh_like_us
+		# 	}
+		# }
 		"NEW" = {
 			history = "NEW_OWB_DESC"
 			ideology = people

@@ -2280,10 +2280,10 @@ MET_masters = {
 	color = rgb { 219 226 233 }
 	color_ui = rgb { 219 226 233 }
 }
-FBH = {
-	color = rgb { 227 154 66 }
-	color_ui = rgb { 227 154 66}
-}
+# FBH = {
+# 	color = rgb { 227 154 66 }
+# 	color_ui = rgb { 227 154 66}
+# }
 HST_academics = {
 	color = rgb { 125 25 125 }
 	color_ui = rgb { 125 25 125 }

@@ -6,8 +6,8 @@ state={
 	}
 
 	history={
-		owner = FBH
-		add_core_of = FBH
+		# owner = FBH
+		# add_core_of = FBH
 		victory_points = {
 			19848 25
 		}
