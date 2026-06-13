@@ -1,6 +1,7 @@
 state={
 	id=700
 	impassable = yes
+	force_link_ownership_to = 435
 
 	history={
 		buildings = {

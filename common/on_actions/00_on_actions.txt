@@ -205,24 +205,6 @@ on_actions = {
 			if = {
 				limit = {
 					FROM = {
-						original_tag = ROS
-					}
-					ROOT = {
-						tag = MCA
-					}
-				}
-				every_state = {
-					limit = {
-						is_core_of = ROS
-					}
-					MCA = {
-						transfer_state = PREV
-					}
-				}
-			}
-			if = {
-				limit = {
-					FROM = {
 						original_tag = HAN
 					}
 					ROOT = {
@@ -269,10 +251,14 @@ on_actions = {
 				every_state = {
 					limit = {
 						OWNER = {
-							is_ally_with = LAC
+							OR = {
+								original_tag = LAC
+								is_ally_with = LAC
+							}
 						}
 						OR = {
 							is_core_of = HAN
+							is_core_of = WDN
 							is_core_of = ROB
 							is_core_of = MXC
 							is_core_of = SCO
@@ -337,6 +323,44 @@ on_actions = {
 				}
 				ROS = {
 					country_event = nf_nit.19
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = LON
+					}
+					ROOT = {
+						original_tag = ROS
+						has_country_flag = sie_land_deal
+					}
+				}
+				ROS = {
+					country_event = nf_ros.38
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = MCA
+					}
+					ROOT = {
+						original_tag = ROS
+						has_country_flag = ROS_brotherhood_deal
+					}
+				}
+				MCA = {
+					every_owned_state = {
+						limit = {
+							OR = {
+								is_core_of = MCA
+								is_core_of = STM
+							}
+						}
+						remove_claim_by = ROS
+						add_claim_by = MNC
+						transfer_state_to = MNC
+					}
 				}
 			}
 			# 	if = {
@@ -543,12 +567,6 @@ on_actions = {
 			BLP = {
 				load_oob = BLP_2275
 			}
-			STC = {
-				load_oob = STC_2275
-			}
-			HVR = {
-				load_oob = "HVR_2275"
-			}
 			## Relation modifiers for countries based on types
 			# nobody likes supermutants, supermutants don't like anyone else
 			every_country = {
@@ -734,7 +752,7 @@ on_actions = {
 						load_oob = "unlock_supermutant_infantry"
 					}
 				}
-								if = {
+				if = {
 					limit = {
 						NOT = {
 							has_template_containing_unit = heavy_super_mutant_infantry
@@ -793,6 +811,9 @@ on_actions = {
 					limit = {
 						NOT = {
 							has_template_containing_unit = heavy_infantry
+						}
+						NOT = {
+							original_tag = LAC
 						}
 						has_tech = heavy_infantry_tech_1
 					}
@@ -1372,7 +1393,7 @@ on_actions = {
 			}
 		}
 	}
-		#Removed in 5.1 because this was here to make it that LAC could fight a non-bordering MXC-CHC alliance. Now that alliance requires a border, so we can remove this and it's fine. - Zusk
+	#Removed in 5.1 because this was here to make it that LAC could fight a non-bordering MXC-CHC alliance. Now that alliance requires a border, so we can remove this and it's fine. - Zusk
 	#on_capitulation = {
     #    effect = {
     #        if = {

@@ -4,6 +4,7 @@ state = {
 	manpower = 216
 	state_category = rural
 	impassable = yes
+	force_link_ownership_to = 656
 
 	history = {
 	}

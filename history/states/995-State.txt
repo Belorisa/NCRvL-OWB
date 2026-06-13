@@ -1,13 +1,11 @@
 state={
 	id=995
 	name="STATE_995"
-
-	resources = {
-		energy = 4
-		water = 2
-		metal = 3
+	resources={
+		energy=4.000
+		water=2.000
+		metal=3.000
 	}
-
 	history={
 		victory_points = {
 			7296 10
@@ -24,11 +22,11 @@ state={
 			industrial_complex = 2
 		}
 	}
-
 	provinces={
 		2559 2560 3634 3752 4455 7254 7289 7291 7296
 	}
-	manpower = 12480
-	state_category = city
+	manpower=12480
 	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

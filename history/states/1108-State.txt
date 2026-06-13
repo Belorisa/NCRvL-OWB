@@ -6,9 +6,9 @@ state={
 		13122 13256 13257 13258 13260 13261
 	}
 	resources = {
-		water = 12
-		energy = 6
-		metal = 8
+		water = 10
+		energy = 5
+		metal = 3
 	}
 	history = {
 		victory_points = {
@@ -25,11 +25,14 @@ state={
 			industrial_complex = 3
 			arms_factory = 2
 			dockyard = 1
-			
+			air_base = 6
 			radar_station = 1
+			13258 = {
+				naval_base = 4
+			}
 		}
 	}
 	state_category = metropolis
-	manpower = 15681
+	manpower = 25681
 	buildings_max_level_factor=1.000
 }

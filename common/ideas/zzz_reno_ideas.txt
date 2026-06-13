@@ -25,7 +25,7 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
-				NEW_tourist_economy = {
+		NEW_tourist_economy = {
 			picture = cmc_bright_lights
 			removal_cost = -1
 			allowed = {
@@ -690,7 +690,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_core_defence_factor = 0.05
+				army_defence_factor = 0.05
 				army_morale_factor = 0.05
 				conscription_factor = 0.05
 				caps_expense_modifier = 0.05

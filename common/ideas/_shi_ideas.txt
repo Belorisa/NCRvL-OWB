@@ -2,23 +2,18 @@ ideas = {
     country = {
         shi_ghosts_of_the_pacific = {
             picture = enclave_helmet
-
             allowed = {
                 always = no
             }
-
             allowed_civil_war = {
                 always = yes
             }
-
             removal_cost = -1
-
             research_bonus = {
                 air_tech_category = 0.2
                 power_armor_tech_category = 0.2
                 infantry_weapons_tech_category = 0.2
             }
-
             modifier = {
                 industrial_capacity_factory = 0.1
                 experience_gain_air = 0.1
@@ -60,68 +55,52 @@ ideas = {
         }
         shi_expert_infiltrators = {
             picture = itz_idea_icdeb
-
             allowed = {
                 always = no
             }
-
             allowed_civil_war = {
                 always = yes
             }
-
             removal_cost = -1
-
             modifier = {
                 intel_network_gain = 0.5
             }
         }
         shi_political_interference = {
             picture = itz_idea_icdeb
-
             allowed = {
                 always = no
             }
-
             allowed_civil_war = {
                 always = yes
             }
-
             removal_cost = -1
-
             modifier = {
                 political_power_factor = -0.4
             }
         }
         shi_supply_consumption = {
             picture = generic_food_bad
-
             allowed = {
                 always = no
             }
-
             allowed_civil_war = {
                 always = yes
             }
-
             removal_cost = -1
-
             modifier = {
                 supply_consumption_factor = 0.2
             }
         }
         shi_volunteers = {
             picture = shi_calculations
-
             allowed = {
                 always = no
             }
-
             allowed_civil_war = {
                 always = yes
             }
-
             removal_cost = -1
-
             modifier = {
                 send_volunteer_size = 5
                 send_volunteer_divisions_required = -1
@@ -132,9 +111,9 @@ ideas = {
             allowed = {
                 always = no
             }
-			cancel = {
-				NOT = { country_exists = D13 }
-			}
+            cancel = {
+                NOT = { country_exists = D13 }
+            }
             allowed_civil_war = {
                 always = yes
             }
@@ -176,17 +155,13 @@ ideas = {
         }
         shi_imperial_army_2 = {
             picture = animated_vault_boy_army
-
             allowed = {
                 always = no
             }
-
             allowed_civil_war = {
                 always = yes
             }
-
             removal_cost = -1
-
             modifier = {
                 acclimatization_hot_climate_gain_factor = 0.20
                 air_superiority_bonus_in_combat = 0.10
@@ -198,17 +173,13 @@ ideas = {
         }
         shi_arcade_gannon = {
             picture = veg_follower_advisers
-
             allowed = {
                 always = no
             }
-
             allowed_civil_war = {
                 always = yes
             }
-
             removal_cost = -1
-
             modifier = {
                 monthly_population = 999
                 research_speed_factor = 100
@@ -241,7 +212,6 @@ ideas = {
             }
             picture = steel_conquerors
             removal_cost = -1
-
             targeted_modifier = {
                 tag = NCR
                 defense_bonus_against = 0.1

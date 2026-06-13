@@ -18,6 +18,7 @@ state={
 			dockyard = 1
 			16471 = {
 				naval_base = 2
+
 			}
 
 		}

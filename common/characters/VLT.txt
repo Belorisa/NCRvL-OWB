@@ -445,7 +445,7 @@ characters = {
 			}
 		}
 	}
-		VLT_dweller_cyril = {
+	VLT_dweller_cyril = {
 		name = VLT_dweller_cyril
 		portraits = {
 			army = {
@@ -553,7 +553,7 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = economic_advisor
+			slot = cultural_advisor
 			idea_token = VLT_citizen_gracchi_token
 			allowed = {
 				original_tag = VLT

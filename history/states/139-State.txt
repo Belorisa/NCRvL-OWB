@@ -1,6 +1,7 @@
-state = {
-	id = 139
-	name = "STATE_139"
+
+state={
+	id=139
+	name="STATE_139"
 	resources={
 		water=3.000
 	}
@@ -11,13 +12,16 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
 
-	provinces = {
+	provinces={
 		2132 2470 3967 4389 4392 4394 7365 7366 7367 7370 7410 7415 8486
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.000
 }

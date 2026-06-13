@@ -1,0 +1,73 @@
+spriteTypes = {
+    ############################
+    #  NCRvL Focus Icons  #
+    ############################
+    spriteType = {
+        name = "GFX_goal_CES_cypher_warband"
+        texturefile = "gfx/interface/goals/unique/CES/CES_cypher_warband.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_CES_painted_rock"
+        texturefile = "gfx/interface/goals/unique/CES/CES_painted_rock.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_CES_crushers_army"
+        texturefile = "gfx/interface/goals/unique/CES/CES_crushers_army.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_CES_shales_army"
+        texturefile = "gfx/interface/goals/unique/CES/CES_shales_army.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_CES_ironmongers"
+        texturefile = "gfx/interface/goals/unique/CES/CES_ironmongers.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_CES_oklahoma"
+        texturefile = "gfx/interface/goals/unique/CES/CES_oklahoma.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_CES_texas"
+        texturefile = "gfx/interface/goals/unique/CES/ces_texas.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_CES_feel_that_thats_true"
+        texturefile = "gfx/interface/goals/unique/CES/CES_feel_that_thats_true.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_feel_that_thats_true"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_feel_that_thats_true.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_timberline"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_timberline.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_oregon"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_oregon.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_feel_that_thats_true"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_feel_that_thats_true.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_motorized_drummond"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_drummond.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_motorized_humvee"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_humvee.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_motorized_fast"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_fast.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_motorized_drugs"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_drugs.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_NCR_motorized_tank"
+        texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_tank.dds"
+    }
+}

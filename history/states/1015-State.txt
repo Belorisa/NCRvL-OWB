@@ -1,20 +1,23 @@
-state = {
-	id = 1015
-	name = "STATE_1015"
-	manpower = 2451
-	state_category = rural
+
+state={
+	id=1015
+	name="STATE_1015"
 
 	history = {
 		victory_points = {
 			12756 3
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 		}
 	}
 
-	provinces = {
+	provinces={
 		12727 12734 12756 12757 12768 12773 12777
 	}
+	manpower=2451
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,27 +1,23 @@
+state = {
+	id = 1097
+	name = "STATE_1097"
+	manpower = 3467
+	state_category = shanty
 
-state={
-	id=1097
-	name="STATE_1097"
-	resources={
-		energy=4.000
+	resources = {
+		energy = 4
 	}
 
 	history={
 		victory_points = {
-			13244 5
+			21075 5
 		}
 		buildings = {
 			infrastructure = 3
-
 		}
-
 	}
 
-	provinces={
+	provinces = {
 		13243 13244 13248 13328 13332 13355 13362 13363 21075
 	}
-	manpower=3467
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

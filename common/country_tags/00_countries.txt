@@ -348,6 +348,8 @@ BLG = "countries/BLG - Burning Legion.txt"
 DAG = "countries/DAG - House Dagoth.txt"
 WOO = "countries/WOO - Wardens of Oklahoma.txt"
 SDC = "countries/SDC - Showdown City.txt"
+
+#Bugfix Tags
 FRA = "countries/FRA - France.txt"
 GER = "countries/GER - Germany.txt"
 ITA = "countries/ITA - Italy.txt"

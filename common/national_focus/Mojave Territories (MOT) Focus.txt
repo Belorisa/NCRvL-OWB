@@ -162,7 +162,7 @@ focus_tree = {
 	focus = {
 		id = mot_make_our_final_preparations
 		icon = GFX_goal_NCR_Military_March
-			search_filters = {
+		search_filters = {
 			FOCUS_FILTER_MOT_SUNBURST
 		}
 		cost = 30
@@ -517,6 +517,8 @@ focus_tree = {
 			hidden_effect = {
 				division_template = {
 					name = "Reconnaissance Battalion"
+
+					is_locked = no
 					priority = 2
 
 					regiments = {
@@ -533,7 +535,7 @@ focus_tree = {
 					}
 					support = {
 						anti_tank_company = { x = 0 y = 0 }
-						recon_company = { x = 0 y = 1 }
+						recon_company = { x = 1 y = 0 }
 					}
 				}
 				77 = {
@@ -557,6 +559,7 @@ focus_tree = {
 			NOT = {
 				has_country_flag = mot_crisis_in_california
 			}
+			controls_state = 252
 		}
 		prerequisite = {
 			focus = mot_capturing_the_dam
@@ -564,9 +567,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = mot_capturing_the_dam
-		available = {
-			controls_state = 252
-		}
 		select_effect = {
 			252 = {
 				for_each_loop = {
@@ -633,6 +633,9 @@ focus_tree = {
 	focus = {
 		id = mot_divert_planners
 		icon = GFX_goal_generic_outpost
+		search_filters = {
+			FOCUS_FILTER_MOT_SUNBURST
+		}
 		cost = 30
 		available = {
 			NOT = {
@@ -714,6 +717,9 @@ focus_tree = {
 	focus = {
 		id = mot_operation_sunburst
 		icon = GFX_goal_MOJ_energy_boom
+		search_filters = {
+			FOCUS_FILTER_MOT_SUNBURST
+		}
 		cost = 30
 		prerequisite = {
 			focus = mot_form_up_the_first_recon
@@ -783,6 +789,7 @@ focus_tree = {
 			NOT = {
 				has_country_flag = mot_crisis_in_california
 			}
+		controls_state = 620
 		}
 		prerequisite = {
 			focus = mot_riches_of_the_mojave
@@ -790,10 +797,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = mot_riches_of_the_mojave
-		available = {
-			controls_state = 620
-			#controls_state = 939
-		}
+
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -886,11 +890,9 @@ focus_tree = {
 		id = mot_bittersprings
 		icon = GFX_KHA_focus_avenge_bittersprings
 		cost = 30
-		available = {
-			NOT = {
-				has_country_flag = mot_crisis_in_california
-			}
-		}
+		# available = {
+		# 	always = no
+		# }
 		prerequisite = {
 			focus = mot_garrison_primm
 			focus = mot_cottonwood_port
@@ -920,6 +922,7 @@ focus_tree = {
 			NOT = {
 				has_country_flag = mot_crisis_in_california
 			}
+			NOT = { has_war_with = MOJ }
 		}
 		prerequisite = {
 			focus = mot_operation_sunburst
@@ -927,9 +930,6 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = mot_operation_sunburst
-		available = {
-			NOT = { has_war_with = MOJ }
-		}
 		completion_reward = {
 			add_war_support = 0.05
 			army_experience = 20
@@ -1224,7 +1224,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = mot_operation_sunburst
 		available = {
-			NOT = { has_war_with = MOT }
+			NOT = { has_war_with = MOJ }
 			owns_state = 573
 			owns_state = 46
 			owns_state = 417
@@ -1340,6 +1340,8 @@ focus_tree = {
 			hidden_effect = {
 				division_template = {
 					name = "NCR Heavy Corps"
+
+					is_locked = no
 					priority = 2
 
 					regiments = {
@@ -1362,6 +1364,7 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.4
 				uses = 2
 				category = power_armor_tech_category
@@ -1387,6 +1390,7 @@ focus_tree = {
 		relative_position_id = mot_the_heavy_corps
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				category = cat_land_doctrine
 				uses = 3
 				bonus = 0.8
@@ -1405,6 +1409,7 @@ focus_tree = {
 			NOT = {
 				has_country_flag = mot_crisis_in_california
 			}
+			has_completed_focus = mot_the_old_world_wall
 		}
 		prerequisite = {
 			focus = mot_assemble_the_mojave_defence_committee
@@ -1412,9 +1417,6 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = mot_assemble_the_mojave_defence_committee
-		available = {
-			has_completed_focus = mot_the_old_world_wall
-		}
 		completion_reward = {
 			country_event = nf_mot.12
 		}
@@ -1708,6 +1710,7 @@ focus_tree = {
 		relative_position_id = mot_we_can_refuse
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				category = infantry_tech_category
 				uses = 2
 				bonus = 1
@@ -1750,7 +1753,7 @@ focus_tree = {
 			custom_effect_tooltip = mot_benny_prick_tt
 		}
 	}
-	
+
 	focus = {
 		id = mot_restoring_hoover
 		icon = GFX_goal_generic_wrench
@@ -1911,6 +1914,7 @@ focus_tree = {
 			NOT = {
 				has_country_flag = mot_crisis_in_california
 			}
+			controls_state = 77
 		}
 		prerequisite = {
 			focus = mot_supply_and_demand
@@ -1918,9 +1922,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = mot_supply_and_demand
-		available = {
-			controls_state = 77
-		}
 		completion_reward = {
 			every_state = {
 				limit = {

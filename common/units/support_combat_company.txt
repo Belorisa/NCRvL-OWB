@@ -13,6 +13,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -60,6 +61,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -103,6 +105,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -143,6 +146,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -183,6 +187,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -254,6 +259,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -316,6 +322,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_implant
@@ -353,6 +360,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army

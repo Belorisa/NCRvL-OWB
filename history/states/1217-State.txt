@@ -17,8 +17,8 @@ state={
 			14049 5
 		}
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			industrial_complex = 1
 		}
 
 	}
@@ -26,7 +26,7 @@ state={
 	provinces={
 		13969 13970 13972 13993 14013 14014 14020 14022 14024 14049 14056 14059 14069
 	}
-	manpower=787
+	manpower=1787
 	buildings_max_level_factor=1.000
 	state_category=shanty
 	local_supplies=0.000

@@ -1,6 +1,8 @@
 state = {
 	id = 875
 	name = "STATE_875"
+	manpower = 23297
+	state_category = large_town
 
 	resources = {
 		water = 3
@@ -11,20 +13,19 @@ state = {
 		owner = TBH
 		add_core_of = TBH
 		victory_points = {
-			11810 20
+			11812 20
+		}
+		victory_points = {
+			11842 3
 		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 2
 		}
-
 	}
 
-	provinces={
+	provinces = {
 		11810 11812 11813 11819 11826 11828 11830 11837 11842 11849 11853 11856 11857 11863
 	}
-	manpower=20000
-	buildings_max_level_factor=1.000
-	state_category=large_town
 }

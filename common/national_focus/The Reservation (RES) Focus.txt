@@ -301,6 +301,7 @@ focus_tree = {
 			set_temp_variable = { caps_to_add = -75 }
 			add_caps = yes
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 3
 				category = industry
@@ -341,6 +342,7 @@ focus_tree = {
 			set_temp_variable = { caps_to_add = -75 }
 			add_caps = yes
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 3
 				category = cat_land_doctrine
@@ -432,6 +434,7 @@ focus_tree = {
 			set_temp_variable = { caps_to_add = 50 }
 			add_caps = yes
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				ahead_reduction = 1
 				bonus = 0.5
 				uses = 1
@@ -936,6 +939,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 1
 				uses = 2
 				category = support_medical_tech_category

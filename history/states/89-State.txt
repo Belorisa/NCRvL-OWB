@@ -1,16 +1,21 @@
-state={
-	id=89
+state = {
+	id = 89
 	name = "STATE_89"
-	manpower = 134
+	manpower = 890
 	state_category = megalopolis
 
-	history={
+	history = {
 		owner = TOB
 		add_core_of = TOB
+		victory_points = {
+			7465 5
+		}
+		buildings = {
+			infrastructure = 2
+		}
 	}
+
 	provinces = {
 		1726 3091 7459 7460 7461 7465 7469
 	}
-	buildings_max_level_factor=1.000
-	
 }

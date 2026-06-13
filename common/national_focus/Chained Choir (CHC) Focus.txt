@@ -110,6 +110,7 @@ focus_tree = {
 		will_lead_to_war_with = TLP
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			OR = {
@@ -510,9 +511,6 @@ focus_tree = {
 				size > 1000
 			}
 		}
-		#allow_branch = {
-		#	has_country_flag = CHC_evil_wins
-		#}
 		relative_position_id = CHC_evil_path
 		completion_reward = {
 			SCA = {
@@ -533,9 +531,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_evil_path
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_evil_path
 		completion_reward = {
 			random_owned_state = {
@@ -563,9 +558,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_evil_path
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_evil_path
 		completion_reward = {
 			add_tech_bonus = {
@@ -592,9 +584,6 @@ focus_tree = {
 			focus = CHC_industry_knowledge
 			focus = CHC_utilizing_townsfolk
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_industry_knowledge
 		completion_reward = {
 			random_owned_state = {
@@ -617,9 +606,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_utilizing_townsfolk
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_industry_knowledge
 		completion_reward = {
 			add_research_slot = 1
@@ -634,9 +620,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_evil_path
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_evil_path
 		completion_reward = {
 			random_owned_state = {
@@ -657,9 +640,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_evil_path
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_evil_path
 		completion_reward = {
 			random_owned_state = {
@@ -683,9 +663,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_gather_what_they_must
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_gather_what_they_must
 		completion_reward = {
 			add_timed_idea = {
@@ -705,9 +682,6 @@ focus_tree = {
 			focus = CHC_the_old_facility
 			focus = CHC_gather_what_they_must
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_the_old_facility
 		completion_reward = {
 			set_temp_variable = {
@@ -725,9 +699,6 @@ focus_tree = {
 		cost = 45
 		x = -3
 		y = 1
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		prerequisite = { focus = CHC_evil_path }
 		relative_position_id = CHC_evil_path
 		completion_reward = {
@@ -744,9 +715,6 @@ focus_tree = {
 		cost = 45
 		x = 3
 		y = 1
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		prerequisite = { focus = CHC_evil_path }
 		relative_position_id = CHC_evil_path
 		completion_reward = {
@@ -762,6 +730,7 @@ focus_tree = {
 		cost = 45
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			SCA = {
@@ -771,9 +740,6 @@ focus_tree = {
 		x = 2
 		y = 1
 		prerequisite = { focus = CHC_seize_the_stretch }
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_seize_the_stretch
 		completion_reward = {
 			SCA = {
@@ -798,9 +764,6 @@ focus_tree = {
 		available = {
 			owns_state = 886
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_attack_scrappers_compact
 		completion_reward = {
 			country_event = {
@@ -823,9 +786,6 @@ focus_tree = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_core_the_stretch
 		completion_reward = {
 			add_offsite_building = {
@@ -857,9 +817,6 @@ focus_tree = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_attack_scrappers_compact
 		completion_reward = {
 			country_event = {
@@ -882,9 +839,6 @@ focus_tree = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_core_corroded_fields
 		completion_reward = {
 			add_offsite_building = {
@@ -906,9 +860,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		prerequisite = { focus = CHC_evil_path }
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_evil_path
 		completion_reward = {
 			custom_effect_tooltip = CHC_scream_tt
@@ -929,9 +880,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_seize_the_stretch
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_the_scream_ability
 		completion_reward = {
 			add_ideas = CHC_slaves_to_a_melody
@@ -946,6 +894,7 @@ focus_tree = {
 		cost = 45
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			PAR = {
@@ -955,9 +904,6 @@ focus_tree = {
 		x = -2
 		y = 1
 		prerequisite = { focus = CHC_the_scream_ability }
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_the_scream_ability
 		completion_reward = {
 			PAR = {
@@ -984,9 +930,6 @@ focus_tree = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_attack_painted_rock
 		completion_reward = {
 			add_state_core = 891
@@ -1009,9 +952,6 @@ focus_tree = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_core_guymon_junction
 		completion_reward = {
 			add_offsite_building = {
@@ -1047,9 +987,6 @@ focus_tree = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_attack_painted_rock
 		completion_reward = {
 			add_state_core = 938
@@ -1072,9 +1009,6 @@ focus_tree = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_core_sperman
 		completion_reward = {
 			add_offsite_building = {
@@ -1101,6 +1035,7 @@ focus_tree = {
 		y = 2
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		prerequisite = {
 			focus = CHC_attack_painted_rock
@@ -1108,9 +1043,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHC_attack_scrappers_compact
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_attack_painted_rock
 		completion_reward = {
 			add_timed_idea = {
@@ -1149,9 +1081,6 @@ focus_tree = {
 				is_owned_by = CHC
 			}
 		}
-#		allow_branch = {
-#			has_country_flag = CHC_evil_wins
-#		}
 		relative_position_id = CHC_the_possessed_rally
 		completion_reward = {
 			add_stability = 0.05

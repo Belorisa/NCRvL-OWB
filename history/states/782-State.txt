@@ -18,6 +18,16 @@ state = {
 			arms_factory = 1
 			industrial_complex = 1
 			radar_station = 1
+			11000 = {
+				bunker = 2
+			}
+			9274 = {
+				bunker = 2
+			}
+			9371 = {
+				bunker = 2
+			}
+
 		}
 
 	}

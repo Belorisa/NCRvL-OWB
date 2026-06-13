@@ -11,7 +11,7 @@ characters = {
 				#small = gfx_sprite_type_name_or_file_path
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = {
 				strong_trait
 				agile_trait

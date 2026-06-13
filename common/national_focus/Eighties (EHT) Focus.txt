@@ -14,9 +14,6 @@ focus_tree = {
 	}
 	default = no
 
-	#shared_focus = raider_modular_the_garage
-	#shared_focus = raider_modular_incorporate_slavers
-
 	###################
 	# Starter Focuses #
 	###################

@@ -1,6 +1,8 @@
+
 state={
 	id=987
 	name="STATE_987"
+
 	history={
 		buildings = {
 			infrastructure = 3
@@ -9,16 +11,21 @@ state={
 			7355 = {
 				bunker = 1
 				naval_base = 2
+
 			}
+
 		}
 		victory_points = {
 			7355 10
 		}
+
 	}
+
 	provinces={
 		2469 4386 7222 7300 7301 7334 7335 7336 7342 7348 7353 7354 7355
 	}
 	manpower=6709
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

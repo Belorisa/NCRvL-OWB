@@ -1,11 +1,9 @@
-state = {
-	id = 1014
-	name = "STATE_1014"
-	manpower = 1100
-	state_category = rural
 
-	resources = {
-		metal = 6
+state={
+	id=1014
+	name="STATE_1014"
+	resources={
+		metal=6.000
 	}
 
 	history = {
@@ -14,10 +12,16 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
 
-	provinces = {
+	provinces={
 		12716 12730 12731 12742 12748 12762 12765 12771
 	}
+	manpower=1100
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -4,8 +4,10 @@ state = {
 	manpower = 37
 	state_category = wasteland
 	resources = {
+		metal = 6
 	}
 	impassable = yes
+	force_link_ownership_to = 308
 
 	history = {
 		owner = CES

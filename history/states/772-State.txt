@@ -1,18 +1,20 @@
-state = {
-	id = 772
-	name = "STATE_772"
-	manpower = 772
-	state_category = wasteland
-	impassable = yes
 
-	resources = {
-		metal = 12
+state={
+	id=772
+	name="STATE_772"
+	resources={
+		metal=12.000
 	}
 
-	history = {
+	history={
 	}
 
-	provinces = {
+	provinces={
 		495
 	}
+	manpower=772
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+	local_supplies=0.000
 }

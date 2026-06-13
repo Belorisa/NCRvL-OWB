@@ -1019,7 +1019,7 @@ focus_tree = {
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 2 y = 0 }
 				}
-				is_locked = yes
+				is_locked = no
 				priority = 0
 			}
 			211 = {
@@ -1815,7 +1815,9 @@ focus_tree = {
 					amount = 5
 				}
 			}
-			var:GLOBAL.ncr_leader = {
+			# Branch is shut off but fixing regardless. Why was this trying to target a character? @tran
+			# var:GLOBAL.ncr_leader = {
+			NCR = {
 				give_guarantee = VEG
 				give_military_access = VEG
 				add_ai_strategy = {
@@ -1946,7 +1948,9 @@ focus_tree = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] veg_ncrstatehood entered"
 			}
-			var:GLOBAL.ncr_leader = {
+			# Branch is shut off but fixing regardless. Why was this trying to target a character? @tran
+			# var:GLOBAL.ncr_leader = {
+			NCR = {
 				country_event = nf_vegas.53
 			}
 			if = {
@@ -2181,11 +2185,13 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] veg_securitron entered"
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 1
 				category = robotics_tech_category
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 4
 				category = encryption_tech
@@ -3290,7 +3296,7 @@ focus_tree = {
 	}
 	focus = {
 		id = veg_elijah
-		icon = GFX_goal_BOS_elijahs_genius
+		icon = GFX_goal_BOS_the_mojave_signal
 		cost = 60
 		prerequisite = {
 			focus = veg_fourthfam
@@ -3406,16 +3412,19 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] veg_warlabs entered"
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 1
 				category = robotics_tech_category
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 1
 				category = infantry_tech_category
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 1
 				category = support_tech_category

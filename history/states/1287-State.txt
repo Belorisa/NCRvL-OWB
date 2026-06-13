@@ -1,18 +1,26 @@
+state = {
+	id = 1287
+	name = "STATE_1287"
+	manpower = 3909
+	state_category = rural
 
-state={
-	id=1287
-	name="STATE_1287"
-	resources={
-		water=7.000
-		energy=2.000
+	resources = {
+		water = 7
+		energy = 2
 	}
 
 	history={
 		victory_points = {
-			13588 5
+			13500 3
 		}
 		victory_points = {
-			13590 5
+			13593 5
+		}
+		victory_points = {
+			16409 5
+		}
+		victory_points = {
+			13587 3
 		}
 		buildings = {
 			infrastructure = 4
@@ -23,8 +31,4 @@ state={
 	provinces = {
 		13491 13500 13501 13502 13504 13509 13580 13583 13585 13586 13587 13589 13590 13591 13592 13593 16408 16409 16411
 	}
-	manpower=3909
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
 }

@@ -20,6 +20,8 @@ technologies = {
 	@Row_8 = 14
 	@Row_bonus = 0
 	@Row_tank = 9
+	@Row_caravan = 11
+	@Row_roads = 13
 
 	# Scrap Motorcycles
 
@@ -30,9 +32,10 @@ technologies = {
 		enable_equipments = {
 			supply_equipment_1
 		}
+
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_7 y = @Col_1 }
+			position = { x = @Row_caravan y = @Col_1 }
 		}
 		path = {
 			leads_to_tech = railways_construction_tech
@@ -41,6 +44,11 @@ technologies = {
 		path = {
 			leads_to_tech = basic_supply_upgrade_tech_1
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			tribal_tech_category
 		}
 		ai_will_do = {
 			factor = 5
@@ -65,11 +73,16 @@ technologies = {
 
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_7 y = @Col_2 }
+			position = { x = @Row_caravan y = @Col_2 }
 		}
 		path = {
 			leads_to_tech = armored_supply_transport_tech
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			civilized_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -89,11 +102,16 @@ technologies = {
 		}
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_7 y = @Col_3 }
+			position = { x = @Row_caravan y = @Col_3 }
 		}
 		path = {
 			leads_to_tech = basic_supply_upgrade_tech_2
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			civilized_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -122,11 +140,16 @@ technologies = {
 
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_7 y = @Col_4 }
+			position = { x = @Row_caravan y = @Col_4 }
 		}
 		path = {
 			leads_to_tech = trains_supply_transport_tech
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			civilized_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -146,11 +169,16 @@ technologies = {
 		}
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_7 y = @Col_5 }
+			position = { x = @Row_caravan y = @Col_5 }
 		}
 		path = {
 			leads_to_tech = basic_supply_upgrade_tech_3
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			civilized_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -178,11 +206,16 @@ technologies = {
 		}
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_7 y = @Col_6 }
+			position = { x = @Row_caravan y = @Col_6 }
 		}
 		path = {
 			leads_to_tech = basic_supply_upgrade_tech_4
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			civilized_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -201,7 +234,12 @@ technologies = {
 		}
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_7 y = @Col_7 }
+			position = { x = @Row_caravan y = @Col_7 }
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			scientific_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -216,14 +254,18 @@ technologies = {
 			building = rail_way
 			level = 5
 		}
-
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_8 y = @Col_1 }
+			position = { x = @Row_roads y = @Col_1 }
 		}
 		path = {
 			leads_to_tech = railways_upgrade_tech_1
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			tribal_tech_category
 		}
 		ai_will_do = {
 			factor = 1.5
@@ -242,11 +284,16 @@ technologies = {
 		}
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_8 y = @Col_3 }
+			position = { x = @Row_roads y = @Col_3 }
 		}
 		path = {
 			leads_to_tech = railways_upgrade_tech_2
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			civilized_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -265,11 +312,16 @@ technologies = {
 		}
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_8 y = @Col_5 }
+			position = { x = @Row_roads y = @Col_5 }
 		}
 		path = {
 			leads_to_tech = railways_upgrade_tech_3
 			research_cost_coeff = 1
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			civilized_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -290,7 +342,12 @@ technologies = {
 		}
 		folder = {
 			name = fallout_vehicle_folder
-			position = { x = @Row_8 y = @Col_7 }
+			position = { x = @Row_roads y = @Col_7 }
+		}
+		categories = {
+			vehicle_tech_category
+			supply_tech_category
+			scientific_tech_category
 		}
 		ai_will_do = {
 			factor = 1
@@ -303,6 +360,10 @@ technologies = {
 		}
 		enable_subunits = {
 			motorized
+		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_motorized
 		}
 		on_research_complete = {
 			add_to_variable = {
@@ -369,7 +430,7 @@ technologies = {
 				factor = 4
 				has_country_flag = grand_motorized_doctrine_ai
 			}
-						modifier = {
+			modifier = {
 				factor = 3
 				has_country_flag = grand_infantry_doctrine_ai
 			}
@@ -415,7 +476,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-				factor = 1
+			factor = 1
 			modifier = {
 				factor = 3
 				NOT = {
@@ -598,7 +659,7 @@ technologies = {
 				factor = 4
 				has_country_flag = grand_motorized_doctrine_ai
 			}
-						modifier = {
+			modifier = {
 				factor = 3
 				has_country_flag = grand_infantry_doctrine_ai
 			}
@@ -1275,7 +1336,7 @@ technologies = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
-				}	
+				}
 			}
 			modifier = {
 				factor = 1.25
@@ -1344,13 +1405,13 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
-				}			
+				}
 			}
 			modifier = {
 				factor = 1.25
@@ -1408,7 +1469,7 @@ OR = {
 				}
 			}
 			modifier = {
-					factor = 2
+				factor = 2
 				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
@@ -1667,7 +1728,7 @@ OR = {
 					has_country_flag = robot_doctrine_ai
 					has_country_flag = super_mutant_doctrine_ai
 				}
-						}
+			}
 		}
 	}
 
@@ -1782,7 +1843,7 @@ OR = {
 			factor = 1
 			modifier = {
 				factor = 2
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
@@ -1796,7 +1857,7 @@ OR = {
 					has_country_flag = robot_doctrine_ai
 					has_country_flag = super_mutant_doctrine_ai
 				}
-						}
+			}
 		}
 	}
 
@@ -1834,7 +1895,7 @@ OR = {
 			factor = 1
 			modifier = {
 				factor = 2
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
@@ -1848,7 +1909,7 @@ OR = {
 					has_country_flag = robot_doctrine_ai
 					has_country_flag = super_mutant_doctrine_ai
 				}
-						}
+			}
 		}
 	}
 
@@ -1882,7 +1943,7 @@ OR = {
 			factor = 1
 			modifier = {
 				factor = 2
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
@@ -1896,7 +1957,7 @@ OR = {
 					has_country_flag = robot_doctrine_ai
 					has_country_flag = super_mutant_doctrine_ai
 				}
-						}
+			}
 		}
 	}
 
@@ -1944,44 +2005,44 @@ OR = {
 			}
 			modifier = {
 				factor = 2
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
-				}	
-					}
+				}
+			}
 			modifier = {
 				factor = 1.5
 				date > "2277.1.1"
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
 				}
-						}
+			}
 			modifier = {
 				factor = 1.5
 				date > "2278.1.1"
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					num_of_military_factories > 75
 				}
-					}
+			}
 			modifier = {
 				factor = 1.5
 				date > "2279.1.1"
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
 				}
-						}
+			}
 		}
 	}
 
@@ -1997,6 +2058,13 @@ OR = {
 
 		dependencies = {
 			vehicles_tech_level_settler = 1
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_tank"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -2032,47 +2100,47 @@ OR = {
 			}
 			modifier = {
 				factor = 2
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
-				}	
-					}
+				}
+			}
 			modifier = {
 				factor = 1.25
 				date > "2278.1.1"
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
-				}	
-					}
+				}
+			}
 			modifier = {
 				factor = 1.25
 				date > "2279.1.1"
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
 				}
-						}
+			}
 			modifier = {
 				factor = 1.25
 				date > "2280.1.1"
-OR = {
+				OR = {
 					has_country_flag = grand_motorized_doctrine_ai
 					AND = {
 						num_of_military_factories > 75
 						has_country_flag = grand_infantry_doctrine_ai
 					}
 				}
-						}
+			}
 		}
 	}
 
@@ -2127,7 +2195,7 @@ OR = {
 						has_country_flag = grand_infantry_doctrine_ai
 					}
 				}
-						}
+			}
 			modifier = {
 				factor = 1.25
 				date > "2279.1.1"
@@ -2138,7 +2206,7 @@ OR = {
 						has_country_flag = grand_infantry_doctrine_ai
 					}
 				}
-						}
+			}
 			modifier = {
 				factor = 1.25
 				date > "2280.1.1"
@@ -2537,7 +2605,7 @@ OR = {
 			civilized_tech_category
 		}
 
-			ai_will_do = {
+		ai_will_do = {
 			factor = 0
 		}
 	}

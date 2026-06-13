@@ -1,6 +1,9 @@
-state={
-	id=989
-	name="STATE_989"
+state = {
+	id = 989
+	name = "STATE_989"
+	manpower = 23265
+	state_category = city
+
 	resources = {
 		energy = 4
 		metal = 6
@@ -11,13 +14,16 @@ state={
 		buildings = {
 			
 			infrastructure = 2
-			industrial_complex = 1
 			arms_factory = 1
 		}
 		victory_points = {
 			12457 15
 		}
+		victory_points = {
+			12451 5
+		}
 	}
+
 	provinces = {
 		12377 12378 12384 12456 12457 12455 703 12453 12451 12454 12452 12448 12447 12824
 	}

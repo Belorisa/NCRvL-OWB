@@ -1,13 +1,12 @@
 state={
 	id=1003
 	name="STATE_1003"
-
-	resources = {
-		metal = 3
-		circuitry = 5
-		composites = 2
-		advanced = 4
-		energy = 1
+	resources={
+		metal=3.000
+		circuitry=5.000
+		composites=2.000
+		advanced=4.000
+		energy=1.000
 	}
 
 	history={
@@ -23,11 +22,11 @@ state={
 			7246 5
 		}
 	}
-
 	provinces={
 		2096 3806 3950 3989 7244 7246
 	}
-	manpower = 16590
-	state_category = large_city
+	manpower=13590
 	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

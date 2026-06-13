@@ -1,20 +1,26 @@
-state = {
-	id = 658
-	name = "STATE_658"
+
+state={
+	id=658
+	name="STATE_658"
+
 	history={
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
+
 		}
 		victory_points = {
 			672 5
 		}
+
 	}
+
 	provinces={
 		1 59 656 672 2225 2365 2467 2551 2588 8642 8646
 	}
-	manpower = 1330
-	state_category = town
+	manpower=1330
 	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -305,7 +305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = vlt_election_mutant_threat
-		icon = GFX_goal_WBH_mutant_purge
+		icon = GFX_goal_mutant_supremacy
 		cost = 15
 		prerequisite = {
 			focus = vlt_end_of_a_term

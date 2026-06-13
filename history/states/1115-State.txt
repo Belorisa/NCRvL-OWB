@@ -8,7 +8,8 @@ state={
 		13202
 	}
 	impassable = yes
-	state_category = rural
+	force_link_ownership_to = 1302
+	state_category = wasteland
 	manpower = 100
 	buildings_max_level_factor=1.000
 }

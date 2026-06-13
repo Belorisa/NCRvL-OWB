@@ -15,7 +15,7 @@
 ideas = {
 	economy = {
 		law = yes
-	#Generic Laws
+		#Generic Laws
 		undisturbed_isolation = {
 			picture = gov_idea_undisturbed_isolation
 			allowed = {
@@ -41,7 +41,7 @@ ideas = {
 				caps_node_trade_modifier = 0.4
 			}
 			allowed_to_remove = {
-							or = {
+				or = {
 					OR = {
 						has_war_support > 0.5
 						has_war = yes
@@ -98,10 +98,6 @@ ideas = {
 			allowed = {
 				use_generic_economic_laws = yes
 			}
-			# Redundant due to above allowed block @Tran
-			# visible = {
-			# 	use_generic_economic_laws = yes
-			# }
 			cost = 150
 			removal_cost = -1
 			modifier = {
@@ -131,10 +127,6 @@ ideas = {
 			allowed = {
 				use_generic_economic_laws = yes
 			}
-			# Redundant due to above allowed block @Tran
-			# visible = {
-			# 	use_generic_economic_laws = yes
-			# }
 			cost = 150
 			removal_cost = -1
 			modifier = {
@@ -170,10 +162,6 @@ ideas = {
 					original_tag = CES
 				}
 			}
-			# Redundant due to above allowed block @Tran
-			# visible = {
-			# 	use_generic_economic_laws = yes
-			# }
 			cost = 150
 			removal_cost = -1
 			modifier = {
@@ -209,10 +197,6 @@ ideas = {
 					original_tag = CES
 				}
 			}
-			# Redundant due to above allowed block @Tran
-			# visible = {
-			# 	use_generic_economic_laws = yes
-			# }
 			cost = 150
 			removal_cost = -1
 			modifier = {
@@ -257,10 +241,6 @@ ideas = {
 					original_tag = CES
 				}
 			}
-			# Redundant due to above allowed block @Tran
-			# visible = {
-			# 	use_generic_economic_laws = yes
-			# }
 			cost = 150
 			removal_cost = -1
 			modifier = {
@@ -303,10 +283,6 @@ ideas = {
 					original_tag = CES
 				}
 			}
-			# Redundant due to above allowed block @Tran
-			# visible = {
-			# 	use_generic_economic_laws = yes
-			# }
 			allowed_to_remove = {
 				if = {
 					limit = { original_tag = TLP }
@@ -1157,6 +1133,10 @@ ideas = {
 		}
 		three_rivers_economy = {
 			picture = economy_flannel
+			allowed = {
+				is_canadian_nation_allowed_block = yes
+				use_generic_trade_laws = yes
+			}
 			available = {
 				NOT = {
 					has_war_with = WPG
@@ -1168,8 +1148,6 @@ ideas = {
 				}
 			}
 			visible = {
-				# Redundant due to the allowed block below @Tran
-				# is_canadian_nation = yes
 				NOT = {
 					OR = {
 						original_tag = LOI
@@ -1177,10 +1155,6 @@ ideas = {
 						original_tag = STC
 					}
 				}
-			}
-			allowed = {
-				is_canadian_nation_allowed_block = yes
-				use_generic_trade_laws = yes
 			}
 			cost = 150
 			removal_cost = -1
@@ -1336,9 +1310,9 @@ ideas = {
 				#caps country_trade_modifier = 0.30
 			}
 
-						cancel_if_invalid = no
+			cancel_if_invalid = no
 		}
-			currencycomputerchip = {
+		currencycomputerchip = {
 			picture = gov_idea_computerchip
 			#cost = 150
 			removal_cost = -1
@@ -1914,7 +1888,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-				URA_wages_law = {
+		URA_wages_law = {
 			picture = gov_idea_bottle_cap
 			allowed = {
 				original_tag = URA

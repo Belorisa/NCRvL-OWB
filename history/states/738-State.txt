@@ -1,7 +1,7 @@
    state = {
 	id = 738
 	name = "STATE_738"
-	manpower = 2800
+	manpower = 6864
 	state_category = shanty
 
 	history = {

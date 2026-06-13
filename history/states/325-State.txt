@@ -14,10 +14,13 @@ state = {
 		owner = BVC
 		add_core_of = BVC
 		victory_points = {
-			4682 5
+			4682 3
 		}
 		victory_points = {
-			4687 5
+			8557 5
+		}
+		victory_points = {
+			744 10
 		}
 		buildings = {
 			infrastructure = 2

@@ -7,7 +7,6 @@ NCR_vote_of_no_confidence = {
 
 NCR_anti_corruption_campaigns = {
 	allowed = { original_tag = NCR }
-	#visible_when_empty = yes
 	priority = 30
 	visible = {
 		has_completed_focus = ncr_campaigns_against_corruption

@@ -39,7 +39,7 @@ focus_tree = {
             focus = ncr_puppet_ncr_draft
 
         }
-       #relative_position_id = ncr_puppet_ncrta
+        #relative_position_id = ncr_puppet_ncrta
         completion_reward = {
             add_ideas = umb_puppet_understanding
         }
@@ -243,7 +243,7 @@ focus_tree = {
         y = 4
         cost = 30
         available = {
-            has_completed_focus = ncr_puppet_ncr_state
+            has_completed_focus = ncr_puppet_settler_paying_our_dues
         }
         allow_branch = {
             original_tag = RAP
@@ -264,7 +264,7 @@ focus_tree = {
         y = 0
         cost = 30
         available = {
-            has_completed_focus = ncr_puppet_ncr_state
+            has_completed_focus = ncr_puppet_settler_paying_our_dues
         }
         relative_position_id = RAP_new_captains
         allow_branch = {
@@ -575,9 +575,6 @@ focus_tree = {
         }
         completion_reward = {
             country_event = nf_bjs_puppet.1
-            hidden_effect = {
-             caps_country_initialize = yes
-            }
         }
     }
 
@@ -595,9 +592,6 @@ focus_tree = {
         }
         completion_reward = {
             country_event = nf_bjs_puppet.2
-            hidden_effect = {
-             caps_country_initialize = yes
-            }
         }
     }
 
@@ -716,7 +710,7 @@ focus_tree = {
         }
         relative_position_id = BJS_bandito_heritage
         available = {
-            has_completed_focus = ncr_puppet_ncr_state
+            has_completed_focus = ncr_puppet_settler_paying_our_dues
             NOT = {
                 has_completed_focus = BJS_bandito_heritage
             }
@@ -1040,7 +1034,7 @@ focus_tree = {
         icon = GFX_goal_NCR_Caravan
         cost = 45
         available = {
-            has_completed_focus = ncr_puppet_ncr_state
+            has_completed_focus = ncr_puppet_settler_paying_our_dues
         }
         allow_branch = {
             original_tag = SKY

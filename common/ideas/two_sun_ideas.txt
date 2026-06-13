@@ -492,7 +492,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				caps_country_trade_modifier = 0.1
+				caps_node_trade_modifier = 0.1
 			}
 		}
 		two_invitations_gdh_idea = {

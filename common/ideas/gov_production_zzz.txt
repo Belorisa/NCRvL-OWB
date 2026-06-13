@@ -223,7 +223,7 @@ ideas = {
 				}
 			}
 		}
-		loi_HAYLEY = {
+	loi_HAYLEY = {
 		#picture = unique_economy_awakening_giant
 		picture = robobrain_full
 		visible = { tag = LOI }
@@ -391,7 +391,7 @@ ideas = {
 				}
 			}
 		}
-				yorkton_arms = {
+		yorkton_arms = {
 			picture = dln_yorkton_arms_manu
 			allowed = {
 				original_tag = DLN
@@ -688,7 +688,7 @@ ideas = {
 			}
 		}
 
-    ### TODO WHT unique comapny. move to seperate file later
+	### TODO WHT unique comapny. move to seperate file later
 
 	# happy_trails_caravan_company = {
 	# 	picture = happy_trails
@@ -1932,7 +1932,7 @@ ideas = {
 				}
 			}
 		}
-				dawfin_port = {
+		dawfin_port = {
 			picture = dln_ship_manu
 			allowed = {
 				original_tag = DLN

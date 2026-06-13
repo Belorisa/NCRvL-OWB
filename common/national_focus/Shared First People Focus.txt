@@ -22,8 +22,6 @@ focus_tree = {
 		cost = 7
 		x = 14
 		y = 0
-		available = {
-		}
 		completion_reward = {
 			country_event = {
 				id = nf_event_fp.1

@@ -1,4 +1,4 @@
-characters={
+characters = {
 	MCA_Douglas_Granite = {
 		name = ERB_GRANITE_NAME
 		portraits = {
@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader = {
-			desc = Granite_desc
+			#desc = Granite_desc
 			ideology = technocracy
 			expire = "3000.1.1"
 		}
@@ -28,7 +28,6 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				eureka_general
 				charismatic_trait
 				enduring_trait
 			}
@@ -81,7 +80,6 @@ characters={
 			traits = {
 				strong_trait
 				perceptive_trait
-				eureka_general
 			}
 			skill = 1
 			attack_skill = 2
@@ -104,7 +102,6 @@ characters={
 			planning_skill = 2
 			logistics_skill = 1
 			traits = {
-				eureka_general
 				agile_trait
 			}
 			legacy_id = -1
@@ -125,7 +122,6 @@ characters={
 			planning_skill = 1
 			logistics_skill = 2
 			traits = {
-				eureka_general
 				charismatic_trait
 			}
 			legacy_id = -1
@@ -153,7 +149,6 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			traits = {
-				eureka_general
 				intelligent_trait
 				robotics_expert_trait
 			}
@@ -377,7 +372,7 @@ characters={
 			}
 		}
 		advisor = {
-			slot = economic_advisor
+			slot = high_command
 			idea_token = EUR_jay_livard_idea_token
 			ledger = army
 			allowed = {
@@ -400,7 +395,7 @@ characters={
 			}
 		}
 		advisor = {
-			slot = cultural_advisor
+			slot = theorist
 			idea_token = EUR_even_eleven_idea_token
 			ledger = army
 			allowed = {

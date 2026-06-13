@@ -12,12 +12,16 @@ state = {
 		owner = TOB
 		add_core_of = TOB
 		victory_points = {
-			1836 10
+			7466 5
 		}
+		add_extra_state_shared_building_slots = 5
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
+			metal_generator = 1
+			electricity_generator = 1
+			water_generator = 1
 			7464 = { naval_base = 1 }
 		}
 	}

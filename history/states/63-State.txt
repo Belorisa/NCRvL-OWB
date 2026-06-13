@@ -15,7 +15,22 @@ state = {
 		owner = NCR
 		add_core_of = NCR
 		victory_points = {
-			2652 30
+			2652 30 # Dayglow itself
+		}
+		victory_points = {
+			2647 2 # Fort Coronado (Naval Base)
+		}
+		victory_points = {
+			2048 5 # Escondilo
+		}
+		victory_points = {
+			2646 20 # Tijuana
+		}
+		victory_points = {
+			3302 2 # Julian
+		}
+		victory_points = {
+			4976 2 # Ranger Station Baja
 		}
 		buildings = {
 			infrastructure = 4
@@ -23,10 +38,18 @@ state = {
 			industrial_complex = 4
 			dockyard = 5
 			radar_station = 1
-			4980 = {
-				naval_base = 3
+			2652 = {
+				naval_base = 5
 			}
-
+			4980 = {
+				bunker = 2
+				coastal_bunker = 1
+			}
+			2647 = {
+				bunker2 = 1
+				coastal_bunker = 2
+				naval_base = 2
+			}
 		}
 		add_dynamic_modifier = {
 			modifier = caps_ncr_start_modifier

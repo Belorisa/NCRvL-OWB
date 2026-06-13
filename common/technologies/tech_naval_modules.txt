@@ -66,7 +66,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-						path = {
+		path = {
 			leads_to_tech = naval_light_weapon_module_tech_1
 			research_cost_coeff = 1
 		}
@@ -758,7 +758,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-						factor = 1
+			factor = 1
 			modifier = {
 				has_tech = medium_navy_hull_tech_2
 				factor = 2.5
@@ -1093,7 +1093,7 @@ technologies = {
 			leads_to_tech = naval_heavy_weapon_module_tech_3
 			research_cost_coeff = 1
 		}
-				path = {
+		path = {
 			leads_to_tech = naval_super_heavy_weapon_module_tech_3
 			research_cost_coeff = 1
 		}
@@ -1120,7 +1120,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-				factor = 0.5
+			factor = 0.5
 			modifier = {
 				has_tech = heavy_navy_hull_tech_2
 				factor = 1.5

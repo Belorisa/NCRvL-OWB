@@ -53,4 +53,6 @@ sub_unit_categories = {
 	category_ferals
 	category_beasts
 	category_unique
+	category_headquarters
+	category_headquarters_line
 }

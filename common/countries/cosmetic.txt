@@ -18,6 +18,11 @@ SHA_mogger = {
 	color_ui = rgb { 77 115 38 }
 }
 
+TON_ENC = {
+	color = rgb { 54 100 194 }
+	color_ui = rgb { 54 100 194 }
+}
+
 ACH_texan_brotherhood = {
 	color = rgb { 100 115 100 }
 	color_ui = rgb { 100 115 100 }
@@ -37,7 +42,6 @@ GRD_brotherhood = {
 	color = rgb { 39 0 97 }
 	color_ui = rgb { 39 0 97 }
 }
-
 SOK_navarro = {
 	color = rgb { 0 78 102 }
 	color_ui = rgb { 0 78 102 }
@@ -53,7 +57,12 @@ MXC_colorado = {
 	color_ui = rgb { 0 39 104 }
 }
 
-LAC_occupied = {
+MXC_brotherhood = {
+	color = rgb { 0 39 104 }
+	color_ui = rgb { 0 39 104 }
+}
+
+EDA_BOS = {
 	color = rgb { 166 160 2 }
 	color_ui = rgb { 166 160 2 }
 }
@@ -76,6 +85,11 @@ TVT_FORMABLE = {
 TOF_FORMABLE = {
 	color = rgb { 25 114 5 }
 	color_ui = rgb { 25 114 5 }
+}
+
+TOB_the_grogs = {
+	color = rgb { 159 159 159 }
+	color_ui = rgb { 159 159 159 }
 }
 
 UOA_cosmetic = {
@@ -592,11 +606,6 @@ RDS_ENC = {
 }
 
 NCR_ENC = {
-	color = rgb { 0 40 100 }
-	color_ui = rgb { 0 40 100 }
-}
-
-SLA_ENC = {
 	color = rgb { 0 40 100 }
 	color_ui = rgb { 0 40 100 }
 }
@@ -1603,10 +1612,6 @@ COM_MDM = {
     color = rgb { 30 91 170 }
     color_ui = rgb { 30 91 170 }
 }
-COM_NOR = {
-    color = rgb { 30 91 170 }
-    color_ui = rgb { 30 91 170 }
-}
 COM_STA = {
     color = rgb { 30 91 170 }
     color_ui = rgb { 30 91 170 }
@@ -1755,6 +1760,10 @@ KHA_free_khans = {
 	color = rgb { 255 102 0 }
 	color_ui = rgb { 255 102 0 }
 }
+# KHA_free_khans = {
+# 	color = rgb { 255 102 0 }
+# 	color_ui = rgb { 255 102 0 }
+# }
 KHA_great_khans = {
 	color = rgb { 255 102 0 }
 	color_ui = rgb { 255 102 0 }
@@ -1771,6 +1780,11 @@ ROB_robotopiastate = {
 ROB_republic = {
 	color = rgb { 191 0 0 }
 	color_ui = rgb { 191 0 9 }
+}
+#Broken Hearts
+BRT_starman = {
+	color = rgb { 196 0 0 }
+	color_ui = rgb { 196 0 0 }
 }
 #Redding
 RDS_People_Republic = {
@@ -1926,6 +1940,10 @@ ROS_republic = {
 	color = rgb { 70 175 120 }
 	color_ui = rgb { 70 175 120 }
 }
+ROS_monad = {
+	color = rgb { 170 175 120 }
+	color_ui = rgb { 170 175 120 }
+}
 #OLY
 OLY_erebus = {
 	color = { 86 125 70 }
@@ -1992,10 +2010,6 @@ MXT_MAA = {
 }
 
 ###Electorate formables
-WAK_democratic_technate = {
-	color = rgb { 0 155 193 }
-	color_ui = rgb { 0 155 193 }
-}
 STN_competitive_goverment = {
 	color = rgb { 170 69 35 }
 	color_ui = rgb { 170 69 35 }
@@ -2109,19 +2123,6 @@ VSH_peoples_northern_haven = {
 PAS_mountain_wardens = {
 	color = rgb { 41 206 218 }
 	color_ui = rgb { 41 206 218 }
-}
-### RMM
-RMM_dawfin = {
-	color = rgb { 0 42 255 }
-	color_ui = rgb { 0 42 255 }
-}
-RMM_CRA = {
-	color = rgb { 162 112 13 }
-	color_ui = rgb { 162 112 13 }
-}
-RMM_CRA_final = {
-	color = rgb { 162 112 13 }
-	color_ui = rgb { 162 112 13 }
 }
 
 ### Plaguelands Formables
@@ -2256,21 +2257,10 @@ JCK_montana = {
 	color = rgb { 0 10 124 }
 	color_ui = rgb { 0 10 124 }
 }
+
 COM_COMMONWEALTH = {
 	color = rgb { 30 91 170 }
 	color_ui = rgb { 30 91 170 }
-}
-ANO_plant = {
-	color = rgb { 19 149 10 }
-	color_ui = rgb { 19 149 10 }
-}
-MTR_station = {
-	color = rgb { 181 74 47 }
-	color_ui = rgb { 181 74 47 }
-}
-HVR_liberty = {
-	color = rgb { 181 74 47 }
-	color_ui = rgb { 181 74 47 }
 }
 COM_PIO = {
 	color = rgb { 51 101 55 }
@@ -2287,6 +2277,10 @@ MET_masters = {
 HST_academics = {
 	color = rgb { 125 25 125 }
 	color_ui = rgb { 125 25 125 }
+}
+HST_american_historical_association = {
+	color = rgb { 225 10 50 }
+	color_ui = rgb { 225 10 50 }
 }
 BGR_union = {
 	color = rgb { 144 77 100 }

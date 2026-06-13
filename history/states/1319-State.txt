@@ -23,10 +23,10 @@ state = {
 			infrastructure = 4
 			industrial_complex = 2
 			arms_factory = 1
-			 
+			air_base = 1
 			radar_station = 1
 		}
 	}
 	state_category = metropolis
-	manpower = 17682
+	manpower = 22682
 }

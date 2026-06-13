@@ -1,7 +1,7 @@
 state = {
 	id = 906
 	name = "STATE_906"
-	manpower = 14906
+	manpower = 11906
 	state_category = town
 
 	history = {
@@ -9,6 +9,9 @@ state = {
 		add_core_of = TAA
 		victory_points = {
 			11305 10
+		}
+		victory_points = {
+			11317 5
 		}
 		buildings = {
 			infrastructure = 3

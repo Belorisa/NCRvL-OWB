@@ -6,17 +6,20 @@ state = {
 		owner = MOT
 		add_core_of = MRA
 		victory_points = {
+			2316 5
+		}
+		victory_points = {
 			965 10
+		}
+		victory_points = {
+			3204 2
 		}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 2
 			industrial_complex = 1
-			965 = {
-				bunker = 1
-			}
 			2316 = {
-				coastal_bunker = 1
+				bunker = 1
 				naval_base = 1
 			}
 		}

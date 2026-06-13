@@ -79,7 +79,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	raider_nation
 	oregon_cannibal_widespread_cannibalism
 	undesirables_law_raider
 	raider_bands

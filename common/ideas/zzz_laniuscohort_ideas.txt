@@ -565,6 +565,8 @@ ideas = {
 				political_power_gain = 0.05
 				exodus_national_appeal = -0.15
 				required_garrison_factor = -0.05
+				trade_opinion_factor = -0.1
+				offensive_war_stability_factor = 0.20
 			}
 			removal_cost = -1
 		}
@@ -927,7 +929,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_attack_factor = 0.05
+				army_attack_factor = 0.06
+				caps_expense_modifier = 0.02
 			}
 			removal_cost = -1
 		}

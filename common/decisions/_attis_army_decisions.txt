@@ -55,7 +55,7 @@ attis_army_taa_raids = {
 	attis_taa_border_war = {
 		icon = generic_independence
 		cost = 25
-
+		
 		ai_will_do = {
 			factor = 45
 			modifier = {

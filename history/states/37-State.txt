@@ -1,7 +1,7 @@
 state = {
 	id = 37
 	name = "STATE_37"
-	manpower = 14000
+	manpower = 20434
 	state_category = city
 
 	resources = {
@@ -42,11 +42,10 @@ state = {
 				naval_base = 1
 			}
 		}
+		add_extra_state_shared_building_slots = 1
 	}
 
 	provinces = {
 		1471 1951 3883 3884 3885 3886 3887 3888 3889 3890 3891 3895 4032 4336 4337 8566 8567
 	}
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

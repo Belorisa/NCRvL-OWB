@@ -1,7 +1,7 @@
 state = {
 	id = 370
 	name = "STATE_370"
-	manpower = 2700
+	manpower = 6743
 	state_category = shanty
 
 	resources = {

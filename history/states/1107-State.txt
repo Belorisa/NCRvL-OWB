@@ -13,14 +13,14 @@ state={
 	}
 	history = {
 		victory_points = {
-			14483 15
+			14483 5
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
 	}
-	state_category = shanty
-	manpower = 1141
+	state_category = large_city
+	manpower = 3141
 	buildings_max_level_factor=1.000
 }

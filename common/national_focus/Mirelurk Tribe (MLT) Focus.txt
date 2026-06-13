@@ -284,7 +284,7 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 186
 			set_province_name = {
-				id = 7101
+				id = 8574
 				name = VICTORY_POINTS_7101_MLT
 			}
 			hidden_effect = {
@@ -1044,6 +1044,7 @@ focus_tree = {
 		}
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = -1
 		y = 1
@@ -1122,6 +1123,7 @@ focus_tree = {
 			set_cosmetic_tag = MLT_cosmetic_tag
 			set_technology = {
 				settled_civilization = 1
+				creatures_tech_level_scientific = 1
 				support_tech_level_settler = 1
 				vehicles_tech_level_tribal = 1
 				vehicles_tech_level_settler = 1
@@ -1152,6 +1154,7 @@ focus_tree = {
 		}
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = -2
 		y = 1

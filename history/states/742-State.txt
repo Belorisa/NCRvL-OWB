@@ -15,7 +15,6 @@ state = {
 				bunker = 3
 
 			}
-
 		}
 		victory_points = {
 			9070 15

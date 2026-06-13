@@ -13,6 +13,6 @@ state={
 		12545 12543 12547 12559 12560 12557 12556 12568
 	}
 	manpower = 981
-	state_category = rural
+	state_category = shanty
 	buildings_max_level_factor=1.000
 }

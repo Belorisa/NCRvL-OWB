@@ -1,5 +1,7 @@
 ﻿capital = 326
+
 oob = "WHT_2275"
+
 set_technology = {
 	basic_supply_transport_tech = 1
 	infantry_tech_level_tribal = 1
@@ -126,5 +128,7 @@ set_variable = { never_return_stolen_territory = 1 }
 recruit_character = WHT_salt_upon_wounds
 recruit_character = WHT_balm_upon_wounds
 recruit_character = WHT_tears_in_the_rain
+recruit_character = WHT_cunning_owl
+recruit_character = WHT_red_anteater
 
 set_country_flag = infantry_melee_ai

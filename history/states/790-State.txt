@@ -1,6 +1,7 @@
-state = {
-	id = 790
-	name = "STATE_790"
+
+state={
+	id=790
+	name="STATE_790"
 	resources={
 		metal = 12
 	}
@@ -28,4 +29,5 @@ state = {
 	manpower=38525
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

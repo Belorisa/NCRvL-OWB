@@ -71,6 +71,10 @@ technologies = {
 		enable_subunits = {
 			support_robot
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_robot
+		}
 
 		enable_equipments = {
 			support_robot_scrap_equipment
@@ -1769,7 +1773,7 @@ technologies = {
 	}
 
 	robot_humanoid_tech = {
-				research_cost = 4.0
+		research_cost = 4.0
 		start_year = 2282
 		dependencies = {
 			robotics_tech_level_scientific = 1
@@ -1800,7 +1804,7 @@ technologies = {
 	}
 
 	robot_pacification_bot_tech = {
-				research_cost = 7.0
+		research_cost = 7.0
 		dependencies = {
 			blocked_unit_tech = 1
 			robotics_tech_level_settler = 1

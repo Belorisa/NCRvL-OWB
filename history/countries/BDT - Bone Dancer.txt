@@ -79,7 +79,7 @@ set_popularities = {
 add_ideas = {
 	bdt_seraph_pilgrims
 	bdt_odious_king
-	fertile_lands
+	oregon_cannibal_widespread_cannibalism
 	volunteer_militia_conscription
 	undesirables_law_raider
 }

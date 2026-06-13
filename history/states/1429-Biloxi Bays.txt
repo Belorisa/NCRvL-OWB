@@ -8,6 +8,7 @@ state={
 		add_core_of = TBH
 		buildings = {
 			infrastructure = 1
+
 		}
 
 	}

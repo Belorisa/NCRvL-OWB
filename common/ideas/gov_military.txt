@@ -218,7 +218,7 @@ ideas = {
 			cost = 250
 			removal_cost = -1
 			level = 5
-			visible = {
+			allowed = {
 				OR = {
 					original_tag = TOC
 					original_tag = VSH
@@ -435,7 +435,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		############# Legion
+############# Legion
 		officer_law_ces_recruit = {
 			picture = ces_officer_1
 			cost = 100
@@ -721,7 +721,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		############### Legion
+############### Legion
 		training_law_ces_no_training = {
 			cost = 100
 			removal_cost = -1
@@ -846,24 +846,30 @@ ideas = {
 			cost = 50
 			removal_cost = -1
 			level = 1
-			visible = {
+			allowed = {
 				OR = {
 					original_tag = DES
 					original_tag = COW
-					AND = {
-						is_subject_of = COW
-						OR = {
-							original_tag = NCR
-							original_tag = TBH
-							original_tag = SUF
-							original_tag = BAG
-							original_tag = MRR
-							original_tag = BEL
-							original_tag = WPG
-							original_tag = FFI
-							original_tag = ATE
+					original_tag = NCR
+					original_tag = TBH
+					original_tag = SUF
+					original_tag = BAG
+					original_tag = MRR
+					original_tag = BEL
+					original_tag = WPG
+					original_tag = FFI
+					original_tag = ATE
+				}
+			}
+			visible = {
+				if = {
+					limit = {
+						NOT = {
+							original_tag = DES
+							original_tag = COW
 						}
 					}
+					is_subject_of = COW
 				}
 			}
 			modifier = {

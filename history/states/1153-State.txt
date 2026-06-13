@@ -1,19 +1,21 @@
-
 state={
 	id=1153
 	name="STATE_1153"
-
+	resources = {
+		water = 5.000
+		energy = 5.000
+	}
 	history={
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
 		}
 	}
-
 	provinces={
 		1802 17008 17011 17015 17359 17361 17365 17381 17382 17383 17384 17391 17396 17398 17399 17401
 	}
-	manpower=100
+	manpower=4532
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=shanty
 	local_supplies=0.000
 }

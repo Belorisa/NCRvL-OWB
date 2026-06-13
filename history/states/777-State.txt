@@ -1,6 +1,7 @@
-state = {
-	id = 777
-	name = "STATE_777"
+
+state={
+	id=777
+	name="STATE_777"
 	resources={
 		metal=22.000
 		circuitry=4.000
@@ -16,10 +17,13 @@ state = {
 			9515 = {
 				naval_base = 8
 				bunker = 3
+
 			}
 			9518 = {
 				bunker = 2
+
 			}
+
 		}
 		victory_points = {
 			9515 15
@@ -33,4 +37,5 @@ state = {
 	manpower=38591
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

@@ -21,7 +21,7 @@ state={
 	provinces={
 		13266 13269 13272 13273 13274 13275 13279 13282 16352 16357
 	}
-	manpower=1631
+	manpower=2331
 	buildings_max_level_factor=1.000
 	state_category=shanty
 	local_supplies=0.000

@@ -75,7 +75,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	raider_nation
 	undesirables_law_raider
 	CCW_dont_walk_the_bone_road
 	fertile_lands

@@ -69,7 +69,7 @@ technologies = {
 			leads_to_tech = tribal_piercing_tech
 			research_cost_coeff = 1
 		}
-				path = {
+		path = {
 			leads_to_tech = tribal_beast_breakthrough_tech
 			research_cost_coeff = 1
 		}
@@ -583,7 +583,7 @@ technologies = {
 			}
 		}
 	}
-	
+
 	tribal_beast_breakthrough_tech = {
 
 		category_beasts = {

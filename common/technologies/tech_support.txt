@@ -115,7 +115,7 @@ technologies = {
 		enable_equipments = {
 			fireteam_equipment_1
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			ship_pd_module_2
 		}
 		enable_equipment_modules = {
@@ -1139,7 +1139,7 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_1
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			ship_pd_module_4
 		}
 
@@ -1259,7 +1259,7 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_2
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			ship_pd_module_6
 		}
 
@@ -1318,7 +1318,7 @@ technologies = {
 		anti_air_support = {
 			air_attack = 0.15
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			ship_pd_module_7
 		}
 
@@ -2382,6 +2382,10 @@ technologies = {
 		enable_subunits = {
 			dog_company
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_military_police
+		}
 
 		enable_equipments = {
 			dogs_equipment_1
@@ -2998,6 +3002,10 @@ technologies = {
 		enable_subunits = {
 			medical_chem_company
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_field_hospital
+		}
 
 		path = {
 			leads_to_tech = med_company_tech_2
@@ -3411,6 +3419,10 @@ technologies = {
 		enable_subunits = {
 			recon_company
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_recon
+		}
 
 		path = {
 			leads_to_tech = recon_company_tech_2
@@ -3729,6 +3741,11 @@ technologies = {
 
 		enable_subunits = {
 			logistics_company
+		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_logistics
+			hq_signal
 		}
 
 		path = {
@@ -4054,6 +4071,11 @@ technologies = {
 		enable_subunits = {
 			maintenance_company
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_maintenance
+			hq_engineer
+		}
 
 		path = {
 			leads_to_tech = maintenance_company_tech_2
@@ -4125,7 +4147,7 @@ technologies = {
 				attack = 0.02
 			}
 		}
-				combat_engineer_unit = {
+		combat_engineer_unit = {
 			urban = {
 				attack = 0.02
 			}
@@ -4204,7 +4226,7 @@ technologies = {
 				attack = 0.02
 			}
 		}
-				combat_engineer_unit = {
+		combat_engineer_unit = {
 			urban = {
 				attack = 0.02
 			}
@@ -4283,7 +4305,7 @@ technologies = {
 				attack = 0.02
 			}
 		}
-				combat_engineer_unit = {
+		combat_engineer_unit = {
 			urban = {
 				attack = 0.02
 			}
@@ -4362,7 +4384,7 @@ technologies = {
 				attack = 0.02
 			}
 		}
-				combat_engineer_unit = {
+		combat_engineer_unit = {
 			urban = {
 				attack = 0.02
 			}
@@ -4441,7 +4463,7 @@ technologies = {
 				attack = 0.02
 			}
 		}
-				combat_engineer_unit = {
+		combat_engineer_unit = {
 			urban = {
 				attack = 0.02
 			}
@@ -4595,7 +4617,7 @@ technologies = {
 			}
 		}
 	}
-	
+
 	railway_gun_unlock_tech = {
 		enable_equipments = {
 			railway_gun_equipment_1

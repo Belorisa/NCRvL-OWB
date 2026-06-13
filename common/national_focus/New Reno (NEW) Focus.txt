@@ -171,11 +171,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 1
 				category = cat_land_doctrine
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 1
 				category = spec_force_tech_category
@@ -295,6 +297,9 @@ focus_tree = {
 	focus = {
 		id = new_wrightsvangraff
 		icon = GFX_goal_generic_focus_magazine_lal_married_a_robot
+		search_filters = {
+			FOCUS_FILTER_VAN_GRAFFS
+		}
 		x = -1
 		y = 1
 		relative_position_id = new_church
@@ -308,6 +313,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 25
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				uses = 2
 				category = infantry_weapons_tech_category
@@ -316,6 +322,7 @@ focus_tree = {
 				ideology = intellectuals
 				popularity = 0.05
 			}
+			custom_effect_tooltip = nf_vault_city.35.a_tt
 		}
 		ai_will_do = {
 			base = 10
@@ -553,6 +560,9 @@ focus_tree = {
 	focus = {
 		id = new_bishop_van_graff
 		icon = GFX_goal_generic_building_focus
+		search_filters = {
+			FOCUS_FILTER_VAN_GRAFFS
+		}
 		relative_position_id = new_jetbeta
 		cost = 40
 		x = 1
@@ -637,6 +647,9 @@ focus_tree = {
 	focus = {
 		id = new_allroads
 		icon = GFX_goal_brahmin_cart
+		search_filters = {
+			FOCUS_FILTER_NEW_OVERTOURISM
+		}
 		x = 8
 		y = 10
 		cost = 40
@@ -664,6 +677,15 @@ focus_tree = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					has_idea = NEW_tourist_economy
+				}
+				modify_timed_idea = {
+					idea = NEW_tourist_economy
+					days = -60
 				}
 			}
 		}
@@ -785,6 +807,9 @@ focus_tree = {
 	focus = {
 		id = new_silverrush
 		icon = GFX_goal_NEW_a_new_silver_rush
+		search_filters = {
+			FOCUS_FILTER_NEW_OVERTOURISM
+		}
 		x = 4
 		y = 12
 		cost = 30
@@ -801,6 +826,15 @@ focus_tree = {
 				add_resource = {
 					type = advanced
 					amount = 10
+				}
+			}
+			if = {
+				limit = {
+					has_idea = NEW_tourist_economy
+				}
+				modify_timed_idea = {
+					idea = NEW_tourist_economy
+					days = -60
 				}
 			}
 		}
@@ -844,7 +878,7 @@ focus_tree = {
 				is_owned_and_controlled_by = ROOT
 			}
 			has_country_leader = {
-				name = "Mr Bishop"
+				character = NEW_mr_bishop
 				ruling_only = yes
 			}
 		}
@@ -929,13 +963,13 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_country_leader = {
-					name = "Mr Bishop"
+					character = NEW_mr_bishop
 					ruling_only = yes
 				}
 			}
 		}
 		completion_reward = {
-			295 = {
+			285 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -1038,7 +1072,7 @@ focus_tree = {
 				}
 				log = "[GetDateText]: [Root.GetName] new_catpaw entered"
 			}
-			295 = {
+			285 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1076,6 +1110,9 @@ focus_tree = {
 	focus = {
 		id = new_tipography
 		icon = GFX_goal_generic_patty_cheesecake
+		search_filters = {
+			FOCUS_FILTER_NEW_OVERTOURISM
+		}
 		x = 7
 		y = 12
 		cost = 30
@@ -1089,6 +1126,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.1
+			if = {
+				limit = {
+					has_idea = NEW_tourist_economy
+				}
+				modify_timed_idea = {
+					idea = NEW_tourist_economy
+					days = -60
+				}
+			}
 		}
 	}
 	focus = {
@@ -1101,7 +1147,7 @@ focus_tree = {
 			focus = new_tipography
 		}
 		completion_reward = {
-			295 = {
+			285 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -1307,6 +1353,9 @@ focus_tree = {
 	focus = {
 		id = new_powerplant
 		icon = GFX_goal_generic_power_poles
+		search_filters = {
+			FOCUS_FILTER_NEW_OVERTOURISM
+		}
 		x = 10
 		y = 12
 		cost = 30
@@ -1323,6 +1372,15 @@ focus_tree = {
 				type = energy
 				amount = 15
 				state = 285
+			}
+			if = {
+				limit = {
+					has_idea = NEW_tourist_economy
+				}
+				modify_timed_idea = {
+					idea = NEW_tourist_economy
+					days = -60
+				}
 			}
 		}
 	}
@@ -1362,16 +1420,16 @@ focus_tree = {
 			focus = new_distillery2
 		}
 		available = {
-			184 = {
+			614 = {
 				is_owned_and_controlled_by = ROOT
 			}
 			has_country_leader = {
-				name = "Christopher Wright"
+				character = NEW_christopher_wright
 				ruling_only = yes
 			}
 		}
 		completion_reward = {
-			184 = {
+			614 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -1410,13 +1468,13 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_country_leader = {
-					name = "Christopher Wright"
+					character = NEW_christopher_wright
 					ruling_only = yes
 				}
 			}
 		}
 		completion_reward = {
-			184 = {
+			614 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1425,7 +1483,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = water
-					amount = 6
+					amount = 8
 				}
 			}
 		}
@@ -1516,6 +1574,9 @@ focus_tree = {
 	focus = {
 		id = new_golgotha
 		icon = GFX_goal_pal_death_and_taxes
+		search_filters = {
+			FOCUS_FILTER_NEW_OVERTOURISM
+		}
 		x = 13
 		y = 12
 		cost = 30
@@ -1524,6 +1585,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = golgotharestored
+			if = {
+				limit = {
+					has_idea = NEW_tourist_economy
+				}
+				modify_timed_idea = {
+					idea = NEW_tourist_economy
+					days = -60
+				}
+			}
 		}
 		ai_will_do = {
 			base = 2
@@ -1561,7 +1631,7 @@ focus_tree = {
 				}
 				log = "[GetDateText]: [Root.GetName] new_slvatorebar2 entered"
 			}
-			184 = {
+			285 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -1713,7 +1783,7 @@ focus_tree = {
 					producer = USA
 				}
 			}
-			184 = {
+			614 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1827,7 +1897,7 @@ focus_tree = {
 			focus = new_sweatshop
 		}
 		available = {
-			285 = {
+			159 = {
 				is_owned_and_controlled_by = ROOT
 			}
 		}
@@ -2007,7 +2077,7 @@ focus_tree = {
 			modifier = {
 				factor = 2
 				OR = {
-					has_cosmetic_tag = ENC_cosmetic_tag
+					#has_cosmetic_tag = ENC_cosmetic_tag
 					NEW_has_ai_behavior_enclave = yes
 					# Neutral Reno will prioritize building up over other tasks.
 					NEW_has_ai_behavior_neutrality = yes
@@ -2041,30 +2111,31 @@ focus_tree = {
 		}
 		ai_will_do = {
 			base = 2
-			modifier = {
-				factor = 5
-				OR = {
-					has_cosmetic_tag = ENC_cosmetic_tag
-					has_cosmetic_tag = THR_cosmetic_tag
-				}
-			}
+			#modifier = {
+			#	factor = 5
+			#	OR = {
+			#		has_cosmetic_tag = ENC_cosmetic_tag
+			#		has_cosmetic_tag = THR_cosmetic_tag
+			#	}
+			#}
 			# If we're forcing the Enclave or Thradd to happen, don't let them bother
 			# with Klamath until the takeover happens and they have some doods.
 			modifier = {
 				factor = 0
 				OR = {
 					num_divisions < 15
-					AND = {
-						NOT = {
-							has_cosmetic_tag = ENC_cosmetic_tag
-						}
-						NEW_has_ai_behavior_enclave = yes
-					}
-					AND = {
-						NOT = {
-							has_cosmetic_tag = THR_cosmetic_tag
-						}
-						NEW_has_ai_behavior_thradd = yes
+					NEW_has_ai_behavior_thradd = yes
+				}
+			}
+			#Do not do this until after the Den has done their thing
+			modifier = {
+				factor = 0
+				date < 2280.1.1
+				TDN = {
+					exists = yes
+					NOT = {
+						is_ally_with = NEW
+						has_completed_focus = den_border_war
 					}
 				}
 			}
@@ -2104,13 +2175,13 @@ focus_tree = {
 					ratio > 1
 				}
 			}
-			modifier = {
-				factor = 5
-				OR = {
-					has_cosmetic_tag = ENC_cosmetic_tag
-					has_cosmetic_tag = THR_cosmetic_tag
-				}
-			}
+			#modifier = {
+			#	factor = 5
+			#	OR = {
+			#		has_cosmetic_tag = ENC_cosmetic_tag
+			#		has_cosmetic_tag = THR_cosmetic_tag
+			#	}
+			#}
 			modifier = {
 				factor = 0
 				OR = {
@@ -2545,7 +2616,7 @@ focus_tree = {
 			KLA = {
 				OR = {
 					exists = yes
-					is_puppet = no
+					is_subject = no
 				}
 			}
 			OR = {
@@ -2637,13 +2708,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			base = 2
-			modifier = {
-				factor = 0
-				OR = {
-					has_cosmetic_tag = ENC_cosmetic_tag
-					has_cosmetic_tag = THR_cosmetic_tag
-				}
-			}
+			#modifier = {
+			#	factor = 0
+			#	OR = {
+			#		has_cosmetic_tag = ENC_cosmetic_tag
+			#		has_cosmetic_tag = THR_cosmetic_tag
+			#	}
+			#}
 		}
 	}
 	focus = {
@@ -2658,7 +2729,7 @@ focus_tree = {
 		}
 		available = {
 			KLA = {
-				is_puppet_of = NEW
+				is_subject_of = NEW
 			}
 		}
 		completion_reward = {
@@ -2734,13 +2805,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			base = 2
-			modifier = {
-				factor = 0.5
-				OR = {
-					has_cosmetic_tag = ENC_cosmetic_tag
-					has_cosmetic_tag = THR_cosmetic_tag
-				}
-			}
+			#modifier = {
+			#	factor = 0.5
+			#	OR = {
+			#		has_cosmetic_tag = ENC_cosmetic_tag
+			#		has_cosmetic_tag = THR_cosmetic_tag
+			#	}
+			#}
 		}
 	}
 	focus = {
@@ -2849,6 +2920,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_state_core = 57
 			57 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2861,7 +2933,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_core_of = NEW
 			}
 			59 = {
 				add_extra_state_shared_building_slots = 2
@@ -2894,6 +2965,16 @@ focus_tree = {
 		cost = 40
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = restrict_ai_wargoal_focuses
+					}
+				}
+			}
 		}
 		prerequisite = {
 			focus = new_expansionism
@@ -2910,18 +2991,6 @@ focus_tree = {
 			}
 		}
 		will_lead_to_war_with = MOD
-		available = {
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = restrict_ai_wargoal_focuses
-					}
-				}
-			}
-		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -2941,18 +3010,18 @@ focus_tree = {
 				}
 				log = "[GetDateText]: [Root.GetName] new_savages exited"
 			}
-			if = {
-				limit = {
-					has_country_flag = new_brokentakeoverflag
-				}
-				SLA = {
-					diplomatic_relation = {
-						country = MOD
-						relation = guarantee
-						active = no
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		has_country_flag = new_brokentakeoverflag
+			# 	}
+			# 	SLA = {
+			# 		diplomatic_relation = {
+			# 			country = MOD
+			# 			relation = guarantee
+			# 			active = no
+			# 		}
+			# 	}
+			# }
 		}
 		ai_will_do = {
 			base = 2
@@ -2963,13 +3032,13 @@ focus_tree = {
 					ratio > 1
 				}
 			}
-			modifier = {
-				factor = 5
-				OR = {
-					has_cosmetic_tag = ENC_cosmetic_tag
-					has_cosmetic_tag = THR_cosmetic_tag
-				}
-			}
+			#modifier = {
+			#	factor = 5
+			#	OR = {
+			#		has_cosmetic_tag = ENC_cosmetic_tag
+			#		has_cosmetic_tag = THR_cosmetic_tag
+			#	}
+			#}
 			modifier = {
 				factor = 0
 				OR = {
@@ -3223,7 +3292,7 @@ focus_tree = {
 	}
 	focus = {
 		id = new_bet
-		icon = GFX_goal_NEW_generic_reno
+		icon = GFX_goal_goal_card_tricks
 		x = 35
 		y = 14
 		cost = 40
@@ -3406,6 +3475,7 @@ focus_tree = {
 			}
 			army_experience = 30
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 1
 				category = infantry_tech_category
@@ -3565,6 +3635,9 @@ focus_tree = {
 	focus = {
 		id = new_radio
 		icon = GFX_goal_generic_communcation_focus
+		search_filters = {
+			FOCUS_FILTER_NEW_OVERTOURISM
+		}
 		x = -2
 		y = 1
 		relative_position_id = new_mercmilitary
@@ -3579,6 +3652,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 2
 				category = radar_tech
@@ -3614,6 +3688,15 @@ focus_tree = {
 					type = metal
 					amount = -1
 					state = 285
+				}
+			}
+			if = {
+				limit = {
+					has_idea = NEW_tourist_economy
+				}
+				modify_timed_idea = {
+					idea = NEW_tourist_economy
+					days = -120
 				}
 			}
 		}
@@ -3733,6 +3816,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 1
 				uses = 3
 				category = light_air_tech_category
@@ -3896,7 +3980,7 @@ focus_tree = {
 			hidden_effect = {
 				add_corps_commander_role = {
 					Character = NEW_runs_with_hatred
-					skill = 3
+					skill = 2
 					traits = {
 						hot_blooded_trait
 						strong_trait
@@ -4048,7 +4132,7 @@ focus_tree = {
 			}
 			add_ideas = pabloconquistadors
 			add_tech_bonus = {
-				name = ballistic_bonus
+				name = tech_bonus_tree_tt
 				bonus = 1
 				uses = 3
 				category = ballistic_weaponry_tech_category
@@ -4103,7 +4187,6 @@ focus_tree = {
 		relative_position_id = new_merc
 		x = 1
 		y = 1
-		relative_position_id = new_merc
 		cost = 30
 		available = {
 			OR = {
@@ -4170,7 +4253,7 @@ focus_tree = {
 			}
 			add_ideas = blackvultures
 			add_tech_bonus = {
-				name = ballistic_bonus
+				name = tech_bonus_tree_tt
 				bonus = 1
 				uses = 3
 				category = energy_weaponry_tech_category
@@ -4305,7 +4388,7 @@ focus_tree = {
 			}
 			add_ideas = junkcitygladiators
 			add_tech_bonus = {
-				name = robotic_bonus
+				name = tech_bonus_tree_tt
 				bonus = 1
 				uses = 3
 				category = robotics_tech_category
@@ -4966,6 +5049,9 @@ focus_tree = {
 	focus = {
 		id = new_enctech
 		icon = GFX_goal_generic_plasma_cutter
+		search_filters = {
+			FOCUS_FILTER_VAN_GRAFFS
+		}
 		x = -1
 		y = 1
 		relative_position_id = new_councilfunding

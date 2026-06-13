@@ -4620,7 +4620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = tof_ind_6
-		icon = GFX_goal_MOJ_powder_gangers
+		icon = GFX_goal_generic_war_focus
 		cost = 30
 		prerequisite = {
 			focus = tof_rip_wg

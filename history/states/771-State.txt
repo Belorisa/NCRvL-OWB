@@ -1,6 +1,9 @@
 state = {
 	id = 771
 	name = "STATE_771"
+	manpower = 8920
+	state_category = town
+
 	resources = {
 		energy = 2
 	}
@@ -13,13 +16,12 @@ state = {
 		victory_points = {
 			8594 5
 		}
-
+		victory_points = {
+			9277 3
+		}
 	}
 
-	provinces={
+	provinces = {
 		727 8594 9277 9362 9364 9375 9378 9380 9386 10993 10996 10999 11003 11008 11014 11018 11026
 	}
-	manpower=8920
-	buildings_max_level_factor=1.000
-	state_category=town
 }

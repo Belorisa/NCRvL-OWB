@@ -1,23 +1,28 @@
-state={
-	id=1277
-	name="STATE_1277"
-	provinces={
-		14334 14335 14336 14359 14360 14361 14362 14363 14364
-	}
+state = {
+	id = 1277
+	name = "STATE_1277"
+	state_category = shanty
+	manpower = 1217
+	
 	resources = {
 		circuitry = 5
 		water = 3
 	}
+
 	history = {
 		victory_points = {
-			14361 5
+			14361 3
+		}
+		victory_points = {
+			14335 3
 		}
 		buildings = {
 			infrastructure = 2
 			14335 = { naval_base = 1 }
 		}
 	}
-	state_category = shanty
-	manpower = 1217
-	buildings_max_level_factor=1.000
+
+	provinces = {
+		14334 14335 14336 14359 14360 14361 14362 14363 14364
+	}
 }

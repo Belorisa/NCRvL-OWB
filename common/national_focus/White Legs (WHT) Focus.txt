@@ -27,7 +27,6 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] wht_bombs_origins entered"
 			}
 			country_event = nf_whitelegs.1
-
 			if = {
 				limit = {
 					has_global_flag = debug_logs
@@ -36,7 +35,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = wht_supermutant_invasion
 		icon = GFX_goal_WHT_supermutant
@@ -81,7 +79,6 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] wht_winds_change entered"
 			}
 			country_event = nf_whitelegs.3
-
 			if = {
 				limit = {
 					has_global_flag = debug_logs
@@ -259,6 +256,7 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] wht_training_caesar entered"
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 2
 				category = cat_land_doctrine
@@ -331,9 +329,9 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] wht_slave_raiding entered"
 			}
 			add_political_power = 80
-				CES = {news_event = nf_whitelegs.33}
-				RES = {news_event = nf_whitelegs.33}
-				NAV = {news_event = nf_whitelegs.33}
+			CES = {news_event = nf_whitelegs.33}
+			RES = {news_event = nf_whitelegs.33}
+			NAV = {news_event = nf_whitelegs.33}
 			if = {
 				limit = { NCN = { exists = yes } }
 				NCN = {
@@ -395,6 +393,7 @@ focus_tree = {
 				producer = CES
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.2
 				uses = 1
 				category = ballistic_weaponry_tech_category
@@ -532,8 +531,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = wht_sell_animal_skins
 		icon = GFX_goal_generic_creature_gecko
@@ -567,12 +564,12 @@ focus_tree = {
 		id = wht_welcome_traders
 		icon = GFX_goal_generic_communcation_focus
 		cost = 40
-		x = 0
-		y = 1
 		prerequisite = {
 			focus = wht_mormon_slaves
 		}
 		relative_position_id = wht_mormon_slaves
+		x = 0
+		y = 1
 		completion_reward = {
 			if = {
 				limit = {
@@ -782,12 +779,6 @@ focus_tree = {
 				log = "[GetDateText]: [Root.GetName] wht_god_sky entered"
 			}
 			add_ideas = god_of_sky
-			if = {
-				limit = {
-					has_global_flag = debug_logs
-				}
-				log = "[GetDateText]: [Root.GetName] wht_god_sky exited"
-			}
 		}
 	}
 	focus = {
@@ -798,6 +789,7 @@ focus_tree = {
 		y = 1
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		prerequisite = {
 			focus = wht_slave_raiding
@@ -946,6 +938,7 @@ focus_tree = {
 		relative_position_id = wht_good_book
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		ai_will_do = {
 			modifier = {
@@ -962,7 +955,6 @@ focus_tree = {
 		#			all_core_land_owned_by_prev_sphere = yes
 		#		}
 		# }
-
 		will_lead_to_war_with = CLK
 		completion_reward = {
 			if = {
@@ -1074,7 +1066,7 @@ focus_tree = {
 				}
 				log = "[GetDateText]: [Root.GetName] wht_send_clock_to_flagstaff entered"
 			}
-						add_popularity = {
+			add_popularity = {
 				ideology = ruler
 				popularity = 0.05
 			}
@@ -1173,6 +1165,7 @@ focus_tree = {
 		relative_position_id = wht_good_book
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		ai_will_do = {
 			modifier = {
@@ -1198,7 +1191,6 @@ focus_tree = {
 		#			all_core_land_owned_by_prev_sphere = yes
 		#		}
 		# }
-
 		will_lead_to_war_with = TAR
 		completion_reward = {
 			if = {
@@ -1751,7 +1743,6 @@ focus_tree = {
 			focus = wht_attack_mormons_ferocity
 		}
 		relative_position_id = wht_attack_mormons
-
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -2036,7 +2027,7 @@ focus_tree = {
 			add_political_power = 100
 			add_to_tech_sharing_group = legion_research_pact
 			add_manpower = 500
-						add_opinion_modifier = {
+			add_opinion_modifier = {
 				modifier = WHT_friend_legion
 				target = CES
 			}
@@ -2192,7 +2183,7 @@ focus_tree = {
 				ideology = ruler
 				popularity = 0.05
 			}
-			country_event =  nf_whitelegs.15
+			country_event = nf_whitelegs.15
 		}
 	}
 	focus = {
@@ -2246,7 +2237,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = WHT_tater_farming
 		icon = GFX_goal_generic_food_focus
@@ -2556,7 +2546,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		add_manpower = 1000
+			add_manpower = 1000
 		}
 	}
 	focus = {
@@ -2830,18 +2820,16 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 	focus = {
 		id = wht_poverty_goal
 		icon = GFX_goal_80
-		cost  = 30
-		available = {	
+		cost = 30
+		available = {
 			EHT = {
-                all_core_land_owned_by_prev_sphere = yes
-            }
-
+				all_core_land_owned_by_prev_sphere = yes
 			}
-
+		}
 		prerequisite = {
 			focus = wht_winds_change
 		}
@@ -2853,15 +2841,21 @@ focus_tree = {
 			RUB = {
 				ROOT = {
 					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+				}
+			}
 			HAM = {
 				ROOT = {
 					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
-			EAS = {
-				ROOT = {
-					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
-			MUR = {
-				ROOT = {
-					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+				}
+				EAS = {
+					ROOT = {
+						grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+					}
+				}
+				MUR = {
+					ROOT = {
+						grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+					}
 				}
 			}
 		}

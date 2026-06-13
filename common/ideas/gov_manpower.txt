@@ -68,6 +68,15 @@ ideas = {
 					factor = 30
 					manpower_per_military_factory > 200
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = disarmed_nation
+							has_idea = funded_militia_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.07
@@ -112,6 +121,15 @@ ideas = {
 					factor = 0.5
 					is_robotic_civilization = yes
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = volunteer_militia_conscription
+							has_idea = two_year_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.09
@@ -155,6 +173,15 @@ ideas = {
 					factor = 0.5
 					is_robotic_civilization = yes
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = funded_militia_conscription
+							has_idea = four_year_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.11
@@ -197,6 +224,15 @@ ideas = {
 				modifier = {
 					factor = 0.5
 					is_robotic_civilization = yes
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = two_year_conscription
+							has_idea = until_dismissal_conscription
+						}
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -249,6 +285,15 @@ ideas = {
 					factor = 0.5
 					is_robotic_civilization = yes
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = four_year_conscription
+							has_idea = child_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.17
@@ -299,6 +344,12 @@ ideas = {
 				modifier = {
 					factor = 0.5
 					is_robotic_civilization = yes
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = until_dismissal_conscription
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -358,6 +409,15 @@ ideas = {
 					factor = 30
 					manpower_per_military_factory > 200
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = petty_gang_conscription
+							has_idea = scum_and_villainy
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.06
@@ -390,6 +450,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 150
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = raider_bands
+							has_idea = threat_to_all_people
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.09
@@ -420,6 +489,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 100
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = scum_and_villainy
+							has_idea = doom_of_wasteland
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.15
@@ -448,6 +526,12 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 50
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = threat_to_all_people
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -505,6 +589,15 @@ ideas = {
 					factor = 0.25
 					is_robotic_civilization = yes
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = tlaloc_stagnation
+							has_idea = adelitas_militias
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.05
@@ -536,6 +629,15 @@ ideas = {
 				modifier = {
 					factor = 0.25
 					is_robotic_civilization = yes
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = frontier_militias
+							has_idea = standing_garrisons
+						}
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -575,6 +677,15 @@ ideas = {
 					factor = 0.25
 					is_robotic_civilization = yes
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = adelitas_militias
+							has_idea = mexican_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.15
@@ -608,6 +719,12 @@ ideas = {
 				modifier = {
 					factor = 0.25
 					is_robotic_civilization = yes
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = standing_garrisons
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -673,6 +790,15 @@ ideas = {
 					factor = 30
 					manpower_per_military_factory > 200
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = born_warriors
+							has_idea = able_bodied_tribesmen
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.065
@@ -704,6 +830,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 150
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = veteran_pathfinders
+							has_idea = first_sons_and_daughters
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.10
@@ -733,6 +868,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 40
 					manpower_per_military_factory < 100
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = able_bodied_tribesmen
+							has_idea = children_and_mothers
+						}
+					}
+					factor = 0
 				}
 			}
 			available = {
@@ -766,6 +910,12 @@ ideas = {
 					factor = 60
 					manpower_per_military_factory < 50
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = first_sons_and_daughters
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.2
@@ -797,6 +947,14 @@ ideas = {
 				war_support_factor = 0.02
 				army_defence_factor = 0.05
 				army_attack_factor = 0.05
+				female_divisional_commander_chance = -1.0
+				female_random_army_leader_chance = -1.0
+				hidden_modifier = {
+					female_random_country_leader_chance = -1.0
+					female_random_operative_chance = -1.0
+					female_random_admiral_chance = -1.0
+					female_random_scientist_chance = -1.0
+				}
 			}
 			default = yes
 		}
@@ -821,6 +979,15 @@ ideas = {
 					factor = 1000
 					has_idea = tribal_recruitment
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = tribal_recruitment
+							has_idea = settler_volunteers
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.08
@@ -829,6 +996,14 @@ ideas = {
 				war_support_factor = 0.04
 				army_defence_factor = 0.04
 				army_attack_factor = 0.04
+				female_divisional_commander_chance = -1.0
+				female_random_army_leader_chance = -1.0
+				hidden_modifier = {
+					female_random_country_leader_chance = -1.0
+					female_random_operative_chance = -1.0
+					female_random_admiral_chance = -1.0
+					female_random_scientist_chance = -1.0
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -853,6 +1028,15 @@ ideas = {
 					factor = 80
 					manpower_per_military_factory < 400
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = incorporate_mercenaries
+							has_idea = conscript_settlers
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.12
@@ -863,6 +1047,14 @@ ideas = {
 				army_attack_factor = 0.02
 				supply_consumption_factor = -0.02
 				army_morale_factor = 0.02
+				female_divisional_commander_chance = -1.0
+				female_random_army_leader_chance = -1.0
+				hidden_modifier = {
+					female_random_country_leader_chance = -1.0
+					female_random_operative_chance = -1.0
+					female_random_admiral_chance = -1.0
+					female_random_scientist_chance = -1.0
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -887,6 +1079,15 @@ ideas = {
 					factor = 80
 					manpower_per_military_factory < 200
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = settler_volunteers
+							has_idea = conscript_children_of_caesar
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.16
@@ -895,6 +1096,14 @@ ideas = {
 				war_support_factor = 0.08
 				supply_consumption_factor = -0.04
 				army_morale_factor = 0.04
+				female_divisional_commander_chance = -1.0
+				female_random_army_leader_chance = -1.0
+				hidden_modifier = {
+					female_random_country_leader_chance = -1.0
+					female_random_operative_chance = -1.0
+					female_random_admiral_chance = -1.0
+					female_random_scientist_chance = -1.0
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -919,6 +1128,12 @@ ideas = {
 					factor = 80
 					manpower_per_military_factory < 100
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = conscript_settlers
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.20
@@ -927,6 +1142,14 @@ ideas = {
 				war_support_factor = 0.1
 				supply_consumption_factor = -0.05
 				army_morale_factor = 0.05
+				female_divisional_commander_chance = -1.0
+				female_random_army_leader_chance = -1.0
+				hidden_modifier = {
+					female_random_country_leader_chance = -1.0
+					female_random_operative_chance = -1.0
+					female_random_admiral_chance = -1.0
+					female_random_scientist_chance = -1.0
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -961,7 +1184,13 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 200
 				}
-						}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = senior_knights
+					}
+					factor = 0
+				}
+			}
 			modifier = {
 				conscription = 0.025
 				training_time_army_factor = 0.15
@@ -993,6 +1222,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 150
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = paladins
+							has_idea = knights
+						}
+					}
+					factor = 0
 				}
 			}
 			available = {
@@ -1051,6 +1289,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 100
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = senior_knights
+							has_idea = scribes
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.06
@@ -1098,6 +1345,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 50
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = knights
+							has_idea = initiates
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.09
@@ -1144,6 +1400,12 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 25
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = scribes
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.12
@@ -1158,43 +1420,6 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-	# KHA CONSCRIPTION
-		# khan_culture_mobilisation = {
-		# 	picture = KHA_culture_mobilisation
-		# 	cost = 150
-		# 	removal_cost = 2100
-		# 	level = 6
-		# 	allowed = {
-		# 		#original_tag = KHA
-		# 		always = no
-		# 	}
-		# 	modifier = {
-		# 		conscription = 0.25
-		# 	}
-		# 	on_add = {
-		# 		set_temp_variable = { removal_cost = 2100 }
-		# 		custom_effect_tooltip = remove_cost_tooltip
-		# 	}
-		# 	cancel_if_invalid = no
-		# }
-		# khan_culture_mobilisation_2 = {
-		# 	picture = KHA_culture_mobilisation
-		# 	cost = 150
-		# 	removal_cost = 2100
-		# 	level = 6
-		# 	allowed = {
-		# 		#original_tag = KHA
-		# 		always = no
-		# 	}
-		# 	modifier = {
-		# 		conscription = 0.25
-		# 	}
-		# 	on_add = {
-		# 		set_temp_variable = { removal_cost = 2100 }
-		# 		custom_effect_tooltip = remove_cost_tooltip
-		# 	}
-		# 	cancel_if_invalid = no
-		# }
 	# ITZ CONSCRIPTION
 		itz_idea_extensive_agri_expemtions = {
 			cost = 150
@@ -1232,6 +1457,15 @@ ideas = {
 			}
 			ai_will_do = {
 				factor = 1
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = itz_idea_extensive_agri_expemtions
+							has_idea = itz_idea_light_agri_expemtions
+						}
+					}
+					factor = 0
+				}
 			}
 			cancel_if_invalid = no
 			modifier = {
@@ -1267,6 +1501,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 50
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = itz_idea_moderate_agri_expemtions
+							has_idea = itz_idea_minimal_agri_expemtions
+						}
+					}
+					factor = 0
 				}
 			}
 			cancel_if_invalid = no
@@ -1314,6 +1557,15 @@ ideas = {
 					#Lower chance if has decent amount
 					factor = 0.5
 					manpower_per_military_factory > 100
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = itz_idea_light_agri_expemtions
+							has_idea = itz_idea_bare_minimal_agri_expemtions
+						}
+					}
+					factor = 0
 				}
 			}
 			cancel_if_invalid = no
@@ -1371,6 +1623,12 @@ ideas = {
 					factor = 0
 					manpower_per_military_factory > 1000
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = itz_idea_minimal_agri_expemtions
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.1
@@ -1382,7 +1640,7 @@ ideas = {
 				training_time_factor = 0.3
 			}
 		}
-	# ORO CONSCRIPTION
+		# ORO CONSCRIPTION
 		oro_gene_warriors = {
 			picture = oro_gene_warriors
 			cost = 150
@@ -1406,7 +1664,7 @@ ideas = {
 			default = yes
 			cancel_if_invalid = no
 		}
-	# TLP CONSCRIPTION
+	# TLP CONSCRIPTION UNIQUE LAW
 		always_ready_always_there = {
 			picture = tlp_national_guard
 			removal_cost = -1
@@ -1424,7 +1682,7 @@ ideas = {
 				modifier_army_sub_unit_ghoul_infantry_speed_factor = 0.08
 			}
 		}
-	# SHI CONSCRIPTION
+	# SHI CONSCRIPTION UNIQUE LAW
 		shi_shi_huang_ti = {
 			picture = generic_communist_army
 			cost = 150
@@ -1501,7 +1759,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-	# SHA CONSCRIPTION
+	# SHA CONSCRIPTION UNIQUE LAW
 		sha_forceful_mutation = {
 			picture = trl_a_roaming_army
 			cost = 150
@@ -1521,7 +1779,7 @@ ideas = {
 			default = yes
 			cancel_if_invalid = no
 		}
-	# IMO CONSCRIPTION
+	# IMO CONSCRIPTION UNIQUE LAW
 		imo_mastersmiths = {
 			picture = imo_mastersmiths
 			cost = 150
@@ -1543,7 +1801,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-	# UOA CONSCRIPTION
+	# UOA CONSCRIPTION UNIQUE LAW
 		uoa_fev_volunteers = {
 			picture = uoa_fev_volunteers
 			cost = 150
@@ -1620,6 +1878,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 250
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = trl_cave_trolls
+							has_idea = trl_the_roaming_army
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				stability_factor = 0.1
@@ -1659,6 +1926,15 @@ ideas = {
 					factor = 40
 					manpower_per_military_factory < 200
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = trl_leaving_the_caves
+							has_idea = trl_power_of_the_trolls
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				stability_factor = -0.1
@@ -1695,6 +1971,12 @@ ideas = {
 					factor = 60
 					manpower_per_military_factory < 150
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = trl_the_roaming_army
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				stability_factor = -0.2
@@ -1709,7 +1991,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-	# Varina
+	# Varina APRILS FOOLS
 		var_undead_legions = {
 			picture = recruitment_reaper
 			cost = 150
@@ -1827,6 +2109,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 250
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = lns_mercenary_approach
+							has_idea = lns_mercenary_frontlines
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.05
@@ -1883,6 +2174,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 150
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = lns_mercenary_primacy
+							has_idea = lns_regular_frontlines
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.08
@@ -1937,6 +2237,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 100
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = lns_mercenary_frontlines
+							has_idea = lns_regular_only
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.10
@@ -1985,6 +2294,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 75
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = lns_regular_frontlines
+							has_idea = lns_tbh_deputies
+						}
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -2035,6 +2353,12 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 50
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = lns_regular_only
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -2087,6 +2411,15 @@ ideas = {
 					factor = 1000
 					has_idea = born_warriors
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ttm_born_warriors
+							has_idea = ttm_able_bodied_tribesmen
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.07
@@ -2114,6 +2447,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 250
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ttm_veteran_pathfinders
+							has_idea = ttm_first_sons_and_daughters
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.10
@@ -2137,6 +2479,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 200
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ttm_able_bodied_tribesmen
+							has_idea = ttm_children_and_mothers
+						}
+					}
+					factor = 0
 				}
 			}
 			available = {
@@ -2171,6 +2522,12 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 100
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = ttm_first_sons_and_daughters
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -2226,6 +2583,15 @@ ideas = {
 					factor = 1000
 					has_idea = disarmed_nation
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ncn_disarmed_nation
+							has_idea = ncn_funded_militia_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.06
@@ -2264,6 +2630,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 250
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ncn_volunteer_militia_conscription
+							has_idea = ncn_two_year_conscription
+						}
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -2307,6 +2682,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 150
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ncn_funded_militia_conscription
+							has_idea = ncn_four_year_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.12
@@ -2346,6 +2730,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 100
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ncn_two_year_conscription
+							has_idea = ncn_until_dismissal_conscription
+						}
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -2388,6 +2781,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 75
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ncn_four_year_conscription
+							has_idea = ncn_child_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.18
@@ -2428,6 +2830,12 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 50
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = ncn_until_dismissal_conscription
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.21
@@ -2457,6 +2865,14 @@ ideas = {
 				max_fuel_factor = 0.1
 				fuel_gain_factor_from_states = 0.04
 				fuel_gain_factor = 0.04
+				female_divisional_commander_chance = -0.5
+				female_random_army_leader_chance = -0.5
+				hidden_modifier = {
+					female_random_country_leader_chance = -0.5
+					female_random_operative_chance = -0.5
+					female_random_admiral_chance = -0.5
+					female_random_scientist_chance = -0.5
+				}
 			}
 			default = yes
 
@@ -2482,6 +2898,15 @@ ideas = {
 					factor = 1000
 					has_idea = tribal_recruitment
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = TWO_legionem_foederati
+							has_idea = TWO_equites_cohortes
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.08
@@ -2491,6 +2916,14 @@ ideas = {
 				max_fuel_factor = 0.2
 				fuel_gain_factor_from_states = 0.08
 				fuel_gain_factor = 0.08
+				female_divisional_commander_chance = -0.5
+				female_random_army_leader_chance = -0.5
+				hidden_modifier = {
+					female_random_country_leader_chance = -0.5
+					female_random_operative_chance = -0.5
+					female_random_admiral_chance = -0.5
+					female_random_scientist_chance = -0.5
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -2515,6 +2948,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 800
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = TWO_barbarisque_auxiliis
+							has_idea = TWO_sociis
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.11
@@ -2523,6 +2965,14 @@ ideas = {
 				max_fuel_factor = 0.3
 				fuel_gain_factor_from_states = 0.12
 				fuel_gain_factor = 0.12
+				female_divisional_commander_chance = -0.5
+				female_random_army_leader_chance = -0.5
+				hidden_modifier = {
+					female_random_country_leader_chance = -0.5
+					female_random_operative_chance = -0.5
+					female_random_admiral_chance = -0.5
+					female_random_scientist_chance = -0.5
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -2547,6 +2997,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 400
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = TWO_equites_cohortes
+							has_idea = TWO_alae
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.14
@@ -2555,6 +3014,14 @@ ideas = {
 				max_fuel_factor = 0.4
 				fuel_gain_factor_from_states = 0.16
 				fuel_gain_factor = 0.16
+				female_divisional_commander_chance = -0.75
+				female_random_army_leader_chance = -0.75
+				hidden_modifier = {
+					female_random_country_leader_chance = -0.75
+					female_random_operative_chance = -0.75
+					female_random_admiral_chance = -0.75
+					female_random_scientist_chance = -0.75
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -2579,6 +3046,12 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 200
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = TWO_sociis
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.21
@@ -2588,6 +3061,14 @@ ideas = {
 				max_fuel_factor = 0.5
 				fuel_gain_factor_from_states = 0.2
 				fuel_gain_factor = 0.2
+				female_divisional_commander_chance = -1.0
+				female_random_army_leader_chance = -1.0
+				hidden_modifier = {
+					female_random_country_leader_chance = -1.0
+					female_random_operative_chance = -1.0
+					female_random_admiral_chance = -1.0
+					female_random_scientist_chance = -1.0
+				}
 			}
 			cancel_if_invalid = no
 		}
@@ -2634,6 +3115,15 @@ ideas = {
 					factor = 1000
 					has_idea = tribal_recruitment
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = NAV_legionem_foederati
+							has_idea = NAV_equites_cohortes
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.08
@@ -2665,6 +3155,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 800
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = NAV_barbarisque_auxiliis
+							has_idea = NAV_sociis
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.11
@@ -2695,6 +3194,15 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 400
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = NAV_equites_cohortes
+							has_idea = NAV_vexillatio
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.15
@@ -2724,6 +3232,12 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 200
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = NAV_sociis
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -2757,6 +3271,15 @@ ideas = {
 				army_attack_factor = 0.1
 				training_time_factor = -0.1
 			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = ghoul_volunteers
+					}
+					factor = 0
+				}
+			}
 			default = yes
 			cancel_if_invalid = no
 		}
@@ -2787,6 +3310,15 @@ ideas = {
 			}
 			ai_will_do = {
 				factor = 10
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ghoul_military_in_both_lives
+							has_idea = ghoul_conscription
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				research_speed_factor = 0.05
@@ -2825,6 +3357,15 @@ ideas = {
 			}
 			ai_will_do = {
 				factor = 20
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = ghoul_volunteers
+							has_idea = ghoul_feral_ones
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.12
@@ -2863,6 +3404,12 @@ ideas = {
 			}
 			ai_will_do = {
 				factor = 20
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = ghoul_conscription
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.25
@@ -2916,6 +3463,15 @@ ideas = {
 					factor = 1000
 					has_idea = enclave_military_law_1
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = enclave_military_law_1
+							has_idea = enclave_military_law_3
+						}
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.04
@@ -2945,6 +3501,15 @@ ideas = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 100
+				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						OR = {
+							has_idea = enclave_military_law_2
+							has_idea = enclave_military_law_4
+						}
+					}
+					factor = 0
 				}
 			}
 			modifier = {
@@ -2979,6 +3544,12 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 50
 				}
+				modifier = {
+					NOT = { ##If this isn't an adjacent law level, do not evaluate.
+						has_idea = enclave_military_law_3
+					}
+					factor = 0
+				}
 			}
 			modifier = {
 				conscription = 0.07
@@ -3001,21 +3572,8 @@ ideas = {
 					original_tag = DSL
 				}
 			}
-			# Redundant due to above allowed block @Tran
-			# available = {
-			# 	OR = {
-			# 		original_tag = HXL
-			# 		original_tag = DSL
-			# 	}
-			# }
-			# visible = {
-			# 	OR = {
-			# 		original_tag = HXL
-			# 		original_tag = DSL
-			# 	}
-			# }
 			ai_will_do = {
-				factor = 20
+				factor = 0 #Let Paradox implement demilitarization, not us.
 			}
 			modifier = {
 				conscription = 0.025
@@ -3042,27 +3600,21 @@ ideas = {
 				original_tag = STC
 			}
 		}
-		# Redundant due to above allowed block @Tran
-		# available = {
-		# 	OR = {
-		# 		original_tag = HXL
-		# 		original_tag = DSL
-		# 		original_tag = STC
-		# 	}
-		# }
-		# visible = {
-		# 	OR = {
-		# 		original_tag = HXL
-		# 		original_tag = DSL
-		# 		original_tag = STC
-		# 	}
-		# }
 		ai_will_do = {
 			factor = 20
 			modifier = {
 				#Prio if low on manpower
 				factor = 20
 				manpower_per_military_factory < 150
+			}
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = recruitment_communist_stealth_law
+						has_idea = recruitment_communist_knife_law
+					}
+				}
+				factor = 0
 			}
 		}
 		modifier = {
@@ -3081,7 +3633,7 @@ ideas = {
 				original_tag = HXL
 				original_tag = DSL
 				original_tag = STC
-			}
+				}
 		}
 		available = {
 			OR = {
@@ -3096,20 +3648,26 @@ ideas = {
 				date > 2278.1.1
 			}
 		}
-		# Redundant due to above allowed block @Tran
-		# visible = {
-		# 	OR = {
-		# 		original_tag = HXL
-		# 		original_tag = DSL
-		# 		original_tag = STC
-		# 	}
-		# }
 		ai_will_do = {
 			factor = 40
 			modifier = {
 				#Prio if low on manpower
 				factor = 20
 				manpower_per_military_factory < 100
+			}
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = recruitment_communist_rifle_law
+						has_idea = recruitment_communist_law
+					}
+				}
+				factor = 0
+			}
+			modifier = {
+				#We need to get rid of this
+				factor = 1000
+				has_idea = recruitment_communist_rifle_law
 			}
 		}
 		modifier = {
@@ -3142,20 +3700,18 @@ ideas = {
 				date > 2285.1.1
 			}
 		}
-		# Redundant due to above allowed block @Tran
-		# visible = {
-		# 	OR = {
-		# 		original_tag = HXL
-		# 		original_tag = DSL
-		# 		original_tag = STC
-		# 	}
-		# }
 		ai_will_do = {
 			factor = 120
 			modifier = {
 				#Prio if low on manpower
 				factor = 20
 				manpower_per_military_factory < 50
+			}
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					has_idea = recruitment_communist_knife_law
+				}
+				factor = 0
 			}
 		}
 		modifier = {
@@ -3165,7 +3721,7 @@ ideas = {
 		}
 		cancel_if_invalid = no
 	}
-	#######MOORE law
+	#######MOORE UNIQUE LAW
 	recruitment_cali_patriots = {
 		picture = recruitment_moores_law
 		cost = 150
@@ -3240,13 +3796,13 @@ ideas = {
 				has_completed_focus = WOO_runaway
 			}
 		}
-			visible = {
-				OR = {
-					original_tag = TOC
-					original_tag = VSH
-					original_tag = WOO
-				}
+		visible = {
+			OR = {
+				original_tag = TOC
+				original_tag = VSH
+				original_tag = WOO
 			}
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -3281,7 +3837,7 @@ ideas = {
 			original_tag = DLN
 		}
 		ai_will_do = {
-			factor = 100
+			factor = 0 #Let Paradox implement demilitarization, not us.
 		}
 		modifier = {
 			mobilization_speed = 0.15
@@ -3307,6 +3863,20 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				#BEAT UP THOSE REPUBLICANS
+				factor = 1000
+				has_idea = dln_small_professional_army
+			}
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = dln_small_professional_army
+						has_idea = dln_hegemonial_army
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			mobilization_speed = 0.1
@@ -3337,6 +3907,15 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = dln_kingdom_army
+						has_idea = dln_royal_order
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			mobilization_speed = 0.05
@@ -3367,6 +3946,16 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = dln_hegemonial_army
+						has_idea = dln_imperial_army
+						has_idea = dln_frozen_throne
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			political_power_factor = -0.2
@@ -3401,6 +3990,12 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					has_idea = dln_royal_order
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			conscription = 0.15
@@ -3435,6 +4030,12 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					has_idea = dln_royal_order
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			mobilization_speed = -0.1
@@ -3470,7 +4071,7 @@ ideas = {
 			original_tag = RCK
 		}
 		ai_will_do = {
-			factor = 100
+			factor = 0 #Let Paradox implement demilitarization, not us.
 		}
 		modifier = {
 			conscription = 0.0125
@@ -3499,6 +4100,15 @@ ideas = {
 			}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = RCK_personal_cohort
+						has_idea = RCK_calling_all_roaches_mp
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			conscription = 0.025
@@ -3525,6 +4135,15 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = RCK_brave_new_roaches
+						has_idea = RCK_every_last_nest
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			mobilization_speed = 0.05
@@ -3551,6 +4170,15 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = RCK_calling_all_roaches_mp
+						has_idea = RCK_full_party
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			conscription = 0.1
@@ -3569,16 +4197,25 @@ ideas = {
 		}
 		available = {
 			has_country_leader = {
-			character = RCK_roach_king
-			ruling_only = yes
-				}
-			NOT = { has_idea = RCK_manpower_agreement }
+				character = RCK_roach_king
+				ruling_only = yes
 			}
+			NOT = { has_idea = RCK_manpower_agreement }
+		}
 		visible = {
 			original_tag = RCK
 		}
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = RCK_every_last_nest
+						has_idea = RCK_roach_swarms
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			conscription = 0.1
@@ -3606,6 +4243,12 @@ ideas = {
 		}
 		ai_will_do = {
 			factor = 150
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					has_idea = RCK_full_party
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			mobilization_speed = 0.15
@@ -3649,6 +4292,9 @@ ideas = {
 		allowed = {
 			original_tag = BLC
 		}
+		ai_will_do = {
+			factor = 0 #Let Paradox implement demilitarization, not us.
+		}
 		modifier = {
 			conscription = 0.1
 			training_time_factor = -0.6
@@ -3673,6 +4319,18 @@ ideas = {
 		picture = recruitment_shotgun
 		allowed = {
 			original_tag = BLC
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = BLC_local_private_armies
+						has_idea = BLC_semi_centralized_banderiums
+					}
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			conscription = 0.13
@@ -3699,6 +4357,18 @@ ideas = {
 		allowed = {
 			original_tag = BLC
 		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					OR = {
+						has_idea = BLC_local_private_armies
+						has_idea = BLC_semi_centralized_banderiums
+					}
+				}
+				factor = 0
+			}
+		}
 		modifier = {
 			conscription = 0.16
 			training_time_factor = -0.15
@@ -3722,6 +4392,15 @@ ideas = {
 		picture = recruitment_army_green
 		allowed = {
 			original_tag = BLC
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				NOT = { ##If this isn't an adjacent law level, do not evaluate.
+					has_idea = BLC_semi_centralized_banderiums
+				}
+				factor = 0
+			}
 		}
 		modifier = {
 			conscription = 0.2

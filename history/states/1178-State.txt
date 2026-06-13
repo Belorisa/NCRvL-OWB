@@ -23,7 +23,7 @@ state={
 	provinces={
 		13304 13305 13309 13310 13311 13312 13316 13318 13319 13322
 	}
-	manpower=3135
+	manpower=4135
 	buildings_max_level_factor=1.000
 	state_category=shanty
 	local_supplies=0.000

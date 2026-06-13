@@ -690,7 +690,6 @@ ideas = {
 			allowed = {
 				original_tag = BAG
 			}
-
 			cost = 100
 			removal_cost = -1
 			level = 0

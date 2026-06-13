@@ -314,6 +314,7 @@ focus_tree = {
 				air_tech_level_settler = 1
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 3
 				category = air_tech_category
@@ -395,7 +396,9 @@ focus_tree = {
 		relative_position_id = eur_pilot_training_procedures
 
 		completion_reward = {
+			air_experience = -75
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.8
 				uses = 2
 				category = air_tech_category
@@ -1286,7 +1289,7 @@ focus_tree = {
 				level = 3
 			}
 			add_manpower = 1000
-			set_cosmetic_tag = EUR_ncrterritories
+			set_cosmetic_tag = EUR_NCR
 			hidden_effect = {
 				every_country = {
 					limit = {
@@ -1414,7 +1417,8 @@ focus_tree = {
 		}
 		available = {
 			NOT = { has_non_aggression_pact_with = ARR }
-			NOT = { is_puppet_of = ARR }
+			NOT = { is_subject_of = ARR }
+			date > 2278.1.1
 		}
 		relative_position_id = eur_the_growing_tribe
 
@@ -1499,6 +1503,7 @@ focus_tree = {
 		completion_reward = {
 			country_lock_all_division_template = no
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.75
 				uses = 2
 				category = cat_land_doctrine
@@ -1872,6 +1877,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 2
 				category = cat_land_doctrine
@@ -1922,6 +1928,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 1
 				uses = 2
 				category = agriculture_tech
@@ -2069,6 +2076,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = eur_power_armor_tt
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 2
 				category = power_armor_tech_category
@@ -2098,8 +2106,10 @@ focus_tree = {
 					regiments = {
 						power_armour = { x = 0 y = 0 }
 						power_armour = { x = 0 y = 1 }
+						power_armour = { x = 0 y = 2 }
 						power_armour = { x = 1 y = 0 }
 						power_armour = { x = 1 y = 1 }
+						power_armour = { x = 1 y = 2 }
 						power_armour = { x = 2 y = 0 }
 						power_armour = { x = 2 y = 1 }
 					}
@@ -2109,6 +2119,45 @@ focus_tree = {
 				}
 			}
 			add_ideas = EUR_power_armor_specialists
+			# Tooltip of this idea doesn't display in swap_ideas and using remove plus add is too bulky, hence the custom effect tooltip usage
+			if = {
+				limit = {
+					has_idea = eur_apa_disrepair
+				}
+				custom_effect_tooltip = eur_apa_disrepair_improved_tt
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = eur_apa_disrepair
+						add_idea = eur_apa_disrepair_1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = eur_apa_disrepair_1
+				}
+				custom_effect_tooltip = eur_apa_disrepair_improved_tt
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = eur_apa_disrepair_1
+						add_idea = eur_apa_disrepair_2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = eur_apa_disrepair_2
+				}
+				remove_ideas = eur_apa_disrepair_2
+			}
+			else = {
+				add_tech_bonus = {
+					name = tech_bonus_tree_tt
+					bonus = 0.5
+					uses = 1
+					category = power_armor_tech_category
+				}
+			}
 		}
 	}
 	focus = { #Fourways influence
@@ -2398,9 +2447,48 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = eur_apa_disrepair
+				}
+				custom_effect_tooltip = eur_apa_disrepair_improved_tt
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = eur_apa_disrepair
+						add_idea = eur_apa_disrepair_1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = eur_apa_disrepair_1
+				}
+				custom_effect_tooltip = eur_apa_disrepair_improved_tt
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = eur_apa_disrepair_1
+						add_idea = eur_apa_disrepair_2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = eur_apa_disrepair_2
+				}
+				remove_ideas = eur_apa_disrepair_2
+			}
+			else = {
+				add_tech_bonus = {
+					name = tech_bonus_tree_tt
+					bonus = 0.5
+					uses = 1
+					category = power_armor_tech_category
+				}
+			}
 			set_temp_variable = { caps_to_add = -25 }
 			add_caps = yes
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
@@ -2453,6 +2541,7 @@ focus_tree = {
 			set_temp_variable = { caps_to_add = -25 }
 			add_caps = yes
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
@@ -2919,11 +3008,11 @@ focus_tree = {
 				}
 			}
 			163 = {
-				set_state_name = "Starfather's Church"
+				set_state_name = STATE_163_EUR
 				hidden_effect = {
 					set_province_name = {
 						id = 2422
-						name = "Starfather's Church"
+						name = VICTORY_POINTS_2422_EUR
 					}
 				}
 			}
@@ -3027,7 +3116,6 @@ focus_tree = {
 		}
 		relative_position_id = eur_whacha_gonna_do
 		completion_reward = {
-			#custom_effect_tooltip = ncr_regulator_friends_tt
 			NCR = {
 				set_temp_variable = { BOS_tension_to_add = 10 }
 				bos_change_tension = yes
@@ -3079,6 +3167,45 @@ focus_tree = {
 		relative_position_id = eur_study_air_designs
 		completion_reward = {
 			add_ideas = enclave_salvagers
+			# Tooltip of this idea doesn't display in swap_ideas and using remove plus add is too bulky, hence the custom effect tooltip usage
+			if = {
+				limit = {
+					has_idea = eur_apa_disrepair
+				}
+				custom_effect_tooltip = eur_apa_disrepair_improved_tt
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = eur_apa_disrepair
+						add_idea = eur_apa_disrepair_1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = eur_apa_disrepair_1
+				}
+				custom_effect_tooltip = eur_apa_disrepair_improved_tt
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = eur_apa_disrepair_1
+						add_idea = eur_apa_disrepair_2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = eur_apa_disrepair_2
+				}
+				remove_ideas = eur_apa_disrepair_2
+			}
+			else = {
+				add_tech_bonus = {
+					name = tech_bonus_tree_tt
+					bonus = 0.5
+					uses = 1
+					category = power_armor_tech_category
+				}
+			}
 			add_to_variable = { EUR_suspicion = 1 }
 			custom_effect_tooltip = eur_suspicion_increase_tt
 		}

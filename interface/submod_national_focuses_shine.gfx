@@ -1,7 +1,7 @@
 # Shiny version of icons setup by Mechano via script
 spriteTypes = {
 	spriteType = {
-		name = "GFX_goal_CES_cypher_warband"
+		name = "GFX_goal_CES_cypher_warband_shine"
 		texturefile = "gfx/interface/goals/unique/CES/CES_cypher_warband.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -16,9 +16,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_cypher_warband.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_CES_painted_rock"
+		name = "GFX_goal_CES_painted_rock_shine"
 		texturefile = "gfx/interface/goals/unique/CES/CES_painted_rock.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -33,9 +46,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_painted_rock.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_CES_crushers_army"
+		name = "GFX_goal_CES_crushers_army_shine"
 		texturefile = "gfx/interface/goals/unique/CES/CES_crushers_army.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -50,9 +76,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_crushers_army.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_CES_shales_army"
+		name = "GFX_goal_CES_shales_army_shine"
 		texturefile = "gfx/interface/goals/unique/CES/CES_shales_army.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -67,9 +106,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_shales_army.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_CES_ironmongers"
+		name = "GFX_goal_CES_ironmongers_shine"
 		texturefile = "gfx/interface/goals/unique/CES/CES_ironmongers.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -84,9 +136,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_ironmongers.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_CES_oklahoma"
+		name = "GFX_goal_CES_oklahoma_shine"
 		texturefile = "gfx/interface/goals/unique/CES/CES_oklahoma.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -101,10 +166,23 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_oklahoma.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_CES_texas"
-		texturefile = "gfx/interface/goals/unique/CES/CES_texas.dds"
+		name = "GFX_goal_CES_texas_shine"
+		texturefile = "gfx/interface/goals/unique/CES/ces_texas.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/unique/CES/CES_texas.dds"
@@ -118,9 +196,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_texas.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_CES_feel_that_thats_true"
+		name = "GFX_goal_CES_feel_that_thats_true_shine"
 		texturefile = "gfx/interface/goals/unique/CES/CES_feel_that_thats_true.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -135,9 +226,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/CES/CES_feel_that_thats_true.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_feel_that_thats_true"
+		name = "GFX_goal_NCR_feel_that_thats_true_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_feel_that_thats_true.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -152,9 +256,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_feel_that_thats_true.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_timberline"
+		name = "GFX_goal_NCR_timberline_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_timberline.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -169,9 +286,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_timberline.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_oregon"
+		name = "GFX_goal_NCR_oregon_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_oregon.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -186,9 +316,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_oregon.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_feel_that_thats_true"
+		name = "GFX_goal_NCR_feel_that_thats_true_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_feel_that_thats_true.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -203,9 +346,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_feel_that_thats_true.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_motorized_drummond"
+		name = "GFX_goal_NCR_motorized_drummond_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_drummond.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -220,9 +376,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_motorized_drummond.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_motorized_humvee"
+		name = "GFX_goal_NCR_motorized_humvee_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_humvee.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -237,9 +406,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_motorized_humvee.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_motorized_fast"
+		name = "GFX_goal_NCR_motorized_fast_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_fast.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -254,9 +436,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_motorized_fast.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_motorized_drugs"
+		name = "GFX_goal_NCR_motorized_drugs_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_drugs.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -271,9 +466,22 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_motorized_drugs.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_goal_NCR_motorized_tank"
+		name = "GFX_goal_NCR_motorized_tank_shine"
 		texturefile = "gfx/interface/goals/unique/NCR/NCR_motorized_tank.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -288,5 +496,18 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+				animation = {
+			animationmaskfile = "gfx/interface/goals/unique/NCR/NCR_motorized_tank.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+				legacy_lazy_load = no
 	}
 }

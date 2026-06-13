@@ -4,6 +4,7 @@ state = {
 	manpower = 266
 	state_category = wasteland
 	impassable = yes
+	force_link_ownership_to = 1387
 
 	history = {
 	}

@@ -84,7 +84,6 @@ set_popularities = {
 recruit_character = RBT_DORAS
 
 add_ideas = {
-	tribal_nation
 	funded_militia_conscription
 	RBT_femur_breakers
 	fertile_lands

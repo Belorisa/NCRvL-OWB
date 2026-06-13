@@ -1,10 +1,10 @@
 ####################################################
-#         Lanius's Cohort Focus Tree               #
-#        Originally Planned by Zapdude             #
-# 3.0 Tree                                         #
-# Coded by Faeelin, Assistance from Zusk           #
-# 3.2 Tree                                         #
-# Reworked by Zusk                                 #
+#		  Lanius's Cohort Focus Tree			   #
+#		 Originally Planned by Zapdude			   #
+# 3.0 Tree										   #
+# Coded by Faeelin, Assistance from Zusk		   #
+# 3.2 Tree										   #
+# Reworked by Zusk								   #
 ####################################################
 
 #Coding Notes:
@@ -577,6 +577,7 @@ focus_tree = {
 		prerequisite = {
 			focus = lac_conquering_lambda
 		}
+		will_lead_to_war_with = SUF
 		available = {
 			SUF = {
 				OR = {
@@ -681,6 +682,9 @@ focus_tree = {
 			}
 			add_command_power = 50
 		}
+		ai_will_do = {
+			base = 100
+		}
 	}
 	focus = {
 		id = lac_lessons_hidebarks
@@ -695,6 +699,9 @@ focus_tree = {
 		completion_reward = {
 			increase_conscription_law = yes
 			add_command_power = 50
+		}
+		ai_will_do = {
+			base = 100
 		}
 	}
 	focus = {
@@ -944,6 +951,9 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
+		ai_will_do = {
+			factor = 1000
+		}
 		relative_position_id = lac_march_on_mescalero2
 		completion_reward = {
 			country_event = nf_lanius.10
@@ -974,6 +984,10 @@ focus_tree = {
 			add_offsite_building = {
 				type = arms_factory
 				level = 2
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
 			}
 		}
 	}
@@ -1370,6 +1384,10 @@ focus_tree = {
 					}
 				}
 			}
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1390,7 +1408,11 @@ focus_tree = {
 					}
 				}
 			}
-			owns_state = 554
+			OR = {
+				554 = { is_controlled_by_ROOT_or_ally = yes }
+				has_country_flag = ttm_lanius_accepts_peace
+			}
+
 		}
 		bypass = {
 			SUN = {
@@ -1412,6 +1434,9 @@ focus_tree = {
 					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1528,6 +1553,11 @@ focus_tree = {
 						all_core_land_owned_by_prev_sphere = yes
 					}
 				}
+				WDN = {
+					MXC = {
+						all_core_land_owned_by_prev_sphere = yes
+					}
+				}
 			}
 		}
 		x = 1
@@ -1539,6 +1569,9 @@ focus_tree = {
 					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1571,12 +1604,19 @@ focus_tree = {
 						all_core_land_owned_by_prev_sphere = yes
 					}
 				}
+				WDN = {
+					MXC = {
+						all_core_land_owned_by_prev_sphere = yes
+					}
+				}
 				is_neighbor_of = HAN
+				is_neighbor_of = WDN
 			}
 			SUN = {
 				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
 			}
 		}
+		will_lead_to_war_with = SCO
 		bypass = {
 			OR = {
 				SCO = {
@@ -1585,6 +1625,14 @@ focus_tree = {
 				AND = {
 					is_neighbor_of = HAN
 					HAN = {
+						SCO = {
+							all_core_land_owned_by_prev_sphere = yes
+						}
+					}
+				}
+				AND = {
+					is_neighbor_of = WDN
+					WDN = {
 						SCO = {
 							all_core_land_owned_by_prev_sphere = yes
 						}
@@ -1638,6 +1686,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_neighbor_of = HAN
+				is_neighbor_of = WDN
 				AND = {
 					SUN = {
 						all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
@@ -1693,6 +1742,7 @@ focus_tree = {
 			}
 			OR = {
 				is_neighbor_of = HAN
+				is_neighbor_of = WDN
 				AND = {
 					SUN = {
 						all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
@@ -1706,8 +1756,13 @@ focus_tree = {
 				}
 			}
 		}
+		will_lead_to_war_with = HAN
+		will_lead_to_war_with = WDN
 		bypass = {
 			HAN = {
+				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
+			}
+			WDN = {
 				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
 			}
 		}
@@ -1733,9 +1788,37 @@ focus_tree = {
 					days = 365
 				}
 			}
-			HAN = {
-				ROOT = {
-					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+			if = {
+				limit = {
+					WDN = { exists = yes }
+					HAN = { exists = yes }
+				}
+				WDN = {
+					ROOT = {
+						grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+					}
+				}
+				HAN = {
+					ROOT = {
+						grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					WDN = { exists = yes }
+				}
+				WDN = {
+					ROOT = {
+						grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+					}
+				}
+			}
+			else = {
+				HAN = {
+					ROOT = {
+						grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+					}
 				}
 			}
 		}
@@ -1749,6 +1832,9 @@ focus_tree = {
 		}
 		available = {
 			HAN = {
+				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
+			}
+			WDN = {
 				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
 			}
 		}
@@ -1836,6 +1922,9 @@ focus_tree = {
 			HAN = {
 				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
 			}
+			WDN = {
+				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
+			}
 		}
 		x = 4
 		y = 1
@@ -1895,7 +1984,7 @@ focus_tree = {
 			factor = 0
 		}
 	}
-	focus = {##keep it here so it's less stuff to remove elswhere just keep the alaways no and its fine
+	focus = {
 		id = lac_triumphant_campaign
 		text = lac_no_strings_on_me
 		icon = GFX_goal_LAC_monster_of_the_east
@@ -2061,6 +2150,9 @@ focus_tree = {
 			HAN = {
 				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
 			}
+			WDN = {
+				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
+			}
 		}
 		prerequisite = {
 			focus = lac_hang_the_dogs
@@ -2083,6 +2175,9 @@ focus_tree = {
 		cost = 30
 		available = {
 			HAN = {
+				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
+			}
+			WDN = {
 				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
 			}
 		}
@@ -2169,10 +2264,10 @@ focus_tree = {
 			}
 			set_province_name = {
 				id = 5583
-				name = "Fort Desolation"
+				name = VICTORY_POINTS_5583_LAC
 			}
 			hidden_effect = {
-				554 = { set_state_name = "Fort Desolation" }
+				554 = { set_state_name = STATE_554_LAC }
 			}
 		}
 	}
@@ -2182,14 +2277,17 @@ focus_tree = {
 		icon = GFX_goal_CES_colosseum
 		cost = 30
 		available = {
-			has_completed_focus = lac_good_boy_puppet
+			OR = {
+				has_completed_focus = lac_triumphant_campaign
+				has_completed_focus = lac_good_boy_puppet
+			}
 		}
 		allow_branch = {
 			NOT = { has_country_flag = lac_accepted_dianas_offer }
 		}
 		x = 0
-		y = 3
-		relative_position_id = lac_brought_to_heel
+		y = 1
+		relative_position_id = lac_triumphant_campaign
 		completion_reward = {
 			custom_effect_tooltip = lac_new_empire_tt
 			hidden_effect = {
@@ -2272,7 +2370,10 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = HAN
+					OR = {
+						is_core_of = HAN
+						is_core_of = WDN
+					}
 					if = {
 						limit = {
 							LAC = {
@@ -2455,7 +2556,7 @@ focus_tree = {
 		}
 		available = {
 			MXC = {
-				all_core_land_owned_by_prev_sphere = yes
+				all_core_land_owned_by_prev_sphere_or_legion_influence_tag = yes
 			}
 		}
 		x = 4
@@ -2465,7 +2566,7 @@ focus_tree = {
 			set_country_flag = maxson_died_flag
 			country_event = nf_lanius.12
 			# LAC_lanius = {
-			# 	add_skill_level = 1
+			#	add_skill_level = 1
 			# }
 		}
 	}

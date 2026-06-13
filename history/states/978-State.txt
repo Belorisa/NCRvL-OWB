@@ -6,6 +6,7 @@ state = {
 
 	resources = {
 		metal = 4
+		water = 6
 	}
 
 	history = {

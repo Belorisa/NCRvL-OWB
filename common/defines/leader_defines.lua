@@ -17,12 +17,18 @@ NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = {						-- trait slot for 0 l
 }
 
 NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = {
-	-- applies as a factor to female unit leader randomization
-	-- the values needs to be zero if you don't actually have random portraits
-	0.0, -- navy leaders
-	0.0, -- army leaders
-	0.0 -- operatives
+		-- applies as a factor to female unit leader randomization
+		-- the values needs to be zero if you don't actually have random portraits
+		0.35, -- country leaders
+		0.35, -- army leaders
+		0.35, -- navy leaders
+		0.35, -- air leaders
+		0.35, -- operatives
+		0.35, -- scientists
 }
+
+NDefines.NMilitary.BASE_FEMALE_DIVISIONAL_COMMANDER_CHANCE = 0.35		--Chance to receive a female divisonal commander. This is set to zero in the base game, as we do not have generic female portraits for many graphical culture groups.
+																	--this expects a value between 0 and 1 and is added to by female_divisional_commander_chance. If you don't have female generic portraits defined, you -will- get silhouettes.
 
 
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.09		-- XP gain per unit in combat (Vanilla = 0.1)

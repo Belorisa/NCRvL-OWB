@@ -7,9 +7,9 @@ state = {
 	history = {
 		owner = TAA
 		add_core_of = TAA
-		#victory_points = { #There's nothing, really
-		#	9728 5
-		#}
+		victory_points = {
+			9728 3
+		}
 		#add_extra_state_shared_building_slots = 1 #Industry moved Eagle Pass;793
 		buildings = {
 			infrastructure = 2

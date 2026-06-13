@@ -1,6 +1,8 @@
 state = {
 	id = 918
 	name = "STATE_918"
+	manpower = 23415
+	state_category = large_town
 	history={
 		owner = SHA
 		add_core_of = SHA
@@ -12,13 +14,9 @@ state = {
 			infrastructure = 4
 			arms_factory = 1
 		}
-
 	}
 
 	provinces = {
 		9689 11354 11355 11356 11358 11362 11363 11364 11369 11370 11371 11373 11381
 	}
-	manpower=19000
-	buildings_max_level_factor=1.000
-	state_category=large_town
 }

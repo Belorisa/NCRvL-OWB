@@ -781,7 +781,7 @@ technologies = {
 			}
 		}
 
-	on_research_complete = {
+    on_research_complete = {
         air_experience = -50
     }
 
@@ -1568,7 +1568,7 @@ technologies = {
 				NOT = { has_tech = settled_civilization }
 			}
 		}
-		
+
     on_research_complete = {
         air_experience = -50
     }

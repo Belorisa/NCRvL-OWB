@@ -25,7 +25,7 @@ leader_traits = {
 
 	bos_the_smothering_storm = {
 		random = no
-		custom_modifier_tooltip = tvt_the_people_of_tomorrow_warform_tooltip
+		#custom_modifier_tooltip = #tvt_the_people_of_tomorrow_warform_tooltip
 	}
 
 	bos_war_hero_of_the_ncr_war = {
@@ -1098,7 +1098,7 @@ leader_traits = {
 		political_power_factor = 0.10
 	}
 
-		ncr_follower_theorist = {
+	ncr_follower_theorist = {
 		random = no
 		experience_gain_army = 0.05
 		experience_gain_navy = 0.05
@@ -1198,7 +1198,7 @@ leader_traits = {
 		}
 	}
 
-		lanius_caesars_voice = {
+	lanius_caesars_voice = {
 		random = no
 		resistance_target = -0.05
 		training_time_factor = -0.2
@@ -1217,8 +1217,8 @@ leader_traits = {
 		training_time_factor = -0.15
 		compliance_gain = 0.01
 	}
-	
-		lac_res_publica = {
+
+	lac_res_publica = {
 		random = no
 		production_speed_buildings_factor = -0.05
 		research_speed_factor = -0.05
@@ -1585,7 +1585,7 @@ leader_traits = {
 			factor = 500
 		}
 	}
-		military_theorist_no_sprite = {
+	military_theorist_no_sprite = {
 		experience_gain_army = 0.15
 		experience_gain_navy = 0.15
 		experience_gain_air = 0.05
@@ -2549,7 +2549,7 @@ leader_traits = {
 			factor = 3
 		}
 	}
-	
+
 	# No suitable replacement for these modifiers now that PDX deleted them and they aren't referenced elsewhere @Tran
 
 	# air_airborne_1 = { # Paratrooper drop efficiency increased by 4%
@@ -3448,7 +3448,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-		captain_crabeater_trait = {
+	captain_crabeater_trait = {
 		random = no
 		naval_invasion_penalty = -0.1
 		convoy_raiding_efficiency_factor = 0.075
@@ -3460,7 +3460,7 @@ leader_traits = {
 		random = no
 		trade_opinion_factor = -0.2
 		command_power_gain = 1
-		defence = 0.05
+		army_defence_factor = 0.05
 		ai_will_do = {
 			factor = 1
 		}
@@ -3513,7 +3513,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-    hai_wounded = {
+	hai_wounded = {
 		random = no
 		political_power_factor = -0.1
 		ai_will_do = {
@@ -3650,6 +3650,19 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	android_coordinator = {
+		random = no
+		political_power_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.15
+		local_resources_factor = -0.1
+		industrial_capacity_factory = 0.10
+	}
+	poseidon_ai = {
+		random = no
+		weekly_manpower = 2
+		mobilization_speed = 0.2
+		conscription_factor = 0.1
+	}
 #roach king#
 	roach_king = {
 		random = no
@@ -3724,8 +3737,8 @@ leader_traits = {
 		random = no
 		custom_modifier_tooltip = RCK_marked_for_death_tt
 	}
-#Petro Chico#
-PET_the_boards = {
+	#Petro Chico#
+	PET_the_boards = {
 		random = no
 			resistance_target = -0.05
 			political_power_factor = 0.05
@@ -3733,6 +3746,7 @@ PET_the_boards = {
 			research_speed_factor = 0.05
 			consumer_goods_expected_value = -0.05
 			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
 			experience_gain_army = 0.05
 			justify_war_goal_time = -0.1
 	}
@@ -3889,7 +3903,7 @@ PET_the_boards = {
 			factor = 1
 		}
 	}
-		#### Swords of Hayman ####
+	#### Swords of Hayman ####
 	soh_the_last_resort = {
 		random = no
 		ai_focus_aggressive_factor = 0.80
@@ -3899,25 +3913,6 @@ PET_the_boards = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-	soh_heir_apparent = {
-		random = no
-		war_support_factor = 0.10
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	soh_tough_love = {
-		random = no
-		resistance_target = -0.20
-		political_power_factor = 0.03
-	}
-	soh_beast_in_the_machine = {
-		random = no
-		resistance_target = -0.25
-		justify_war_goal_time = -0.45
-		ai_focus_aggressive_factor = 0.75
-		planning_speed = 0.1
 	}
 	soh_the_bloody_elder = {
 		random = no
@@ -4407,7 +4402,7 @@ PET_the_boards = {
 			factor = 1
 		}
 	}
-		VSH_legacy_of_sierra = {
+	VSH_legacy_of_sierra = {
 		random = no
 		breakthrough_factor = 0.05
 		army_speed_factor = 0.10
@@ -4659,7 +4654,7 @@ PET_the_boards = {
 		random = no
 		required_compliance_for_coring_factor = -0.15
 	}
-	##Luminous Ones
+		##Luminous Ones
 	LUM_king_of_all = {
 		random = no
 		required_compliance_for_coring = -10
@@ -4766,7 +4761,7 @@ PET_the_boards = {
 		breakthrough_factor = 0.05
 		land_bunker_effectiveness_factor = 0.1
 	}
-		###Unbound
+	###Unbound
 	unb_harbringer_of_destruction = {
 		random = no
 		land_reinforce_rate = 0.05
@@ -4980,6 +4975,28 @@ PET_the_boards = {
 		army_defence_factor = 0.035
 		army_morale_factor = 0.035
 	}
+	#HST
+	HST_compassionate = {
+		random = no
+		stability_factor = 0.1
+		compliance_growth = 0.1
+		resistance_activity = -0.1
+	}
+	HST_observant = {
+		random = no
+		local_resources_factor = 0.15
+		equipment_capture = 0.1
+	}
+	HST_studious = {
+		random = no
+		research_speed_factor = 0.075
+	}
+	HST_tactical_historian = {
+		random = no
+		research_speed_factor = 0.05
+		experience_gain_army = 0.1
+	}
+
 	###April Fools 2024
 	MIN_netherlord = {
 		random = no

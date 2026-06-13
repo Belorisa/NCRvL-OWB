@@ -6,7 +6,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_group_special_forces_group_icon"						textureFile = "gfx/interface/counters/division_templates_large/custom_template_037.dds" noOfFrames = 1 }
 
 
-
 	# Category icons
 	spriteType = {
 		name = "GFX_unit_category_army_icon_small"
@@ -26,7 +25,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_unit_category_militia_icon_small"
 		texturefile = "gfx/texticons/unit_militia_icon_small.dds"
 		legacy_lazy_load = no
@@ -50,7 +49,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 1
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_unit_category_spec_ops"
 		textureFile = "gfx/interface/counters/divisions_large/unit_spec_ops_icon.dds"
 		legacy_lazy_load = no
@@ -173,7 +172,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_unit_category_mutants"
 		texturefile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
 		legacy_lazy_load = no
@@ -185,7 +184,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_unit_category_super_mutants"
 		texturefile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
 		legacy_lazy_load = no
@@ -197,7 +196,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_unit_category_super_mutant_infantry"
 		texturefile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
 		legacy_lazy_load = no
@@ -323,8 +322,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-
-
 
 	# Infantry
 	spriteType = {
@@ -490,13 +487,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
@@ -511,7 +506,7 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_unit_heavy_super_mutant_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_breacher_icon.dds"
 		noOfFrames = 2
@@ -681,13 +676,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_faerie_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_faerie_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_faerie_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_faerie_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_faerie_infantry_icon_small.dds"
@@ -701,13 +694,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_leshy_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_leshy_unit_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_leshy_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_leshy_unit_icon_small"
 		texturefile = "gfx/texticons/unit_leshy_icon_small.dds"
@@ -720,13 +711,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_hatchling_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_leshy_baby_unit_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_hatchling_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_leshy_baby_unit_icon_small"
 		texturefile = "gfx/texticons/unit_hatchling_icon_small.dds"
@@ -739,13 +728,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_steel_dame_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_dun_robot_unit_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_steel_dame_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_dun_robot_unit_icon_small"
 		texturefile = "gfx/texticons/unit_steel_dame_icon_small.dds"
@@ -759,13 +746,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_nightkin_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_nightkin_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_nightkin_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_nightkin_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_nightkin_infantry_icon_small.dds"
@@ -778,20 +763,18 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_aux_infantry_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_infantry_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_super_mutant_aux_infantry_icon_small"
 		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-		# monster support
+	# monster support
 	spriteType = {
 		name = "GFX_unit_monster_support_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
@@ -1111,13 +1094,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_support_robots_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_support_robot_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_support_robots_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_support_robot_icon_small"
 		texturefile = "gfx/texticons/unit_support_robots_icon_small.dds"
@@ -1300,6 +1281,74 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+	# anti armor infantry
+	spriteType = {
+		name = "GFX_unit_anti_armor_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_anti_armor_infantry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_anti_armor_infantry_icon_small"
+		textureFile = "gfx/texticons/unit_anti_armor_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_anti_armor_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_armor_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	# anti tank infantry
+	spriteType = {
+		name = "GFX_unit_anti_tank_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_tank_infantry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_anti_tank_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_anti_tank_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_anti_tank_infantry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_motorized_anti_tank_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_motorized_anti_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_motorized_anti_tank_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_anti_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_motorized_anti_tank_icon_small"
+		texturefile = "gfx/texticons/unit_motorized_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_power_armour_anti_tank_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_power_armour_anti_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_power_armour_anti_tank_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armour_anti_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_power_armour_anti_tank_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_power_armour_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
 	# anti tank support
 	spriteType = {
 		name = "GFX_unit_anti_tank_company_icon_medium"
@@ -1311,67 +1360,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_tank_support_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_anti_tank_company_icon_small"
 		texturefile = "gfx/texticons/unit_anti_tank_support_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_anti_tank_infantry_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_anti_tank_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	# anti tank support
-	spriteType = {
-		name = "GFX_unit_anti_tank_infantry_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_tank_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_anti_tank_infantry_icon_small"
-		texturefile = "gfx/texticons/unit_anti_tank_infantry_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_motorized_anti_tank_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_motorized_anti_tank_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_motorized_anti_tank_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_anti_tank_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_motorized_anti_tank_icon_small"
-		texturefile = "gfx/texticons/unit_motorized_anti_tank_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_power_armour_anti_tank_infantry_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_power_armour_anti_tank_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_power_armour_anti_tank_infantry_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armour_anti_tank_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_power_armour_anti_tank_infantry_icon_small"
-		texturefile = "gfx/texticons/unit_power_armour_anti_tank_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
@@ -1382,7 +1373,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_anti_air_support_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_anti_air_support_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_support_icon.dds"
@@ -1401,13 +1391,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_flamer_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_flamer_company_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_flamer_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_flamer_company_icon_small"
 		texturefile = "gfx/texticons/unit_flamer_icon_small.dds"
@@ -1420,13 +1408,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_laser_support_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_laser_company_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_laser_support_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_laser_company_icon_small"
 		texturefile = "gfx/texticons/unit_laser_support_icon_small.dds"
@@ -1780,19 +1766,34 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+	spriteType = {
+		name = "GFX_unit_combat_engineer_unit_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_combat_engineer_unit_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_engineer_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_combat_engineer_unit_icon_small"
+		texturefile = "gfx/texticons/support_engineer_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
 	# warform
 	spriteType = {
 		name = "GFX_unit_cybernetic_warform_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_warform_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_cybernetic_warform_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_warform_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_cybernetic_warform_icon_small"
 		texturefile = "gfx/texticons/unit_unit_warform_icon_small.dds"
@@ -1806,13 +1807,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_forward_firebase_support_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_forward_firebase_support_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_forward_firebase_support_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_forward_firebase_support_icon_small"
 		texturefile = "gfx/texticons/unit_forward_firebase_support_icon_small.dds"
@@ -1820,19 +1819,17 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# gary
+	# Gary
 	spriteType = {
 		name = "GFX_unit_gary_unit_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_gary_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_gary_unit_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_gary_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_gary_unit_icon_small"
 		texturefile = "gfx/texticons/unit_gary_unit_icon_small.dds"
@@ -1840,119 +1837,73 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	# Elites
-	# Elite Infantry
-	spriteType = {
-		name = "GFX_unit_elite_infantry_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_elite_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_infantry_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_elite_infantry_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_infantry_icon_small"
-		texturefile = "gfx/texticons/unit_elite_infantry_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-
-	# Elite Power Armour
-	spriteType = {
-		name = "GFX_unit_elite_power_armour_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_elite_power_armor_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_power_armour_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_elite_power_armor_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_power_armour_icon_small"
-		texturefile = "gfx/texticons/unit_elite_power_armor_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	# Elite Spec Ops
-	spriteType = {
-		name = "GFX_unit_elite_spec_ops_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_elite_spec_ops_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_spec_ops_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_elite_spec_ops_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_spec_ops_icon_small"
-		texturefile = "gfx/texticons/unit_elite_spec_ops_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	# Elite Motorized
-	spriteType = {
-		name = "GFX_unit_elite_motorized_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_elite_motorized_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_motorized_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_elite_motorized_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_motorized_icon_small"
-		texturefile = "gfx/texticons/unit_elite_motorized_icon.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	# Elite Robot
-	spriteType = {
-		name = "GFX_unit_elite_robot_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_elite_robots_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_robot_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_elite_robots_icon.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_unit_elite_robot_icon_small"
-		texturefile = "gfx/texticons/unit_elite_robots_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-		###crusaders
+	###crusaders
 	spriteType = {
 		name = "GFX_unit_crusader_unit_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_crusader_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_crusader_unit_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_crusader_unit_icon.dds"
 		noOfFrames = 2
 	}
-
 	spriteType = {
 		name = "GFX_unit_crusader_unit_icon_small"
 		texturefile = "gfx/texticons/unit_crusader_unit_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	### HQ Units
+	# HQ Robots
+	spriteType = {
+		name = "GFX_unit_hq_robot_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_support_robots_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hq_robot_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_support_robots_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hq_robot_icon_small"
+		texturefile = "gfx/texticons/unit_support_robots_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	# HQ Super Mutants
+	spriteType = {
+		name = "GFX_unit_hq_super_mutant_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_mutant_infantry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hq_super_mutant_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_mutant_infantry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hq_super_mutant_icon_small"
+		texturefile = "gfx/texticons/unit_super_mutant_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	# HQ PA
+	spriteType = {
+		name = "GFX_unit_hq_power_armour_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_power_armor_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hq_power_armour_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_power_armor_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_hq_power_armour_icon_small"
+		texturefile = "gfx/texticons/unit_power_armor_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}

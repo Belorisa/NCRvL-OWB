@@ -89,6 +89,7 @@ focus_tree = {
 		relative_position_id = bdt_power_overwhelming
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = -1
 		y = 1
@@ -118,6 +119,7 @@ focus_tree = {
 		relative_position_id = bdt_power_overwhelming
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = 1
 		y = 1
@@ -150,6 +152,7 @@ focus_tree = {
 		relative_position_id = bdt_fire_sho
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = -1
 		y = 1
@@ -179,6 +182,7 @@ focus_tree = {
 		relative_position_id = bdt_fire_hgh
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = -2
 		y = 1
@@ -208,6 +212,7 @@ focus_tree = {
 		relative_position_id = bdt_fire_hgh
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = 0
 		y = 1
@@ -237,6 +242,7 @@ focus_tree = {
 		relative_position_id = bdt_fire_hgh
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = 2
 		y = 1
@@ -272,6 +278,7 @@ focus_tree = {
 		relative_position_id = bdt_fire_tim
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = -2
 		y = 1
@@ -328,6 +335,7 @@ focus_tree = {
 		relative_position_id = bdt_fire_cold_north
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = 0
 		y = 1
@@ -411,6 +419,7 @@ focus_tree = {
 		}
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			CYC = {
@@ -772,7 +781,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = bdt_clerical_militia
 		completion_reward = {
-						set_technology = {
+			set_technology = {
 				gecko_tech_access_tech = 1
 				gecko_support_unlock_tech = 1
 			}
@@ -889,6 +898,7 @@ focus_tree = {
 		relative_position_id = bdt_che_war
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
@@ -1018,6 +1028,7 @@ focus_tree = {
 		relative_position_id = bdt_sho_war
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
@@ -1393,6 +1404,7 @@ focus_tree = {
 		relative_position_id = bdt_the_skeleton_king
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 4
 				uses = 3
@@ -1763,6 +1775,7 @@ focus_tree = {
 		}
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		x = 2
 		y = 1
@@ -1898,16 +1911,18 @@ focus_tree = {
 		relative_position_id = bdt_dreams_of_unity
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.3
 				ahead_reduction = 3
 				uses = 3
 				category = spec_force_equipment_tech_category
 			}
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.3
-				uses = 3
-				category = caf_land_doctrine_xp
-			}
+			#add_doctrine_cost_reduction = {
+			#	cost_reduction = 0.3
+			#	uses = 3
+			#	category = caf_land_doctrine_xp
+			#}
+			army_experience = 75
 		}
 	}
 
@@ -1948,6 +1963,7 @@ focus_tree = {
 		}
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		ai_will_do = {
 			factor = 0
@@ -2135,6 +2151,7 @@ focus_tree = {
 		relative_position_id = bdt_cleansing_the_crimson_forest
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.75
 				uses = 1
 				category = infantry_weapons_tech_category
@@ -2190,6 +2207,7 @@ focus_tree = {
 		relative_position_id = bdt_western_integration
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
@@ -2225,6 +2243,7 @@ focus_tree = {
 		relative_position_id = bdt_council_of_pilgrims
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
@@ -2364,7 +2383,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "Heaven's Gate has accepted us"
+				tooltip = "Heaven's Guard has accepted us"
 				has_country_flag = hea_accepted
 			}
 			is_subject = no
@@ -2456,7 +2475,7 @@ focus_tree = {
 			NOT = { has_completed_focus = bdt_communion_achieved }
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = "Heaven's Gate has rejected us"
+					tooltip = "Heaven's Guard has rejected us"
 					has_country_flag = hea_refused
 				}
 				HEA = {
@@ -2561,6 +2580,7 @@ focus_tree = {
 		y = 2
 		will_lead_to_war_with = HEA
 		will_lead_to_war_with = HGH
+		will_lead_to_war_with = ROS
 		relative_position_id = bdt_excommunication
 		completion_reward = {
 			if = {

@@ -5,7 +5,7 @@ state={
 		13120 14492 14493 14702 14703 15026
 	}
 	resources = {
-		advanced = 9
+		advanced = 6
 	}
 	history = {
 		victory_points = {
@@ -21,6 +21,6 @@ state={
 		}
 	}
 	state_category = metropolis
-	manpower = 15731
+	manpower = 21731
 	buildings_max_level_factor=1.000
 }

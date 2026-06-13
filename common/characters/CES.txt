@@ -161,6 +161,7 @@ characters = {
 			traits = {
 				strong_trait
 				intelligent_trait
+				ferocious_loyalty_trait
 			}
 			skill = 3
 			attack_skill = 3
@@ -271,8 +272,7 @@ characters = {
 			}
 			field_marshal = {
 				traits = {
-					perceptive_trait
-					intelligent_trait
+					perceptive_trait intelligent_trait tough_leader_trait
 				}
 				skill = 4
 				attack_skill = 2
@@ -368,7 +368,7 @@ characters = {
 			}
 			field_marshal = {
 				traits = {
-					perceptive_trait intelligent_t
+					perceptive_trait intelligent_trait tough_leader_trait
 				}
 				skill = 4
 				attack_skill = 2
@@ -1070,7 +1070,7 @@ characters = {
 		}
 	}
 	CES_airforce = {
-		name = "Centurion Germanicus"
+		name = CES_airforce_name
 		portraits = {
 			army = {
 				small = GFX_idea_generic_advisor41

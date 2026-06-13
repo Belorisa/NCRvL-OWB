@@ -474,7 +474,7 @@ ideas = {
 				army_morale_factor = 0.08
 				army_org_factor = 0.05
 			}
-						equipment_bonus = {
+			equipment_bonus = {
 				infantry_equipment = {
 					instant = yes
 					breakthrough = 0.05

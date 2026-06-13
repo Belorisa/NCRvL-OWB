@@ -89,7 +89,7 @@
 	shared_focus = { #Military (Ruler) Control
 		id = NCR_puppet_military_rule
 		icon = GFX_goal_NCR_Protege
-		cost = 45
+		cost = 30
 		prerequisite = {
 			focus = ncr_puppet_ncrta
 			focus = BJS_fate_of_pancho_villa

@@ -149,6 +149,11 @@ technologies = {
 			heavy_super_mutant_infantry
 		}
 
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_super_mutant
+		}
+
 		on_research_complete_limit = {
 			NOT = {
 				has_template_containing_unit = super_mutant_infantry
@@ -427,7 +432,7 @@ technologies = {
 		}
 	}
 
-sentinel_unit_tech = {
+	sentinel_unit_tech = {
 		research_cost = 7.0
 
 		dependencies = {
@@ -467,7 +472,7 @@ sentinel_unit_tech = {
 	mininuke_unlock_tech = {
 		research_cost = 7.0
 
-				dependencies = {
+		dependencies = {
 			blocked_unit_tech = 1
 		}
 
@@ -623,9 +628,9 @@ sentinel_unit_tech = {
 	################################################
 	#Buffs
 	################################################
-		################################################
-		#Tribals
-		################################################
+	################################################
+	#Tribals
+	################################################
 	tribalholyorg = {
 
 		research_cost = 1
@@ -956,7 +961,7 @@ sentinel_unit_tech = {
 			combat_width = -0.3
 		}
 	}
-pathfinders = {
+	pathfinders = {
 
 		research_cost = 1
 
@@ -1060,7 +1065,7 @@ pathfinders = {
 				movement = 0.1
 			}
 		}
-				spec_ops_cavalry = {
+		spec_ops_cavalry = {
 			plains = {
 				movement = 0.1
 			}
@@ -1624,8 +1629,6 @@ pathfinders = {
 		}
 	}
 
-	# here was legacy -combat width tech, I've replaced it
-
 	ces_aurelius_mercenaries_tech = {
 		research_cost = 1
 
@@ -1663,6 +1666,16 @@ pathfinders = {
 			}
 		}
 		militia = {
+			mountain = {
+				attack = 0.1
+				movement = 0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		police_infantry = {
 			mountain = {
 				attack = 0.1
 				movement = 0.1
@@ -2304,7 +2317,7 @@ pathfinders = {
 		#custom_modifier_tooltip = scav_unlock_weapon_tt
 		show_effect_as_desc = yes
 	}
-	
+
 	combat_engineers_tech = {
 		research_cost = 1.0
 		folder = {
@@ -2432,7 +2445,7 @@ pathfinders = {
 		}
 		custom_modifier_tooltip = scav_unlock_weapon_tt
 	}
-	
+
 	humanoid_robot_unlock_tech = {
 		research_cost = 1.0
 
@@ -2466,8 +2479,8 @@ pathfinders = {
 			factor = 0
 		}
 		custom_modifier_tooltip = scav_unlock_weapon_tt
-	}	
-		general_atomics_unlock_tech = {
+	}
+	general_atomics_unlock_tech = {
 		research_cost = 1.0
 
 		dependencies = {
@@ -2664,7 +2677,7 @@ pathfinders = {
 		}
 		custom_modifier_tooltip = scav_unlock_business_tt
 	}
-	
+
 
 	platinum_os_tech = {
 		research_cost = 1.0
@@ -2682,7 +2695,7 @@ pathfinders = {
 		}
 	}
 
-ballistic_missile_unlock_tech = {
+	ballistic_missile_unlock_tech = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -2693,8 +2706,8 @@ ballistic_missile_unlock_tech = {
 			ballistic_missile_equipment_3
 		}
 	}
-		nuclear_missile_unlock_tech = {
-					research_cost = 1
+	nuclear_missile_unlock_tech = {
+		research_cost = 1
 		allow = {
 			always = no
 		}
@@ -3066,27 +3079,6 @@ ballistic_missile_unlock_tech = {
 		}
 	}
 
-	railways_construction = {
-		research_cost = 1.0
-
-		allow = {
-			always = no
-		}
-
-		dependencies = {
-			blocked_tech = 1
-		}
-
-		enable_building = {
-			building = rail_way
-			level = 5
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
     # Special crazy horns tech to let them make mono-demo/fireteam units
 	crazy_horns_fire_warriors = {
 		allow = {
@@ -3111,7 +3103,7 @@ ballistic_missile_unlock_tech = {
 			combat_width = 3
 		}
 	}
-	
+
 	###############################################
 	# New Khans Tech
 	###############################################
@@ -3303,7 +3295,7 @@ ballistic_missile_unlock_tech = {
 		}
 	}
 
-		#Electorate Uniques
+	#Electorate Uniques
 	leshy_unlock_tech = {
 		allow = {
 			always = no
@@ -3453,7 +3445,7 @@ ballistic_missile_unlock_tech = {
 
 		allow = { always = no }
 
-		militia = {
+		category_militia = {
 			soft_attack = 0.05
 			defense = 0.05
 			max_organisation = 5
@@ -3755,7 +3747,7 @@ ballistic_missile_unlock_tech = {
 			max_organisation = 10
 		}
 	}
-whd_dragoon_tech =	{
+	whd_dragoon_tech =	{
 		research_cost = 1
 
 		folder = {
@@ -3820,13 +3812,6 @@ whd_dragoon_tech =	{
 
 		allow = { always = no }
 
-#		ghoul_infantry = {
-#			battalion_mult = {
-#				category = category_ferals
-#				default_morale = 0.05
-#				#add = yes
-#			}
-#		}
 		feral_ghoul = {
 			max_organisation = 2
 			combat_width = -0.3
@@ -3868,16 +3853,16 @@ whd_dragoon_tech =	{
 			max_organisation = 10
 		}
 	}
-	
-		woo_power_armored_horses = { # Yes this is broken af. No, I'm not taking criticism. - Orwich <3
+
+	woo_power_armored_horses = { # Yes this is broken af. No, I'm not taking criticism. - Orwich <3
 		research_cost = 1.0
-		
+
 		dependencies = {
 			blocked_tech = 1
 		}
-		
+
 		allow = { always = no }
-		
+
 		spec_ops_cavalry = {
 			need = {
 				power_armor_equipment = 25

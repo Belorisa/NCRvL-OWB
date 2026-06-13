@@ -1,15 +1,17 @@
+state = {
+	id = 654
+	name = "STATE_654"
+	manpower = 16938
+	state_category = large_town
 
-state={
-	id=654
-	name="STATE_654"
-	resources={
-		water=8.000
-		metal=4.000
+	resources = {
+		water = 8
+		metal = 4
 	}
 
 	history={
 		victory_points = {
-			705 10
+			705 15
 		}
 		victory_points = {
 			451 5
@@ -18,16 +20,10 @@ state={
 			infrastructure = 5
 			arms_factory = 3
 			industrial_complex = 2
-
 		}
-
 	}
 
-	provinces={
+	provinces = {
 		46 292 451 659 705 2011 2557 8637 8639 8640 15675 15678
 	}
-	manpower=10938
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
 }

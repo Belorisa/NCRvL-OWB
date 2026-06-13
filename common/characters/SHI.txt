@@ -172,7 +172,7 @@ characters = {
 		gender = female
 		portraits = {
 			army = {
-				large = GFX_Portrait_Settler_Generic_16
+				large = GFX_Portrait_SHI_luqi
 			}
 		}
 		corps_commander = {
@@ -191,6 +191,11 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_Portrait_Brotherhood_Generic_6
+				small = GFX_idea_brotherhood_generic_7
+			}
+			civilian = {
+				large = GFX_Portrait_Brotherhood_Generic_6
+				small = GFX_idea_brotherhood_generic_7
 			}
 		}
 		corps_commander = {

@@ -1,11 +1,12 @@
 state = {
 	id = 1096
 	name = "STATE_1096"
-	manpower = 2100
-	state_category = rural
+	manpower = 3600
+	state_category = shanty
 
 	resources = {
 		water = 2
+		metal = 2
 	}
 
 	history = {
@@ -13,7 +14,7 @@ state = {
 			13153 5
 		}
 		victory_points = {
-			13162 5
+			13134 5
 		}
 		buildings = {
 			infrastructure = 3

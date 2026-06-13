@@ -24,7 +24,7 @@ state={
 	provinces={
 		14326 14327 14328 14329 14330 14339 14353 14354 14371 14372 14373 14374 14375 14378 14379 14381
 	}
-	manpower=1134
+	manpower=3134
 	buildings_max_level_factor=1.000
 	state_category=shanty
 	local_supplies=0.000

@@ -4,6 +4,7 @@ state={
 	name="STATE_1118"
 	resources={
 		advanced=6.000
+		water=5.000
 	}
 
 	history={
@@ -23,8 +24,8 @@ state={
 	provinces={
 		14075 14076 14084 14100 14118 14134 14137 14138 14146
 	}
-	manpower=1400
+	manpower=4833
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

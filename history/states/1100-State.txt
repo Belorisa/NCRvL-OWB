@@ -5,9 +5,9 @@ state={
 		13121 14490 14491 15049
 	}
 	resources = {
-		metal = 12
+		metal = 10
 		composites = 5
-		circuitry = 8
+		circuitry = 7
 	}
 	history = {
 		victory_points = {
@@ -20,6 +20,6 @@ state={
 		}
 	}
 	state_category = metropolis
-	manpower = 14782
+	manpower = 20782
 	buildings_max_level_factor=1.000
 }

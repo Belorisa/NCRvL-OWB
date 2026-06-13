@@ -148,14 +148,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1487;5744;sea;1887;-1;-1;-1;-1;;Old Country to Yakama Nation
 2641;5749;sea;1886;-1;-1;-1;-1;;Old Country to Yakama Nation
 2641;4042;sea;1886;-1;-1;-1;-1;;Old Country to Yakama Nation
-7166;5739;sea;1888;-1;-1;-1;-1;;Timberline to Heaven's Gate
-7166;5738;sea;1888;-1;-1;-1;-1;;Timberline to Heaven's Gate
-4077;4361;sea;1889;-1;-1;-1;-1;;Timberline to Heaven's Gate
-4077;1455;sea;1889;-1;-1;-1;-1;;Timberline to Heaven's Gate
-1430;7490;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Gate
-1430;4076;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Gate
-1430;4360;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Gate
-4360;1424;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Gate
+7166;5739;sea;1888;-1;-1;-1;-1;;Timberline to Heaven's Guard
+7166;5738;sea;1888;-1;-1;-1;-1;;Timberline to Heaven's Guard
+4077;4361;sea;1889;-1;-1;-1;-1;;Timberline to Heaven's Guard
+4077;1455;sea;1889;-1;-1;-1;-1;;Timberline to Heaven's Guard
+1430;7490;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Guard
+1430;4076;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Guard
+1430;4360;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Guard
+4360;1424;sea;1893;-1;-1;-1;-1;;Bone Dancers to Heaven's Guard
 1379;4467;sea;1891;-1;-1;-1;-1;;High Chapel to Shoshone Nation
 4466;1379;sea;1891;-1;-1;-1;-1;;High Chapel to Shoshone Nation
 4205;4466;sea;1891;-1;-1;-1;-1;;High Chapel to Shoshone Nation

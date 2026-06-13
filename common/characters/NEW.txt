@@ -14,6 +14,7 @@ characters = {
 		country_leader = {
 			desc = NEW_MR_BISHOP_DESC
 			ideology = constitutional_republic
+			traits = { NEW_local_celebrity }
 			expire = "3000.01.01.01"
 			id = 10061
 		}
@@ -209,12 +210,12 @@ characters = {
 		name = NEW_colonel_jalabert
 		portraits = {
 			army = {
-				large = GFX_Portrait_NEW_jalabert
-				small = GFX_idea_colonel_jalabert
+				large = GFX_Portrait_Settler_Generic_44
+				small = GFX_Portrait_Settler_Generic_44_small
 			}
 			civilian = {
-				large = GFX_Portrait_NEW_jalabert
-				small = GFX_idea_colonel_jalabert
+				large = GFX_Portrait_Settler_Generic_44
+				small = GFX_Portrait_Settler_Generic_44_small
 			}
 		}
 		advisor = {

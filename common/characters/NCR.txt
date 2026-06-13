@@ -90,8 +90,6 @@ characters = {
             }
 		}
 		advisor = {
-			slot = economic_advisor
-			idea_token = NCR_allgood_murphy_economic_advisor
 			slot = cultural_advisor
 			idea_token = NCR_anton_flynn_cultural_advisor
 			allowed = {
@@ -277,10 +275,10 @@ characters = {
 			desc = NCR_Committee_DESC
 			ideology = ideocracy
 			expire = "3000.01.01.01"
-			traits = {
-				military_dominance
-				civil_service_members
-			}
+			# traits = {
+			# 	military_dominance
+			# 	civil_service_members
+			# }
 		}
 	}
 	NCR_vacant_leadership = {
@@ -297,9 +295,9 @@ characters = {
 			desc = NCR_Vacant_DESC
 			ideology = constitutional_republic
 			expire = "3000.01.01.01"
-			traits = {
-				constitutional_chaos
-			}
+			# traits = {
+			# 	constitutional_chaos
+			# }
 		}
 	}
 	NCR_mossman_character = {
@@ -319,10 +317,10 @@ characters = {
 			idea_token = NCR_mossman_character_army_chief
 			ledger = army
 			allowed = {
-				OR = {
 					original_tag = NCR
-					tag = RDS
 				}
+			available = {
+				has_completed_focus = ncr_rangergenmossman
 			}
 			traits = {
 				ranger_general
@@ -342,7 +340,13 @@ characters = {
 				factor = 10
 			}
 		}
-		field_marshal = {
+		corps_commander = {
+			# visible = {
+			# 	OR = {
+			# 		has_completed_focus = ncr_rangergenmossman
+			# 		has_country_flag = red_mossman_lives
+			# 	}
+			# }
 			skill = 4
 			attack_skill = 2
 			defense_skill = 2
@@ -352,6 +356,8 @@ characters = {
 				perceptive_trait
 				agile_trait
 				ranger_trait
+				sniper_trait
+				skilled_trait
 			}
 			legacy_id = -1
 		}
@@ -370,11 +376,9 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_Portrait_NCR_kimball
-				small = GFX_idea_aaron_kimball
 			}
 			army = {
 				large = GFX_Portrait_NCR_kimball
-				small = GFX_idea_aaron_kimball
 			}
 		}
 		country_leader = {
@@ -420,6 +424,7 @@ characters = {
 				strong_trait
 				perceptive_trait
 				lucky_trait
+				fast_metabolism
 			}
 			skill = 3
 			attack_skill = 4
@@ -942,7 +947,8 @@ characters = {
 				follower_of_the_apocalypse
 			}
 			research_bonus = {
-				resource_and_agriculture_category = 0.1
+				industry = 0.1
+				electronics = 0.1
 			}
 			cost = 100
 			ai_will_do = {
@@ -1138,7 +1144,6 @@ characters = {
 			desc = "NCR_VERONICA_NAME_desc"
 			traits = {
 				strong_trait
-				intelligence_trait
 			}
 			skill = 4
 			attack_skill = 4

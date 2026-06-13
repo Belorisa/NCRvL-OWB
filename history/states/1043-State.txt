@@ -2,7 +2,7 @@ state = {
 	id = 1043
 	name = "STATE_1043"
 	manpower = 267
-	state_category = wasteland
+	state_category = rural
 
 	history = {
 		victory_points = {

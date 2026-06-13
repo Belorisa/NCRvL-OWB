@@ -1,18 +1,19 @@
-state={
-	id=1296
-	name="STATE_1296"
-	provinces = {
-		13560 13561 13562 13564 13565 13566 13575 16399
-	}
+state = {
+	id = 1296
+	name = "STATE_1296"
+	state_category = town
+	manpower = 1678
+
 	history = {
 		victory_points = {
-			13560 3
+			13561 3
 		}
 		buildings = {
 			infrastructure = 2
 		}
 	}
-	state_category = town
-	manpower = 1678
-	buildings_max_level_factor=1.000
+
+	provinces = {
+		13560 13561 13562 13564 13565 13566 13575 16399
+	}
 }

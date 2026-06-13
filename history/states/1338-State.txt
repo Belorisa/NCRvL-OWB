@@ -21,7 +21,7 @@ state={
 	provinces={
 		14622 14624 14773 14779
 	}
-	manpower = 1412
+	manpower = 2412
 	state_category = shanty
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

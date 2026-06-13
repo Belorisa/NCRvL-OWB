@@ -1,11 +1,9 @@
+
 state={
 	id=1106
 	name="STATE_1106"
-	provinces={
-		14689 14690 14691 14847 14848 14849 14850 14851
-	}
-	resources = {
-		water = 4
+	resources={
+		water=4.000
 	}
 	history = {
 		victory_points = {
@@ -34,7 +32,12 @@ state={
 			}
 		}
 	}
-	state_category = pastoral
-	manpower = 912
+
+	provinces={
+		14689 14690 14691 14847 14848 14849 14850 14851
+	}
+	manpower=912
 	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

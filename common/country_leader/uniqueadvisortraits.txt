@@ -1,5 +1,5 @@
 leader_traits = {
-	 #TTM Advisors
+    #TTM Advisors
 	TTM_on_vacation = {
 		random = no
 		targeted_modifier = {
@@ -221,7 +221,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-		war_dog_2 = {
+	war_dog_2 = {
 		random = no
 		equipment_bonus = {
 			dogs_equipment = {
@@ -990,7 +990,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-		well_loved_denizen = {
+	well_loved_denizen = {
 		random = no
 		war_support_factor = 0.05
 		stability_factor = 0.05
@@ -1443,7 +1443,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-		warren_winter_expert = {
+	warren_winter_expert = {
 		random = no
 		winter_attrition_factor = -0.3
 		attrition = -0.1
@@ -2067,7 +2067,7 @@ leader_traits = {
 	gpf_scarcity_magician = {
 		random = no
 		production_lack_of_resource_penalty_factor = -0.1
-		out_of_supply_factor = -0.01
+		out_of_supply_factor = -0.1
 	}
 
 	gpf_recruiter = {
@@ -2136,7 +2136,7 @@ leader_traits = {
 	cmc_ear_to_the_ground_lar = {
 		random = no
 		recon_factor = 0.05
-        intel_network_gain_factor = 0.5
+		intel_network_gain_factor = 0.5
 	}
 	cmc_police_chief = {
 		random = no
@@ -2338,6 +2338,13 @@ leader_traits = {
 		random = no
 		stability_factor = 0.05
 		MONTHLY_POPULATION = 0.2
+		equipment_bonus = {
+			support_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+
 	}
 	HAN_foreman_trait = {
 		random = no
@@ -2820,8 +2827,8 @@ leader_traits = {
 	}
 	MXC_vic_trait = {
 		random = no
-		army_infantry_attack_factor = -0.1
-		special_forces_min = 10
+		army_infantry_attack_factor = -0.08
+		special_forces_min = 15
 		equipment_bonus = {
 			power_armor_equipment = {
 				instant = yes
@@ -2905,6 +2912,51 @@ leader_traits = {
 		trade_opinion_factor = 0.15
 		supply_consumption_factor = -0.05
 	}
+	MXC_blondie_trait = {
+		random = no
+		motorized_attack_factor = 0.10
+		motorized_defence_factor = -0.05
+		equipment_bonus = {
+			motorized_equipment = {
+				instant = yes
+				maximum_speed = 0.10
+			}
+		}
+	}
+	MXC_mechanic_trait = {
+		random = no
+		industry_free_repair_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
+		equipment_bonus = {
+			power_armor_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+			}
+		}
+	}
+	MXC_billings_trait = {
+		random = no
+		breakthrough_factor = 0.10
+	}
+
+	MXC_comedian_trait = {
+		random = no
+		stability_factor = 0.1
+		compliance_gain = 0.02
+	}
+
+	MXC_fashion_trait = {
+		random = no
+		political_power_factor = 0.05
+		equipment_bonus = {
+			fireteam_equipment = {
+				soft_attack = 0.1
+				hard_attack = 0.1
+				build_cost_ic = -0.10
+			}
+		}
+
+	}
 	pacer = {
 		random = no
 		political_power_gain = 0.15
@@ -2923,7 +2975,7 @@ leader_traits = {
 	}
 	phillipe = {
 		random = no
-		supply_consumption_factor = 0.15
+		supply_consumption_factor = -0.15
 		stability_factor = 0.05
 	}
 	jessup = {
@@ -3630,7 +3682,7 @@ leader_traits = {
 		research_speed_factor = 0.1
 		production_factory_max_efficiency_factor = 0.15
 	}
-		kha_hellshark_trait = {
+	kha_hellshark_trait = {
 		random = no
 		army_fuel_consumption_factor = -0.15
 		equipment_bonus = {
@@ -3655,7 +3707,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-		kha_follower_liaison = {
+	kha_follower_liaison = {
 		random = no
 		production_speed_water_generator_factor = 0.20
 		equipment_bonus = {
@@ -3793,7 +3845,7 @@ leader_traits = {
 			}
 		}
 	}
-		oscar_velasco_trait = {
+	oscar_velasco_trait = {
 		random = no
 		special_forces_min = 50 
 		#special_forces_cap = 0.1
@@ -3804,7 +3856,7 @@ leader_traits = {
 		}
 	}
 
-		#### Highland Watch ####
+	#### Highland Watch ####
 	atoms_devout = {
 		random = no
 		research_speed_factor = 0.06
@@ -3817,12 +3869,12 @@ leader_traits = {
 		economy_cost_factor = -0.1
 		mobilization_laws_cost_factor = -0.1
 		trade_laws_cost_factor = -0.1
-    }
+	}
 	### BRA
 	BRA_north_hound = {
 		random = no
-		special_forces_attack_factor = 0.08
-		special_forces_defence_factor = 0.08
+		special_forces_attack_factor = 0.05
+		special_forces_defence_factor = 0.05
 		equipment_bonus = {
 			dogs_equipment = {
 				instant = yes
@@ -3847,42 +3899,42 @@ leader_traits = {
 
 	BRA_trait_mailman = {
 		random = no
-		production_factory_max_efficiency_factor = 0.15
+		production_factory_max_efficiency_factor = 0.075
 		production_factory_efficiency_gain_factor = 0.05
 	}
 	BRA_jack_of = {
 		random = no
-		army_speed_factor = 0.04
-		army_org_factor = 0.04
-		army_attack_factor = 0.04
-		army_defence_factor = 0.04
+		army_speed_factor = 0.05
+		army_org_factor = 0.05
+		army_attack_factor = 0.03
+		army_defence_factor = 0.03
 	}
 	BRA_jack_of_2 = {
 		random = no
-		attrition = -0.2
+		attrition = -0.15
 		experience_gain_army = 0.05
 		experience_gain_army_factor = 0.1
 	}
 	BRA_aggressive_attacker = {
 		random = no
 		army_attack_speed_factor = 0.05
-		army_attack_factor = 0.1
+		army_attack_factor = 0.05
 	}
 	BRA_aggressive_attacker_2 = {
 		random = no
-		land_reinforce_rate = 0.04
-		org_loss_when_moving = -0.2
+		land_reinforce_rate = 0.03
+		org_loss_when_moving = -0.15
 	}
 	BRA_wall_of_manitoba = {
 		random = no
 		army_org_factor = 0.05
-		army_defence_factor = 0.1
-		dig_in_speed_factor = 0.2
+		army_defence_factor = 0.05
+		dig_in_speed_factor = 0.15
 	}
 	BRA_wall_of_manitoba_2 = {
 		random = no
 		army_morale_factor = 0.12
-		experience_loss_factor = -0.2
+		experience_loss_factor = -0.1
 	}
 	BRA_forward_thinker = {
 		random = no
@@ -3892,50 +3944,50 @@ leader_traits = {
 	BRA_bloody_baron = {
 		random = no
 		mobilization_speed = 0.15
-		conscription_factor = 0.1
+		conscription_factor = 0.05
 		conscription = 0.01
 		minimum_training_level = 0.15
 	}
 	BRA_militarist = {
 		random = no
-		war_support_factor = 0.15
-		war_stability_factor = 0.5
+		war_support_factor = 0.05
+		war_stability_factor = 0.1
 		mobilization_laws_cost_factor = -0.25
 	}
 	BRA_healing_hand = {
 		random = no
-		experience_loss_factor = -0.2
+		experience_loss_factor = -0.1
 		monthly_population = 0.1
 	}
 	BRA_iron_wall = {
 		random = no
 		experience_gain_army = 0.05
-		experience_gain_air_factor = -0.25
-		experience_gain_navy_factor = -0.25
-		army_core_defence_factor = 0.15
+		experience_gain_air_factor = -0.2
+		experience_gain_navy_factor = -0.2
+		army_core_defence_factor = 0.1
 	}
 	BRA_rogue_trader = {
 		random = no
-		trade_opinion_factor = 0.35
+		trade_opinion_factor = 0.25
 		operative_slot = 1
 		intel_network_gain_factor = 0.1
 	}
 	BRA_cleptocrat = {
 		random = no
 		local_resources_factor = 0.1
-		extra_trade_to_overlord_factor = 0.2
+		# extra_trade_to_overlord_factor = 0.2	# This doesn't work on the master, other way around, feel free to replace with something mild @Tran
 	}
 	BRA_bureaucrat = {
 		random = no
 		production_speed_buildings_factor = 0.05
-		production_speed_infrastructure_factor = 0.1
-		industrial_capacity_factory = 0.1
+		production_speed_infrastructure_factor = 0.05
+		industrial_capacity_factory = 0.05
 	}
 	BRA_economist = {
 		random = no
-		state_resource_energy = 20
+		country_resource_energy = 10
 		army_fuel_consumption_factor = -0.15
-		fuel_gain_factor = 0.25
+		fuel_gain_factor = 0.1
 	}
 	BRA_handyman = {
 		random = no
@@ -3950,7 +4002,7 @@ leader_traits = {
 		decryption_factor = 0.25
 		custom_modifier_tooltip = bra_he_is_best_tt
 	}
-#Langenburg
+	#Langenburg
 	DLN_captain = {
 		random = no
 		breakthrough_factor = 0.05
@@ -4103,14 +4155,14 @@ leader_traits = {
 	###Metal Mouths###
 	MET_mean_leroy_brown = {
 		random = no
-		army_org_factor = 0.06
-		breakthrough_factor = 0.06
-		experience_gain_army_unit_factor = 0.16
+		army_org_factor = 0.08
+		breakthrough_factor = 0.08
+		experience_gain_army_unit_factor = 0.18
 	}
 
 	MET_shiny_metal_arms = {
 		random = no
-		max_planning_factor = 0.1
+		max_planning_factor = 0.15
 		army_attack_speed_factor = 0.1
 		justify_war_goal_time = -0.15
 	}
@@ -4143,13 +4195,13 @@ leader_traits = {
 		equipment_bonus = {
 			demolitions_equipment = {
 				instant = yes
-				build_cost_IC = -0.15
-				reliability = -0.20
+				build_cost_IC = -0.2
+				reliability = -0.1
 			}
 		}
 	}
 
-		MET_meat_eater = {
+	MET_meat_eater = {
 		random = no
 		army_strength_factor = 0.05
 		equipment_bonus = {
@@ -4191,7 +4243,7 @@ leader_traits = {
 		equipment_bonus = {
 			anti_tank_equipment = {
 				instant = yes
-				ap_attack = 0.2
+				ap_attack = 0.25
 			}
 		}
 	}
@@ -4218,7 +4270,7 @@ leader_traits = {
 	MET_copper_construction = {
 		random = no
 		production_speed_industrial_complex_factor = 0.1
-		global_building_slots_factor = 0.05
+		global_building_slots_factor = 0.1
 	}
 
 	MET_gol_d = {
@@ -4229,7 +4281,7 @@ leader_traits = {
 
 	MET_safe_cracking = {
 		random = no
-		supply_consumption_factor = 0.1
+		supply_consumption_factor = -0.1
 		organization_floor_modifier_1 = 30
 		organization_floor_modifier_4 = 30
 	}
@@ -4238,7 +4290,8 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.05
 		decryption_factor = 0.15
-		own_operative_intel_extraction_rate = 0.15
+		enemy_operative_intel_extraction_rate = 0.15
+		enemy_operative_detection_chance_factor = 0.1
 	}
 
 	MET_pretty_legs = {
@@ -4261,8 +4314,8 @@ leader_traits = {
 
 	MET_music_man = {
 		random = no
-		stability_factor = 0.05
-		production_factory_max_efficiency_factor = 0.02
+		stability_factor = 0.1
+		production_factory_max_efficiency_factor = 0.03
 	}
 
 	MET_feeding_metal = {
@@ -4310,7 +4363,7 @@ leader_traits = {
 		}
 	}
 
-    #Three Rivers
+	#Three Rivers
 	wpg_mad_baron = {
 		random = no
 		air_ace_bonuses_factor = 0.15
@@ -4334,7 +4387,7 @@ leader_traits = {
 	}
 	wpg_unorthodox_strategist = {
 		random = no
-		planning_speed = 0.4
+		planning_speed = 0.25
 		max_planning_factor = -0.15
 		army_speed_factor = 0.1
 		ai_will_do = {
@@ -4354,8 +4407,8 @@ leader_traits = {
 		random = no
 
 		max_dig_in_factor = 0.1
-		army_defence_factor = 0.1
-		land_reinforce_rate = 0.06
+		army_defence_factor = 0.08
+		land_reinforce_rate = 0.02
 
 		ai_will_do = {
 			factor = 1
@@ -4364,9 +4417,9 @@ leader_traits = {
 	wpg_torchbearer = {
 		random = no
 
-        army_attack_factor = 0.2
-		army_defence_factor = 0.2
-		army_morale_factor = 0.1
+		army_attack_factor = 0.075
+		army_defence_factor = 0.05
+		army_morale_factor = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -4375,7 +4428,7 @@ leader_traits = {
 	wpg_girlscout = {
 		random = no
 
-        cas_damage_reduction = 0.2
+		cas_damage_reduction = 0.2
 		acclimatization_hot_climate_gain_factor = 0.5
 		acclimatization_cold_climate_gain_factor = 0.5
 
@@ -4386,7 +4439,7 @@ leader_traits = {
 	wpg_natural_talent = {
 		random = no
 
-        army_attack_factor = 0.03
+		army_attack_factor = 0.03
 		army_defence_factor = 0.05
 		army_org_factor = 0.03
 		equipment_capture_factor = 0.03
@@ -4406,13 +4459,13 @@ leader_traits = {
 		}
 		equipment_bonus = {
 			power_armor_equipment = {
-				reliability = 0.2
+				reliability = 0.1
 				instant = yes
 			}
 		}
 		equipment_bonus = {
 			motorized_equipment = {
-				reliability = 0.2
+				reliability = 0.1
 				instant = yes
 			}
 		}
@@ -4425,8 +4478,8 @@ leader_traits = {
 	wpg_adventurous_capitalist = {
 		random = no
 
-		production_factory_efficiency_gain_factor = 0.2
-		line_change_production_efficiency_factor = -0.4
+		production_factory_efficiency_gain_factor = 0.1
+		line_change_production_efficiency_factor = -0.2
 		industrial_capacity_factory = 0.1
 
 		ai_will_do = {
@@ -4436,8 +4489,8 @@ leader_traits = {
 	wpg_architect_of_freedom = {
 		random = no
 
-		production_speed_buildings_factor = 0.1
-		production_speed_infrastructure_factor = 0.2
+		production_speed_buildings_factor = 0.05
+		production_speed_infrastructure_factor = 0.1
 		compliance_gain = 0.02
 
 		ai_will_do = {
@@ -4448,7 +4501,7 @@ leader_traits = {
 		random = no
 
 		industrial_capacity_dockyard = 0.1
-		local_resources_factor = 0.2
+		local_resources_factor = 0.05
 		experience_gain_navy = 0.04
 
 		ai_will_do = {
@@ -4468,9 +4521,9 @@ leader_traits = {
 	wpg_american_patriot = {
 		random = no
 
-		training_time_factor = -0.2
-		mobilization_speed = 0.1
-		production_speed_arms_factory_factor = 0.1
+		training_time_factor = -0.1
+		mobilization_speed = 0.05
+		production_speed_arms_factory_factor = 0.05
 		conversion_cost_civ_to_mil_factor = -0.2
 
 		ai_will_do = {
@@ -4480,8 +4533,8 @@ leader_traits = {
 	wpg_danger_fuel = {
 		random = no
 
-		army_fuel_consumption_factor = -0.25
-		fuel_gain_factor = 0.5
+		army_fuel_consumption_factor = -0.15
+		fuel_gain_factor = 0.3
 		air_accidents_factor = 0.15
 
 		ai_will_do = {
@@ -4492,7 +4545,7 @@ leader_traits = {
 
 		random = no
 
-		stability_factor = 0.15
+		stability_factor = 0.08
 		research_speed_factor = 0.04
 
 		ai_will_do = {
@@ -4503,8 +4556,8 @@ leader_traits = {
 
 		random = no
 
-        conscription = 0.03
-		war_support_factor = 0.15
+		conscription = 0.02
+		war_support_factor = 0.05
 		caps_expense_modifier = -0.15
 
 		ai_will_do = {
@@ -4515,7 +4568,7 @@ leader_traits = {
 
 		random = no
 
-		caps_income_modifier = 0.4
+		caps_income_modifier = 0.2
 		trade_opinion_factor = 0.2
 		industrial_capacity_dockyard = 0.05
 
@@ -4527,7 +4580,8 @@ leader_traits = {
 
 		random = no
 
-		operative_slot = 2
+		operative_slot = 1
+		new_operative_slot_bonus = 2
 		civilian_intel_to_others = 20
 		army_intel_to_others = 20
 
@@ -4539,7 +4593,7 @@ leader_traits = {
 
 		random = no
 
-		local_factories = 0.2
+		global_building_slots_factor = 0.2
 		monthly_population = -0.2
 
 		ai_will_do = {
@@ -4550,9 +4604,9 @@ leader_traits = {
 
 		random = no
 
-        naval_invasion_penalty = -0.15
-		army_core_defence_factor = 0.1
-		army_core_attack_factor = 0.1
+		naval_invasion_penalty = -0.15
+		army_core_defence_factor = 0.075
+		army_core_attack_factor = 0.075
 
 		ai_will_do = {
 			factor = 1
@@ -4573,10 +4627,12 @@ leader_traits = {
 	ROB_superfly_fuel = {
 		random = no
 		army_fuel_consumption_factor = -0.15
+		country_resource_energy = 2
 	}
 	ROB_starman_training = {
 		random = no
 		experience_loss_factor = -0.15
+		planning_speed = 0.1
 	}
 	ROB_diana_teaching = {
 		random = no
@@ -4586,33 +4642,45 @@ leader_traits = {
 		random = no
 		army_attack_factor = 0.15
 	}
+	BRT_unbreakable = {
+		random = no
+		experience_loss_factor = -0.05
+		army_defence_factor = 0.05
+		stability_factor = 0.05
+	}
+	BRT_heartbreaker = {
+		random = no
+		war_support_factor = 0.05
+		army_attack_factor = 0.05
+		conscription_factor = 0.06
+	}
 
 	#HVR-cult of liberty
-		HVR_smart_thief = {
+	HVR_smart_thief = {
 
 		random = no
-		
-		stability_factor = -0.03
+
+		stability_factor = -0.10
 		production_factory_max_efficiency_factor = 0.05
-		caps_income_modifier = 0.20
+		caps_income_modifier = 0.10
 		caps_expense_modifier = -0.15
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
-			HVR_clueless_genius = {
+	HVR_clueless_genius = {
 		random = no
-		weekly_manpower = 45
+		#weekly_manpower = 45
 		org_loss_when_moving = 0.10
-		army_attack_speed_factor = 0.10
-		army_attack_factor = 0.10
+		#army_attack_speed_factor = 0.07
+		army_attack_factor = 0.07
 		breakthrough_factor = 0.05
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	#VSH-safehaven
 	VSH_safehaven_grandpa = {
 		random = no

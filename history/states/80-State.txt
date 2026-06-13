@@ -4,7 +4,7 @@ state = {
 	impassable = yes
 	history={
 		owner = BVC
-		add_core_of = BCV
+		add_core_of = BVC
 		buildings = {
 			infrastructure = 2
 		}

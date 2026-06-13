@@ -163,7 +163,8 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-				ncr_idea_war_ready_economy = {
+
+		ncr_idea_war_ready_economy = {
 			picture = VEG_Good_Business
 			modifier = {
 				consumer_goods_expected_value = -0.05
@@ -183,7 +184,7 @@ ideas = {
 			}
 		}
 
-				ncr_diversified_weapons_contracts_idea = {
+		ncr_diversified_weapons_contracts_idea = {
 			picture = generic_war_preparation
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
@@ -419,7 +420,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			equipment_bonus = {
 				ship_hull_light = {
 					build_cost_ic = -0.1

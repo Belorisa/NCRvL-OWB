@@ -186,6 +186,7 @@ focus_tree = {
 		y = 2
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		relative_position_id = mdt_schemes_against_the_trolls
 		will_lead_to_war_with = TRL
@@ -297,6 +298,7 @@ focus_tree = {
 		relative_position_id = mdt_magics_of_the_sorceress
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 2
@@ -708,11 +710,13 @@ focus_tree = {
 		relative_position_id = mdt_mastery_over_mutants
 		completion_reward = {
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 1
 				category = agriculture_tech
 			}
 			add_tech_bonus = {
+				name = tech_bonus_tree_tt
 				bonus = 0.5
 				uses = 1
 				category = scavenging_tech
@@ -811,6 +815,7 @@ focus_tree = {
 		}
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		will_lead_to_war_with = MLT
 		bypass = {
@@ -1091,6 +1096,7 @@ focus_tree = {
 		}
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			OR = {
@@ -1141,7 +1147,7 @@ focus_tree = {
 		relative_position_id = mdt_necromancers_of_the_wastes
 		completion_reward = {
 			custom_effect_tooltip = mdt_gecko_warriors
-						set_technology = {
+			set_technology = {
 				gecko_tech_access_tech = 1
 				gecko_support_unlock_tech = 1
 			}
@@ -1323,6 +1329,7 @@ focus_tree = {
 		will_lead_to_war_with = KLA
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			KLA = {
@@ -1494,6 +1501,7 @@ focus_tree = {
 		will_lead_to_war_with = CHE
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			CHE = {
@@ -1675,6 +1683,7 @@ focus_tree = {
 		relative_position_id = mdt_united_heartlands
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		will_lead_to_war_with = ARR
 		bypass = {
@@ -1844,6 +1853,7 @@ focus_tree = {
 		will_lead_to_war_with = TIM
 		available = {
 			ai_has_no_other_wars_or_wargoals = yes
+			is_subject = no
 		}
 		bypass = {
 			TIM = {

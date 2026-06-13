@@ -180,7 +180,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			has_country_flag = HAN_Lupa
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		cost = 30
 		days_remove = 60
@@ -203,7 +205,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			has_country_flag = HAN_Lupa
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		cost = 30
 		days_remove = 60
@@ -226,7 +230,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			has_country_flag = HAN_Lupa
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		cost = 30
 		days_remove = 60
@@ -276,7 +282,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			tag = HAN
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_country_flag = warden_revolt
 			SUN = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -308,7 +316,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			tag = HAN
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_country_flag = warden_revolt
 			SUN = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -347,7 +357,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			tag = HAN
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_country_flag = warden_revolt
 			SUN = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -388,7 +400,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			tag = HAN
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_country_flag = warden_revolt
 			BAG = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -429,7 +443,9 @@ hangdogs_decisions = {
 		}
 		visible = {
 			tag = HAN
-			owns_state = 5
+			5 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_country_flag = warden_revolt
 			LUM = {
 				all_core_land_owned_by_prev_sphere = yes
@@ -496,15 +512,15 @@ hangdogs_decisions = {
 			has_completed_focus = han_temp_3a
 			has_completed_focus = han_greatest_alphas
 			has_tech = dog_tech_3
-			any_allied_country = {
-				owns_state = 568
+			568 = {
+				is_controlled_by_ROOT_or_ally = yes
 			}
 		}
 		visible = {
 			tag = HAN
 			has_country_flag = warden_revolt
-			any_allied_country = {
-				owns_state = 568
+			568 = {
+				is_controlled_by_ROOT_or_ally = yes
 			}
 		}
 		modifier = {
@@ -651,8 +667,9 @@ warden_decisions = {
 		icon = GFX_decision_security_cam
 		fire_only_once = yes
 		available = {
-			owns_state = 412
-			NOT = { country_exists = MXC }
+			412 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		cost = 40
 		days_remove = 40
@@ -674,12 +691,8 @@ warden_decisions = {
 		icon = GFX_decision_t51_vb_helm
 		fire_only_once = yes
 		available = {
-			AND = {
-				OR = {
-					owns_state = 412
-					ROB = { owns_state = 412 }
-				}
-				NOT = { country_exists = MXC }
+			412 = {
+				is_controlled_by_ROOT_or_ally = yes
 			}
 		}
 		cost = 60
@@ -910,7 +923,9 @@ warden_decisions = {
 		icon = GFX_decision_terminal
 		fire_only_once = yes
 		available = {
-			owns_state = 550
+			550 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_tech = electronics_tech_level_scientific
 			has_tech = electronic_engineering_3
 		}
@@ -1020,7 +1035,9 @@ warden_decisions = {
 		icon = GFX_decision_vertibird
 		fire_only_once = yes
 		available = {
-			owns_state = 460
+			460 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_country_flag = warden_computation_flag
 			NOT = { has_country_flag = zax_in_progress }
 			has_tech = communication_engineering_4
@@ -1050,7 +1067,9 @@ warden_decisions = {
 		icon = GFX_decision_vault_tec
 		fire_only_once = yes
 		available = {
-			owns_state = 532
+			532 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_country_flag = warden_computation_flag
 			NOT = { has_country_flag = zax_in_progress }
 		}
@@ -1109,7 +1128,9 @@ warden_decisions = {
 		fire_only_once = yes
 		available = {
 			has_tech = construction_industry_tech_4
-			owns_state = 568
+			568 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		cost = 30
 		days_remove = 30
@@ -1130,7 +1151,9 @@ warden_decisions = {
 		icon = GFX_decision_minning_helmet
 		fire_only_once = yes
 		available = {
-			owns_state = 572
+			572 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 			has_tech = construction_industry_tech_5
 			has_tech = electronic_engineering_7
 			NOT = { has_country_flag = zax_in_progress }

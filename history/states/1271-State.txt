@@ -3,7 +3,7 @@ state={
 	id=1271
 	name="STATE_1271"
 	resources={
-		metal=8.000
+		metal=5.000
 	}
 
 	history={
@@ -21,7 +21,7 @@ state={
 	provinces={
 		13621 13644 13713 13715 14151 14350 14377
 	}
-	manpower=2400
+	manpower=7432
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

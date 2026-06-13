@@ -6254,6 +6254,24 @@ focus_tree = {
 			add_political_power = @BOS_COUNCIL_FOCUS_POLITICAL_POWER_COST_EFFECT
 			unlock_decision_tooltip = BOS_solidify_head_elder_position
 		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				AND = {
+					has_government = people
+					has_completed_focus = bos_nf_strengthen_the_pact
+				}
+				add = 9
+			}
+			modifier = {
+				has_government = intellectuals
+				add = 4
+			}
+			modifier = {
+				date < 2280.01.01
+				factor = 0
+			}
+		}
 	}
 	focus = {
 		id = bos_nf_establishing_diversity_of_thought
@@ -6279,6 +6297,24 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = @BOS_COUNCIL_FOCUS_POLITICAL_POWER_COST_EFFECT
 			custom_effect_tooltip = bos_unlock_new_council_buffs_tt
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_government = intellectuals
+				add = 4
+			}
+			modifier = {
+				AND = {
+					has_government = people
+					has_completed_focus = bos_nf_strengthen_the_pact
+				}
+				factor = 0
+			}
+			modifier = {
+				date < 2280.01.01
+				factor = 0
+			}
 		}
 	}
 	focus = {
@@ -6381,6 +6417,13 @@ focus_tree = {
 			custom_effect_tooltip = bos_unlocked_offer_scribe_team_tt
 			##Other alternatives: Creation a decision to add chapters in the faction into a tech-sharing group, or add a focus like the Germany one to give factories to everybody.
 			##Alternative #3 is to add N.S. like "a reunited brotherhood" or something for 2.5% special forces cap.
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				has_global_flag = bos_player_chapters_alive
+			} 
 		}
 	}
 

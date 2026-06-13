@@ -1,9 +1,10 @@
-state = {
-	id = 864
-	name = "STATE_864"
+
+state={
+	id=864
+	name="STATE_864"
 	resources={
-		water = 4
-		metal = 12
+		water=4.000
+		metal=12.000
 	}
 
 	history={
@@ -12,6 +13,7 @@ state = {
 			dockyard = 2
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
 		victory_points = {
 			10803 10
@@ -25,4 +27,5 @@ state = {
 	manpower=53451
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

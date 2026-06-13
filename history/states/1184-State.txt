@@ -1,9 +1,11 @@
+state = {
+	id = 1184
+	name = "STATE_1184"
+	manpower = 3600
+	state_category = shanty
 
-state={
-	id=1184
-	name="STATE_1184"
-	resources={
-		metal=2.000
+	resources = {
+		metal = 2
 	}
 
 	history={
@@ -19,11 +21,7 @@ state={
 		}
 	}
 
-	provinces={
+	provinces = {
 		13172 13173 13178 13181 13182 13187 13189 13190 13192 13197 13199
 	}
-	manpower=3600
-	buildings_max_level_factor=1.000
-	state_category=shanty
-	local_supplies=0.000
 }

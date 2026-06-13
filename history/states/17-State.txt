@@ -1,7 +1,7 @@
 state = {
 	id = 17
 	name = "STATE_17"
-	manpower = 1000
+	manpower = 2836
 	state_category = rural
 
 	resources = {
@@ -23,6 +23,4 @@ state = {
 	provinces = {
 		436 3711 3713 3735 4409 4415 4418 6323
 	}
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

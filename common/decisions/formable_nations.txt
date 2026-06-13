@@ -182,6 +182,7 @@ formable_nations = {
 				original_tag = DRE
 				original_tag = WHI
 				original_tag = SYN
+				original_tag = ROS #Bioregionalism
 			}
 		}
 		visible = {
@@ -207,7 +208,6 @@ formable_nations = {
 				is_core_of = BRK
 				is_core_of = WBH
 				is_core_of = TCA
-
 			}
 		}
 
@@ -477,6 +477,7 @@ formable_nations = {
 				original_tag = FOR
 				original_tag = MXC
 				original_tag = HAN
+				original_tag = WDN
 				original_tag = EAG
 				original_tag = GLW
 				original_tag = BLC
@@ -527,7 +528,7 @@ formable_nations = {
 							region = 43
 							region = 44
 						}
-						NOT = { is_owned_by = ROOT }
+						NOT = { is_core_of = ROOT }
 					}
 					add_claim_by = ROOT
 				}
@@ -681,7 +682,7 @@ formable_nations = {
 					add_core_of = ROOT
 					set_state_name = STATE_190_TRL
 					hidden_effect = {
-						set_province_name = { id = 4740 name = VICTORY_POINTS_4740_TRL}
+						set_province_name = { id = 4740 name = VICTORY_POINTS_4740_TRL }
 					}
 				}
 			}
@@ -705,7 +706,7 @@ formable_nations = {
 					add_core_of = ROOT
 					set_state_name = STATE_351_TRL
 					hidden_effect = {
-						set_province_name = { id = 4335 name = VICTORY_POINTS_4335_TRL}
+						set_province_name = { id = 4335 name = VICTORY_POINTS_4335_TRL }
 					}
 				}
 			}
@@ -1001,67 +1002,6 @@ formable_nations = {
 			}
 		}
 	}
-	form_republic_of_the_steam = {
-		allowed = {
-			original_tag = ROS
-		}
-		available = {
-			OR = {
-				MCA = { exists = no }
-				MCA = { is_subject_of = ROS }
-			}
-			OR = {
-				HEA = { exists = no }
-				HEA = { is_subject_of = ROS}
-			}
-			controls_state = 656
-			controls_state = 1384
-		}
-
-		highlight_states = {
-			highlight_states_trigger = {
-				state = 656
-				state = 1384
-			}
-		}
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			base = 200
-		}
-
-		complete_effect = {
-			set_cosmetic_tag = ROS_republic
-			if = {
-				limit = { 1384 = { NOT = { is_owned_by = HEA } } }
-				set_state_owner = 1384
-			}
-			every_state = {
-				limit = { is_core_of = HEA }
-				add_core_of = ROS
-			}
-			if = {
-				limit = { 656 = { NOT = { is_owned_by = MCA } } }
-				set_state_owner = 656
-			}
-			every_state = {
-				limit = { is_core_of = MCA }
-				add_core_of = ROS
-			}
-			modify_building_resources = {
-				building = electricity_generator
-				resource = energy
-				amount = 2
-			}
-			add_ideas = ros_secrets_of_the_steamD
-			set_technology = {
-				tools_tech_level_scientific = 1
-				habitation_tech_level_scientific = 1
-				electronics_tech_level_scientific = 1
-			}
-		}
-	}
 	form_motor_city = {
 		allowed = {
 			original_tag = FIE
@@ -1143,13 +1083,13 @@ formable_nations = {
 			518 = {
 				set_state_name = STATE_518_RHO
 				hidden_effect = {
-					set_province_name = { id = 7962 name = VICTORY_POINTS_7962_RHO}
+					set_province_name = { id = 7962 name = VICTORY_POINTS_7962_RHO }
 				}
 			}
 			519 = {
 				set_state_name = STATE_519_RHO
 				hidden_effect = {
-					set_province_name = { id = 8933 name = VICTORY_POINTS_8933_RHO}
+					set_province_name = { id = 8933 name = VICTORY_POINTS_8933_RHO }
 				}
 			}
 			add_state_core = 518
@@ -1673,7 +1613,7 @@ formable_nations = {
 				log = "[GetDateText]: [Root.GetName] form_elysian_fields (decision) complete entered"
 			}
 			set_cosmetic_tag = OLY_elysian_fields
-						set_technology = {
+			set_technology = {
 				creatures_tech_level_scientific = 1
 			}
 			add_ideas = oly_elysium_achieved
@@ -1858,7 +1798,7 @@ formable_nations = {
 			}
 		}
 	}
-	
+
 ### Plaguelands Formables
 
 	form_upsilon_initiative = { # Site Y Formable
@@ -1951,6 +1891,7 @@ formable_nations = {
 			}
 		}
 	}
+
 	BRE_formables = { # Parish Formables
 		allowed = {
 			original_tag = BRE
@@ -2061,191 +2002,1908 @@ formable_nations = {
 			}
 		}
 	}
-	form_canada_stn = { #stoon formable
+
+	INR_formable = { # Circle Junction into Iron Rivers Tribe
 		allowed = {
-			original_tag = STN
+			original_tag = INR
+		}
+		available = {
+				CIP = { all_core_land_owned_by_prev_sphere = yes }
+				FOR = { all_core_land_owned_by_prev_sphere = yes }
+				CLJ = { all_core_land_owned_by_prev_sphere = yes }
+
+		}
+		priority = 100
+		fire_only_once = yes
+		ai_will_do = {
+			base = 300
+		}
+		complete_effect = {
+			set_cosmetic_tag = INR_tribe
+			swap_ideas = {
+				remove_idea = INR_forgotten_exiles
+				add_idea = INR_forgotten_exiles_2
+			}
+		}
+	}
+	SCO_formable = { # Scorpian's Bite into Scorpion Clanholds
+		allowed = {
+			original_tag = SCO
+		}
+		available = {
+				HAN = { all_core_land_owned_by_prev_sphere = yes }
+				WDN = { all_core_land_owned_by_prev_sphere = yes }
+				ROB = { all_core_land_owned_by_prev_sphere = yes }
+				MXC = { all_core_land_owned_by_prev_sphere = yes }
+				SUN = { all_core_land_owned_by_prev_sphere = yes }
+		}
+		priority = 100
+		fire_only_once = yes
+		ai_will_do = {
+			base = 300
+		}
+		complete_effect = {
+			set_cosmetic_tag = SCO_clanholds
+			add_research_slot = 1
+			set_technology = {
+				creatures_tech_level_scientific = 1
+			}
+			swap_ideas = {
+				remove_idea = SCO_scorpions_specialty
+				add_idea = SCO_scorpions_specialty_2
+			}
+			custom_effect_tooltip = colorado_claims_tt
+			hidden_effect ={
+				every_state = {
+					limit = {
+						OR = {
+							region = 42
+							region = 43
+							region = 44
+						}
+						NOT = { is_core_of = ROOT }
+					}
+					add_claim_by = ROOT
+				}
+			}
+		}
+	}
+	form_manifest_americana = { #Cult of Liberty HVR formable
+		allowed = {
+			original_tag = HVR
+		}
+		available = {
+			has_tech = power_armour_tech_level_settler
+			has_tech = scav_pa_tech
+			has_completed_focus = HVR_americas_grace
+			MCA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			MET = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			BTH = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			STM = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_manifest americana (decision) complete entered"
+			}
+			set_country_flag = HVR_man_ame
+			set_cosmetic_tag = HVR_manifest_americana
+			add_ideas = hvr_americore
+			MET = {
+				ROOT = {
+					core_owned_states_of_prev = yes
+				}
+			}
+			BTH = {
+				ROOT = {
+					core_owned_states_of_prev = yes
+				}
+			}
+			MCA = {
+				ROOT = {
+					core_owned_states_of_prev = yes
+				}
+			}
+			custom_effect_tooltip = HVR_america_tt
+			hidden_effect = {
+				set_province_name = {
+					id = 12457
+					name = VICTORY_POINTS_12457_HVR
+				}
+				if = {
+					limit = {
+						owns_state = 653
+					}
+					set_capital = { state = 653 }
+					653 = {
+						hidden_effect = {
+							set_victory_points = {
+								province = 11634
+								value = 20
+							}
+							set_province_name = {
+								id = 11634
+								name = VICTORY_POINTS_11634_HVR
+							}
+						}
+						#set_state_category = city
+						add_manpower = 1000
+						set_state_name = STATE_653_HVR
+					}
+				}
+				else = {
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_manpower = 5000
+						set_state_name = STATE_1283_HVR
+					}
+				}
+			}
+			set_technology = { advanced_servo_tech = 1 }
+			set_technology = { t45d_pa_tech = 1 }
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_manifest_americana (decision) complete exited"
+			}
+		}
+	}
+	form_kanata = { #Iron Confederacy Formable
+		allowed = {
+			original_tag = IRC
+		}
+		available = {
+			has_completed_focus = irc_kanata
 		}
 		visible = {
-			has_cosmetic_tag = STN_competitive_goverment
+			has_completed_focus = irc_kanata
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_kanata (decision) complete entered"
+			}
+			set_cosmetic_tag = IRC_kanata
+			add_manpower = 2000
+			add_stability = 0.10
+			set_technology = {
+				c_t45d_pa_tech = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_kanata (decision) complete exited"
+			}
+		}
+	}
+
+	form_the_academics = { #Historians Formable
+		allowed = {
+			original_tag = HST
+		}
+		available = {
+			original_tag = HST
+			STR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			custom_trigger_tooltip = {
+			tooltip = HST_historians_formable_requirement_tt
+				if = {
+					limit = {
+						1082 = {
+							is_core_of = SOH
+						}
+					}
+					owns_state = 1082
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_the_academics (decision) complete entered"
+			}
+			set_cosmetic_tag = HST_academics
+			set_province_name = {
+				id = 13094
+				name = VICTORY_POINTS_13083_HST
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = HST_university_formed
+			}
+			else = {
+				add_ideas = HST_university_formed_no_la
+			}
+
+			every_army_leader = {
+				add_planning = 2
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = STR
+						}
+					}
+					add_core_of = ROOT
+				}
+				every_state = {
+					limit = {
+						is_core_of = BIS
+					}
+					add_claim_by = ROOT
+				}
+				if = {
+					limit = {
+						1082 = {
+							is_core_of = SOH
+						}
+					}
+					add_state_core = 1082
+				}
+			}
+			custom_effect_tooltip = HST_historians_formable_tt
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_the_academics (decision) complete exited"
+			}
+		}
+	}
+
+	form_union_machine = { #Big Grass Formable
+		allowed = {
+			original_tag = BGR
+		}
+		available = {
+			STC = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			COM = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			LOI = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			is_subject = no
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_union_machine (decision) complete entered"
+			}
+			set_cosmetic_tag = BGR_union
+			custom_effect_tooltip = BGR_union_machining_tt
+			swap_ideas = {
+				remove_idea = bgr_robobrain_factory
+				add_idea = bgr_robobrain_factory_2
+			}
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = STC
+						is_core_of = COM
+						is_core_of = LOI
+					}
+				}
+				add_compliance  = 30
+			}
+			set_temp_variable = { core_cost_var = -0.40 }
+			set_temp_variable = { core_cost_var = -0.40 }
+			STC = { ROOT = { decrease_coring_cost_for_prev_cores = yes } } # This doesn't fucking work for some reason so using it for tooltip only
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_core_of = STC
+					}
+					set_variable = { coring_cost_targeted_state_factor@ROOT = core_cost_var }
+				}
+			}
+			set_temp_variable = { core_cost_var = -0.40 }
+			COM = { ROOT = { decrease_coring_cost_for_prev_cores = yes } } # This doesn't fucking work for some reason so using it for tooltip only
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_core_of = COM
+					}
+					set_variable = { coring_cost_targeted_state_factor@ROOT = core_cost_var }
+				}
+			}
+			LOI = { ROOT = { decrease_coring_cost_for_prev_cores = yes } } # This doesn't fucking work for some reason so using it for tooltip only
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						is_core_of = LOI
+					}
+					set_variable = { coring_cost_targeted_state_factor@ROOT = core_cost_var }
+				}
+			}
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_union_machine (decision) complete exited"
+			}
+		}
+	}
+
+	form_principality_katch = { #Battleford Formable
+		allowed = {
+			original_tag = BAT
+		}
+		available = {
+			STA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			STN = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			DUN = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			PLT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			has_country_leader = {
+				character = BAT_fardeen_guerrero
+				ruling_only = yes
+			}
+			is_subject = no
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_principality_katch (decision) complete entered"
+			}
+			set_cosmetic_tag = BAT_princely
+			custom_effect_tooltip = BAT_battleford_formable_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = BRA
+							is_core_of = DLN
+							is_core_of = STA
+							is_core_of = STN
+							is_core_of = DUN
+							is_core_of = PLT
+						}
+					}
+					add_claim_by = ROOT
+				}
+			}
+			custom_effect_tooltip = spacer_tt
+			swap_ruler_traits = {
+				remove = bat_admirals_son
+				add = bat_crowned_head
+			}
+			swap_ideas = {
+				remove_idea = BAT_mercenary_force
+				add_idea = BAT_princely_force
+			}
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_principality_katch (decision) complete exited"
+			}
+		}
+	}
+
+	form_scarlet_expansion = { #Blighted Woods Formable
+		allowed = {
+			original_tag = RRR
+		}
+		available = {
+			TPA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			IRC = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = woo_no_formable
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_scarlet_expansion (decision) complete entered"
+			}
+			set_cosmetic_tag = RRR_domain_expansion
+			add_ideas = RRR_expanding_blizzard
+			custom_effect_tooltip = RRR_scarlet_formable_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = TPA
+							is_core_of = IRC
+						}
+					}
+					add_core_of = ROOT
+				}
+				activate_mission = RRR_domain_growth
+			}
+			set_country_flag = achievement_RRR_blighted_woods
+			custom_effect_tooltip = spacer_tt
+			custom_effect_tooltip = RRR_scarlet_expansion_tt
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_scarlet_expansion (decision) complete exited"
+			}
+		}
+	}
+
+	form_uranium_county = { #Rad Hazards Formable 1
+		allowed = {
+			original_tag = URA
+		}
+		available = {
+			has_country_flag = ura_horde_contained
+		}
+		visible = {
+			NOT = { has_country_flag = ura_formable_flag }
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_uranium_county (decision) complete entered"
+			}
+			set_cosmetic_tag = URA_county
+			set_country_flag = ura_formable_flag
+			set_technology = {
+				habitation_tech_level_settler = 1
+				exploitation_tech_level_settler = 1
+			}
+			swap_ideas = {
+				remove_idea = URA_glowing_crater_ghoul_horde
+				add_idea = URA_glowing_crater_ghoul_horde_peaceful
+			}
+			decrease_conscription_law = yes
+			increase_trading = yes
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_uranium_county (decision) complete exited"
+			}
+		}
+	}
+
+	form_rad_horde = { #Rad Hazards Formable 2
+		allowed = {
+			original_tag = URA
+		}
+		available = {
+			MJW = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			has_country_flag = ura_horde_unstoppable
+			is_subject = no
+		}
+		visible = {
+			NOT = { has_country_flag = ura_formable_flag }
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_rad_horde (decision) complete entered"
+			}
+			set_cosmetic_tag = URA_horde
+			set_country_flag = ura_formable_flag
+			swap_ideas = {
+				remove_idea = URA_glowing_crater_ghoul_horde
+				add_idea = URA_glowing_crater_ghoul_horde_relentless
+			}
+			UNB = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev_force_ai_war = yes
+				}
+			}
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_rad_horde (decision) complete exited"
+			}
+		}
+	}
+
+	form_hydraulic_empire = { #Dammed Formable
+		allowed = {
+			original_tag = DMM
+		}
+		available = {
+			ARB = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			TPA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			IRC = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_hydraulic_empire (decision) complete entered"
+			}
+			set_cosmetic_tag = DMM_hydraulic_empire
+			custom_effect_tooltip = DMM_hydraulic_formable_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = ARB
+							is_core_of = TPA
+							is_core_of = IRC
+						}
+					}
+					add_core_of = ROOT
+				}
+				remove_ideas = DMM_shady_dealing
+				remove_ideas = DMM_ragged
+			}
+			custom_effect_tooltip = DMM_formable_ideas_tt
+			add_ideas = DMM_lake_lords
+			add_ideas = DMM_northern_power_stations
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_hydraulic_empire (decision) complete exited"
+			}
+		}
+	}
+
+	form_four_fathers_return = { #Four Fathers Formable
+		allowed = {
+			original_tag = RMT
+		}
+		available = {
+			MRR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			STR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_four_fathers_return (decision) complete entered"
+			}
+			set_cosmetic_tag = RMT_birthright
+			custom_effect_tooltip = RMT_return_formable_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							region = 172
+							region = 173
+							region = 175
+						}
+					}
+					add_claim_by = ROOT
+				}
+				every_state = {
+					limit = {
+						is_core_of = MRR
+					}
+					add_core_of = ROOT
+				}
+			}
+			custom_effect_tooltip = spacer_tt
+			swap_ideas = {
+				remove_idea = RMT_four_forefathers
+				add_idea = RMT_four_forefathers_2
+			}
+
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_four_fathers_return (decision) complete exited"
+			}
+		}
+	}
+
+	form_per_mighty_hunters = { #The Pursuant Formable
+		allowed = {
+			original_tag = PER
+		}
+		available = {
+			has_completed_focus = per_great_hunt
+			owns_state = 908
+			ACH = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			ARM = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 880
+					state = 879
+					state = 882
+					state = 876
+					state = 870
+					state = 777
+					state = 816
+					state = 818
+					state = 819
+					state = 820
+					state = 822
+					state = 823
+					state = 864
+					state = 904
+					state = 799
+					state = 903
+					state = 789
+					state = 905
+					state = 755
+					state = 758
+					state = 759
+					state = 770
+					state = 778
+					state = 798
+				}
+			}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_per_mighty_hunters (decision) complete entered"
+			}
+			set_cosmetic_tag = PER_hunting_coast
+			custom_effect_tooltip = PER_hunts_formable_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 880
+							state = 879
+							state = 882
+							state = 876
+							state = 870
+							state = 777
+							state = 816
+							state = 818
+							state = 819
+							state = 820
+							state = 822
+							state = 823
+							state = 864
+							state = 904
+							state = 799
+							state = 903
+							state = 789
+							state = 905
+							state = 755
+							state = 758
+							state = 759
+							state = 770
+							state = 778
+							state = 798
+						}
+					}
+					add_claim_by = PER
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_per_mighty_hunters (decision) complete exited"
+			}
+		}
+	}
+
+	form_union_of_bismarck = { #Bismarck Formable
+		allowed = {
+			original_tag = BIS
+		}
+		available = {
+			STR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_union_of_bismarck (decision) complete entered"
+			}
+			set_cosmetic_tag = BIS_bismarck_union
+			custom_effect_tooltip = BIS_bismarck_formable_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							region = 172
+							region = 173
+							region = 175
+						}
+					}
+					add_claim_by = ROOT
+				}
+				every_state = {
+					limit = {
+						is_core_of = STR
+					}
+					add_core_of = ROOT
+				}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_union_of_bismarck (decision) complete exited"
+				}
+			}
+		}
+	}
+
+	form_oregon = { #Oregon Formable
+		allowed = {
+			original_tag = TIM
+		}
+		available = {
+			37 = { is_owned_and_controlled_by = TIM }
+			274 = { is_owned_and_controlled_by = TIM }
+			7 = { is_owned_and_controlled_by = TIM }
+			192 = { is_owned_and_controlled_by = TIM }
+			23 = { is_owned_and_controlled_by = TIM }
+			186 = { is_owned_and_controlled_by = TIM }
+			RBT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			CCW = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			TRL = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			MDT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			BDT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			MLT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			DIS = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_oregon (decision) complete entered"
+			}
+			set_cosmetic_tag = TIM_oregon
+			custom_effect_tooltip = TIM_oregon_formable_tt
+			hidden_effect = {
+				TIM_rename_states = yes
+				every_state = {
+					limit = {
+						OR = {
+							region = 59
+							region = 58
+							region = 11
+						}
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { pop_add = 500 } add_state_population_no_state_name = yes
+				}
+				every_state = {
+					limit = {
+						OR = {
+							region = 59
+							region = 58
+							region = 11
+						}
+					}
+					set_temp_variable = { core_cost_var = -0.80 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 60
+					add_resistance_target = -15
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_oregon (decision) complete exited"
+				}
+			}
+		}
+	}
+	form_okanagan = { #Sylex Formable
+		allowed = {
+			original_tag = SYN
+		}
+		available = {
+			KAM = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_okanagan  (decision) complete entered"
+			}
+			set_cosmetic_tag = SYN_okanagan
+			custom_effect_tooltip = SYN_okanagan_formable_tt
+			hidden_effect = {
+				every_owned_state = { set_temp_variable = { pop_add = 500 } add_state_population_no_state_name = yes }
+				every_state = {
+					limit = {
+						is_core_of = KAM
+					}
+					add_core_of = SYN
+				}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_okanagan  (decision) complete exited"
+				}
+			}
+		}
+	}
+	form_patriotes = { #Koover Formable
+		allowed = {
+			original_tag = BEL
+		}
+		available = {
+			84 = { is_owned_and_controlled_by = BEL }
+			61 = { is_owned_and_controlled_by = BEL }
+			737 = { is_owned_and_controlled_by = BEL }
+			424 = { is_owned_and_controlled_by = BEL }
+			609 = { is_owned_and_controlled_by = BEL }
+			556 = { is_owned_and_controlled_by = BEL }
+			599 = { is_owned_and_controlled_by = BEL }
+			387 = { is_owned_and_controlled_by = BEL }
+			575 = { is_owned_and_controlled_by = BEL }
+			468 = { is_owned_and_controlled_by = BEL }
+			105 = { is_owned_and_controlled_by = BEL }
+			509 = { is_owned_and_controlled_by = BEL }
+			65 = { is_owned_and_controlled_by = BEL }
+			540 = { is_owned_and_controlled_by = BEL }
+			BRK = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_patriotes  (decision) complete entered"
+			}
+			if = {
+				limit = { is_subject = no }
+				set_cosmetic_tag = BEL_patriotes
+			}
+			custom_effect_tooltip = BEL_formable_tt
+			hidden_effect = {
+				84 = {  set_temp_variable = { pop_add = 15000 } add_state_population_no_state_name = yes set_state_category = megalopolis }
+				21 = {  set_temp_variable = { pop_add = 20000 } add_state_population_no_state_name = yes set_state_category = megalopolis }
+				48 = {  set_temp_variable = { pop_add = 10000 } add_state_population_no_state_name = yes set_state_category = metropolis }
+				61 = {  set_temp_variable = { pop_add = 15000 } add_state_population_no_state_name = yes set_state_category = metropolis }
+				556 = {  set_temp_variable = { pop_add = 8000 } add_state_population_no_state_name = yes set_state_category = metropolis }
+				set_province_name = {
+					id = 9239
+					name = VICTORY_POINTS_9239_BEL
+				}
+				every_owned_state = { set_temp_variable = { pop_add = 900 } add_state_population_no_state_name = yes }
+				every_state = {
+					limit = {
+						OR = {
+							region = 37
+							region = 60
+							region = 61
+							region = 89
+							region = 14
+							region = 35
+						}
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { core_cost_var = -0.50 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 30
+					add_resistance_target = -15
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = WBH
+							is_core_of = OLY
+							is_core_of = YAK
+							is_core_of = BRK
+							is_core_of = BEL
+							is_core_of = NEW
+							is_core_of = WHI
+							is_core_of = DRE
+							is_core_of = HAI
+							is_core_of = KAM
+							is_core_of = SYN
+						}
+					}
+					add_core_of = ROOT
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_patriotes  (decision) complete exited"
+			}
+		}
+	}
+	form_canada_koover = { #koover Formable
+		allowed = {
+			original_tag = BEL
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = STN_competitive_goverment_tt
-				STA = {
+				tooltip = BEL_CAN_AVAILABLE_tt
+				BEL = {
+					has_cosmetic_tag = "BEL_patriotes"
+				}
+				PAS = {
 					all_core_land_owned_by_prev_sphere = yes
 				}
-				MTC = {
+				WHI = {
 					all_core_land_owned_by_prev_sphere = yes
 				}
-				BRA = {
+				DRE = {
 					all_core_land_owned_by_prev_sphere = yes
 				}
-				WPG = {
+				SYN = {
 					all_core_land_owned_by_prev_sphere = yes
 				}
-				STB = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				ARB = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				ROL = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				DLN = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				DMM = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				RRR = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				TPA = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				NUN = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				MJW = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				UNB = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				BAT = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				URA = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				IRC = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				LOI = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				VSH = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				STC = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-				BGR = {
+				KAM = {
 					all_core_land_owned_by_prev_sphere = yes
 				}
 			}
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			base = 200
 		}
 		complete_effect = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] form_canada_stn (decision) complete entered"
+				log = "[GetDateText]: [Root.GetName] form_canada_koover  (decision) complete entered"
 			}
-			add_state_core = 1206
-			add_state_core = 1225
-			add_state_core = 1263
-			add_state_core = 1319
-			add_state_core = 1105
-			add_state_core = 1100
-			add_state_core = 1101
-			add_state_core = 1108
-			add_state_core = 1125
-			set_cosmetic_tag = STN_canada_goverment
+			if = {
+				limit = { is_subject = no }
+				set_cosmetic_tag = BEL_canada
+			}
+			custom_effect_tooltip = BEL_CAN_formable_tt
+			hidden_effect = {
+				every_owned_state = { set_temp_variable = { pop_add = 900 } add_state_population_no_state_name = yes }
+				every_state = {
+					limit = {
+						OR = {
+							region = 158
+							region = 164
+							region = 162
+							region = 84
+							region = 161
+							region = 166
+							region = 165
+							region = 163
+							region = 184
+							region = 170
+							region = 167
+							region = 186
+							region = 169
+							region = 171
+							region = 168
+							region = 185
+							region = 183
+						}
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { core_cost_var = -0.50 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 30
+					add_resistance_target = -15
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] form_canada_stn (decision) complete exited"
-			}
-		}
-	}
-	form_capitalist_microheaven_of_dundurn = { #dundurn formable
-			allowed = {
-				original_tag = DUN
-			}
-			available = {
-				is_in_faction = no
-				PLT = {
-					all_core_land_owned_by_prev_sphere = yes
+				log = "[GetDateText]: [Root.GetName] form_canada_koover  (decision) complete exited"
 				}
-				STN = {
-					all_core_land_owned_by_prev_sphere = yes
-				}
-			}
-			fire_only_once = yes
-
-			ai_will_do = {
-				base = 200
-			}
-			complete_effect = {
-				if = {
-					limit = { has_global_flag = debug_logs }
-					log = "[GetDateText]: [Root.GetName] form_capitalist_microheaven_of_dundurn (decision) complete entered"
-				}
-			PLT = {
-				ROOT = {
-					core_owned_states_of_prev = yes
-				}
-			}
-			STN = {
-				ROOT = {
-					core_owned_states_of_prev = yes
-				}
-			}
-			set_technology = {
-				artillery_ammo_unlock_tech = 1
-			}
-			set_cosmetic_tag = DUN_capitalist_microheaven
-			if = {
-				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] form_capitalist_microheaven_of_dundurn (decision) complete exited"
 			}
 		}
 	}
 
-	form_pleasant_country = { #pleasnantdale formable
+	form_columbia_kingdom = { #Victoria Formable
 		allowed = {
-			original_tag = PLT
+			original_tag = VIC
 		}
 		available = {
-			is_in_faction = no
-			DUN = {
+			BRK = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
-			STN = {
+			BEL = {
 				all_core_land_owned_by_prev_sphere = yes
 			}
 		}
 		fire_only_once = yes
-
 		ai_will_do = {
 			base = 200
 		}
 		complete_effect = {
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] form_pleasant_country (decision) complete entered"
+				log = "[GetDateText]: [Root.GetName] form_columbia_kingdom  (decision) complete entered"
 			}
-			DUN = {
-				ROOT = {
-					core_owned_states_of_prev = yes
+			set_cosmetic_tag = VIC_columbia
+			custom_effect_tooltip = VIC_CAS_formable_tt
+			hidden_effect = {
+				21 = {  set_temp_variable = { pop_add = 20000 } add_state_population_no_state_name = yes set_state_category = megalopolis }
+				420 = {  set_temp_variable = { pop_add = 1000 } add_state_population_no_state_name = yes set_state_category = metropolis }
+				48 = {  set_temp_variable = { pop_add = 9000 } add_state_population_no_state_name = yes set_state_category = metropolis }
+				every_owned_state = { set_temp_variable = { pop_add = 900 } add_state_population_no_state_name = yes }
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = BRK
+							is_core_of = BEL
+							is_core_of = WHI
+							is_core_of = DRE
+							is_core_of = HAI
+							is_core_of = KAM
+							is_core_of = SYN
+						}
+					}
+					add_core_of = ROOT
 				}
-			}
-			STN = {
-				ROOT = {
-					core_owned_states_of_prev = yes
-				}
-			}
-			add_ideas = cpf_all_is_pleasant
-			set_cosmetic_tag = PLT_pleasant_country
 			if = {
 				limit = { has_global_flag = debug_logs }
-				log = "[GetDateText]: [Root.GetName] form_pleasant_country (decision) complete exited"
+				log = "[GetDateText]: [Root.GetName] form_columbia_kingdom  (decision) complete exited"
+				}
+			}
+		}
+	}
+	form_canada_kingdom = { #Victoria Formable
+		allowed = {
+			original_tag = VIC
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = VIC_CAN_AVAILABLE_tt
+				VIC = {
+					has_cosmetic_tag = "VIC_columbia"
+				}
+				PAS = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_canada_kingdom  (decision) complete entered"
+			}
+			set_cosmetic_tag = VIC_canada
+			custom_effect_tooltip = VIC_CAN_formable_tt
+			hidden_effect = {
+				every_owned_state = { set_temp_variable = { pop_add = 900 } add_state_population_no_state_name = yes }
+				every_state = {
+					limit = {
+						OR = {
+							region = 158
+							region = 164
+							region = 162
+							region = 84
+							region = 161
+						}
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { core_cost_var = -0.50 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 30
+					add_resistance_target = -15
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_canada_kingdom  (decision) complete exited"
+				}
+			}
+		}
+	}
+	form_norcal = { #Max Sec Formable
+		allowed = {
+			original_tag = MXS
+		}
+		available = {
+			has_country_flag = mxs_we_came_back
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_norcal  (decision) complete entered"
+			}
+			set_cosmetic_tag = MXS_NCL
+			custom_effect_tooltip = MXS_NCL_formable_tt
+			hidden_effect = {
+				every_owned_state = {
+					set_temp_variable = { pop_add = 900 }
+					add_state_population_no_state_name = yes
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				set_province_name = {
+					id = 7152
+					name = VICTORY_POINTS_7152_MXS_PRS
+				}
+				96 = { set_state_name = STATE_96_MXS_PRS }
+				add_victory_points = {
+					province = 4916
+					value = 5
+				}
+				set_province_name = {
+					id = 4916
+					name = VICTORY_POINTS_4916_MXS_PRS
+				}
+				add_victory_points = {
+					province = 4907
+					value = 5
+				}
+				set_province_name = {
+					id = 4907
+					name = VICTORY_POINTS_4907_MXS_PRS
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_norcal  (decision) complete exited"
+			}
+		}
+	}
+	form_normut = { #Max Sec Formable
+		allowed = {
+			original_tag = MXS
+		}
+		available = {
+			MXS = { has_country_leader = { character = MXS_whoz } }
+			owns_state = 239
+			owns_state = 182
+			owns_state = 337
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_normut  (decision) complete entered"
+			}
+			set_cosmetic_tag = MXS_SMT
+			ask_to_join_masters_new_army = yes
+			custom_effect_tooltip = MXS_SMT_formable_tt
+			hidden_effect = {
+				every_owned_state = {
+					set_temp_variable = { pop_add = 900 }
+					add_state_population_no_state_name = yes
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				set_province_name = {
+					id = 4365
+					name = "Whoz Headquarter"
+				}
+				467 = { set_state_name = STATE_467_MXS_MTN }
+				set_province_name = {
+					id = 2722
+					name = VICTORY_POINTS_2722_MXS_MTN
+				}
+				337 = { set_state_name = STATE_337_MXS_MTN }
+				set_province_name = {
+					id = 4906
+					name = VICTORY_POINTS_4906_MXS_MTN
+				}
+				182 = { set_state_name = STATE_182_MXS_MTN }
+				set_province_name = {
+					id = 4915
+					name = VICTORY_POINTS_4915_MXS_MTN
+				}
+				239 = { set_state_name = STATE_239_MXS_MTN }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_normut  (decision) complete exited"
+			}
+		}
+	}
+	form_rangers = { #Kamlo Formable
+		allowed = {
+			original_tag = KAM
+		}
+		available = {
+			BRK = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			SYN = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_rangers  (decision) complete entered"
+			}
+			set_cosmetic_tag = KAM_rangers
+			set_technology = {
+				infantry_tech_level_scientific = 1
+			}
+			set_technology = {
+				mountaineer_training_tech = 1
+			}
+			#custom_effect_tooltip = KAM_rangers_formable_tt
+			custom_effect_tooltip = cascadia_cores_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							region = 14
+							region = 60
+							region = 61
+							region = 35
+							region = 89
+							state = 42
+							state = 987
+						}
+					}
+					add_claim_by = ROOT
+					add_core_of = ROOT
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_rangers  (decision) complete exited"
+			}
+		}
+	}
+	form_nevada = { #Slags Formable
+		allowed = {
+			original_tag = SLA
+		}
+		available = {
+			has_government = people
+			NEW = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			VLT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_nevada  (decision) complete entered"
+			}
+			set_cosmetic_tag = SLA_NEV
+			custom_effect_tooltip = SLA_NEV_formable_tt
+			hidden_effect = {
+				SLA = { annex_country = { target = MOD transfer_troops = yes }}
+				set_capital = { state = 285 }
+				every_state = {
+					limit = {
+						OR = {
+							region = 12
+						}
+					}
+					add_core_of = ROOT
+				}
+				every_state = {
+					limit = {
+						OR = {
+							region = 57
+							region = 56
+							region = 3
+						}
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { core_cost_var = -0.50 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 30
+					add_resistance_target = -15
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_nevada  (decision) complete exited"
+			}
+		}
+	}
+	form_apache = { #Mescalero Formable
+		allowed = {
+			original_tag = MES
+		}
+		available = {
+			WAP = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_apache  (decision) complete entered"
+			}
+			set_cosmetic_tag = MES_APA
+			custom_effect_tooltip = MES_APA_formable_tt
+			every_owned_state = {
+				set_temp_variable = {
+					pop_add = 250
+				}
+				add_state_population_no_state_name = yes
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = WAP
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { core_cost_var = -0.90 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 30
+					add_resistance_target = -15
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_apache  (decision) complete exited"
+			}
+		}
+	}
+	form_space = { #Houston Formable
+		allowed = {
+			original_tag = HRO
+		}
+		available = {
+			owns_state = 904
+			owns_state = 799
+			owns_state = 903
+			owns_state = 798
+			owns_state = 905
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_space  (decision) complete entered"
+			}
+			set_cosmetic_tag = HRO_space
+			#custom_effect_tooltip = HRO_space_formable_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						state = 904
+						state = 799
+						state = 903
+						state = 798
+						state = 905
+					}
+					add_core_of = HRO
+				}
+				every_owned_state = {
+					set_temp_variable = { pop_add = 900 }
+					add_state_population_no_state_name = yes
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				880 = { set_temp_variable = { pop_add = 15000 } add_state_population_no_state_name = yes set_state_category = megalopolis }
+				903 = { set_state_name = STATE_903_HRO set_temp_variable = { pop_add = 10000 } add_state_population_no_state_name = yes set_state_category = megalopolis }
+				879 = { set_temp_variable = { pop_add = 2000 } add_state_population_no_state_name = yes set_state_category = megalopolis }
+				882 = { set_state_category = metropolis }
+				905 = { set_state_category = metropolis }
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_space  (decision) complete exited"
+			}
+		}
+	}
+	form_tohono = { #Tohono Formable
+		allowed = {
+			original_tag = TON
+		}
+		available = {
+		custom_trigger_tooltip = {
+		tooltip = TON_united_formable_land_tt
+			COW = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			owns_state = 516
+			owns_state = 588
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_tohono (decision) complete entered"
+			}
+			set_cosmetic_tag = TON_united
+			custom_effect_tooltip = TON_united_formable_tt
+			every_owned_state = {
+				set_temp_variable = {
+					pop_add = 250
+				}
+				add_state_population_no_state_name = yes
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			519 = {
+				add_claim_by = TON
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = TWO
+					}
+					add_core_of = TON
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_tohono  (decision) complete exited"
+			}
+		}
+	}
+	tohono_decore_south_phoenix = { #Tohono Formable, additional land
+		allowed = {
+			original_tag = TON
+		}
+		available = {
+			owns_state = 519
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			519 = {
+				remove_core_of = CES
+				add_core_of = TON
 			}
 		}
 	}
 
+	form_chained_republic = { #GRA Formable
+		allowed = {
+			original_tag = GRA
+		}
+		available = {
+			NCR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_chained_republic  (decision) complete entered"
+			}
+			set_cosmetic_tag = GRA_calif
+			custom_effect_tooltip = GRA_calif_formable_tt
+			every_owned_state = {
+				set_temp_variable = {
+					pop_add = 250
+				}
+				add_state_population_no_state_name = yes
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = NCR
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { core_cost_var = -0.50 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 30
+					add_resistance_target = 50
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_chained_republic  (decision) complete exited"
+			}
+		}
+	}
+	form_nmx_catholic = { #ASF Formable
+		allowed = {
+			original_tag = ASF
+		}
+		available = {
+			LAC = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_nmx_catholic  (decision) complete entered"
+			}
+			set_cosmetic_tag = ASF_NMX
+			custom_effect_tooltip = ASF_nmx_formable_tt
+			hidden_effect = {
+				ASF_rename_states = yes
+				every_state = {
+					limit = {
+						OR = {
+						is_core_of = SUF
+						is_core_of = EXE
+						is_core_of = MES
+						is_core_of = EDA
+						is_core_of = LAC
+						}
+					}
+					add_core_of = ASF
+				}
+				every_state = {
+					limit = {
+						OR = {
+						region = 47
+						region = 45
+						region = 15
+						region = 46
+						region = 30
+						region = 31
+						region = 29
+						region = 2
+						region = 28
+						}
+					}
+					add_claim_by = ROOT
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_nmx_catholic  (decision) complete exited"
+			}
+		}
+	}
+	form_crz_uth = { #CRZ Formable
+		allowed = {
+			original_tag = CRZ
+		}
+		available = {
+			UIN = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			DEA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			SOR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			WHT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			TAR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			CLK = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_crz_uth  (decision) complete entered"
+			}
+			set_cosmetic_tag = CRZ_UTH
+			custom_effect_tooltip = CRZ_uth_formable_tt
+			CRZ = { add_nuclear_bombs = 1 }
+			add_equipment_to_stockpile = {
+				type = flamer_demolitions_equipment_3
+				amount = 1250
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = explosive_demolitions_equipment_3
+				amount = 1250
+				producer = USA
+			}
+			hidden_effect = {
+				#ASF_rename_states = yes
+				every_state = {
+					limit = {
+						OR = {
+						is_core_of = UIN
+						is_core_of = DEA
+						is_core_of = SOR
+						is_core_of = WHT
+						is_core_of = TAR
+						is_core_of = CLK
+						}
+					}
+					add_claim_by = ROOT
+					set_temp_variable = { core_cost_var = -0.50 }
+					ROOT = { decrease_coring_cost_for_prev_cores = yes }
+					add_compliance = 30
+					add_resistance_target = -15
+					set_variable = {
+						coring_cost_targeted_state_factor@ROOT = core_cost_var
+					}
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_crz_uth  (decision) complete exited"
+			}
+		}
+	}
+	form_eas_hakis_nppr = { #EAS April Fools 2026 Formable
+		allowed = {
+			original_tag = EAS
+		}
+		available = {
+			WHT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			HEA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			BDT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+			set_temp_variable = {
+				caps_diff = -510
+			}
+			caps_cost_trigger = yes
+		}
+		visible = {
+			has_global_flag = EAS_hakis_arrives_enabled_global_flag
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 200
+		}
+		complete_effect = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_eas_hakis_nppr  (decision) complete entered"
+			}
+			set_cosmetic_tag = EAS_hakis_republic
+			set_temp_variable = { caps_to_add = -500 }
+			add_caps = yes
+			custom_effect_tooltip = EAS_hakis_republic_formable_tt
+			hidden_effect = {
+				every_neighbor_country = {
+					random_state = {
+						limit = {
+							is_core_of = EAS
+							impassable = no
+						}
+						add_claim_by = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = WHT
+							is_core_of = HEA
+							is_core_of = BDT
+						}
+					}
+					add_core_of = EAS
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] form_eas_hakis_nppr  (decision) complete exited"
+			}
+		}
+	}
+	_Conquer_The_Plaguelands = {
+		allowed = {
+			OR = {
+				original_tag = TLR
+				original_tag = BRE
+				original_tag = FRN
+				original_tag = RAD
+				original_tag = SIY
+				original_tag = DAM
+				original_tag = LAP
+				original_tag = DED
+				original_tag = SAN
+				original_tag = REH
+				original_tag = OST
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = TLR
+				original_tag = BRE
+				original_tag = FRN
+				original_tag = RAD
+				original_tag = SIY
+				original_tag = DAM
+				original_tag = LAP
+				original_tag = DED
+				original_tag = SAN
+				original_tag = REH
+				original_tag = OST
+			}
+			is_ai = yes
+		}
+		available = {
+			is_subject = no
+			date > 2281.1.1
+			has_war = no
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 200
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				TLR = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				BRE = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				FRN = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				RAD = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				SIY = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				DAM = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				LAP = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				DED = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				SAN = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				REH = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+				OST = { ROOT = { grant_wargoals_on_core_states_of_prev_force_ai_war = yes } }
+			}
+			custom_effect_tooltip = _Conquer_The_Plaguelands_tt
+		}
+	}
 }

@@ -38,17 +38,14 @@ ability = {
 				trait = exhausted_order_trait
 				days = 20
 			}
-			add_temporary_buff_to_units = {
-				combat_offense = 0.2
-				combat_breakthrough = 0.25
-				org_damage_multiplier = -0.75
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
-				cannot_retreat_while_attacking = 1.0
-
-				days = 7
-				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
-			}
+		}
+		unit_modifiers = {
+			offence = 0.2
+			breakthrough_factor = 0.25
+			org_damage_multiplier = -0.75
+			str_damage_multiplier = 0.6
+			war_support_reduction_on_damage = 0.2
+			cannot_retreat_while_attacking = 1.0
 		}
 	}
 
@@ -74,17 +71,16 @@ ability = {
 				trait = exhausted_order_trait
 				days = 20
 			}
-			add_temporary_buff_to_units = {
-				combat_defense = 0.2
-				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
-				cannot_retreat_while_defending = 1.0
 
-				days = 7
-				tooltip = ABILITY_LAST_STAND_TOOLTIP
-			}
+		}
+
+		unit_modifiers = {
+			defence = 0.2
+			combat_entrenchment = 0.25
+			org_damage_multiplier = -1.0
+			str_damage_multiplier = 0.6
+			war_support_reduction_on_damage = 0.2
+			cannot_retreat_while_defending = 1.0
 		}
 
 		ai_will_do = {
@@ -417,16 +413,6 @@ ability = {
 				trait = exhausted_order_trait
 				days = 20
 			}
-			add_temporary_buff_to_units = {
-				combat_offense = 0.4
-				combat_breakthrough = 0.4
-				org_damage_multiplier = -0.4
-				str_damage_multiplier = -0.15
-				cannot_retreat_while_attacking = 1.0
-
-				days = 7
-				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
-			}
 			OWNER = {
 				add_timed_idea = {
 					idea = moj_archimedes_ii_cooldown
@@ -435,6 +421,13 @@ ability = {
 			}
 		}
 
+		unit_modifiers = {
+			offence = 0.4
+			breakthrough_factor = 0.4
+			org_damage_multiplier = -0.4
+			str_damage_multiplier = -0.15
+			cannot_retreat_while_attacking = 1.0
+		}
 
 		ai_will_do = {
 			factor = -1
@@ -711,19 +704,18 @@ ability = {
 		one_time_effect = {
 			add_timed_unit_leader_trait = {
 				trait = exhausted_order_trait
-				days = 30
-			}
-			add_temporary_buff_to_units = {
-				combat_offense = 0.5
-				combat_breakthrough = 0.5
-				org_damage_multiplier = -0.8
-				cannot_retreat_while_attacking = 1.0
-				days = 7
-				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+				days = 20
 			}
 			OWNER = {
 				subtract_from_variable = { fatman_uses = 1 }
 			}
+		}
+
+		unit_modifiers = {
+			offence = 0.5
+			breakthrough_factor = 0.5
+			org_damage_multiplier = -0.8
+			cannot_retreat_while_attacking = 1.0
 		}
 
 
@@ -766,19 +758,18 @@ ability = {
 				trait = exhausted_order_trait
 				days = 50
 			}
-			add_temporary_buff_to_units = {
-				combat_offense = 0.1
-				combat_breakthrough = 0.1
-				combat_defense = 0.1
-				org_damage_multiplier = -0.25
-				str_damage_multiplier = -0.10
-				days = 15
-			}
 			OWNER = {
 				subtract_from_variable = { artillery_uses = 1 }
 			}
 		}
 
+		unit_modifiers = {
+			offence = 0.1
+			breakthrough_factor = 0.1
+			defence = 0.1
+			org_damage_multiplier = -0.25
+			str_damage_multiplier = -0.10
+		}
 
 		ai_will_do = {
 			factor = -1

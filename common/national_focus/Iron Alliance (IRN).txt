@@ -19,9 +19,8 @@ focus_tree = {
 	default = no
 	focus = {
 		id = colorado_1
-		icon = {
-			value = GFX_goal_colorado_flag
-		}
+		icon = GFX_goal_colorado_flag
+
 		dynamic = yes
 		cost = 7
 		x = 11
@@ -32,9 +31,8 @@ focus_tree = {
 	}
 	focus = {
 		id = colorado_2
-		icon = {
-			value = GFX_goal_colorado_climbing
-		}
+		icon = GFX_goal_colorado_climbing
+		
 		dynamic = yes
 		cost = 7
 		prerequisite = {
@@ -49,9 +47,8 @@ focus_tree = {
 	}
 	focus = {
 		id = colorado_3
-		icon = {
-			value = GFX_goal_colorado_rocky_mountain
-		}
+		icon = GFX_goal_colorado_rocky_mountain
+
 		dynamic = yes
 		cost = 7
 		prerequisite = {

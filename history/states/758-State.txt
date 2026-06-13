@@ -1,7 +1,10 @@
 state = {
 	id = 758
 	name = "STATE_758"
-	resources={
+	manpower = 4460
+	state_category = shanty
+
+	resources = {
 		metal = 9
 		energy = 2
 	}
@@ -15,15 +18,11 @@ state = {
 			}
 		}
 		victory_points = {
-			9427 10
+			11106 5
 		}
-
 	}
 
-	provinces={
+	provinces = {
 		9200 9427 9526 9530 9531 10678 10682 11098 11099 11106 11114 11117 11124 11130
 	}
-	manpower=4460
-	buildings_max_level_factor=1.000
-	state_category=shanty
 }

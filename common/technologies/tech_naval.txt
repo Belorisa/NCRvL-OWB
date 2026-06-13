@@ -56,7 +56,7 @@ technologies = {
 			leads_to_tech = medium_navy_hull_tech_1
 			research_cost_coeff = 1
 		}
-				path = {
+		path = {
 			leads_to_tech = heavy_navy_hull_tech_1
 			research_cost_coeff = 1
 		}
@@ -99,7 +99,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_light_1
 		}
-			enable_equipment_modules = {
+		enable_equipment_modules = {
 			light_ship_oars_module
 			ship_light_mounted_gun_module
 			ship_command_module_1
@@ -196,7 +196,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_light_3
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			light_ship_paddle_module
 		}
 
@@ -338,7 +338,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_medium_1
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			medium_ship_oars_module
 			ship_medium_mounted_gun_module
 			ship_command_module_1
@@ -488,7 +488,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_medium_4
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			medium_ship_propeller_module
 		}
 
@@ -577,7 +577,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_heavy_1
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			heavy_ship_oars_module
 			ship_heavy_mounted_gun_module
 			ship_command_module_1
@@ -627,7 +627,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_heavy_2
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			heavy_ship_sail_module
 			super_heavy_ship_sail_module
 		}
@@ -675,7 +675,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_heavy_3
 		}
-			enable_equipment_modules = {
+		enable_equipment_modules = {
 			heavy_ship_paddle_module
 			super_heavy_ship_paddle_module
 		}
@@ -723,7 +723,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_heavy_4
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			heavy_ship_propeller_module
 			super_heavy_ship_propeller_module
 		}
@@ -862,7 +862,7 @@ technologies = {
 		enable_equipments = {
 			ship_hull_super_heavy_1
 		}
-				enable_equipment_modules = {
+		enable_equipment_modules = {
 			super_heavy_ship_hydrojet_module
 		}
 
@@ -1039,7 +1039,7 @@ technologies = {
 		invasion_preparation = -0.1
 		amphibious_invasion = 0.1
 		amphibious_invasion_defence = 0.1
-				naval_invasion_prep_days = -10
+		naval_invasion_prep_days = -10
 		naval_invasion_penalty = -0.1
 		naval_invasion_capacity = 2
 		naval_invasion_division_cap = 10

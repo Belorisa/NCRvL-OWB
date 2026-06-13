@@ -173,7 +173,7 @@ technologies = {
 		}
 
 		planning_speed = 0.15
-				category_front_line = {
+		category_front_line = {
 			max_organisation = -10
 		}
 		tank = {
@@ -227,7 +227,7 @@ technologies = {
 	advanced_cnc_focus_doctrine_2 = {
 
 		initiative_factor = 0.15
-				category_front_line = {
+		category_front_line = {
 			max_organisation = -10
 		}
 		tank = {
@@ -284,7 +284,7 @@ technologies = {
 	advanced_cnc_focus_doctrine_3 = {
 
 		coordination_bonus = 0.025
-				category_front_line = {
+		category_front_line = {
 			max_organisation = -10
 		}
 		tank = {
@@ -540,7 +540,7 @@ technologies = {
 			hard_attack = 0.15
 		}
 
-		enable_tactic = tactic_overwhelming_fire
+		#enable_tactic = tactic_overwhelming_fire
 
 		path = {
 			leads_to_tech = refined_construction
@@ -622,7 +622,7 @@ technologies = {
 	#Combat Simulations
 	combat_simulations = {
 
-		enable_tactic = tactic_planned_attack
+		#enable_tactic = tactic_planned_attack
 
 		category_front_line = {
 			defense = 0.05
@@ -746,7 +746,7 @@ technologies = {
 			max_organisation = -15
 		}
 
-		enable_tactic = tactic_breakthrough
+		#enable_tactic = tactic_breakthrough
 
 		path = {
 			leads_to_tech = age_of_the_machine
@@ -932,6 +932,7 @@ technologies = {
 			default_morale = 0.1
 			supply_consumption = -0.05
 		}
+
 		category_robots = {
 			hardness = 0.15
 			armor_value = 0.15
@@ -1136,7 +1137,7 @@ technologies = {
 			walking_fire
 		}
 
-		enable_tactic = tactic_barrage
+		#enable_tactic = tactic_barrage
 
 		category_combat_support = {
 			soft_attack = 0.25
@@ -1294,7 +1295,7 @@ technologies = {
 	# Hit and Run
 	hit_and_run = {
 
-		enable_tactic = tactic_overwhelming_fire
+		#enable_tactic = tactic_overwhelming_fire
 
 		org_loss_when_moving = -0.1
 		special_forces_min = 30 #special_forces_cap = 0.05
@@ -1391,7 +1392,7 @@ technologies = {
 			recon_in_depth
 		}
 
-		enable_tactic = tactic_backhand_blow
+		#enable_tactic = tactic_backhand_blow
 
 		conscription_factor = -0.1
 		compliance_growth = -0.2
@@ -1537,7 +1538,7 @@ technologies = {
 			hard_attack = 0.10
 		}
 
-		enable_tactic = tactic_breakthrough
+		#enable_tactic = tactic_breakthrough
 
 		army_bonus_air_superiority_factor = 0.10
 
@@ -1584,7 +1585,7 @@ technologies = {
 			defense = 1
 		}
 
-		enable_tactic = tactic_infantry_charge
+		#enable_tactic = tactic_infantry_charge
 
 		path = {
 			leads_to_tech = warrior_code_doctrine
@@ -1736,7 +1737,7 @@ technologies = {
 			defense = 0.2
 		}
 
-		enable_tactic = tactic_breakthrough
+		#enable_tactic = tactic_breakthrough
 
 
 		research_cost = 4
@@ -1934,7 +1935,7 @@ technologies = {
 			breakthrough = 0.10
 		}
 		coordination_bonus = 0.10
-		enable_tactic = tactic_planned_attack
+		#enable_tactic = tactic_planned_attack
 		path = {
 			leads_to_tech = mechanized_offensive_doctrine
 			research_cost_coeff = 1
@@ -1985,7 +1986,7 @@ technologies = {
 			hold_the_line
 		}
 
-		enable_tactic = tactic_unexpected_thrust
+		#enable_tactic = tactic_unexpected_thrust
 
 		category_army = {
 			maximum_speed = 0.05
@@ -2235,7 +2236,7 @@ technologies = {
 	mechanized_onslaught = {
 
 		coordination_bonus = 0.05
-		enable_tactic = tactic_blitz
+		#enable_tactic = tactic_blitz
 
 		category_army = {
 			maximum_speed = 0.1
@@ -2286,7 +2287,7 @@ technologies = {
 			mechanized_offensive_doctrine
 		}
 
-		enable_tactic = tactic_elastic_defense
+		#enable_tactic = tactic_elastic_defense
 
 		max_planning = 0.05
 		category_standard_infantry = {
@@ -2425,6 +2426,7 @@ technologies = {
 
 	# New World Tactics
 	grunt_level_radio_integration_doctrine_tech = {
+
 		category_infantry_and_special_forces = {
 			max_organisation = 5
 			initiative = 0.04
@@ -2978,7 +2980,7 @@ technologies = {
 	# Ego Gloriam Nominis
 	ego_gloriam_nominis = {
 
-		enable_tactic = tactic_relentless_assault
+		#enable_tactic = tactic_relentless_assault
 
 		category_army = {
 			breakthrough = 0.15
@@ -3170,7 +3172,7 @@ technologies = {
 	# Divide et Vincet
 	divide_et_vincet = {
 
-		enable_tactic = tactic_delay
+		#enable_tactic = tactic_delay
 
 		max_dig_in_factor = 0.2
 		dig_in_speed_factor = 0.5
@@ -3221,7 +3223,7 @@ technologies = {
 
 		org_loss_when_moving = -0.5
 		experience_loss_factor = -0.3
-		enable_tactic = tactic_breakthrough
+		#enable_tactic = tactic_breakthrough
 
 		category_infantry_and_special_forces = {
 			max_strength = 5
@@ -3330,7 +3332,7 @@ technologies = {
 			hard_attack = 0.1
 			max_organisation = 10
 		}
-				category_creatures = {
+		category_creatures = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 			max_organisation = 5
@@ -3384,9 +3386,9 @@ technologies = {
 			soft_attack = 0.10
 			hard_attack = 0.10
 		}
-				land_reinforce_rate = 0.04
+		land_reinforce_rate = 0.04
 		conscription_factor = 0.05
-		enable_tactic = tactic_barrage
+		#enable_tactic = tactic_barrage
 
 		dog_company = {
 			battalion_mult = {
@@ -3522,7 +3524,7 @@ technologies = {
 	# The Nightstalkers Bite
 	the_nightstalkers_bite = {
 
-		enable_tactic = tactic_guerrilla_tactics
+		#enable_tactic = tactic_guerrilla_tactics
 
 		land_night_attack = 0.15
 		special_forces_min = 30 #special_forces_cap = 0.05
@@ -3632,7 +3634,7 @@ technologies = {
 
 		command_power_gain_mult = 0.25
 
-		enable_tactic = tactic_backhand_blow
+		#enable_tactic = tactic_backhand_blow
 
 
 		research_cost = 4
@@ -3997,7 +3999,7 @@ technologies = {
 			defense = 0.1
 			armor_value = 0.1
 		}
-				category_insects = {
+		category_insects = {
 			hard_attack = 0.2
 		}
 
@@ -4502,7 +4504,7 @@ technologies = {
 			breakthrough = 0.1
 			defense = 0.1
 		}
-				category_mutant_creatures = {
+		category_mutant_creatures = {
 			hardness = 0.3
 			defense = 0.05
 		}
@@ -4578,7 +4580,7 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
-				category_mutant_creatures = {
+		category_mutant_creatures = {
 			max_organisation = 5
 			maximum_speed = 0.1
 			soft_attack = 0.05

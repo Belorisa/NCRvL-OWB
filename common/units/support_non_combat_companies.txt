@@ -13,6 +13,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -36,7 +37,7 @@ sub_units = {
 		supply_consumption = 0.1
 		recon = 1.5
 		can_be_parachuted = yes
-		
+
 		# Support nerfs to combat abilities
 		defense = 1
 		breakthrough = 1
@@ -107,6 +108,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -205,6 +207,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -279,6 +282,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -357,6 +361,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -422,6 +427,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -475,7 +481,7 @@ sub_units = {
 			defence = 0.05
 			movement = 0.05
 		}
-		
+
 		same_support_type = maintenance_company # blocks adding other maintenance types to template
 	}
 
@@ -492,6 +498,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army
@@ -558,6 +565,7 @@ sub_units = {
 		}
 
 		group = support
+		regimental = no
 
 		categories = {
 			category_army

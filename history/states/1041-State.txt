@@ -11,14 +11,14 @@ state = {
 
 	history = {
 		victory_points = {
-			12523 20
+			12523 15
 		}
 		victory_points = {
 			2143 5
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 3
+			industrial_complex = 1
 			arms_factory = 1
 		}
 	}

@@ -1,34 +1,7 @@
 ideas = {
 	country = {
 
-		
-		roaring_machines_eht = {
-			picture = generic_armor
 
-			allowed = {
-				is_raider_nation_allowed_block = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-
-			equipment_bonus = {
-				motorized_equipment = {
-					maximum_speed = 0.15
-					reliability_factor = 0.1
-					breakthrough = 0.1
-					armor_value = 0.1
-					build_cost_ic = -0.1
-					instant = yes
-				}
-			}
-			modifier = {
-				modifier_army_sub_unit_tank_speed_factor = 0.1
-				modifier_army_sub_unit_motorized_attack_factor = 0.05
-			}
-		}
 		EHT_nomadic_centralization_idea = {
 			picture = generic_morale_bonus
 			removal_cost = -1
@@ -526,6 +499,33 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				fuel_gain_factor = 0.1
 				production_lack_of_resource_penalty_factor = -0.3
+			}
+		}
+		roaring_machines_eht = {
+			picture = generic_armor
+
+			allowed = {
+				is_raider_nation_allowed_block = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				motorized_equipment = {
+					maximum_speed = 0.15
+					reliability_factor = 0.1
+					breakthrough = 0.1
+					armor_value = 0.1
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				modifier_army_sub_unit_tank_speed_factor = 0.1
+				modifier_army_sub_unit_motorized_attack_factor = 0.05
 			}
 		}
 	}

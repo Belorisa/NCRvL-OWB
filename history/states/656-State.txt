@@ -1,8 +1,11 @@
 state = {
 	id = 656
 	name = "STATE_656"
+	manpower = 5430
+	state_category = large_town
+
 	resources = {
-		energy = 8
+		energy = 12
 		composites = 12
 		circuitry = 4
 		advanced = 5
@@ -12,19 +15,12 @@ state = {
 			infrastructure = 5
 			arms_factory = 3
 			industrial_complex = 2
-			
-			12359 = {
-				bunker = 2
-			}
-		}
-		victory_points = {
-			12359 20
+			air_base = 2
+			12359 = { bunker = 2 }
 		}
 	}
-	provinces={
+
+	provinces = {
 		4494 1476 2078 4492 4542 4495 2080 2079 12350 12353 12357 12361 12359 12362 2515
 	}
-	manpower = 2430
-	state_category = large_town
-	buildings_max_level_factor=1.000
 }

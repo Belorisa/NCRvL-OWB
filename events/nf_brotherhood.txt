@@ -34,7 +34,7 @@ add_namespace = nf_brotherhood_off_map_chapter_logic
 add_namespace = nf_brotherhood_integrate_guardians
 #Hidden events
 add_namespace = nf_brotherhood_hidden
-#??
+#War on the NCR!
 add_namespace = nf_brotherhood_bunkered_divisions
 
 ##Decision events for chapters, mostly
@@ -64,7 +64,8 @@ add_namespace = nf_brotherhood_chapter_story
 #Steel rangers!
 add_namespace = nf_brotherhood_steel_rangers
 
-
+#Notifications from decisions expiring!
+add_namespace = nf_brotherhood_effort_notifications
 
 # Delivering Justice
 country_event = {
@@ -895,7 +896,7 @@ country_event = {
 				days = 1
 			}
 		}
-		#clr_global_flag = foreign_chapter_annexing_bos ##Prevent the foreign chapter from having all their units get brotherhood_commander. No need to punish them!
+		#clr_global_flag = foreign_chapter_annexing_bos ##Deliberately commented out. Since this is essentially LH "annexing", we want them to get the trait. But not when LH is being annexed(.1.b) ##Prevent the foreign chapter from having all their units get brotherhood_commander. No need to punish them!
 	}
 	option = {
 		name = nf_brotherhood_foreign_elder.1.b

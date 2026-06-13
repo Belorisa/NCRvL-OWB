@@ -47,17 +47,9 @@ set_technology = {
 	fireteam_weaponry_tech = 1
 	bike_tech_1 = 1
 	raider_reckless_aggression = 1
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		nautics_tech_1 = 1
-		light_navy_hull_tech_1 = 1
-		#waterproof_sealing_tech = 1
-	}
+	nautics_tech_1 = 1
+	light_navy_hull_tech_1 = 1
+	#waterproof_sealing_tech = 1
 }
 
 create_equipment_variant = {

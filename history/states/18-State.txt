@@ -11,16 +11,19 @@ state = {
 			1946 5
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
+			infrastructure = 3
+			industrial_complex = 1
 			arms_factory = 1
+			1946 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	provinces = {
 		1479 1946 2514 4057 4058 4059 4060 4061 4062 4064 4460 4551 7167 7168 7175 8536
 	}
-	manpower=6791
+	manpower=2791
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 }

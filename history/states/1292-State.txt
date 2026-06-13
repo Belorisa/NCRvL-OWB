@@ -19,6 +19,6 @@ state={
 		}
 	}
 	state_category = large_town
-	manpower = 4800
+	manpower = 6832
 	local_supplies=0.000
 }

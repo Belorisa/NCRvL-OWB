@@ -1,6 +1,8 @@
 state = {
 	id = 1
 	name = "STATE_1"
+	manpower = 40000
+	state_category = metropolis
 
 	resources = {
 		metal = 7
@@ -11,11 +13,14 @@ state = {
 		advanced = 7
 	}
 
-	history={
+	history = {
 		owner = NCR
 		add_core_of = NCR
 		victory_points = {
 			2409 25
+		}
+		victory_points = {
+			4622 5
 		}
 		buildings = {
 			infrastructure = 3
@@ -24,10 +29,8 @@ state = {
 			metal_generator = 2
 		}
 	}
-	provinces={
+
+	provinces = {
 		951 1780 2001 2409 2410 2411 2412 2413 2414 2415 4622 4785 4786 4787 4953 4954
 	}
-	manpower=25000
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
 }

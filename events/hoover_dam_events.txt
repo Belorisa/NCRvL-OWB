@@ -333,7 +333,7 @@ news_event = { # News Event: Legion Overall Vic
 
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		trigger = {
 			is_new_california_member = yes
@@ -591,7 +591,7 @@ news_event = { # New Event: Battle for Hoover Dam (MOT vs CES)
 	id = bhd.102
 	title = bhd.102.t
 	desc = bhd.102.d
-	picture = GFX_event_NCR_battle_for_hoover_dam
+	picture = GFX_event_battle_for_hoover_dam
 
 	major = yes
 	is_triggered_only = yes
@@ -689,7 +689,7 @@ news_event = { # New Event: Battle for Hoover Dam (MOJ vs CES)
 	id = bhd.152
 	title = bhd.152.t
 	desc = bhd.152.d
-	picture = GFX_event_NCR_battle_for_hoover_dam
+	picture = GFX_event_battle_for_hoover_dam
 
 	major = yes
 	is_triggered_only = yes

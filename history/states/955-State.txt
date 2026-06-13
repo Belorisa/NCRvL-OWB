@@ -7,10 +7,11 @@ state={
 		}
 	}
 	impassable = yes
+	force_link_ownership_to = 659
 	provinces={
 		4498
 	}
 	manpower=164
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=wasteland
 }
