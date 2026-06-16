@@ -21,7 +21,7 @@ technologies = {
 		army_fuel_consumption_factor = -0.15
 		planning_speed = 0.15
 		max_planning = 0.1
-
+		additional_brigade_column_size = 1
 
 		research_cost = 4
 		xp_research_type = army
@@ -974,6 +974,7 @@ technologies = {
 		enable_tactic = tactic_basic_defensive_hardpoints
 
 		minimum_training_level = 0.15
+		additional_brigade_column_size = 1
 
 		allow = {
 			NOT = { has_tech = grunt_level_radio_unlock_tech }
@@ -1784,6 +1785,7 @@ technologies = {
 
 		max_dig_in = 5
 		dig_in_speed_factor = 0.25
+		additional_brigade_column_size = 1
 
 		path = {
 			leads_to_tech = grand_battle_plan_owb
@@ -2761,6 +2763,7 @@ technologies = {
 		minimum_training_level = -0.10
 		org_loss_at_low_org_factor = -0.2
 		equipment_capture_factor = 0.05
+		additional_brigade_column_size = 1
 
 
 		research_cost = 4
@@ -3684,6 +3687,7 @@ technologies = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 		}
+		additional_brigade_column_size = 1
 
 		XOR = { automated_warfare grand_army terror_tactics elite_army }
 

@@ -6,6 +6,11 @@ bookmarks = {
 		picture = "GFX_bookmark_selection_entry_west_coast"
 		default_country = "NCR"
 		default = yes
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
 		"NCR" = {
 			history = "NCR_OWB_DESC"
 			ideology = people
@@ -203,6 +208,7 @@ bookmarks = {
 			}
 		}
 		"EUR" = {
+			minor = yes
 			history = "EUR_OWB_DESC"
 			ideology = elites
 			ideas = {
@@ -215,12 +221,9 @@ bookmarks = {
 				eur_raider_refugees
 			}
 		}
+
 		"---" = {
 			history = "OTHER_OWB_DESC"
-		}
-		effect = {
-			randomize_weather = 12345			# <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
 		}
 	}
 }
