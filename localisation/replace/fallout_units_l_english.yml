@@ -1,5 +1,5 @@
 ﻿l_english:
- # Categories
+ ### Categories
 
   category_army:0 "Army"
   category_front_line:0 "Frontline Platoons"
@@ -43,6 +43,8 @@
   infantry:0 "Infantry"
   support:0 "Support"
   special_forces_group:0 "Special Forces Group"
+  category_headquarters:0 "Headquarter Units"
+  category_headquarters_line:0 "Headquarter Security"
 
 
   category_air_unit:0 "All Aircraft"
@@ -61,17 +63,17 @@
 
   category_all_infantry:0 "All Infantry & Motorized"
 
- # Groups (Division designer categories)
+ ### Groups (Division designer categories)
   group_robot_group_title:0 "Robot Platoons"
   group_mutant_group_title:0 "Mutant Platoons"
   group_special_forces_group_title:0 "Special Platoons"
 
- # Infantry
+ ### Infantry
   Infantry:0 "Infantry Platoon"
   Infantry_short:0 "Infantry"
   Infantry_desc:0 ""
 
- # Infantry
+ ### Infantry
   heavy_infantry:0 "Enforcers"
   heavy_infantry_short:0 "Enforcers"
   heavy_infantry_desc:0 ""
@@ -219,7 +221,10 @@
   gecko_support_company_short:0 "Geckos"
   gecko_support_company_desc:0 "While these mutated lizards are normally hunted for their hides, once tamed they can fight alongside us on the battlefield."
 
- # Motorized/Mechanized
+ ### Motorized/Mechanized
+  motorized:0 "Motorized Infantry"
+  motorized_short:0 "Motorized Infantry"
+  motorized_desc:0 "Motorized infantry transportation, such as trucks and motorcycles."
   motorized_heavy_infantry:0 "Motorized Enforcers"
   motorized_heavy_infantry_short:0 "Mobile Enforcers"
   motorized_heavy_infantry_desc:0 ""
@@ -237,12 +242,12 @@
   chariot_unit_short:0 "Chariots"
   chariot_unit_desc:0 "Legion goes BRRRRRRRRRR"
 
- # tanks
+ ### tanks
   tank:0 "Tank Platoon"
   tank_short:0 "Tanks"
   tank_desc:0 "Heavily armed and armoured tanks will plough through any soft targets foolish enough to stand in their way."
 
- # Planes
+ ### Planes
   spotter_plane:0 "Recon Aircraft"
   spotter_plane_short:0 "Recon"
   spotter_plane_desc:0 ""
@@ -304,7 +309,7 @@
   chaff_glider_short:0 "Barrage Balloons"
   chaff_glider_desc:0 ""
 
- # Robots
+ ### Robots
   support_robot:0 "Support Robot Platoon"
   support_robot_short:0 "Support Robots"
   support_robot_desc:0 "Lightly armoured and armed robots put into service as a combat unit. With a focus on supporting roles."
@@ -332,9 +337,7 @@
   cnc_robot_3_desc:0 ""
 
 
-
- # Support
-
+ ### Support
   power_armour_support:0 "Power Armour Support"
   power_armour_support_short:0 "Power Armour Support"
   power_armour_support_desc:0 "A unit of infantry equipped with power armour. Their armour can provide an enormous advantage in combat by adding more resilience to soft attacks. The cost of producing such armour increases the cost of infantry units but can provide much better use of manpower resources"
@@ -406,7 +409,7 @@
   monster_support:0 "Colorado Mutant Support"
   monster_support_desc:0 ""
 
-  # Ships
+ ### Ships
   light_ship_unit:0 "Light Ship"
   light_ship_unit_short:0 "LS"
   light_ship_unit_desc:0 ""
@@ -423,7 +426,7 @@
   super_heavy_ship_unit_short:0 "NCR"
   super_heavy_ship_unit_desc:0 ""
 
-  # Sentinels
+ ### Uniques
   sentinel_unit:0 "Sentinel Automated Power Armour Unit"
   sentinel_unit_short:0 "Sentinels"
   sentinel_unit_desc:0 "Humans need not apply."
@@ -455,25 +458,23 @@
   scribe_support_unit:0 "Field Scribes"
   scribe_support_unit_short:0 "Scribes"
   scribe_support_unit_desc:0 ""
-    combat_engineer_unit:0 "Combat Engineers"
+  combat_engineer_unit:0 "Combat Engineers"
   combat_engineer_unit_short:0 "Combat Engineer"
   combat_engineer_unit_desc:0 "Engineers trained to support our troops in the field by building fortifications, reinforcing armor, and tweaking equipment to evolving battlefield conditions"
   ACH_scribe_support_unit:0 "Specialist Support"
   ACH_scribe_support_unit_short:0 "Specialists"
 
-  # Elites
-  elite_infantry:0 "Elite Infantry"
-  elite_infantry_short:0 "Elite Infantry"
-  elite_infantry_desc:0 ""
-  elite_power_armour:0 "Elite Power Armour"
-  elite_power_armour_short:0 "Elite Power Armour"
-  elite_power_armour_desc:0 ""
-  elite_spec_ops:0 "Elite Special Ops"
-  elite_spec_ops_short:0 "Elite Spec Ops"
-  elite_spec_ops_desc:0 ""
-  elite_motorized:0 "Elite Motorized"
-  elite_motorized_short:0 "Elite Motorized"
-  elite_motorized_desc:0 ""
-  elite_robot:0 "Elite Robot"
-  elite_robot_short:0 "Elite Robot"
-  elite_robot_desc:0 ""
+ ### Headquarters
+  hq_infantry:0 "Infantry HQ Security"
+  hq_infantry_desc:0 "A smaller infantry battalion, dedicated towards HQ security."
+  hq_motorized:0 "Motorized HQ Security"
+  hq_motorized_desc:0 "Infantry in motorized vehicles, allowing more rapid relocation of the HQ."
+  hq_robot:0 "Robot HQ Security"
+  hq_robot_desc:0 ""
+  hq_super_mutant:0 "Super Mutant Lieutenants"
+  hq_super_mutant_desc:0 ""
+  hq_power_armour:0 "Power Armour HQ Security"
+  hq_power_armour_desc:0 ""
+
+  hq_military_police: "Pathfinder Teams"
+  hq_military_police_desc: "Locates the best travel routes and directs division traffic across the army's area of operations."
